@@ -21,10 +21,15 @@ Route::group(['prefix'=>'blogs'], function(){
     Route::get('/blog', [App\Http\Controllers\BlogController::class, 'create'])->name('blog.create');
 });
 
+Route::group(['prefix'=>'mentorings'], function(){
+    Route::get('/mentoring', [App\Http\Controllers\BlogController::class, 'index'])->name('metonring');
+    Route::get('/mentoring/new', [App\Http\Controllers\BlogController::class, 'create'])->name('mentoring.create');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
