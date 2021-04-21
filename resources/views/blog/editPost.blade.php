@@ -23,7 +23,7 @@
             <h5 class="text-marron-claro font-weight-normal mb-2">Título del artículo</h5>
             <input class="form-control form-control-lg rounded-pill" type="text" value="{{ $blog->title }}">
             <h5 class="mt-5 text-marron-claro font-weight-normal mb-2">Cuerpo del artículo</h5>
-            <textarea class="form-control" name="" id="" cols="30" rows="10">{{ $blog->artice_body }}</textarea>
+            <textarea class="form-control" name="" id="" cols="30" rows="10">{{ $blog->article_body }}</textarea>
         </div>
         <div class="col-md-4">
             <div class="text-center mt-5 mt-md-0">
