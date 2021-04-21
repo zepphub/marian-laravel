@@ -14,11 +14,13 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
+
+//Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
 
 Route::group(['prefix'=>'blogs'], function(){
     Route::get('/', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
     Route::get('/blog', [App\Http\Controllers\BlogController::class, 'create'])->name('blog.create');
+    Route::get('/blog/edit', [App\Http\Controllers\BlogController::class, 'edit'])->name('blog.edit');
 });
 
 Route::group(['prefix'=>'mentorings'], function(){
@@ -26,10 +28,11 @@ Route::group(['prefix'=>'mentorings'], function(){
     Route::get('/mentoring/new', [App\Http\Controllers\BlogController::class, 'create'])->name('mentoring.create');
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
+/*Route::get('/', function(){
+    return view('blog.servicios_tye');
+}
+);
+
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
