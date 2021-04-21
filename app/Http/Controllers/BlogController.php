@@ -11,7 +11,7 @@ class BlogController extends Controller
      * Create a new controller instance.
      *
      * @return void
-     
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -24,7 +24,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blog = BLOG::all();
+        $blog = Blog::all();
         return view('blog.blog',['blog'=>$blog]);
     }
 
@@ -32,13 +32,10 @@ class BlogController extends Controller
     {
         return view('blog.newBlog');
     }
-    
-    public function edit(request $id)
 
-    { 
-        $blog = Blog::findOrFail($id);
-        dd($blog);
-        return view('blog.editPost',compact('blog'));
+    public function show(Blog $blog)
+    {
+        return view('blog.editPost', ['blog'=>$blog]);
     }
     /**
      * Show the application dashboard.

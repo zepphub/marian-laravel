@@ -28,12 +28,12 @@
         <div class="col-8 col-md-9">
             <div class="d-flex align-items-center">
                 <img src="https://via.placeholder.com/75" alt="">
-                <h5 class="text-bold text-marron-claro ml-3">{{$item->title}}</h5>
+                <h5 class="text-bold text-marron-claro ml-3">{{$item->title }}</h5>
             </div>
         </div>
         <div class="col-4 col-md-3 d-flex align-items-center">
             <div class="">
-                <a href="{{route('blog.edit')}}"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
+                <a href="{{route('blog.show',$item)}}"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
                         viewBox="0 0 46.952 46.952">
                         <g id="Button" transform="translate(-879.253 -2498.988)">
                             <path id="Background"
@@ -45,7 +45,7 @@
                         </g>
                     </svg>
                 </a>
-                <a class="ml-2" href="{{route('blog.edit')}}"><svg xmlns="http://www.w3.org/2000/svg" width="44.028"
+                <a class="ml-2" href="{{route('blog.show', $item->id)}}"><svg xmlns="http://www.w3.org/2000/svg" width="44.028"
                         height="46.889" viewBox="0 0 44.028 46.889">
                         <g id="Button" transform="translate(-850.386 -2499.575)">
                             <rect id="Background" width="44.028" height="46.889" rx="22"
@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <hr class="border-marron-claro my-3 mx-0"> 
+    <hr class="border-marron-claro my-3 mx-0">
     @endforeach
 
     <div class="row mt-5">

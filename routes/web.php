@@ -19,8 +19,8 @@ use App\Http\Controllers\HomeController;
 
 Route::group(['prefix'=>'blogs'], function(){
     Route::get('/', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
-    Route::get('/blog', [App\Http\Controllers\BlogController::class, 'create'])->name('blog.create');
-    Route::get('/blog/edit', [App\Http\Controllers\BlogController::class, 'edit'])->name('blog.edit');
+    Route::get('/new', [App\Http\Controllers\BlogController::class, 'create'])->name('blog.create');
+    Route::get('{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
 });
 
 Route::group(['prefix'=>'mentorings'], function(){
