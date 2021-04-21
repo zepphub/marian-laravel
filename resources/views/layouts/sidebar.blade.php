@@ -13,7 +13,7 @@
                     </a>
                     <div class="dropdown-menu bg-nude shadow-sm border-0 rounded-lg" aria-labelledby="blog_dropdown">
                     <a class="dropdown-item" href="#">Todos los artículos</a>
-                    <a class="dropdown-item" href="#">Categorías</a>
+                    <a class="dropdown-item" href="{{ route( 'category' ) }}">Categorías</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

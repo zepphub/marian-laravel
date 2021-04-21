@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
             <div class="col-md-9 p-3 p-md-5">
                 <div class="row">
                     <div class="col-md-12">

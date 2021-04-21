@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,14 @@ Route::group(['prefix'=>'blogs'], function(){
     Route::get('/', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
     Route::get('/new', [App\Http\Controllers\BlogController::class, 'create'])->name('blog.create');
     Route::get('{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
+});
+
+Route::group(['prefix'=>'categories'], function(){
+    Route::get('/', [App\Http\Controllers\CategoryController::class, 'index'])->name('category');
+    Route::post('', [App\Http\Controllers\CategoryController::class, 'store'])->name('category.store');
+    // Route::get('/new', [App\Http\Controllers\CategoryController::class, 'create'])->name('blog.create');
+    // Route::get('{cat}', [App\Http\Controllers\CategoryController::class, 'show'])->name('blog.show');
+    Route::get('{cat}/delete', [App\Http\Controllers\CategoryController::class, 'delete'])->name('category.delete');
 });
 
 Route::group(['prefix'=>'mentorings'], function(){
