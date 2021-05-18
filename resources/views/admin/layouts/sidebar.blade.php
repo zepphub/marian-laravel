@@ -30,7 +30,7 @@
                     <div id="item-2" class="collapse show bg-nude border-0" aria-labelledby="heading-2" data-parent="#main-menu">
                       <ul class="nav flex-column ml-3">
                         <li class="nav-item">
-                          <a class="nav-link" href="{{ route('admin.counselings.index') }}">Asesoría personalizada</a>
+                          <a class="nav-link" href="{{ route('admin.counselings.index') }}">Consultorías Personalizadas</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="{{ route('admin.mentorships.index') }}">Mentoría</a>

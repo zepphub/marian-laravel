@@ -20,8 +20,7 @@
                                     Personalizada</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active border-0 text-marron-claro font-weight-bold" id="mentoria-tab" href="#">Mentoría
-                                    grupal</a>
+                                <a class="nav-link active border-0 text-marron-claro font-weight-bold" id="mentoria-tab" href="#">Mentoría</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">

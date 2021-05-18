@@ -6,7 +6,7 @@
                     <div class="col-md-12">
                         <div
                             class="align-items-md-center d-flex flex-column flex-md-row justify-content-between my-4 my-md-0">
-                            <h2 class="order-2 order-md-1">Asesoria personalizada</h2>
+                            <h2 class="order-2 order-md-1">Consultorías personalizadas</h2>
                         </div>
                     </div>
                 </div>

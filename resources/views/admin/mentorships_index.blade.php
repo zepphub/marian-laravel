@@ -21,7 +21,7 @@
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link text-marron-claro font-weight-bold border-0" id="mentoria-tab" href="{{ route('admin.mentorships.tabtwo') }} "
-                                >Mentoría grupal</a>
+                                >Mentoría</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
