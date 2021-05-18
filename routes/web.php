@@ -33,7 +33,6 @@ Route::prefix('/admin')
     Route::get('/consultorias', function(){ return view('admin.mentorship_personal'); })->name('mentorship_personal');
     Route::get('/mentorias', function(){ return view('admin.mentorship_group'); })->name('mentorship_group');
 
-    Route::get('/recursos', function(){ return view('admin.resources'); })->name('resources');
     Route::get('/newsletter', function(){ return view('admin.newsletter'); })->name('newsletter');
 
     Route::group(['prefix'=>'csv'], function(){
@@ -61,5 +60,10 @@ Route::prefix('/admin')
       // Route::get('{cat}', [App\Http\Controllers\CategoryController::class, 'show'])->name('blog.show');
       Route::get('/delete/{id}', 'CategoryController@delete')->name('categories.delete');
     });
+    Route::group(['prefix'=>'recursos'], function(){
+      Route::get('/', function(){ return view('admin.resources'); })->name('resources');
+      Route::get('/nuevo', function(){ return view('admin.resources_new'); })->name('resources.new');
+    });
+
 });
 
