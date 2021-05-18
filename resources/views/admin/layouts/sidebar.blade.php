@@ -6,24 +6,39 @@
         <hr class="border-white border-2 my-3 mx-0">
         <nav class="navbar p-md-0 nav-dashboard mt-5">
             <!-- Links -->
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ route('admin.posts') }}" id="blog_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Blog
-                    </a>
-                    <div class="dropdown-menu bg-nude shadow-sm border-0 rounded-lg" aria-labelledby="blog_dropdown">
-                    <a class="dropdown-item" href="{{ route('admin.posts') }}">Todos los artículos</a>
-                    <a class="dropdown-item" href="{{ route('admin.categories') }}">Categorías</a>
+            <ul id="main-menu" class="navbar-nav flex-column">
+                <li class="nav-item">
+                    <div id="heading-1">
+                      <a class="nav-link dropdown-toggle" href="#item-1" data-parent="#main-menu" data-toggle="collapse" aria-expanded="true" data-target="#item-1" aria-controls="item-1" > Blog </a>
+                    </div>
+                    <div id="item-1" class="collapse show bg-nude border-0" aria-labelledby="heading-1" data-parent="#main-menu">
+                      <ul class="nav flex-column ml-3">
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{ route('admin.posts') }}">Todos los artículos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{ route('admin.categories') }}">Categorías</a>
+                        </li>
+                      </ul>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ route('admin.services') }}" id="servicios_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Servicios
+                <li class="nav-item">
+                    <div id="heading-2">
+                      <a class="nav-link dropdown-toggle" href="#item-2" data-parent="#main-menu" data-toggle="collapse" aria-expanded="false" data-target="#item-2" aria-controls="item-2" > Servicios </a>
                     </a>
-                    <div class="dropdown-menu bg-nude shadow-sm border-0 rounded-lg" aria-labelledby="servicios_dropdown">
-                    <a class="dropdown-item" href="{{ route('admin.mentorship_personal') }}">Asesoría personalizada</a>
-                    <a class="dropdown-item" href="{{ route('admin.mentorship_group') }}">Mentoría</a>
-                    <a class="dropdown-item" href="{{ route('admin.events') }}">Talleres y eventos</a>
+                    </div>
+                    <div id="item-2" class="collapse show bg-nude border-0" aria-labelledby="heading-2" data-parent="#main-menu">
+                      <ul class="nav flex-column ml-3">
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{ route('admin.mentorship_personal') }}">Asesoría personalizada</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{ route('admin.mentorship_group') }}">Mentoría</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{ route('admin.events') }}">Talleres y eventos</a>
+                        </li>
+                      </ul>
                     </div>
                 </li>
                 <li class="nav-item">
