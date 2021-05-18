@@ -1,4 +1,4 @@
-@extends('front.layouts.main')
+@extends('layouts.main')
 
 @section('head')
 <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">

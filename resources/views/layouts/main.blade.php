@@ -11,9 +11,9 @@
 </head>
 
 <body>
-  @include('front.layouts.header')
+  @include('layouts.header')
   @yield('content')
-  @include('front.layouts.footer')
+  @include('layouts.footer')
 
   <script src="{{ asset('js/jquery.min.js') }}"></script>
   <script type="module" src="{{ asset('js/starter.js') }}"></script>

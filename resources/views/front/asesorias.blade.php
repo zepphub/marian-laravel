@@ -1,4 +1,4 @@
-@extends('front.layouts.main')
+@extends('layouts.main')
 
 @section('title')Asesorías - @endsection
 
