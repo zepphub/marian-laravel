@@ -18,9 +18,33 @@ use App\Http\Controllers\CategoryController;
 
 Auth::routes();
 
+/* Frontpage routes */
+
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('index');
-Route::get('/categorias', 'App\Http\Controllers\CategoryController@index')->name('categories');
-Route::get('/recursos', function(){ return view('resources'); })->name('resources');
+Route::get('/asesorias', function(){ return view('front.asesorias'); })->name('asesorias');
+Route::get('/blog', function(){ return view('front.blog'); })->name('blog');
+Route::get('/calendario', function(){ return view('front.calendar'); })->name('calendario');
+Route::get('/carrito', function(){ return view('front.carrito'); })->name('carrito');
+Route::get('/checkout', function(){ return view('front.checkout'); })->name('checkout');
+Route::get('/contacto', function(){ return view('front.contacto'); })->name('contacto');
+Route::get('/entrada', function(){ return view('front.entrada'); })->name('entrada');
+Route::get('/evento', function(){ return view('front.evento'); })->name('evento');
+Route::get('/footer', function(){ return view('front.footer'); })->name('footer');
+Route::get('/header', function(){ return view('front.header'); })->name('header');
+Route::get('/incrip-exitosa', function(){ return view('front.incrip-exitosa'); })->name('incrip-exitosa');
+Route::get('/mentoria', function(){ return view('front.mentoria'); })->name('mentoria');
+Route::get('/mentoria-grupal', function(){ return view('front.mentoria-grupal'); })->name('mentoria-grupal');
+Route::get('/programa-intensivo', function(){ return view('front.programa-intensivo'); })->name('programa-intensivo');
+Route::get('/recursos', function(){ return view('front.recursos'); })->name('recursos');
+Route::get('/recursos-gratuitos', function(){ return view('front.recursos-gratuitos'); })->name('recursos-gratuitos');
+Route::get('/servicios', function(){ return view('front.servicios'); })->name('servicios');
+Route::get('/sobre-mi', function(){ return view('front.sobre-mi'); })->name('sobre-mi');
+Route::get('/talleres-y-eventos', function(){ return view('front.talleres-y-eventos'); })->name('talleres-y-eventos');
+Route::get('/test', function(){ return view('front.test'); })->name('test');
+Route::get('/test-form', function(){ return view('front.test-form'); })->name('test-form');
+
+
+/* Admin Routes */
 
 Route::prefix('/admin')
   ->name('admin.')
@@ -61,7 +85,7 @@ Route::prefix('/admin')
       Route::get('/delete/{id}', 'CategoryController@delete')->name('categories.delete');
     });
     Route::group(['prefix'=>'recursos'], function(){
-      Route::get('/', function(){ return view('admin.resources'); })->name('resources');
+      Route::get('/', function(){ return view('admin.resources_list'); })->name('resources');
       Route::get('/nuevo', function(){ return view('admin.resources_new'); })->name('resources.new');
     });
 
