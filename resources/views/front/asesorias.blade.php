@@ -20,7 +20,7 @@
 
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-5"><img class="w-100 img-fluid" src="assets/img/asesoria-img-portada.png" alt=""></div>
+      <div class="col-md-5"><img class="w-100 img-fluid" src="{{ asset('img/asesoria-img-portada.png') }}" alt=""></div>
       <div class="col-md-7 pl-md-5">
         <h4 class="font-weight-bold titulo-home mb-4 mt-4 mt-md-0">Consultorías Estratégicas</h4>
         <p>
@@ -45,7 +45,7 @@
   <div class="container-fluid my-5">
     <div class="row">
       <div class="col-md-12 p-0">
-        <img class="img-fluid w-100" src="assets/img/video-placeholder.png" alt="">
+        <img class="img-fluid w-100" src="{{ asset('img/video-placeholder.png') }}" alt="">
       </div>
     </div>
   </div>
@@ -55,7 +55,7 @@
       <div class="row">
         <div class="col-md-12 text-center py-5 py-md-0">
           <h4 class="text-white titulo-home">Sobre las experiencias</h4>
-          <img src="assets/img/separador-titulo-blanco-svg.svg" alt="">
+          <img src="{{ asset('img/separador-titulo-blanco-svg.svg') }}" alt="">
           <p class="text-white my-5 mx-md-5">Trabajamos juntas en encuentros de aproximadamente 2 horas. Todas las
             consultorías incluyen la grabación de la sesión, para que puedas repasarla cuando lo necesites. A eso se le
             suma mi mentoría vía mail durante la semana siguiente a nuestra reunión, en la que podrás implementar lo
@@ -85,7 +85,7 @@
               <div class="col-sm-3">
                 <div class="card rounded-0 border-0 shadow py-4">
                   <div class="card-body text-center">
-                    <img src="assets/img/asesoria-carousel-item-1.svg" alt="">
+                    <img src="{{ asset('img/asesoria-carousel-item-1.svg') }}" alt="">
                     <p class="card-text text-secondary mt-4">Sos una emprendedora apasionada por sus ideas y proyectos
                     </p>
                   </div>
@@ -94,7 +94,7 @@
               <div class="col-sm-3">
                 <div class="card rounded-0 border-0 shadow py-4">
                   <div class="card-body text-center">
-                    <img src="assets/img/asesoria-carousel-item-2.svg" alt="">
+                    <img src="{{ asset('img/asesoria-carousel-item-2.svg') }}" alt="">
                     <p class="card-text text-secondary mt-4">Buscás construir una marca con propósito y querés hacerlo
                       bien</p>
                   </div>
@@ -103,7 +103,7 @@
               <div class="col-sm-3">
                 <div class="card rounded-0 border-0 shadow py-4">
                   <div class="card-body text-center">
-                    <img src="assets/img/asesoria-carousel-item-3.svg" alt="">
+                    <img src="{{ asset('img/asesoria-carousel-item-3.svg') }}" alt="">
                     <p class="card-text text-secondary mt-4">Querés innovar en el universo digital</p>
                   </div>
                 </div>
@@ -111,7 +111,7 @@
               <div class="col-sm-3">
                 <div class="card rounded-0 border-0 shadow py-4">
                   <div class="card-body text-center">
-                    <img src="assets/img/asesoria-carousel-item-4.svg" alt="">
+                    <img src="{{ asset('img/asesoria-carousel-item-4.svg') }}" alt="">
                     <p class="card-text text-secondary mt-4">Aspirás a crear algo significativo</p>
                   </div>
                 </div>
@@ -123,7 +123,7 @@
               <div class="col-sm-3">
                 <div class="card rounded-0 border-0 shadow py-4">
                   <div class="card-body text-center">
-                    <img src="assets/img/asesoria-carousel-item-5.svg" alt="">
+                    <img src="{{ asset('img/asesoria-carousel-item-5.svg') }}" alt="">
                     <p class="card-text text-secondary mt-4">Te gustaría lograr una conexión real con tus clientes a
                       través de propuestas auténticas y diferentes
                     </p>
@@ -133,7 +133,7 @@
               <div class="col-sm-3">
                 <div class="card rounded-0 border-0 shadow py-4">
                   <div class="card-body text-center">
-                    <img src="assets/img/asesoria-carousel-item-6.svg" alt="">
+                    <img src="{{ asset('img/asesoria-carousel-item-6.svg') }}" alt="">
                     <p class="card-text text-secondary mt-4">Querés transformar tu forma de trabajo y disfrutar del
                       proceso</p>
                   </div>
@@ -142,7 +142,7 @@
               <div class="col-sm-3">
                 <div class="card rounded-0 border-0 shadow py-4">
                   <div class="card-body text-center">
-                    <img src="assets/img/asesoria-carousel-item-7.svg" alt="">
+                    <img src="{{ asset('img/asesoria-carousel-item-7.svg') }}" alt="">
                     <p class="card-text text-secondary mt-4">Sabés que las ventas no son lo único importante. </p>
                   </div>
                 </div>
@@ -150,7 +150,7 @@
               <div class="col-sm-3">
                 <div class="card rounded-0 border-0 shadow py-4">
                   <div class="card-body text-center">
-                    <img src="assets/img/asesoria-carousel-item-8.svg" alt="">
+                    <img src="{{ asset('img/asesoria-carousel-item-8.svg') }}" alt="">
                     <p class="card-text text-secondary mt-4">No buscás pociones mágicas ni cientos de seguidores de un
                       día para el otro.</p>
                   </div>
@@ -179,27 +179,27 @@
           <li class="nav-item text-center" role="presentation">
             <a class="active align-items-center d-flex flex-column nav-link h-100" id="pills-1-tab" data-toggle="pill"
               href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true"><img class="mb-2"
-                src="assets/img/asesoria-tab-1.svg" alt="">Elevá tu esencia</a>
+                src="{{ asset('img/asesoria-tab-1.svg') }}" alt="">Elevá tu esencia</a>
           </li>
           <li class="nav-item text-center" role="presentation">
             <a class="nav-link align-items-center d-flex flex-column h-100" id="pills-2-tab" data-toggle="pill"
               href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false"><img class="mb-2"
-                src="assets/img/asesoria-tab-2.svg" alt="">Enamorá a tu audiencia</a>
+                src="{{ asset('img/asesoria-tab-2.svg') }}" alt="">Enamorá a tu audiencia</a>
           </li>
           <li class="nav-item text-center" role="presentation">
             <a class="nav-link align-items-center d-flex flex-column h-100" id="pills-3-tab" data-toggle="pill"
               href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false"><img class="mb-2"
-                src="assets/img/asesoria-tab-3.svg" alt="">Contenido para inspirar</a>
+                src="{{ asset('img/asesoria-tab-3.svg') }}" alt="">Contenido para inspirar</a>
           </li>
           <li class="nav-item text-center" role="presentation">
             <a class="nav-link align-items-center d-flex flex-column h-100" id="pills-4-tab" data-toggle="pill"
               href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false"><img class="mb-2"
-                src="assets/img/asesoria-tab-4.svg" alt="">Comunicá, conectá y lanzá</a>
+                src="{{ asset('img/asesoria-tab-4.svg') }}" alt="">Comunicá, conectá y lanzá</a>
           </li>
           <li class="nav-item text-center" role="presentation">
             <a class="nav-link align-items-center d-flex flex-column h-100" id="pills-5-tab" data-toggle="pill"
               href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false"><img class="mb-2"
-                src="assets/img/asesoria-tab-5.svg" alt="">Hoja de ruta</a>
+                src="{{ asset('img/asesoria-tab-5.svg') }}" alt="">Hoja de ruta</a>
           </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
@@ -652,7 +652,7 @@
             elevarla en el universo digital.</p>
           <a class="btn btn-outline-primary" href="">¡Quiero conocer detalles!</a>
           <h4 class="text-coral mt-5 text-medium">Consultorías a medida</h4>
-          <img src="assets/img/separador-svg.svg" alt="">
+          <img src="{{ asset('img/separador-svg.svg') }}" alt="">
           <p class="mt-5 text-marron-claro">No importa la etapa o el tamaño de tu proyecto: las consultorías a medida
             permiten que diagramemos juntas cada detalle. Con tus inquietudes y situación actual como base, te voy a
             guiar en el proceso de incorporar nuevas herramientas,, adaptándolas a las necesidades de tu empresa.

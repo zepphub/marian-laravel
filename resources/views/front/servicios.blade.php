@@ -23,7 +23,7 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <h4 class="titulo-home">Mis Propuestas</h4>
-        <img src="assets/img/separador-svg.svg" alt="">
+        <img src="{{ asset('img/separador-svg.svg') }}" alt="">
       </div>
     </div>
     <div class="row mt-5">
@@ -112,7 +112,7 @@
         <div class="tab-content" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             <div class="d-flex align-items-center">
-              <img src="assets/img/servicios-pill-1.svg" alt="">
+              <img src="{{ asset('img/servicios-pill-1.svg') }}" alt="">
               <h4 class="ml-3">Consultorías estratégicas</h4>
             </div>
             <p class="mt-4">Te ayudo a consolidar tu presencia online, resaltando la esencia y los valores de tu marca.
@@ -131,7 +131,7 @@
 
           <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
             <div class="d-flex align-items-center">
-              <img src="assets/img/servicios-pill-2.svg" alt="">
+              <img src="{{ asset('img/servicios-pill-2.svg') }}" alt="">
               <h4 class="ml-3">Programa intensivo de 8 semanas</h4>
             </div>
             <p class="mt-4">El programa está creado especialmente para pequeñas empresarias y profesionales
@@ -151,7 +151,7 @@
 
           <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
             <div class="d-flex align-items-center">
-              <img src="assets/img/servicios-pill-3.svg" alt="">
+              <img src="{{ asset('img/servicios-pill-3.svg') }}" alt="">
               <h4 class="ml-3">Mentoría Grupal para emprendedoras</h4>
             </div>
             <p class="mt-4">Un asesoramiento intensivo con el principal objetivo de transformar tu proyecto en el mundo
@@ -172,7 +172,7 @@
 
           <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
             <div class="d-flex align-items-center">
-              <img src="assets/img/servicios-pill-4.svg" alt="">
+              <img src="{{ asset('img/servicios-pill-4.svg') }}" alt="">
               <h4 class="ml-3">Talleres y eventos de networking</h4>
             </div>
             <p class="mt-4">Experiencias especialmente creadas para emprendedores y profesionales con
@@ -204,22 +204,22 @@
           <div class="carousel-inner">
             <div class="carousel-item py-5 active">
               <div class="row align-items-center">
-                <div class="col-4 p-0 text-center"><img src="assets/img/servicios-logo-1.png" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="assets/img/servicios-logo-2.png" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="assets/img/servicios-logo-3.png" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-1.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-2.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-3.png') }}" alt=""></div>
               </div>
             </div>
             <div class="carousel-item py-5">
               <div class="row align-items-center">
-              <div class="col-4 p-0 text-center"><img src="assets/img/servicios-logo-4.png" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="assets/img/servicios-logo-5.png" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="assets/img/servicios-logo-6.png" alt=""></div>
+              <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-4.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-5.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-6.png') }}" alt=""></div>
               </div>
             </div>
             <div class="carousel-item py-5">
               <div class="row align-items-center">
-                <div class="col-4 p-0 text-center"><img src="assets/img/servicios-logo-7.png" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="assets/img/servicios-logo-8.png" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-7.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-8.png') }}" alt=""></div>
                 <div class="col-4 p-0 text-center"><img src="" alt=""></div>
               </div>
             </div>

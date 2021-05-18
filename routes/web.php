@@ -68,5 +68,8 @@ Route::prefix('/admin')
       'counselings' => CounselingController::class,
       'mentorships' => MentorshipController::class,
     ]);
+
+    Route::get('/groupmentorships', function(){ return view('admin.mentorships_tabtwo'); })->name('mentorships.tabtwo');
+
 });
 

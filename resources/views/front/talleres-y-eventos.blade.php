@@ -54,7 +54,7 @@
           </button></a>
       </div>
       <div class="col-md-5">
-        <img class="w-100 img-fluid" src="assets/img/talleres-y-eventos-img-1.png" alt="">
+        <img class="w-100 img-fluid" src="{{ asset('img/talleres-y-eventos-img-1.png') }}" alt="">
       </div>
     </div>
   </div>
@@ -67,19 +67,19 @@
         </div>
       </div>
       <div class="row mt-5 position-relative">
-        <button class="btn customPrevBtn p-0"><img src="assets/img/prevBtn.svg" alt=""></button>
+        <button class="btn customPrevBtn p-0"><img src="{{ asset('img/prevBtn.svg') }}" alt=""></button>
         <div class="owl-carousel owl-theme">
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/tye-owl-item-1.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/tye-owl-item-1.svg') }}" alt="">
               <h5>Marketing digital</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/tye-owl-item-2.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/tye-owl-item-2.svg') }}" alt="">
               <h5>Estrategias en el
                 universo digital</h5>
             </div>
@@ -87,68 +87,68 @@
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/tye-owl-item-3.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/tye-owl-item-3.svg') }}" alt="">
               <h5>Storytelling</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/tye-owl-item-4.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/tye-owl-item-4.svg') }}" alt="">
               <h5>Contenido con propósito</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/tye-owl-item-2.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/tye-owl-item-2.svg') }}" alt="">
               <h5>Uso estratégico de las Redes Sociales</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/tye-owl-item-5.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/tye-owl-item-5.svg') }}" alt="">
               <h5>Tu marca en Instagram</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-6.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-6.svg') }}" alt="">
               <h5>Conceptualización y lanzamiento de campañas</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/tye-owl-item-6.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/tye-owl-item-6.svg') }}" alt="">
               <h5>Comunicación digital e integral</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/tye-owl-item-7.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/tye-owl-item-7.svg') }}" alt="">
               <h5>Esencia y valores de marca</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/tye-owl-item-8.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/tye-owl-item-8.svg') }}" alt="">
               <h5>Motivación para emprendedoras</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/tye-owl-item-9.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/tye-owl-item-9.svg') }}" alt="">
               <h5>Creación de proyectos y marcas que enamoren</h5>
             </div>
           </div>
         </div>
-        <button class="btn customNextBtn p-0"><img src="assets/img/nextBtn.svg" alt=""></button>
+        <button class="btn customNextBtn p-0"><img src="{{ asset('img/nextBtn.svg') }}" alt=""></button>
       </div>
     </div>
   </div>
@@ -159,7 +159,7 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <h4 class="titulo-home">Próximos eventos</h4>
-          <img src="assets/img/separador-svg.svg" alt="">
+          <img src="{{ asset('img/separador-svg.svg') }}" alt="">
         </div>
       </div>
     
@@ -177,7 +177,7 @@
                     <div class="card rounded-0 border-0 shadow" style="max-width: 540px;">
                       <div class="row no-gutters">
                         <div class="col-md-5">
-                          <img class="h-100 img-fluid" src="assets/img/tye-card-eventos.jpg" alt="...">
+                          <img class="h-100 img-fluid" src="{{ asset('img/tye-card-eventos.jpg') }}" alt="...">
                         </div>
                         <div class="col-md-7">
                           <div class="card-body">
@@ -245,7 +245,7 @@
                     <div class="card rounded-0 border-0 shadow" style="max-width: 540px;">
                       <div class="row no-gutters">
                         <div class="col-md-5">
-                          <img class="h-100 img-fluid" src="assets/img/tye-card-eventos.jpg" alt="...">
+                          <img class="h-100 img-fluid" src="{{ asset('img/tye-card-eventos.jpg') }}" alt="...">
                         </div>
                         <div class="col-md-7">
                           <div class="card-body">
@@ -321,7 +321,7 @@
                     <div class="card rounded-0 border-0 shadow" style="max-width: 540px;">
                       <div class="row no-gutters">
                         <div class="col-md-5">
-                          <img class="h-100 img-fluid" src="assets/img/tye-card-eventos.jpg" alt="...">
+                          <img class="h-100 img-fluid" src="{{ asset('img/tye-card-eventos.jpg') }}" alt="...">
                         </div>
                         <div class="col-md-7">
                           <div class="card-body">
@@ -389,7 +389,7 @@
                     <div class="card rounded-0 border-0 shadow" style="max-width: 540px;">
                       <div class="row no-gutters">
                         <div class="col-md-5">
-                          <img class="h-100 img-fluid" src="assets/img/tye-card-eventos.jpg" alt="...">
+                          <img class="h-100 img-fluid" src="{{ asset('img/tye-card-eventos.jpg') }}" alt="...">
                         </div>
                         <div class="col-md-7">
                           <div class="card-body">
@@ -469,7 +469,7 @@
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item py-5 active">
                 <div class="card border-0 p-4">
-                  <img src="assets/img/tye-card-eventos.jpg" class="card-img-top" alt="...">
+                  <img src="{{ asset('img/tye-card-eventos.jpg" class="card-img-top') }}" alt="...">
                   <div class="card-body">
                     <div>
                       <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="12.567"
@@ -532,7 +532,7 @@
               </div>
               <div class="carousel-item py-5">
                 <div class="card border-0 p-4">
-                  <img src="assets/img/tye-card-eventos.jpg" class="card-img-top" alt="...">
+                  <img src="{{ asset('img/tye-card-eventos.jpg" class="card-img-top') }}" alt="...">
                   <div class="card-body">
                     <div>
                       <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="12.567"
@@ -614,28 +614,28 @@
           <div class="carousel-inner">
             <div class="carousel-item py-5 active">
               <div class="row align-items-center">
-                <div class="col-4 p-0 text-center"><img src="assets/img/tye-marcas-1.png" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="assets/img/tye-marcas-2.png" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="assets/img/tye-marcas-3.png" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-1.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-2.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-3.png') }}" alt=""></div>
               </div>
             </div>
             <div class="carousel-item py-5">
               <div class="row align-items-center">
-                <div class="col-4 p-0 text-center"><img src="assets/img/tye-marcas-4.png" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="assets/img/tye-marcas-5.png" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="assets/img/tye-marcas-6.png" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-4.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-5.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-6.png') }}" alt=""></div>
               </div>
             </div>
             <div class="carousel-item py-5">
               <div class="row align-items-center">
-                <div class="col-4 p-0 text-center"><img src="assets/img/tye-marcas-7.png" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="assets/img/tye-marcas-8.png" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="assets/img/tye-marcas-9.png" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-7.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-8.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-9.png') }}" alt=""></div>
               </div>
             </div>
             <div class="carousel-item py-5">
               <div class="row align-items-center">
-                <div class="col-4 p-0 text-center"><img src="assets/img/tye-marcas-10.png" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-10.png') }}" alt=""></div>
                 <div class="col-4 p-0 text-center"><img src="" alt=""></div>
                 <div class="col-4 p-0 text-center"><img src="" alt=""></div>
               </div>
@@ -673,7 +673,7 @@
   </div>
 
   <div class="m-0 p-0"><img style="margin-bottom: -12px !important;" class="img-fluid w-100"
-      src="assets/img/separador-superior-seccion-svg.svg" alt=""></div>
+      src="{{ asset('img/separador-superior-seccion-svg.svg') }}" alt=""></div>
   <div class="bg-crema-suave contenedor-form-home py-5">
     <div class="container bg-white p-4 rounded-lg">
       <div class="row">
@@ -681,7 +681,7 @@
           <div class="bg-textura-form rounded-lg p-md-4 p-3">
           <p class="text-white mt-3">Si te gustaría que sea parte de tu evento</p>
             <h4 class="titulo-home text-medium text-white">¡Charlemos!</h4>
-            <img src="assets/img/separador-secondary-svg.svg" alt="">
+            <img src="{{ asset('img/separador-secondary-svg.svg') }}" alt="">
             
             <div>
               <ul class="list-group">

@@ -16,14 +16,14 @@
           </div>
         </div>
         <div class="col-md-5 d-none d-md-block">
-          <img class="img-fluid" src="assets/img/Background.png" alt="">
+          <img class="img-fluid" src="{{ asset('img/Background.png') }}" alt="">
         </div>
       </div>
     </div>
   </div>
   <div class="divisor-con-forma">
     <img style="margin-top: -12px !important;" class="img-fluid w-100 img-rotate-180"
-      src="assets/img/separador-seccion-svg2.svg" alt="">
+      src="{{ asset('img/separador-seccion-svg2.svg') }}" alt="">
   </div>
   <!-- Portada Home -->
 @endsection

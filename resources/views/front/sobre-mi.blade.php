@@ -73,7 +73,7 @@
           </div>
         </div>
         <div class="col-md-7 order-1 order-md-2">
-          <img class="img-fluid" src="assets/img/video-image.jpg" alt="">
+          <img class="img-fluid" src="{{ asset('img/video-image.jpg') }}" alt="">
         </div>
       </div>
     </div>
@@ -84,7 +84,7 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <h4 class="text-white titulo-home">Lo que ellas dicen</h4>.
-          <img src="assets/img/separador-titulo-blanco-svg.svg" alt="">
+          <img src="{{ asset('img/separador-titulo-blanco-svg.svg') }}" alt="">
         </div>
       </div>
 
@@ -152,7 +152,7 @@
         <div class="col-md-12">
           <div class="text-center">
             <h4 class="titulo-home">Trabajemos Juntas</h4>
-            <img src="assets/img/separador-svg.svg" alt="">
+            <img src="{{ asset('img/separador-svg.svg') }}" alt="">
             <p class="my-4">Construyamos juntas el universo de tu marca de la mano a diversas estrategias de Marketing
               Digital, Comunicación y Branding que te ayuden a posicionarte a través de una propuesta
               auténtica y diferente</p>
@@ -176,7 +176,7 @@
       <div class="row mt-5">
         <div class="col-md-4">
           <div class="card border-secondary text-center card-propuestas shadow">
-            <img src="assets/img/card-mentoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
+            <img src="{{ asset('img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
             <div class="card-body">
               <h5 class="card-title titulo-home">Mentoría</h5>
               <p class="card-text">Trabajamos en el universo de tu marca, fortaleciendo los pilares más importantes y
@@ -188,7 +188,7 @@
         </div>
         <div class="col-md-4 my-4 my-md-0">
           <div class="card border-secondary text-center card-propuestas shadow">
-            <img src="assets/img/card-asesoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
+            <img src="{{ asset('img/card-asesoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
             <div class="card-body">
               <h5 class="card-title titulo-home">Asesoría Personalizada</h5>
               <p class="card-text">Te ayudo a potenciar tu estrategia
@@ -201,7 +201,7 @@
         </div>
         <div class="col-md-4">
           <div class="card border-secondary text-center card-propuestas shadow">
-            <img src="assets/img/card-talleres-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
+            <img src="{{ asset('img/card-talleres-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
             <div class="card-body">
               <h5 class="card-title titulo-home">Talleres y Conferencias</h5>
               <p class="card-text">Experiencias especialmente creadas

@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-md-2 d-flex flex-column align-items-center">
                     <div class="">
-                        <img src="assets/img/logo-marian-nav.svg" alt="">
+                        <img src="{{ asset('img/logo-marian-nav.svg') }}" alt="">
                         <h6 class="font-weight-normal text-center bajada-logo">Consultora de marcas auténticas</h6>
                     </div>
                 </div>

@@ -19,15 +19,15 @@
               digitales, y propuestas acordes a sus principales intereses.</p>
             <div class="row">
               <div class="col-md-4 d-flex align-items-center">
-                <img src="assets/img/evento-date-icon.svg" alt="">
+                <img src="{{ asset('img/evento-date-icon.svg') }}" alt="">
                 <h5 class="font-weight-normal m-0 text-dark-gray ml-2">24 Nov 2020</h5>
               </div>
               <div class="col-md-4 d-flex align-items-center my-3 my-md-0">
-                <img src="assets/img/evento-time-icon.svg" alt="">
+                <img src="{{ asset('img/evento-time-icon.svg') }}" alt="">
                 <h5 class="font-weight-normal m-0 text-dark-gray ml-2">14:00 hs</h5>
               </div>
               <div class="col-md-4 d-flex align-items-center">
-                <img src="assets/img/evento-person-icon.svg" alt="">
+                <img src="{{ asset('img/evento-person-icon.svg') }}" alt="">
                 <h5 class="font-weight-normal m-0 text-dark-gray ml-2">Mariana Pacheco</h5>
               </div>
             </div>

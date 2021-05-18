@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="align-items-md-center d-flex flex-column flex-md-row justify-content-between my-4 my-md-0">
                 <h2 class="order-2 order-md-1">Nuevo artículo</h2>
-                <a class="order-1 order-md-2" href="blog.php"><button class="btn btn-outline-secondary"><svg class="mr-2" style="margin-bottom:2px"
+                <a class="order-1 order-md-2" href="{{ route('admin.posts.index') }}"><button class="btn btn-outline-secondary"><svg class="mr-2" style="margin-bottom:2px"
                             xmlns="http://www.w3.org/2000/svg" width="7" height="10"
                             viewBox="0 0 7.771 11.157">
                             <path id="Icon_awesome-chevron-down" data-name="Icon awesome-chevron-down"
@@ -16,7 +16,7 @@
                         Volver</button></a>
             </div>
         </div>
-    </div>  
+    </div>
     <div class="row mt-4">
         <div class="col-md-8">
             <h5 class="text-marron-claro font-weight-normal mb-2">Título del artículo</h5>
@@ -29,15 +29,15 @@
                 <img class="d-block img-fluid w-100" src="https://via.placeholder.com/150" alt="">
                 <button class="btn btn-primary mt-4">Subir imagen</button>
             </div>
-        </div>                    
-    </div>   
-    <hr class="border-marron-claro my-5 mx-0">       
+        </div>
+    </div>
+    <hr class="border-marron-claro my-5 mx-0">
     <div class="row my-4">
         <div class="col-md-12">
             <div class="d-block d-md-flex justify-content-md-end justify-content-center">
                 <a href=""><button class="btn btn-outline-primary btn-block">Publicar</button></a>
             </div>
-        </div>                  
-    </div> 
+        </div>
+    </div>
 </div>
 @endsection

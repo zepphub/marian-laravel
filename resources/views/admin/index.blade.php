@@ -43,14 +43,14 @@
                 <img src="{{ asset('img/card-asesoria.svg') }}" alt="">
                 <h4 class="titulo-cards-dashboard my-4">Asesoría
                     personalizada</h4>
-                <a href="{{ route( 'admin.mentorship_personal' ) }}" class="btn btn-primary">Gestionar</a>
+                <a href="{{ route( 'admin.mentorships.index' ) }}" class="btn btn-primary">Gestionar</a>
             </div>
         </div>
         <div class="col-md-4">
             <div class="rounded-lg shadow-lg text-center p-4 my-3 my-md-0">
                 <img src="{{ asset('img/card-asesoria.svg') }}" alt="">
                 <h4 class="titulo-cards-dashboard my-4">Mentoría</h4>
-                <a href="{{ route( 'admin.mentorship_group' ) }}" class="btn btn-primary">Gestionar</a>
+                <a href="{{ route( 'admin.mentorships.tabtwo' ) }}" class="btn btn-primary">Gestionar</a>
             </div>
         </div>
         <div class="col-md-4 mt-0 mt-md-5">

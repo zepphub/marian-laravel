@@ -42,7 +42,7 @@
           <div class="col-md-6">
             <div class="card border-0 my-4">
               <div class="position-relative">
-                <a href="entrada.php"><img src="assets/img/img-publicacion-blog.png" class="card-img-top rounded-0" alt="..."></a>
+                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
                 
                 <div class="badge-date position-absolute">
                   <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
@@ -71,7 +71,7 @@
           <div class="col-md-6">
             <div class="card border-0 my-4">
               <div class="position-relative">
-                <a href="entrada.php"><img src="assets/img/img-publicacion-blog.png" class="card-img-top rounded-0" alt="..."></a>
+                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
                 
                 <div class="badge-date position-absolute">
                   <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
@@ -99,7 +99,7 @@
           </div><div class="col-md-6">
             <div class="card border-0 my-4">
               <div class="position-relative">
-                <a href="entrada.php"><img src="assets/img/img-publicacion-blog.png" class="card-img-top rounded-0" alt="..."></a>
+                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
                 
                 <div class="badge-date position-absolute">
                   <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
@@ -127,7 +127,7 @@
           </div><div class="col-md-6">
             <div class="card border-0 my-4">
               <div class="position-relative">
-                <a href="entrada.php"><img src="assets/img/img-publicacion-blog.png" class="card-img-top rounded-0" alt="..."></a>
+                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
                 
                 <div class="badge-date position-absolute">
                   <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
@@ -155,7 +155,7 @@
           </div><div class="col-md-6">
             <div class="card border-0 my-4">
               <div class="position-relative">
-                <a href="entrada.php"><img src="assets/img/img-publicacion-blog.png" class="card-img-top rounded-0" alt="..."></a>
+                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
                 
                 <div class="badge-date position-absolute">
                   <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
@@ -183,7 +183,7 @@
           </div><div class="col-md-6">
             <div class="card border-0 my-4">
               <div class="position-relative">
-                <a href="entrada.php"><img src="assets/img/img-publicacion-blog.png" class="card-img-top rounded-0" alt="..."></a>
+                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
                 
                 <div class="badge-date position-absolute">
                   <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
@@ -211,7 +211,7 @@
           </div><div class="col-md-6">
             <div class="card border-0 my-4">
               <div class="position-relative">
-                <a href="entrada.php"><img src="assets/img/img-publicacion-blog.png" class="card-img-top rounded-0" alt="..."></a>
+                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
                 
                 <div class="badge-date position-absolute">
                   <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
@@ -239,7 +239,7 @@
           </div><div class="col-md-6">
             <div class="card border-0 my-4">
               <div class="position-relative">
-                <a href="entrada.php"><img src="assets/img/img-publicacion-blog.png" class="card-img-top rounded-0" alt="..."></a>
+                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
                 
                 <div class="badge-date position-absolute">
                   <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"

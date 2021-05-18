@@ -2,7 +2,7 @@
     <div class="container pt-5">
         <div class="row">
             <div class="col-md-3">
-                <img src="assets/img/logo-footer.svg" alt="">
+                <img src="{{ asset('img/logo-footer.svg') }}" alt="">
                 <p class="mt-4">Me especializo en la creación de proyectos y estrategias digitales y lo hago a través de
                     experiencias, asesorías y propuestas
                     especialmente diseñadas para marcas con

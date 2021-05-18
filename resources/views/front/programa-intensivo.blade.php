@@ -34,7 +34,7 @@
         <a href=""><button class="btn btn-primary">¡quiero conocer detalles y aplicar al programa!</button></a>
       </div>
       <div class="col-md-5">
-        <img class="w-100 img-fluid" src="assets/img/programa-img-1.png" alt="">
+        <img class="w-100 img-fluid" src="{{ asset('img/programa-img-1.png') }}" alt="">
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="card rounded-0 shadow border-0">
-                <img class="rounded-0" src="assets/img/programa-section-card-1.jpg" class="card-img-top" alt="...">
+                <img class="rounded-0" src="{{ asset('img/programa-section-card-1.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="card-text">Lidero una marca y/o emprendimiento y tengo intenciones de renovarlo en el
                     universo digital de manera estratégica.</p>
@@ -60,7 +60,7 @@
             </div>
             <div class="col-md-6 mt-4 mt-md-0">
               <div class="card rounded-0 shadow border-0">
-                <img class="rounded-0" src="assets/img/programa-section-card-2.jpg" class="card-img-top" alt="...">
+                <img class="rounded-0" src="{{ asset('img/programa-section-card-2.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="card-text">Tengo una idea de proyecto y quiero hacerla realidad con un emprendimiento que
                     conecte y atraiga.</p>
@@ -110,15 +110,15 @@
       <div class="col-md-5 mt-4 mt-md-0 bg-nude rounded">
         <div class="py-4 pm-d-4">
           <h4 class="text-white titulo-home">Ejes de trabajo</h4>
-          <img src="assets/img/separador-secondary-svg.svg" alt="">
+          <img src="{{ asset('img/separador-secondary-svg.svg') }}" alt="">
           <ul class="list-unstyled mt-4">
-            <li class="my-3"><img src="assets/img/programa-icon-list-1.svg" alt=""> Los valores y la esencia de tu marca
+            <li class="my-3"><img src="{{ asset('img/programa-icon-list-1.svg') }}" alt=""> Los valores y la esencia de tu marca
             </li>
-            <li class="my-3"><img src="assets/img/programa-icon-list-2.svg" alt=""> Tu audiencia</li>
-            <li class="my-3"><img src="assets/img/programa-icon-list-3.svg" alt=""> Contenido con propósito</li>
-            <li class="my-3"><img src="assets/img/programa-icon-list-4.svg" alt=""> Personalidad e identidad de marca
+            <li class="my-3"><img src="{{ asset('img/programa-icon-list-2.svg') }}" alt=""> Tu audiencia</li>
+            <li class="my-3"><img src="{{ asset('img/programa-icon-list-3.svg') }}" alt=""> Contenido con propósito</li>
+            <li class="my-3"><img src="{{ asset('img/programa-icon-list-4.svg') }}" alt=""> Personalidad e identidad de marca
             </li>
-            <li class="my-3"><img src="assets/img/programa-icon-list-5.svg" alt=""> Planificación y estrategia</li>
+            <li class="my-3"><img src="{{ asset('img/programa-icon-list-5.svg') }}" alt=""> Planificación y estrategia</li>
           </ul>
         </div>
       </div>
@@ -156,14 +156,14 @@
   <!-- Fin Banner Consultoria Estrategica -->
 
   <div class="m-0 p-0"><img style="margin-bottom: -12px !important;" class="img-fluid w-100"
-      src="assets/img/separador-superior-seccion-svg.svg" alt=""></div>
+      src="{{ asset('img/separador-superior-seccion-svg.svg') }}" alt=""></div>
   <div class="bg-crema-suave contenedor-form-home py-5">
     <div class="container bg-white p-4 rounded-lg">
       <div class="row">
         <div class="col-md-5">
           <div class="bg-textura-form rounded-lg p-md-4 p-3">
             <h4 class="titulo-home text-medium text-white">Contacta conmigo, me encantará leerte</h4>
-            <img src="assets/img/separador-secondary-svg.svg" alt="">
+            <img src="{{ asset('img/separador-secondary-svg.svg') }}" alt="">
             <p class="text-white mt-3">Si estas por aquí es porque hay algo que quieres decirme o preguntarme.</p>
             <div>
               <ul class="list-group">
@@ -351,7 +351,7 @@
   <?php include 'footer.php';?>
 
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script type="module" src="assets/js/starter.js"></script>
+  <script type="module" src="{{ asset('js/starter.js') }}"></script>
 </body>
 
 </html>

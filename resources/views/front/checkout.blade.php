@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-md-8">
                 <h4 class="title-divider text-marron-claro">Sólo un paso más</h4>
-                <img src="assets/img/separador-svg.svg" alt="">
+                <img src="{{ asset('img/separador-svg.svg') }}" alt="">
                 <p class="mt-2">Una vez registrados tus datos y realizado el pago, recibirás un email con el detalle de
                     tu compra y serás redirigida a un calendario para programa nuestro primer encuentro</p>
                 <form>
@@ -105,7 +105,7 @@
     <?php include 'footer.php';?>     
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script type="module" src="assets/js/starter.js"></script>
+    <script type="module" src="{{ asset('js/starter.js') }}"></script>
 </body>
 
 </html>

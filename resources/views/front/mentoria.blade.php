@@ -25,7 +25,7 @@
         <div class="col-md-6">
           <h4 class="text-white titulo-home">Viajamos juntas al corazón de tu marca y aplicamos herramientas adaptadas
             de forma práctica a tu proyecto. </h4>
-          <img src="assets/img/separador-titulo-blanco-svg.svg" alt="">
+          <img src="{{ asset('img/separador-titulo-blanco-svg.svg') }}" alt="">
           <a href=""><button class="btn btn-outline-white d-block mt-4">Ver mis programas </button></a>
         </div>
       </div>
@@ -45,7 +45,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="card border-secondary text-center card-propuestas shadow">
-                <img src="assets/img/card-mentoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
+                <img src="{{ asset('img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
                 <div class="card-body">
                   <h5 class="card-title titulo-home">Mentoría</h5>
                   <p class="card-text">Trabajamos en el universo de tu marca, fortaleciendo los pilares más importantes
@@ -58,7 +58,7 @@
             </div>
             <div class="col-md-6 my-4 my-md-0">
               <div class="card border-secondary text-center card-propuestas shadow">
-                <img src="assets/img/card-asesoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
+                <img src="{{ asset('img/card-asesoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
                 <div class="card-body">
                   <h5 class="card-title titulo-home">Asesoría Personalizada</h5>
                   <p class="card-text">Te ayudo a potenciar tu estrategia

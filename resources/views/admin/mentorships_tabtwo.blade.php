@@ -16,11 +16,11 @@
                     <div class="col-md-12">
                         <ul class="nav nav-tabs" id="tabMentoria" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link text-marron-claro font-weight-bold border-0" id="asesoria-tab" href="{{ route('admin.mentorship_personal') }}">Asesoría
+                                <a class="nav-link text-marron-claro font-weight-bold border-0" id="asesoria-tab" href="{{ route('admin.mentorships.index') }}">Asesoría
                                     Personalizada</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active border-0 text-marron-claro font-weight-bold" id="mentoria-tab" href="{{ route('admin.mentorship_group') }}">Mentoría
+                                <a class="nav-link active border-0 text-marron-claro font-weight-bold" id="mentoria-tab" href="#">Mentoría
                                     grupal</a>
                             </li>
                         </ul>

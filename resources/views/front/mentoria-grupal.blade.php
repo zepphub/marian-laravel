@@ -26,7 +26,7 @@
   <div class="container my-5">
     <div class="row">
       <div class="col-md-5">
-        <img class="w-100 img-fluid" src="assets/img/mentoria-grupal-img-1.png" alt="">
+        <img class="w-100 img-fluid" src="{{ asset('img/mentoria-grupal-img-1.png') }}" alt="">
       </div>
       <div class="col-md-7 pl-md-5">
         <h4 class="font-weight-bold titulo-home mb-4">Si sos una Emprendedora apasionada por su proyecto, con ánimos de
@@ -64,94 +64,94 @@
         </div>
       </div>
       <div class="row mt-5 position-relative">
-        <button class="btn customPrevBtn p-0"><img src="assets/img/prevBtn.svg" alt=""></button>
+        <button class="btn customPrevBtn p-0"><img src="{{ asset('img/prevBtn.svg') }}" alt=""></button>
         <div class="owl-carousel owl-theme">
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-1.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-1.svg') }}" alt="">
               <h5>Elevar tu propuesta de valor</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-2.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-2.svg') }}" alt="">
               <h5>Comunicar tu diferencial</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-3.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-3.svg') }}" alt="">
               <h5>Reconocer a tu cliente ideal y conectar con tu audiencia</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-4.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-4.svg') }}" alt="">
               <h5>Mejorar la estética de tus canales digitales</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-5.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-5.svg') }}" alt="">
               <h5>Mejorar la estética de tus canales digitales</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-6.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-6.svg') }}" alt="">
               <h5>Planificar y ordenar tus ideas</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-7.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-7.svg') }}" alt="">
               <h5>Crear tu calendario contenido para redes sociales</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-1.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-1.svg') }}" alt="">
               <h5>Conocer a emprendedoras muy lo más, con quienes crearás las mejores alianzas</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-1.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-1.svg') }}" alt="">
               <h5>Elevar tu propuesta de valor</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-1.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-1.svg') }}" alt="">
               <h5>Elevar tu propuesta de valor</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-1.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-1.svg') }}" alt="">
               <h5>Elevar tu propuesta de valor</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="assets/img/owl-carousel-item-1.svg" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-1.svg') }}" alt="">
               <h5>Elevar tu propuesta de valor</h5>
             </div>
           </div>
         </div>
-        <button class="btn customNextBtn p-0"><img src="assets/img/nextBtn.svg" alt=""></button>
+        <button class="btn customNextBtn p-0"><img src="{{ asset('img/nextBtn.svg') }}" alt=""></button>
       </div>
     </div>
   </div>
@@ -161,33 +161,33 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <h4 class="titulo-home">La experiencia</h4>
-        <img src="assets/img/separador-svg.svg" alt="">
+        <img src="{{ asset('img/separador-svg.svg') }}" alt="">
       </div>
     </div>
 
     <div class="row mt-4 mt-md-5">
       <div class="col-md-3">
         <div class="d-md-flex align-items-center text-center text-md-left my-3 my-md-0">
-          <img src="assets/img/mentoria-g-exp-1.svg" alt="">
+          <img src="{{ asset('img/mentoria-g-exp-1.svg') }}" alt="">
           <h5 class="text-marron-claro m-md-0 ml-md-3 mt-2 mt-md-0">8 semanas de asesoramiento y seguimiento</h5>
         </div>
       </div>
       <div class="col-md-3">
         <div class="d-md-flex align-items-center text-center text-md-left my-3 my-md-0">
-          <img src="assets/img/mentoria-g-exp-2.svg" alt="">
+          <img src="{{ asset('img/mentoria-g-exp-2.svg') }}" alt="">
           <h5 class="text-marron-claro m-md-0 ml-md-3 mt-2 mt-md-0">Cápsulas de contenido pre-grabados con acceso
             ilimitado</h5>
         </div>
       </div>
       <div class="col-md-3">
         <div class="d-md-flex align-items-center text-center text-md-left my-3 my-md-0">
-          <img src="assets/img/mentoria-g-exp-3.svg" alt="">
+          <img src="{{ asset('img/mentoria-g-exp-3.svg') }}" alt="">
           <h5 class="text-marron-claro m-md-0 ml-md-3 mt-2 mt-md-0">Sesiones grupales online y en vivo</h5>
         </div>
       </div>
       <div class="col-md-3">
         <div class="d-md-flex align-items-center text-center text-md-left my-3 my-md-0">
-          <img src="assets/img/mentoria-g-exp-4.svg" alt="">
+          <img src="{{ asset('img/mentoria-g-exp-4.svg') }}" alt="">
           <h5 class="text-marron-claro m-md-0 ml-md-3 mt-2 mt-md-0">Invitadas/os especiales</h5>
         </div>
       </div>
@@ -198,22 +198,22 @@
         <div class="bg-nude p-4 rounded">
           <h4 class="titulo-home text-white">¿Cuáles son los ejes que desarrollaremos en cada encuentro?</h4>
           <ul class="list-unstyled mt-4">
-            <li class="my-3 text-dark-gray"><img src="assets/img/check-icon.svg" alt=""> Emprendedoras apasionadas: tu
+            <li class="my-3 text-dark-gray"><img src="{{ asset('img/check-icon.svg') }}" alt=""> Emprendedoras apasionadas: tu
               proyecto
             </li>
-            <li class="my-3 text-dark-gray"><img src="assets/img/check-icon.svg" alt=""> Propuesta de valor: tu
+            <li class="my-3 text-dark-gray"><img src="{{ asset('img/check-icon.svg') }}" alt=""> Propuesta de valor: tu
               diferencial</li>
-            <li class="my-3 text-dark-gray"><img src="assets/img/check-icon.svg" alt=""> Cliente ideal: tu público
+            <li class="my-3 text-dark-gray"><img src="{{ asset('img/check-icon.svg') }}" alt=""> Cliente ideal: tu público
               objetivo</li>
-            <li class="my-3 text-dark-gray"><img src="assets/img/check-icon.svg" alt=""> Imagen de marca: personalidad e
+            <li class="my-3 text-dark-gray"><img src="{{ asset('img/check-icon.svg') }}" alt=""> Imagen de marca: personalidad e
               identidad
             </li>
-            <li class="my-3 text-dark-gray"><img src="assets/img/check-icon.svg" alt=""> Planificación y objetivos: plan
+            <li class="my-3 text-dark-gray"><img src="{{ asset('img/check-icon.svg') }}" alt=""> Planificación y objetivos: plan
               de acción</li>
-            <li class="my-3 text-dark-gray"><img src="assets/img/check-icon.svg" alt=""> Invitada/o especial</li>
-            <li class="my-3 text-dark-gray"><img src="assets/img/check-icon.svg" alt=""> Calendario contenido para redes
+            <li class="my-3 text-dark-gray"><img src="{{ asset('img/check-icon.svg') }}" alt=""> Invitada/o especial</li>
+            <li class="my-3 text-dark-gray"><img src="{{ asset('img/check-icon.svg') }}" alt=""> Calendario contenido para redes
               sociales</li>
-            <li class="my-3 text-dark-gray"><img src="assets/img/check-icon.svg" alt=""> Sesión de Q&A: debate grupal
+            <li class="my-3 text-dark-gray"><img src="{{ asset('img/check-icon.svg') }}" alt=""> Sesión de Q&A: debate grupal
             </li>
           </ul>
         </div>
@@ -221,34 +221,34 @@
       <div class="col-md-7 mt-4 mt-md-0 pl-md-4">
         <h4 class="titulo-home">Ser parte de la Mentoría Grupal te dará acceso a:</h4>
         <div class="row align-items-center my-4">
-          <div class="col-md-2 pr-md-0"><img src="assets/img/mentoria-g-acceso-a-1.svg" alt=""></div>
+          <div class="col-md-2 pr-md-0"><img src="{{ asset('img/mentoria-g-acceso-a-1.svg') }}" alt=""></div>
           <div class="col-md-10 p-md-0">
             <p class="m-0">Un grupo de Whatsapp donde compartiremos dudas, inquietudes y experiencias relacionadas al
               proceso de mentoría</p>
           </div>
         </div>
         <div class="row align-items-center my-4">
-          <div class="col-md-2 pr-md-0"><img src="assets/img/mentoria-g-acceso-a-2.svg" alt=""></div>
+          <div class="col-md-2 pr-md-0"><img src="{{ asset('img/mentoria-g-acceso-a-2.svg') }}" alt=""></div>
           <div class="col-md-10 p-md-0">
             <p class="m-0">Una selección exclusiva de artículos y podcast recomendados y avalados por Marian</p>
           </div>
         </div>
         <div class="row align-items-center my-4">
-          <div class="col-md-2 pr-md-0"><img src="assets/img/mentoria-g-acceso-a-3.svg" alt=""></div>
+          <div class="col-md-2 pr-md-0"><img src="{{ asset('img/mentoria-g-acceso-a-3.svg') }}" alt=""></div>
           <div class="col-md-10 p-md-0">
             <p class="m-0">Un cuadernillo de ejercicios para acompañar el proceso y aplicar los contenidos de forma
               práctica</p>
           </div>
         </div>
         <div class="row align-items-center my-4">
-          <div class="col-md-2 pr-md-0"><img src="assets/img/mentoria-g-acceso-a-4.svg" alt=""></div>
+          <div class="col-md-2 pr-md-0"><img src="{{ asset('img/mentoria-g-acceso-a-4.svg') }}" alt=""></div>
           <div class="col-md-10 p-md-0">
             <p class="m-0">Instancias 100% personalizadas en las que seguiré tus avances con correcciones y devoluciones
             </p>
           </div>
         </div>
         <div class="row align-items-center my-4">
-          <div class="col-md-2 pr-md-0"><img src="assets/img/mentoria-g-acceso-a-5.svg" alt=""></div>
+          <div class="col-md-2 pr-md-0"><img src="{{ asset('img/mentoria-g-acceso-a-5.svg') }}" alt=""></div>
           <div class="col-md-10 p-md-0">
             <p class="m-0">Cafecitos virtuales exclusivos para clientas premium de mentoría.</p>
           </div>
@@ -299,7 +299,7 @@
       <div class="col-md-1"></div>
       <div class="col-md-5">
         <div class="card border-secondary text-center card-propuestas shadow">
-          <img src="assets/img/card-mentoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
+          <img src="{{ asset('img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
           <div class="card-body">
             <h5 class="card-title titulo-home">Asesoría Personalizada</h5>
             <p class="card-text">Te ayudo a potenciar tu estrategia 
@@ -312,7 +312,7 @@ valores de tu marca.</p>
       </div>
       <div class="col-md-5 my-4 my-md-0">
         <div class="card border-secondary text-center card-propuestas shadow">
-          <img src="assets/img/card-asesoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
+          <img src="{{ asset('img/card-asesoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
           <div class="card-body">
             <h5 class="card-title titulo-home">Talleres y Conferencias</h5>
             <p class="card-text">Experiencias especialmente creadas 

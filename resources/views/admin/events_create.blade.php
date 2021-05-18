@@ -8,7 +8,7 @@
                         <div
                             class="align-items-md-center d-flex flex-column flex-md-row justify-content-between my-4 my-md-0">
                             <h2 class="order-2 order-md-1">Nuevo evento</h2>
-                            <a class="order-1 order-md-2" href="servicios_tye.php"><button
+                            <a class="order-1 order-md-2" href="{{ route('admin.events.index') }}"><button
                                     class="btn btn-outline-secondary"><svg class="mr-2" style="margin-bottom:2px"
                                         xmlns="http://www.w3.org/2000/svg" width="7" height="10"
                                         viewBox="0 0 7.771 11.157">

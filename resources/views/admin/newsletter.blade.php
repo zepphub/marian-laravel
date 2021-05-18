@@ -6,7 +6,7 @@
           <div class="col-md-12 text-center text-md-left">
             <div class="d-md-flex flex-row align-items-center justify-content-between">
               <h2 class="ml-3 ml-md-0">Newsletter</h2>
-              <a style="white-space: nowrap;" href="servicios_newEvent.php"><button class="btn btn-primary mt-3 mt-md-0">Descargar
+              <a style="white-space: nowrap;" href="{{ route('admin.newsletter') }}"><button class="btn btn-primary mt-3 mt-md-0">Descargar
                   lista</button></a>
             </div>
           </div>

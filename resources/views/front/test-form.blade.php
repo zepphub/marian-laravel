@@ -24,7 +24,7 @@
               <a class="nav-link mx-md-3 active" id="pills-comenzar-tab" data-toggle="pill" href="#pills-comenzar"
                 role="tab" aria-controls="pills-comenzar" aria-selected="true">
                 <div class="text-center p-md-4 mx-md-3">
-                  <img src="assets/img/pill-comenzar.svg" alt="">
+                  <img src="{{ asset('img/pill-comenzar.svg') }}" alt="">
                   <h5 class="mt-4 text-marron-claro font-weight-bold">COMENZAR</h5>
                 </div>
               </a>
@@ -33,7 +33,7 @@
               <a class="nav-link mx-md-3" id="pills-mejorar-tab" data-toggle="pill" href="#pills-mejorar" role="tab"
                 aria-controls="pills-mejorar" aria-selected="false">
                 <div class="text-center p-md-4 mx-md-3">
-                  <img src="assets/img/pill-mejorar.svg" alt="">
+                  <img src="{{ asset('img/pill-mejorar.svg') }}" alt="">
                   <h5 class="mt-4 text-marron-claro font-weight-bold">MEJORAR</h5>
                 </div>
               </a>
@@ -42,7 +42,7 @@
               <a class="nav-link mx-md-3" id="pills-crecer-tab" data-toggle="pill" href="#pills-crecer" role="tab"
                 aria-controls="pills-crecer" aria-selected="false">
                 <div class="text-center p-md-4 mx-md-3">
-                  <img src="assets/img/pill-mejorar.svg" alt="">
+                  <img src="{{ asset('img/pill-mejorar.svg') }}" alt="">
                   <h5 class="mt-4 text-marron-claro font-weight-bold">MEJORAR</h5>
                 </div>
               </a>
@@ -222,9 +222,9 @@
               <div class="row shadow rounded-lg p-3">
                 <div class="col-md-7 text-left">
                   <div class="p-md-4 p-0">
-                    <img src="assets/img/result-test-form-icon.svg" alt="">
+                    <img src="{{ asset('img/result-test-form-icon.svg') }}" alt="">
                     <h4 class="titulo-home font-weight-bold mt-4">Tu resultado</h4>
-                    <img src="assets/img/separador-titulo-svg-crema.svg" alt="">
+                    <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" alt="">
                     <h4 class="mt-4">Construyamos una marca con esencia y corazón.</h4>
                     <p class="mt-3 text-marron-claro">Teniendo en cuenta tus respuestas, quiero compartirte una guía con
                       el paso a paso para que logres crear una marca de forma
@@ -478,9 +478,9 @@
               <div class="row shadow rounded-lg p-3">
                 <div class="col-md-7 text-left">
                   <div class="p-md-4 p-0">
-                    <img src="assets/img/result-test-form-icon.svg" alt="">
+                    <img src="{{ asset('img/result-test-form-icon.svg') }}" alt="">
                     <h4 class="titulo-home font-weight-bold mt-4">Tu resultado</h4>
-                    <img src="assets/img/separador-titulo-svg-crema.svg" alt="">
+                    <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" alt="">
                     <h4 class="mt-4">¡Consolidá tu marca en el universo digital!</h4>
                     <p class="mt-3 text-marron-claro">Teniendo en cuenta tus respuestas, quiero compartirte una guía con
                       el paso a paso para que logres afianzar tu marca en el universo digital.
@@ -732,9 +732,9 @@
               <div class="row shadow rounded-lg p-3">
                 <div class="col-md-7 text-left">
                   <div class="p-md-4 p-0">
-                    <img src="assets/img/result-test-form-icon.svg" alt="">
+                    <img src="{{ asset('img/result-test-form-icon.svg') }}" alt="">
                     <h4 class="titulo-home font-weight-bold mt-4">Tu resultado</h4>
-                    <img src="assets/img/separador-titulo-svg-crema.svg" alt="">
+                    <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" alt="">
                     <h4 class="mt-4">¡Proyectá tu negocio con tus propios productos digitales!</h4>
                     <p class="mt-3 text-marron-claro">Teniendo en cuenta tus respuestas, quiero compartirte una guía que creé específicamente para ayudarte a crear tu plan de acción, con herramientas para identificar los distintos productos digitales que podés crear desde tu marca. 
                     </p>

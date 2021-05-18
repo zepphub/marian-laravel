@@ -37,7 +37,7 @@
                     </div>  
                     <div class="col-3 col-md-3 d-flex align-items-center">
                         <div class="">
-                            <a href="recursos_newRec.php"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
+                            <a href="{{ route('admin.resources.create') }}"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
                                     viewBox="0 0 46.952 46.952">
                                     <g id="Button" transform="translate(-879.253 -2498.988)">
                                         <path id="Background"
@@ -78,7 +78,7 @@
                     </div>  
                     <div class="col-3 col-md-3 d-flex align-items-center">
                         <div class="">
-                            <a href="recursos_newRec.php"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
+                            <a href="{{ route('admin.resources.create') }}"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
                                     viewBox="0 0 46.952 46.952">
                                     <g id="Button" transform="translate(-879.253 -2498.988)">
                                         <path id="Background"
@@ -119,7 +119,7 @@
                     </div>  
                     <div class="col-3 col-md-3 d-flex align-items-center">
                         <div class="">
-                            <a href="recursos_newRec.php"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
+                            <a href="{{ route('admin.resources.create') }}"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
                                     viewBox="0 0 46.952 46.952">
                                     <g id="Button" transform="translate(-879.253 -2498.988)">
                                         <path id="Background"
@@ -160,7 +160,7 @@
                     </div>  
                     <div class="col-3 col-md-3 d-flex align-items-center">
                         <div class="">
-                            <a href="recursos_newRec.php"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
+                            <a href="{{ route('admin.resources.create') }}"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
                                     viewBox="0 0 46.952 46.952">
                                     <g id="Button" transform="translate(-879.253 -2498.988)">
                                         <path id="Background"
@@ -201,7 +201,7 @@
                     </div>  
                     <div class="col-3 col-md-3 d-flex align-items-center">
                         <div class="">
-                            <a href="recursos_newRec.php"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
+                            <a href="{{ route('admin.resources.create') }}"><svg xmlns="http://www.w3.org/2000/svg" width="46.952" height="46.952"
                                     viewBox="0 0 46.952 46.952">
                                     <g id="Button" transform="translate(-879.253 -2498.988)">
                                         <path id="Background"

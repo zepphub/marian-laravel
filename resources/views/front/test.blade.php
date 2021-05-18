@@ -13,7 +13,7 @@
           <div
             class="align-items-center text-center text-md-left align-items-md-baseline d-flex flex-column h-100 justify-content-center pr-md-5">
             <h2>¡Hola por aquí!</h2>
-            <img src="assets/img/separador-titulo-svg-crema.svg" alt="">
+            <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" alt="">
             <h4 class="font-weight-bold text-marron-claro my-4 my-md-3">¡Qué lindo encontrarte en este espacio!</h4>
             <p>Para comenzar, te propongo que hagas un test sin costo para ayudarte a identificar en qué etapa estás y
               en qué pilar de tu emprendimiento debés enfocarte para mejorar la presencia digital de tu marca y
@@ -32,14 +32,14 @@
           </div>
         </div>
         <div class="col-md-6 d-none d-md-flex align-items-center">
-          <img class="img-fluid" src="assets/img/img-portada-test.png" alt="">
+          <img class="img-fluid" src="{{ asset('img/img-portada-test.png') }}" alt="">
         </div>
       </div>
     </div>
   </div>
   <div class="divisor-con-forma">
     <img style="margin-top: -14px !important;" class="img-fluid w-100 img-rotate-180"
-      src="assets/img/separador-seccion-svg2.svg" alt="">
+      src="{{ asset('img/separador-seccion-svg2.svg') }}" alt="">
   </div>
   <!-- Portada Home -->
 
@@ -62,14 +62,14 @@
             <div class="mr-md-4 mb-3 mb-md-0">
               <div
                 class="rounded-lg shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
-                <img class="mt-md-2" src="assets/img/test-box-1.svg" alt="">
+                <img class="mt-md-2" src="{{ asset('img/test-box-1.svg') }}" alt="">
                 <h5 class="font-weight-normal text-marron-claro mt-3">El propósito y los valores de tu marca</h5>
               </div>
             </div>
             <div class="mr-md-4 mb-3 mb-md-0">
               <div
                 class="rounded-lg shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
-                <img class="mt-md-2" src="assets/img/test-box-2.svg" alt="">
+                <img class="mt-md-2" src="{{ asset('img/test-box-2.svg') }}" alt="">
                 <h5 class="font-weight-normal text-marron-claro mt-3">El público objetivo y la audiencia que quieres
                   atraer</h5>
               </div>
@@ -77,7 +77,7 @@
             <div class="mr-md-4 mb-3 mb-md-0">
               <div
                 class="rounded-lg shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
-                <img class="mt-md-2" src="assets/img/test-box-3.svg" alt="">
+                <img class="mt-md-2" src="{{ asset('img/test-box-3.svg') }}" alt="">
                 <h5 class="font-weight-normal text-marron-claro mt-3">El universo visual de tu marca, fruto de su
                   personalidad e identidad</h5>
               </div>
@@ -85,7 +85,7 @@
             <div class="mr-md-4 mb-3 mb-md-0">
               <div
                 class="rounded-lg shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
-                <img class="mt-md-2" src="assets/img/test-box-4.svg" alt="">
+                <img class="mt-md-2" src="{{ asset('img/test-box-4.svg') }}" alt="">
                 <h5 class="font-weight-normal text-marron-claro mt-3">Tu plan de acción:
                   planificación y estrategia</h5>
               </div>
@@ -93,7 +93,7 @@
             <div class="mb-3 mb-md-0">
               <div
                 class="rounded-lg shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
-                <img class="mt-md-2" src="assets/img/test-box-5.svg" alt="">
+                <img class="mt-md-2" src="{{ asset('img/test-box-5.svg') }}" alt="">
                 <h5 class="font-weight-normal text-marron-claro mt-3">El contenido de tus canales digitales</h5>
               </div>
             </div>
