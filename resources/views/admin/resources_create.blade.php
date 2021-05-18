@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('admin.layouts.app')
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../assets/css/starter.css" />
-  <title>Mariann</title>
-</head>
-
-<body>
-  <div class="container-fluid">
-    <div class="row contenedor-dash">
-      <div class="col-md-3 bg-nude">
-
-        <?php include 'sidebar.php';?>
-
-      </div>
+@section('content')
       <div class="col-md-9 p-3 p-md-5">
         <div class="row">
           <div class="col-md-12">
@@ -87,11 +72,4 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script type="module" src="../assets/js/starter.js"></script>
-</body>
-
-</html>
+@endsection
