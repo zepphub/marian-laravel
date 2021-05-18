@@ -31,7 +31,7 @@ Route::prefix('/admin')
 
     Route::get('/servicios', function(){ return view('admin.services'); })->name('services');
     Route::get('/consultorias', function(){ return view('admin.mentorship_personal'); })->name('mentorship_personal');
-    Route::get('/mentorías', function(){ return view('admin.mentorship_group'); })->name('mentorship_group');
+    Route::get('/mentorias', function(){ return view('admin.mentorship_group'); })->name('mentorship_group');
 
     Route::get('/recursos', function(){ return view('admin.resources'); })->name('resources');
     Route::get('/newsletter', function(){ return view('admin.newsletter'); })->name('newsletter');
