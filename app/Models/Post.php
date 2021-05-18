@@ -12,7 +12,7 @@ class Blog extends Model
     protected $fillable = [
         'id',
         'title',
-        'artice_body',
+        'article_body',
         'url',
     ];
 }
