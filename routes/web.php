@@ -60,6 +60,8 @@ Route::prefix('/admin')
       Route::get('/suscriptors', function(){ return view('admin.csv.suscriptors'); })->name('csv.suscriptors');
     });
 
+    Route::get('/mentorships/tabtwo', function(){ return view('admin.mentorships_tabtwo'); })->name('mentorships.tabtwo');
+
     Route::resources([
       'resources' => ResourceController::class,
       'events' => EventController::class,
@@ -69,7 +71,6 @@ Route::prefix('/admin')
       'mentorships' => MentorshipController::class,
     ]);
 
-    Route::get('/groupmentorships', function(){ return view('admin.mentorships_tabtwo'); })->name('mentorships.tabtwo');
 
 });
 
