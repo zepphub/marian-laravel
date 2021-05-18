@@ -7,7 +7,7 @@
             <div
                 class="align-items-md-center d-flex flex-column flex-md-row justify-content-between my-4 my-md-0">
                 <h2 class="order-2 order-md-1">Editar artículo</h2>
-                <a class="order-1 order-md-2" href="{{route('blog')}}"><button class="btn btn-outline-secondary"><svg
+                <a class="order-1 order-md-2" href="{{route('posts')}}"><button class="btn btn-outline-secondary"><svg
                             class="mr-2" style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg"
                             width="7" height="10" viewBox="0 0 7.771 11.157">
                             <path id="Icon_awesome-chevron-down" data-name="Icon awesome-chevron-down"
@@ -21,9 +21,9 @@
     <div class="row mt-4">
         <div class="col-md-8">
             <h5 class="text-marron-claro font-weight-normal mb-2">Título del artículo</h5>
-            <input class="form-control form-control-lg rounded-pill" type="text" value="{{ $blog->title }}">
+            <input class="form-control form-control-lg rounded-pill" type="text" value="{{ $post->title }}">
             <h5 class="mt-5 text-marron-claro font-weight-normal mb-2">Cuerpo del artículo</h5>
-            <textarea class="form-control" name="" id="" cols="30" rows="10">{{ $blog->article_body }}</textarea>
+            <textarea class="form-control" name="" id="" cols="30" rows="10">{{ $post->article_body }}</textarea>
         </div>
         <div class="col-md-4">
             <div class="text-center mt-5 mt-md-0">

@@ -51,6 +51,7 @@ Route::prefix('/admin')
     Route::group(['prefix'=>'posts'], function(){
       Route::get('/', 'PostController@index')->name('posts');
       Route::get('/nuevo', 'PostController@create')->name('posts.new');
+      Route::get('/editar/{id}', 'PostController@create')->name('posts.edit');
       Route::get('/mostrar/{id}', 'PostController@show')->name('posts.show');
     });
     Route::group(['prefix'=>'categorias'], function(){
