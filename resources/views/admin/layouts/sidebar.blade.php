@@ -14,10 +14,10 @@
                     <div id="item-1" class="collapse show bg-nude border-0" aria-labelledby="heading-1" data-parent="#main-menu">
                       <ul class="nav flex-column ml-3">
                         <li class="nav-item">
-                          <a class="nav-link" href="{{ route('admin.posts') }}">Todos los artículos</a>
+                          <a class="nav-link" href="{{ route('admin.posts.index') }}">Todos los artículos</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="{{ route('admin.categories') }}">Categorías</a>
+                          <a class="nav-link" href="{{ route('admin.categories.index') }}">Categorías</a>
                         </li>
                       </ul>
                     </div>
@@ -30,19 +30,19 @@
                     <div id="item-2" class="collapse show bg-nude border-0" aria-labelledby="heading-2" data-parent="#main-menu">
                       <ul class="nav flex-column ml-3">
                         <li class="nav-item">
-                          <a class="nav-link" href="{{ route('admin.mentorship_personal') }}">Asesoría personalizada</a>
+                          <a class="nav-link" href="{{ route('admin.counselings.index') }}">Asesoría personalizada</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="{{ route('admin.mentorship_group') }}">Mentoría</a>
+                          <a class="nav-link" href="{{ route('admin.mentorships.index') }}">Mentoría</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="{{ route('admin.events') }}">Talleres y eventos</a>
+                          <a class="nav-link" href="{{ route('admin.events.index') }}">Talleres y eventos</a>
                         </li>
                       </ul>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.resources') }}">Recursos Gratis</a>
+                    <a class="nav-link" href="{{ route('admin.resources.index') }}">Recursos Gratis</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.newsletter') }}">Newsletter</a>

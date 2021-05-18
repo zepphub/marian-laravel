@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="d-flex flex-row align-items-center justify-content-between">
                 <h2>Blog</h2>
-                <a href="{{ route( 'admin.posts.new' ) }}"><button class="btn btn-primary">Nuevo artículo</button></a>
+                <a href="{{ route( 'admin.posts.create' ) }}"><button class="btn btn-primary">Nuevo artículo</button></a>
             </div>
         </div>
     </div>
