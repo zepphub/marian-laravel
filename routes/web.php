@@ -16,32 +16,49 @@ use App\Http\Controllers\CategoryController;
 */
 
 
-//Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
-
-Route::group(['prefix'=>'blogs'], function(){
-    Route::get('/', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
-    Route::get('/new', [App\Http\Controllers\BlogController::class, 'create'])->name('blog.create');
-    Route::get('{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
-});
-
-Route::group(['prefix'=>'categories'], function(){
-    Route::get('/', [App\Http\Controllers\CategoryController::class, 'index'])->name('category');
-    Route::post('', [App\Http\Controllers\CategoryController::class, 'store'])->name('category.store');
-    // Route::get('/new', [App\Http\Controllers\CategoryController::class, 'create'])->name('blog.create');
-    // Route::get('{cat}', [App\Http\Controllers\CategoryController::class, 'show'])->name('blog.show');
-    Route::get('{cat}/delete', [App\Http\Controllers\CategoryController::class, 'delete'])->name('category.delete');
-});
-
-Route::group(['prefix'=>'mentorings'], function(){
-    Route::get('/mentoring', [App\Http\Controllers\BlogController::class, 'index'])->name('metonring');
-    Route::get('/mentoring/new', [App\Http\Controllers\BlogController::class, 'create'])->name('mentoring.create');
-});
-
 Auth::routes();
-/*Route::get('/', function(){
-    return view('blog.servicios_tye');
-}
-);
 
+Route::get('/', 'App\Http\Controllers\HomeController@index')->name('index');
+Route::get('/categorias', 'App\Http\Controllers\CategoryController@index')->name('categories');
+Route::get('/recursos', function(){ return view('resources'); })->name('resources');
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::prefix('/admin')
+  ->name('admin.')
+  ->middleware(['auth', 'is_admin'])
+  ->namespace('App\Http\Controllers')
+  ->group(function(){
+    Route::get('/', 'HomeController@adminIndex')->name('index');
+
+    Route::get('/servicios', function(){ return view('admin.services'); })->name('services');
+    Route::get('/consultorias', function(){ return view('admin.mentorship_personal'); })->name('mentorship_personal');
+    Route::get('/mentorías', function(){ return view('admin.mentorship_group'); })->name('mentorship_group');
+
+    Route::get('/recursos', function(){ return view('admin.resources'); })->name('resources');
+    Route::get('/newsletter', function(){ return view('admin.newsletter'); })->name('newsletter');
+
+    Route::group(['prefix'=>'csv'], function(){
+      Route::get('/tests', function(){ return view('admin.csv.tests'); })->name('csv.tests');
+      Route::get('/forms', function(){ return view('admin.csv.forms'); })->name('csv.forms');
+      Route::get('/resources', function(){ return view('admin.csv.resources'); })->name('csv.resources');
+      Route::get('/suscriptors', function(){ return view('admin.csv.suscriptors'); })->name('csv.suscriptors');
+    });
+
+    Route::group(['prefix'=>'eventos'], function(){
+      Route::get('/', function(){ return view('admin.events'); })->name('events');
+      Route::get('/nuevo', function(){ return view('admin.events_new'); });
+      Route::get('/editar/{id}', function(){ return view('admin.events_edit'); });
+    });
+    Route::group(['prefix'=>'posts'], function(){
+      Route::get('/', 'PostController@index')->name('posts');
+      Route::get('/nuevo', 'PostController@create')->name('posts.new');
+      Route::get('/mostrar/{id}', 'PostController@show')->name('posts.show');
+    });
+    Route::group(['prefix'=>'categorias'], function(){
+      Route::get('/', 'CategoryController@list')->name('categories');
+      Route::post('/', 'CategoryController@store')->name('categories.new');
+      // Route::get('/new', [App\Http\Controllers\CategoryController::class, 'create'])->name('blog.create');
+      // Route::get('{cat}', [App\Http\Controllers\CategoryController::class, 'show'])->name('blog.show');
+      Route::get('/delete/{id}', 'CategoryController@delete')->name('categories.delete');
+    });
+});
+
