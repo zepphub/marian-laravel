@@ -11,7 +11,7 @@
       <div class="row contenedor-dash">
         <div class="col-md-3 bg-nude">
 
-            @include('layouts.sidebar')
+            @include('admin.layouts.sidebar')
 
         </div>
         @yield('content')

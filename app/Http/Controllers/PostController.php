@@ -3,19 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Blog;
+use App\Models\Post;
 
-class BlogController extends Controller
+class PostController extends Controller
 {
     /**
      * Create a new controller instance.
      *
      * @return void
+     */
 
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }*/
+    //public function __construct()
+    //{
+        //$this->middleware('auth');
+    //}
 
     /**
      * Show the application dashboard.
@@ -24,24 +25,22 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blog = Blog::all();
-        return view('blog.blog',['blog'=>$blog]);
+        $posts = Post::all();
+        return view('admin.posts_list', ['posts'=>$posts]);
     }
 
     public function create()
     {
-        return view('blog.newBlog');
+        return view('admin.posts_new');
     }
 
-    public function show(Blog $blog)
+    public function edit(Post $post)
     {
-        return view('blog.editPost', ['blog'=>$blog]);
+        return view('admin.posts_edit', ['post'=>$post]);
     }
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
 
-
+    public function show(Post $post)
+    {
+        return view('admin.posts_show', ['post'=>$post]);
+    }
 }

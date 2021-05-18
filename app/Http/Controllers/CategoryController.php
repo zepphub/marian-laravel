@@ -12,7 +12,14 @@ class CategoryController extends Controller
     {
         $categories = Category::All();
 
-        return view('blog.category')->with('categories', $categories);
+        return view('categories')->with('categories', $categories);
+    }
+
+    public function list()
+    {
+        $categories = Category::All();
+
+        return view('admin.categories_list')->with('categories', $categories);
     }
 
     public function store(Category $request)
@@ -24,7 +31,7 @@ class CategoryController extends Controller
 
         $category = Device::create($data);
 
-        return redirect()->route('blog.category')->with('categories', $categories);
+        return redirect()->route('admin.categories_list')->with('categories', $categories);
     }
 
     public function delete($id)
@@ -32,7 +39,8 @@ class CategoryController extends Controller
         $categories = Category::All();
         $category = Category::find($id);
         $category->delete();
-        return view('blog.category')->with('categories', $categories)->with('notice', 'El usuario ha sido eliminado correctamente.');
+
+        return view('admin.categories_list')->with('categories', $categories)->with('notice', 'El usuario ha sido eliminado correctamente.');
     }
 
 }
