@@ -57,28 +57,28 @@
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link text-marron pl-0" href="index.php">Inicio <span
+                                    <a class="nav-link text-marron pl-0" href="{{ route('index') }}">Inicio <span
                                             class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-marron" href="sobre-mi.php">Sobre Mi</a>
+                                    <a class="nav-link text-marron" href="{{ route('sobre-mi') }}">Sobre Mi</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link text-marron dropdown-toggle" href="servicios.php" id="trabajaConmigo"
+                                    <a class="nav-link text-marron dropdown-toggle" href="{{ route('servicios') }}" id="trabajaConmigo"
                                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Trabajá conmigo
                                     </a>
                                     <div class="dropdown-menu border-0" aria-labelledby="trabajaConmigo">
-                                        <a class="dropdown-item" href="asesoria.php">Consultorías Personalizadas</a>
-                                        <a class="dropdown-item" href="mentira.php">Mentoría</a>
-                                        <a class="dropdown-item" href="talleres-y-eventos.php">Talleres y Eventos</a>
+                                        <a class="dropdown-item" href="{{ route('asesorias') }}">Consultorías Personalizadas</a>
+                                        <a class="dropdown-item" href="{{ route('mentoria') }}">Mentoría</a>
+                                        <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Talleres y Eventos</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-marron" href="blog.php">Blog</a>
+                                    <a class="nav-link text-marron" href="{{ route('blog') }}">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-marron" href="contacto.php">Contacto</a>
+                                    <a class="nav-link text-marron" href="{{ route('contacto') }}">Contacto</a>
                                 </li>
 
                             </ul>
@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 d-md-flex align-items-center justify-content-between pr-0 pl-md-5 d-none">
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="19.374" height="18.562"
+                    <a href="{{ route('carrito') }}"><svg xmlns="http://www.w3.org/2000/svg" width="19.374" height="18.562"
                             viewBox="0 0 19.374 18.562">
                             <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart"
                                 transform="translate(-0.75 -0.75)">
@@ -111,10 +111,10 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="recursos.php"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Recursos para
+                    <a href="{{ route('recursos') }}"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Recursos para
                             tí</button></a>
-                    <a href="test.php"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Test</button></a>
-                    <a href="talleres-y-eventos.php"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Talleres y
+                    <a href="{{ route('test') }}"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Test</button></a>
+                    <a href="{{ route('talleres-y-eventos') }}"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Talleres y
                             Eventos</button></a>
                 </div>
             </div>
