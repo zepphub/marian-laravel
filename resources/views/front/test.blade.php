@@ -1,18 +1,10 @@
-<!doctype html>
-<html lang="en">
+@extends('front.layouts.main')
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/starter.css">
-  <link rel="stylesheet" href="assets/css/estilos.css">
-  <title>Mariann</title>
-</head>
+@section('head')@endsection
 
-<body>
+@section('title')Test - @endsection
 
-  <?php include 'header.php';?>
-
+@section('content')
   <!-- Portada Home -->
   <div class="bg-crema-suave">
     <div class="container py-5 contenedor-portada-home">
@@ -129,12 +121,4 @@
     </div>
   </div>
   <!-- Fin Banner Eleva Tu Marca -->
-
-
-  <?php include 'footer.php';?>
-
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script type="module" src="assets/js/starter.js"></script>
-</body>
-
-</html>
+@endsection

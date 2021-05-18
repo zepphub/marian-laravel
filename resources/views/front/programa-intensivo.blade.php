@@ -1,18 +1,10 @@
-<!doctype html>
-<html lang="en">
+@extends('front.layouts.main')
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/starter.css">
-  <link rel="stylesheet" href="assets/css/estilos.css">
-  <title>Mariann</title>
-</head>
+@section('head')@endsection
 
-<body>
+@section('title')Programa Intensivo - @endsection
 
-  <?php include 'header.php';?>
-
+@section('content')
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">

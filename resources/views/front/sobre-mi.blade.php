@@ -1,18 +1,10 @@
-<!doctype html>
-<html lang="en">
+@extends('front.layouts.main')
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/starter.css">
-  <link rel="stylesheet" href="assets/css/estilos.css">
-  <title>Mariann</title>
-</head>
+@section('head')@endsection
 
-<body>
+@section('title')Sobre mi - @endsection
 
-  <?php include 'header.php';?>
-
+@section('content')
   <div class="portada-sobre-mi py-5 py-md-0">
     <div class="container d-flex flex-column align-items-baseline justify-content-center h-100">
       <div class="row">
@@ -224,12 +216,4 @@
       </div>
     </div>
   </div>
-  <!-- Fin Seccion Cards Trabajemos Juntas -->
-
-  <?php include 'footer.php';?>
-
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script type="module" src="assets/js/starter.js"></script>
-</body>
-
-</html>
+@endsection

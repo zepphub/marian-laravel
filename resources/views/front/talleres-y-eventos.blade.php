@@ -1,19 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('front.layouts.main')
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/starter.css">
-  <link rel="stylesheet" href="assets/css/estilos.css">
-  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-  <title>Mariann</title>
-</head>
+@section('head')
+<link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+@endsection
 
-<body>
+@section('title')Talleres y Eventos - @endsection
 
-  <?php include 'header.php';?>
-
+@section('content')
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -872,14 +865,10 @@
       </div>
     </div>
   </div>
+@endsection
 
-  <?php include 'footer.php';?>
-
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script type="module" src="assets/js/starter.js"></script>
-
-  <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-
+@section('scripts')
+  <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
   <script type="text/javascript">
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -907,9 +896,5 @@
       // Parameters has to be in square bracket '[]'
       owl.trigger('prev.owl.carousel', [300]);
     })
-
   </script>
-
-</body>
-
-</html>
+@endsection
