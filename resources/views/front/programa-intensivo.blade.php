@@ -347,11 +347,4 @@
       </div>
     </div>
   </div>
-
-  <?php include 'footer.php';?>
-
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script type="module" src="{{ asset('js/starter.js') }}"></script>
-</body>
-
-</html>
+@endsection
