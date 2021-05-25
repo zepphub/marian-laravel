@@ -39,11 +39,12 @@
     <div class="row">
       <div class="col-md-9">
         <div class="row">
+          @foreach ($posts as $post)
           <div class="col-md-6">
             <div class="card border-0 my-4">
               <div class="position-relative">
-                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
-                
+                <a href="{{ route('blog.post', [ 'category' => $post->category->slug,
+                                                 'post' => $post->slug ]) }}"><img src="{{ asset($post->image) }}" class="card-img-top rounded-0" width=365px height=229px alt="..."></a>
                 <div class="badge-date position-absolute">
                   <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
                       xmlns="http://www.w3.org/2000/svg" width="12.064" height="11.136" viewBox="0 0 12.064 11.136">
@@ -57,214 +58,17 @@
                         d="M25.678,4.732a.233.233,0,0,0-.232-.232h-.464a.233.233,0,0,0-.232.232v.7h.928Z"
                         transform="translate(-15.934 -4.5)" fill="#fff" />
                     </svg>
-                    26 Nov 2020</p>
+                    {{ $post->created_at->format('d M Y') }}</p>
                 </div>
               </div>
               <div class="card-body">
-                <a href="entrada.php"><h5 class="card-title">Marketing digital</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
+                <a href="{{ route('blog.post', [ 'category' => $post->category->slug,
+                                                 'post' => $post->slug ]) }}"><h5 class="card-title">{{ $post->title }}</h5></a>
+                <p class="card-text">{!! mb_strimwidth(strip_tags($post->body),0,120,"...","utf-8") !!}</p>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card border-0 my-4">
-              <div class="position-relative">
-                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
-                
-                <div class="badge-date position-absolute">
-                  <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                      xmlns="http://www.w3.org/2000/svg" width="12.064" height="11.136" viewBox="0 0 12.064 11.136">
-                      <path id="Trazado_9" data-name="Trazado 9"
-                        d="M14.279,6.75h-1.16v.7a.233.233,0,0,1-.232.232h-.464a.233.233,0,0,1-.232-.232v-.7H6.623v.7a.233.233,0,0,1-.232.232H5.927A.233.233,0,0,1,5.7,7.446v-.7H4.535a1.163,1.163,0,0,0-1.16,1.16V15.8a1.163,1.163,0,0,0,1.16,1.16h9.744a1.163,1.163,0,0,0,1.16-1.16V7.91A1.163,1.163,0,0,0,14.279,6.75Zm.232,8.7a.582.582,0,0,1-.58.58H4.883a.582.582,0,0,1-.58-.58V10.23A.233.233,0,0,1,4.535,10h9.744a.233.233,0,0,1,.232.232Z"
-                        transform="translate(-3.375 -5.822)" fill="#fff" />
-                      <path id="Trazado_10" data-name="Trazado 10"
-                        d="M9.928,4.732A.233.233,0,0,0,9.7,4.5H9.232A.233.233,0,0,0,9,4.732v.7h.928Z"
-                        transform="translate(-6.68 -4.5)" fill="#fff" />
-                      <path id="Trazado_11" data-name="Trazado 11"
-                        d="M25.678,4.732a.233.233,0,0,0-.232-.232h-.464a.233.233,0,0,0-.232.232v.7h.928Z"
-                        transform="translate(-15.934 -4.5)" fill="#fff" />
-                    </svg>
-                    26 Nov 2020</p>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="entrada.php"><h5 class="card-title">Marketing digital</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div><div class="col-md-6">
-            <div class="card border-0 my-4">
-              <div class="position-relative">
-                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
-                
-                <div class="badge-date position-absolute">
-                  <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                      xmlns="http://www.w3.org/2000/svg" width="12.064" height="11.136" viewBox="0 0 12.064 11.136">
-                      <path id="Trazado_9" data-name="Trazado 9"
-                        d="M14.279,6.75h-1.16v.7a.233.233,0,0,1-.232.232h-.464a.233.233,0,0,1-.232-.232v-.7H6.623v.7a.233.233,0,0,1-.232.232H5.927A.233.233,0,0,1,5.7,7.446v-.7H4.535a1.163,1.163,0,0,0-1.16,1.16V15.8a1.163,1.163,0,0,0,1.16,1.16h9.744a1.163,1.163,0,0,0,1.16-1.16V7.91A1.163,1.163,0,0,0,14.279,6.75Zm.232,8.7a.582.582,0,0,1-.58.58H4.883a.582.582,0,0,1-.58-.58V10.23A.233.233,0,0,1,4.535,10h9.744a.233.233,0,0,1,.232.232Z"
-                        transform="translate(-3.375 -5.822)" fill="#fff" />
-                      <path id="Trazado_10" data-name="Trazado 10"
-                        d="M9.928,4.732A.233.233,0,0,0,9.7,4.5H9.232A.233.233,0,0,0,9,4.732v.7h.928Z"
-                        transform="translate(-6.68 -4.5)" fill="#fff" />
-                      <path id="Trazado_11" data-name="Trazado 11"
-                        d="M25.678,4.732a.233.233,0,0,0-.232-.232h-.464a.233.233,0,0,0-.232.232v.7h.928Z"
-                        transform="translate(-15.934 -4.5)" fill="#fff" />
-                    </svg>
-                    26 Nov 2020</p>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="entrada.php"><h5 class="card-title">Marketing digital</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div><div class="col-md-6">
-            <div class="card border-0 my-4">
-              <div class="position-relative">
-                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
-                
-                <div class="badge-date position-absolute">
-                  <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                      xmlns="http://www.w3.org/2000/svg" width="12.064" height="11.136" viewBox="0 0 12.064 11.136">
-                      <path id="Trazado_9" data-name="Trazado 9"
-                        d="M14.279,6.75h-1.16v.7a.233.233,0,0,1-.232.232h-.464a.233.233,0,0,1-.232-.232v-.7H6.623v.7a.233.233,0,0,1-.232.232H5.927A.233.233,0,0,1,5.7,7.446v-.7H4.535a1.163,1.163,0,0,0-1.16,1.16V15.8a1.163,1.163,0,0,0,1.16,1.16h9.744a1.163,1.163,0,0,0,1.16-1.16V7.91A1.163,1.163,0,0,0,14.279,6.75Zm.232,8.7a.582.582,0,0,1-.58.58H4.883a.582.582,0,0,1-.58-.58V10.23A.233.233,0,0,1,4.535,10h9.744a.233.233,0,0,1,.232.232Z"
-                        transform="translate(-3.375 -5.822)" fill="#fff" />
-                      <path id="Trazado_10" data-name="Trazado 10"
-                        d="M9.928,4.732A.233.233,0,0,0,9.7,4.5H9.232A.233.233,0,0,0,9,4.732v.7h.928Z"
-                        transform="translate(-6.68 -4.5)" fill="#fff" />
-                      <path id="Trazado_11" data-name="Trazado 11"
-                        d="M25.678,4.732a.233.233,0,0,0-.232-.232h-.464a.233.233,0,0,0-.232.232v.7h.928Z"
-                        transform="translate(-15.934 -4.5)" fill="#fff" />
-                    </svg>
-                    26 Nov 2020</p>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="entrada.php"><h5 class="card-title">Marketing digital</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div><div class="col-md-6">
-            <div class="card border-0 my-4">
-              <div class="position-relative">
-                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
-                
-                <div class="badge-date position-absolute">
-                  <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                      xmlns="http://www.w3.org/2000/svg" width="12.064" height="11.136" viewBox="0 0 12.064 11.136">
-                      <path id="Trazado_9" data-name="Trazado 9"
-                        d="M14.279,6.75h-1.16v.7a.233.233,0,0,1-.232.232h-.464a.233.233,0,0,1-.232-.232v-.7H6.623v.7a.233.233,0,0,1-.232.232H5.927A.233.233,0,0,1,5.7,7.446v-.7H4.535a1.163,1.163,0,0,0-1.16,1.16V15.8a1.163,1.163,0,0,0,1.16,1.16h9.744a1.163,1.163,0,0,0,1.16-1.16V7.91A1.163,1.163,0,0,0,14.279,6.75Zm.232,8.7a.582.582,0,0,1-.58.58H4.883a.582.582,0,0,1-.58-.58V10.23A.233.233,0,0,1,4.535,10h9.744a.233.233,0,0,1,.232.232Z"
-                        transform="translate(-3.375 -5.822)" fill="#fff" />
-                      <path id="Trazado_10" data-name="Trazado 10"
-                        d="M9.928,4.732A.233.233,0,0,0,9.7,4.5H9.232A.233.233,0,0,0,9,4.732v.7h.928Z"
-                        transform="translate(-6.68 -4.5)" fill="#fff" />
-                      <path id="Trazado_11" data-name="Trazado 11"
-                        d="M25.678,4.732a.233.233,0,0,0-.232-.232h-.464a.233.233,0,0,0-.232.232v.7h.928Z"
-                        transform="translate(-15.934 -4.5)" fill="#fff" />
-                    </svg>
-                    26 Nov 2020</p>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="entrada.php"><h5 class="card-title">Marketing digital</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div><div class="col-md-6">
-            <div class="card border-0 my-4">
-              <div class="position-relative">
-                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
-                
-                <div class="badge-date position-absolute">
-                  <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                      xmlns="http://www.w3.org/2000/svg" width="12.064" height="11.136" viewBox="0 0 12.064 11.136">
-                      <path id="Trazado_9" data-name="Trazado 9"
-                        d="M14.279,6.75h-1.16v.7a.233.233,0,0,1-.232.232h-.464a.233.233,0,0,1-.232-.232v-.7H6.623v.7a.233.233,0,0,1-.232.232H5.927A.233.233,0,0,1,5.7,7.446v-.7H4.535a1.163,1.163,0,0,0-1.16,1.16V15.8a1.163,1.163,0,0,0,1.16,1.16h9.744a1.163,1.163,0,0,0,1.16-1.16V7.91A1.163,1.163,0,0,0,14.279,6.75Zm.232,8.7a.582.582,0,0,1-.58.58H4.883a.582.582,0,0,1-.58-.58V10.23A.233.233,0,0,1,4.535,10h9.744a.233.233,0,0,1,.232.232Z"
-                        transform="translate(-3.375 -5.822)" fill="#fff" />
-                      <path id="Trazado_10" data-name="Trazado 10"
-                        d="M9.928,4.732A.233.233,0,0,0,9.7,4.5H9.232A.233.233,0,0,0,9,4.732v.7h.928Z"
-                        transform="translate(-6.68 -4.5)" fill="#fff" />
-                      <path id="Trazado_11" data-name="Trazado 11"
-                        d="M25.678,4.732a.233.233,0,0,0-.232-.232h-.464a.233.233,0,0,0-.232.232v.7h.928Z"
-                        transform="translate(-15.934 -4.5)" fill="#fff" />
-                    </svg>
-                    26 Nov 2020</p>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="entrada.php"><h5 class="card-title">Marketing digital</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div><div class="col-md-6">
-            <div class="card border-0 my-4">
-              <div class="position-relative">
-                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
-                
-                <div class="badge-date position-absolute">
-                  <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                      xmlns="http://www.w3.org/2000/svg" width="12.064" height="11.136" viewBox="0 0 12.064 11.136">
-                      <path id="Trazado_9" data-name="Trazado 9"
-                        d="M14.279,6.75h-1.16v.7a.233.233,0,0,1-.232.232h-.464a.233.233,0,0,1-.232-.232v-.7H6.623v.7a.233.233,0,0,1-.232.232H5.927A.233.233,0,0,1,5.7,7.446v-.7H4.535a1.163,1.163,0,0,0-1.16,1.16V15.8a1.163,1.163,0,0,0,1.16,1.16h9.744a1.163,1.163,0,0,0,1.16-1.16V7.91A1.163,1.163,0,0,0,14.279,6.75Zm.232,8.7a.582.582,0,0,1-.58.58H4.883a.582.582,0,0,1-.58-.58V10.23A.233.233,0,0,1,4.535,10h9.744a.233.233,0,0,1,.232.232Z"
-                        transform="translate(-3.375 -5.822)" fill="#fff" />
-                      <path id="Trazado_10" data-name="Trazado 10"
-                        d="M9.928,4.732A.233.233,0,0,0,9.7,4.5H9.232A.233.233,0,0,0,9,4.732v.7h.928Z"
-                        transform="translate(-6.68 -4.5)" fill="#fff" />
-                      <path id="Trazado_11" data-name="Trazado 11"
-                        d="M25.678,4.732a.233.233,0,0,0-.232-.232h-.464a.233.233,0,0,0-.232.232v.7h.928Z"
-                        transform="translate(-15.934 -4.5)" fill="#fff" />
-                    </svg>
-                    26 Nov 2020</p>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="entrada.php"><h5 class="card-title">Marketing digital</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div><div class="col-md-6">
-            <div class="card border-0 my-4">
-              <div class="position-relative">
-                <a href="entrada.php"><img src="{{ asset('img/img-publicacion-blog.png') }}" class="card-img-top rounded-0" alt="..."></a>
-                
-                <div class="badge-date position-absolute">
-                  <p class="m-0 text-white"><svg id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                      xmlns="http://www.w3.org/2000/svg" width="12.064" height="11.136" viewBox="0 0 12.064 11.136">
-                      <path id="Trazado_9" data-name="Trazado 9"
-                        d="M14.279,6.75h-1.16v.7a.233.233,0,0,1-.232.232h-.464a.233.233,0,0,1-.232-.232v-.7H6.623v.7a.233.233,0,0,1-.232.232H5.927A.233.233,0,0,1,5.7,7.446v-.7H4.535a1.163,1.163,0,0,0-1.16,1.16V15.8a1.163,1.163,0,0,0,1.16,1.16h9.744a1.163,1.163,0,0,0,1.16-1.16V7.91A1.163,1.163,0,0,0,14.279,6.75Zm.232,8.7a.582.582,0,0,1-.58.58H4.883a.582.582,0,0,1-.58-.58V10.23A.233.233,0,0,1,4.535,10h9.744a.233.233,0,0,1,.232.232Z"
-                        transform="translate(-3.375 -5.822)" fill="#fff" />
-                      <path id="Trazado_10" data-name="Trazado 10"
-                        d="M9.928,4.732A.233.233,0,0,0,9.7,4.5H9.232A.233.233,0,0,0,9,4.732v.7h.928Z"
-                        transform="translate(-6.68 -4.5)" fill="#fff" />
-                      <path id="Trazado_11" data-name="Trazado 11"
-                        d="M25.678,4.732a.233.233,0,0,0-.232-.232h-.464a.233.233,0,0,0-.232.232v.7h.928Z"
-                        transform="translate(-15.934 -4.5)" fill="#fff" />
-                    </svg>
-                    26 Nov 2020</p>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="entrada.php"><h5 class="card-title">Marketing digital</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
       </div>
       <div class="col-md-3 py-md-4">
@@ -274,9 +78,14 @@
           </form>
           <h4 class="titulo-home mt-3 mt-md-4">Categorías</h4>
           <ul class="list-unstyled list-categories">
-            <li>Marketing</li>
-            <li class="border-marron-claro border-top border-bottom">Capacitaciones</li>
-            <li>Recursos</li>
+            @foreach ($categories as $category)
+            <li class="mt-0 mb-0 @if (!$loop->first)
+border-marron-claro border-top
+@endif
+@if ($category->is($current_category))
+font-weight-bold
+@endif "><a href="{{ route('blog.category', $category->slug) }}">{{ $category->name }}</a></li>
+            @endforeach
           </ul>
           <div class="shadow rounded text-center p-3 mt-md-5">
             <h5>¡Sumate a mi newsletter!</h5>
@@ -308,32 +117,6 @@
         </div>
       </div>
     </div>
-    <div class="row mt-5">
-      <div class="col-md-12">
-        <nav aria-label="...">
-          <ul class="pagination pagination-blog">
-            <li class="page-item">
-              <a class="page-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                </svg></a>
-            </li>
-            <li class="page-item active" aria-current="page">
-              <a href="#" class="page-link">1</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                </svg></a>
-            </li>
-          </ul>
-        </nav>
-
-      </div>
-    </div>
+    {{ $posts->links() }}
   </div>
 @endsection

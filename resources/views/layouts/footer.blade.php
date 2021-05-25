@@ -79,20 +79,17 @@
             </div>
             <div class="col-md-3">
                 <h4 class="text-medium mb-4">Mis novedades</h4>
+                @php
+                $footer_posts = \App\Models\Post::latest()->take(3)->get();
+                @endphp
+                @foreach ($footer_posts as $post)
                 <div>
-                    <a href="entrada.php"><h6 class="text-marron">Otro posteito de sitio web</h6></a>
-                    <p class="date-input"><span>Marian</span>. <span>11 Nov 2020</span></p>
+                    <a href="{{ route('blog.post', [ 'category' => $post->category->slug,
+                                                 'post' => $post->slug ]) }}"><h6 class="text-marron">{{ $post->title }}</h6></a>
+                    <p class="date-input"><span>{{ $post->author }}</span>. <span>{{ $post->created_at->format('d M Y') }}</span></p>
                     <hr>
                 </div>
-                <div>
-                    <a href="entrada.php"><h6 class="text-marron">Otro posteito de sitio web</h6></a>
-                    <p class="date-input"><span>Marian</span>. <span>11 Nov 2020</span></p>
-                    <hr>
-                </div>
-                <div>
-                    <a href="entrada.php"><h6 class="text-marron">Otro posteito de sitio web</h6></a>
-                    <p class="date-input"><span>Marian</span>. <span>11 Nov 2020</span></p>                    
-                </div>
+                @endforeach
             </div>
         </div>
         <hr>

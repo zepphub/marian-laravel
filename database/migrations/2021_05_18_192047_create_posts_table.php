@@ -15,15 +15,16 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title', 250);
-            $table->string('author', 250)->default(env('DEFAULT_AUTHOR', 'Marian'));
+            $table->string('title')->unique();
+            $table->string('slug')->unique();
+            $table->string('author', 80)->default(env('DEFAULT_AUTHOR', 'Marian'));
             $table->text('body');
-            $table->string('image');
+            $table->string('image')->default('');
             $table->timestamps();
         });
 
         Schema::table('posts', function(Blueprint $table) {
-            $table->foreignId('category_id')->nullable()->constrained();
+            $table->foreignId('category_id')->constrained();
         });
     }
 

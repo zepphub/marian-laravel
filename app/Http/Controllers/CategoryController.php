@@ -37,14 +37,18 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $categories = Category::All();
-        $data = [
-            'name' => $request->name,
-        ];
+        $category = new Category();
+        $category->name = $request->name;
+        $category->slug = Str::slug($request->name);
 
-        $category = Device::create($data);
+        $duplicate = Category::where('name', $category->name)->first();
+        if ($duplicate) {
+          return redirect()->route('admin.categories.index')->withErrors('Existe una categoría con ese nombre.')->withInput();
+        }
+        $category->save();
+        $message = 'Categoría "'.$category->name.'" creada.';
 
-        return redirect()->route('admin.categories_index')->with('categories', $categories);
+        return redirect()->route('admin.categories.index')->withMessage($message);
     }
 
     /**
@@ -78,7 +82,16 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+        $message = 'Categoría "'.$category->name.'" renombrada a "'.$request->name.'".';
+        $category->name = $request->name;
+        $category->slug = Str::slug($request->name);
+        $duplicate = Category::where('name', $category->name)->ignore($category->id)->first();
+        if ($duplicate) {
+          return redirect()->route('admin.categories.index')->withErrors('Existe otra categoría con ese nombre.')->withInput();
+        }
+        $category->save();
+
+        return redirect()->route('admin.categories.index')->withMessage($message);
     }
 
     /**
@@ -89,8 +102,9 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
+        $message = 'Categoría "'.$category->name.'" borrada.';
         $category->delete();
 
-        return view('admin.categories_index')->with('notice', 'la categoria ha sido eliminada correctamente.');
+        return redirect()->route('admin.categories.index')->withMessage($message);
     }
 }

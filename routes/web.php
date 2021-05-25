@@ -21,12 +21,13 @@ Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/asesorias', function(){ return view('front.asesorias'); })->name('asesorias');
-Route::get('/blog', function(){ return view('front.blog'); })->name('blog');
+Route::get('/blog', [App\Http\Controllers\PostController::class, 'frontIndex'])->name('blog');
+Route::get('/blog/{category}', [App\Http\Controllers\PostController::class, 'frontIndex'])->name('blog.category');
+Route::get('/blog/{category}/{post}', [App\Http\Controllers\PostController::class, 'frontShow'])->name('blog.post');
 Route::get('/calendario', function(){ return view('front.calendar'); })->name('calendario');
 Route::get('/carrito', function(){ return view('front.carrito'); })->name('carrito');
 Route::get('/checkout', function(){ return view('front.checkout'); })->name('checkout');
 Route::get('/contacto', function(){ return view('front.contacto'); })->name('contacto');
-Route::get('/entrada', function(){ return view('front.entrada'); })->name('entrada');
 Route::get('/evento', function(){ return view('front.evento'); })->name('evento');
 Route::get('/incrip-exitosa', function(){ return view('front.incrip-exitosa'); })->name('incrip-exitosa');
 Route::get('/mentoria', function(){ return view('front.mentoria'); })->name('mentoria');

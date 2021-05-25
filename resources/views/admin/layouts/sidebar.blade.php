@@ -1,3 +1,10 @@
+@php
+$blog_item = \Request::route()->getName() == 'admin.posts.index' ||
+    \Request::route()->getName() == 'admin.categories.index';
+$servicios_item = \Request::route()->getName() == 'admin.counselings.index' ||
+    \Request::route()->getName() == 'admin.mentorships.index' ||
+    \Request::route()->getName() == 'admin.events.index';
+@endphp
 <div class="px-3 py-5 h-100 dashboard-fixed d-flex flex-column justify-content-between">
     <div>
         <img class="img-fluid w-75" src="{{ asset('img/logo-dash-blanco.svg')}}" alt="" />
@@ -9,9 +16,9 @@
             <ul id="main-menu" class="navbar-nav flex-column">
                 <li class="nav-item">
                     <div id="heading-1">
-                      <a class="nav-link dropdown-toggle" href="#item-1" data-parent="#main-menu" data-toggle="collapse" aria-expanded="true" data-target="#item-1" aria-controls="item-1" > Blog </a>
+                      <a class="nav-link dropdown-toggle" href="#item-1" data-parent="#main-menu" data-toggle="collapse" aria-expanded="{{ $blog_item ? 'true' : 'false' }}" data-target="#item-1" aria-controls="item-1" > Blog </a>
                     </div>
-                    <div id="item-1" class="collapse show bg-nude border-0" aria-labelledby="heading-1" data-parent="#main-menu">
+                    <div id="item-1" class="collapse @if ($blog_item) show @endif bg-nude border-0" aria-labelledby="heading-1" data-parent="#main-menu">
                       <ul class="nav flex-column ml-3">
                         <li class="nav-item">
                           <a class="nav-link" href="{{ route('admin.posts.index') }}">Todos los artículos</a>
@@ -24,10 +31,9 @@
                 </li>
                 <li class="nav-item">
                     <div id="heading-2">
-                      <a class="nav-link dropdown-toggle" href="#item-2" data-parent="#main-menu" data-toggle="collapse" aria-expanded="false" data-target="#item-2" aria-controls="item-2" > Servicios </a>
-                    </a>
+                      <a class="nav-link dropdown-toggle" href="#item-2" data-parent="#main-menu" data-toggle="collapse" aria-expanded="{{ $servicios_item ? 'true' : 'false' }}" data-target="#item-2" aria-controls="item-2" > Servicios </a>
                     </div>
-                    <div id="item-2" class="collapse show bg-nude border-0" aria-labelledby="heading-2" data-parent="#main-menu">
+                    <div id="item-2" class="collapse  @if ($servicios_item) show @endif bg-nude border-0" aria-labelledby="heading-2" data-parent="#main-menu">
                       <ul class="nav flex-column ml-3">
                         <li class="nav-item">
                           <a class="nav-link" href="{{ route('admin.counselings.index') }}">Consultorías Personalizadas</a>
