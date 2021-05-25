@@ -28,6 +28,11 @@
               @error('title')
               <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
               @enderror
+              @error('slug')
+              @if ($errors->first('title') == Null)
+              <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+              @endif
+              @enderror
               <h5 class="mt-5 text-marron-claro font-weight-normal mb-2">Cuerpo del artículo</h5>
               <textarea class="form-control" id="post-body" name="body" cols="30" rows="10">{{ old('body') ?? $post->body }}</textarea>
               @error('body')

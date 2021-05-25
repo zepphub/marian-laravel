@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Str;
 
 class PostCreateRequest extends FormRequest
 {
@@ -19,6 +20,18 @@ class PostCreateRequest extends FormRequest
     }
 
     /**
+     * Prepare the data for validation.
+     *
+     * @return void
+     */
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'slug' => Str::slug($this->title),
+        ]);
+    }
+
+    /**
      * Get the validation rules that apply to the request.
      *
      * @return array
@@ -27,6 +40,7 @@ class PostCreateRequest extends FormRequest
     {
         return [
           'title' => 'required|unique:posts|max:250',
+          'slug' => 'unique:posts|max:250',
           'body' => 'required',
           'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg,webp|max:2048',
         ];
@@ -38,6 +52,8 @@ class PostCreateRequest extends FormRequest
               'title.required' => __('Hace falta un título.'),
               'title.unique' => __('El título ya esta en uso.'),
               'title.max' => __('El título no puede ser mas de 250 caracteres.'),
+              'slug.unique' => __('El título ya esta en uso.'),
+              'slug.max' => __('El título no puede ser mas de 250 caracteres.'),
               'body.required' => __('Hace falta un cuerpo para el artículo.'),
               'image.required' => __('Hace falta una imagen.'),
               'image.image' => __('La imagen debe ser una imagen.'),
