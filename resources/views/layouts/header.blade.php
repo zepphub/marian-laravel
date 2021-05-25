@@ -69,7 +69,7 @@
                                         Trabajá conmigo
                                     </a>
                                     <div class="dropdown-menu border-0" aria-labelledby="trabajaConmigo">
-                                        <a class="dropdown-item" href="{{ route('asesorias') }}">Consultorías Personalizadas</a>
+                                        <a class="dropdown-item" href="{{ route('consultorias') }}">Consultorías Personalizadas</a>
                                         <a class="dropdown-item" href="{{ route('mentoria') }}">Mentoría</a>
                                         <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Talleres y Eventos</a>
                                     </div>

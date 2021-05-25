@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Counseling;
+use App\Models\CounselingDescription;
 use Illuminate\Http\Request;
 
 class CounselingController extends Controller
@@ -14,11 +15,20 @@ class CounselingController extends Controller
      */
     public function index()
     {
-      //$counselings = Counseling::all();
-      //return view('admin.counselings_index', ['counselings'=>$counselings]);
-      return view('admin.counselings_index');
+      $counselings = Counseling::all();
+      return view('admin.counselings_index', ['counselings'=>$counselings]);
     }
 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function frontIndex()
+    {
+      $counselings = Counseling::all();
+      return view('front.consultorias', ['counselings'=>$counselings]);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -71,7 +81,37 @@ class CounselingController extends Controller
      */
     public function update(Request $request, Counseling $counseling)
     {
-        //
+      $counseling->description = $request->get('description');
+      $counseling->price_ars = $request->get('price_ars');
+      $counseling->price_usd = $request->get('price_usd');
+      $counseling->video = $request->get('video');
+
+      $counseling->save();
+
+      for ($i = 1; $i < 10; $i++){
+        if(isset($request['description-'.$i])){
+          $description = CounselingDescription::where('id',$request['description-'.$i])->first();
+          $description->content = $request['content-'.$i];
+          $description->save();
+        }
+      }
+      for ($i = 1; $i < 10; $i++){
+        if(isset($request['content-new-'.$i])){
+          $description = new CounselingDescription();
+          $description->counseling_id = $counseling->id;
+          $description->content = $request['content-new-'.$i];
+          $description->save();
+        }
+      }
+
+      $extension = $request->file('image')->getClientOriginalExtension();
+      $image_path = $request->file('image')->storeAs('img/counselings', $counseling->id.".".$extension, "public");
+      $counseling->image = "storage/".$image_path;
+      $counseling->save();
+
+      $message = 'Artículo "'.$counseling->title.'" actualizado';
+
+      return redirect()->route('admin.counselings.index')->withMessage($message);
     }
 
     /**
