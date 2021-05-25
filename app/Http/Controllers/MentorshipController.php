@@ -14,9 +14,9 @@ class MentorshipController extends Controller
      */
     public function index()
     {
-      //$mentorships = Mentorship::all();
-      //return view('admin.mentorships_index', ['mentorships'=>$mentorships]);
-      return view('admin.mentorships_index');
+      $mentorships = Mentorship::all();
+
+      return view('admin.mentorships_index', ['mentorships' => $mentorships]);
     }
 
     /**
@@ -48,7 +48,9 @@ class MentorshipController extends Controller
      */
     public function show(Mentorship $mentorship)
     {
-        //
+      $mentorships = Mentorship::all();
+
+      return view('admin.mentorships_index', ['mentorships' => $mentorships ,'current_mentorship' => $mentorship->id]);
     }
 
     /**
@@ -71,7 +73,29 @@ class MentorshipController extends Controller
      */
     public function update(Request $request, Mentorship $mentorship)
     {
-        //
+      $mentorship->price_ars = $request->get('price_ars');
+      $mentorship->price_usd = $request->get('price_usd');
+
+      $mentorship->save();
+
+
+      for ($i = 0; $i < $mentorship->descriptions->count(); $i++){
+        $description = $mentorship->descriptions[$i];
+        if(isset($request['content-'.$description->id])){
+          $description->content = $request['content-'.$description->id];
+          //if(isset($request['description-'.$i.'-icon'])){
+            //$description->icon_id = $request['content-'.$i];
+          //}
+        }
+        if(isset($request['description-'.$description->id.'-icon-id'])){
+          $description->icon_id = $request['description-'.$description->id.'-icon-id'];
+        }
+        $description->save();
+      }
+
+      $message = 'Mentoría"'.$mentorship->title.'" actualizada.';
+
+      return redirect()->route('admin.mentorships.show', $mentorship)->withMessage($message);
     }
 
     /**
@@ -83,5 +107,19 @@ class MentorshipController extends Controller
     public function destroy(Mentorship $mentorship)
     {
         //
+    }
+
+    public function showSingle ()
+    {
+      $mentorship = Mentorship::where('id','1')->first(); // Hardcoded
+
+      return view('front.programa-intensivo', ['mentorship' => $mentorship]);
+    }
+    
+    public function showGroup ()
+    {
+      $mentorship = Mentorship::where('id','2')->first(); // Hardcoded
+
+      return view('front.mentoria-grupal', ['mentorship' => $mentorship]);
     }
 }

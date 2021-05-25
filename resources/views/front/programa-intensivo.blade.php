@@ -98,13 +98,8 @@
     <div class="row">
       <div class="col-md-7">
         <h4 class="titulo-home mb-3">Sobre la experiencia</h4>
-        <p>El programa propone 8 semanas de trabajo juntas de forma 100% personalizada a través de sesiones online, en
-          vivo y con cafecito de por medio. </p>
-        <p>Compartiremos 5 encuentros en los cuales analizaremos los pilares más importantes de tu marca, trabajaremos
-          en un diagnóstico sobre tu propuesta actual e implementaremos mejoras de la mano de una estrategia digital que
-          te permita comunicar tu diferencial y potenciar tus resultados. Entre encuentro y encuentro aplicamos lo
-          conversado a tu proyecto de forma práctica, mediante ejercicios y reflexiones sugeridos en cada sesión. </p>
-        <h5 class="font-weight-normal titulo-home mt-3">Costo: <span class="font-weight-bold">$500 / USD 6</span></h5>
+        {!! $mentorship->descriptions[0]->content !!}
+        <h5 class="font-weight-normal titulo-home mt-3">Costo: <span class="font-weight-bold">${{intval($mentorship->price_ars)}} / USD {{intval($mentorship->price_usd)}}</span></h5>
         <a class="btn btn-primary mt-4" href="">Aplicar al programa</a>
       </div>
       <div class="col-md-5 mt-4 mt-md-0 bg-nude rounded">

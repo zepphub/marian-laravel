@@ -14,8 +14,8 @@ class IconSeeder extends Seeder
      */
     public function run()
     {
-      for ($i = 1; $i <= 10; $i++) {
-        Icon::create([ 'url' => 'icon'.sprintf('%02d', $i).'.png' ]);
+      for ($i = 1; $i <= 5; $i++) {
+        Icon::create([ 'url' => 'img/icons/'.$i.'.svg' ]);
       }
     }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{{ asset('css/starter.css') }}" />
     <title>@yield('title')Mariann</title>
+    @yield('head')
   </head>
   <body>
     <div class="container-fluid">

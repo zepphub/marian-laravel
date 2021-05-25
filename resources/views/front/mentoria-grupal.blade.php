@@ -220,43 +220,18 @@
       </div>
       <div class="col-md-7 mt-4 mt-md-0 pl-md-4">
         <h4 class="titulo-home">Ser parte de la Mentoría Grupal te dará acceso a:</h4>
+        @foreach ($mentorship->descriptions as $description)
         <div class="row align-items-center my-4">
-          <div class="col-md-2 pr-md-0"><img src="{{ asset('img/mentoria-g-acceso-a-1.svg') }}" alt=""></div>
+          <div class="col-md-2 pr-md-0"><img src="{{ asset($description->icon->url) }}" alt=""></div>
           <div class="col-md-10 p-md-0">
-            <p class="m-0">Un grupo de Whatsapp donde compartiremos dudas, inquietudes y experiencias relacionadas al
-              proceso de mentoría</p>
+            <p class="m-0">{{$description->content}}</p>
           </div>
         </div>
-        <div class="row align-items-center my-4">
-          <div class="col-md-2 pr-md-0"><img src="{{ asset('img/mentoria-g-acceso-a-2.svg') }}" alt=""></div>
-          <div class="col-md-10 p-md-0">
-            <p class="m-0">Una selección exclusiva de artículos y podcast recomendados y avalados por Marian</p>
-          </div>
-        </div>
-        <div class="row align-items-center my-4">
-          <div class="col-md-2 pr-md-0"><img src="{{ asset('img/mentoria-g-acceso-a-3.svg') }}" alt=""></div>
-          <div class="col-md-10 p-md-0">
-            <p class="m-0">Un cuadernillo de ejercicios para acompañar el proceso y aplicar los contenidos de forma
-              práctica</p>
-          </div>
-        </div>
-        <div class="row align-items-center my-4">
-          <div class="col-md-2 pr-md-0"><img src="{{ asset('img/mentoria-g-acceso-a-4.svg') }}" alt=""></div>
-          <div class="col-md-10 p-md-0">
-            <p class="m-0">Instancias 100% personalizadas en las que seguiré tus avances con correcciones y devoluciones
-            </p>
-          </div>
-        </div>
-        <div class="row align-items-center my-4">
-          <div class="col-md-2 pr-md-0"><img src="{{ asset('img/mentoria-g-acceso-a-5.svg') }}" alt=""></div>
-          <div class="col-md-10 p-md-0">
-            <p class="m-0">Cafecitos virtuales exclusivos para clientas premium de mentoría.</p>
-          </div>
-        </div>
+        @endforeach
         <div class="row">
           <div class="d-flex align-items-center">
             <h5 class="subrayado-subtitulo pb-1 m-0">Costo del programa grupal</h5>
-            <h4 class="font-weight-bold titulo-home ml-md-3">$500 / USD 6</h4>
+            <h4 class="font-weight-bold titulo-home ml-md-3">${{intval($mentorship->price_ars)}} / USD {{intval($mentorship->price_usd)}}</h4>
           </div>
         </div>
       </div>
