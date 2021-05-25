@@ -34,7 +34,7 @@ class CounselingSeeder extends Seeder
                'price_usd'=>'5.50',
                'icon'=>'img/asesoria-tab-2.svg',
                'image'=>'img/asesoria-img-tab-2.png',
-               'video'=>'',
+               'video'=>'https://youtu.be/zEMt3qViMjk',
             ],
             [
                'name'=>'Contenido para inspirar',
@@ -44,7 +44,7 @@ class CounselingSeeder extends Seeder
                'price_usd'=>'7.90',
                'icon'=>'img/asesoria-tab-3.svg',
                'image'=>'img/asesoria-img-tab-3.png',
-               'video'=>'',
+               'video'=>'https://youtu.be/zEMt3qViMjk',
             ],
             [
                'name'=>'Comunicá, conectá y lanzá',
@@ -54,7 +54,7 @@ class CounselingSeeder extends Seeder
                'price_usd'=>'3',
                'icon'=>'img/asesoria-tab-4.svg',
                'image'=>'img/asesoria-img-tab-4.png',
-               'video'=>'',
+               'video'=>'https://youtu.be/zEMt3qViMjk',
             ],
             [
                'name'=>'Hoja de ruta',
@@ -64,7 +64,7 @@ class CounselingSeeder extends Seeder
                'price_usd'=>'8',
                'icon'=>'img/asesoria-tab-5.svg',
                'image'=>'img/asesoria-img-tab-5.png',
-               'video'=>'',
+               'video'=>'https://youtu.be/zEMt3qViMjk',
             ],
         ];
 

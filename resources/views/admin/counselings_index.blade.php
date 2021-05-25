@@ -17,6 +17,7 @@
                         <form id="editForm-{{ $counseling->id }}" action="{{ route('admin.counselings.update', $counseling) }}" method="POST" enctype="multipart/form-data">
                           @csrf
                           @method('PUT')
+                          <input type=hidden name="counseling-id" value="{{ $counseling->id }}">
                         </form>
                         <div class="shadow rounded-lg p-4 mt-5 @if ($loop->first) mt-md-0 @endif">
                             <h4 class="m-0"><img class="mr-3" src="{{ asset($counseling->icon) }}" width=47 height=45.294 >{{ $counseling->name }}</h4>
@@ -30,10 +31,10 @@
                                         <div class="row mt-5">
                                             <div class="col-md-7">
                                                 <h4>{{ $counseling->marked_description }}</h4>
-                                                <div id='descriptions-container-{{$counseling->id}}' data-ndesc='0'>
+                                                <div id='descriptions-container-{{$counseling->id}}'>
+                                                  <input type=hidden id="ndesc-{{$counseling->id}}" name="new-descriptions" form="editForm-{{ $counseling->id }}" value="0">
                                                 @foreach ($counseling->descriptions as $description)
-                                                  <input type=hidden name="description-{{$loop->iteration}}" form="editForm-{{ $counseling->id }}" value="{{ $description->id }}">
-                                                  <input class="form-control form-control-lg rounded-pill @if (!$loop->first) mt-3 @endif" name="content-{{$loop->iteration}}" type="text" form="editForm-{{ $counseling->id }}" value="{{ $description->content }}">
+                                                  <input class="form-control form-control-lg rounded-pill @if (!$loop->first) mt-3 @endif" name="content-{{$description->id}}" type="text" form="editForm-{{ $counseling->id }}" value="{{ $description->content }}">
                                                 @endforeach
                                                 </div>
 
@@ -47,16 +48,31 @@
                                                         <h4>Precio</h4><input
                                                             class="form-control form-control-lg rounded-pill"
                                                             type="text" name="price_ars" form="editForm-{{ $counseling->id }}" value="{{ $counseling->price_ars }}">
+                                                        @error('price_ars')
+                                                        @if ( $errors->first('counseling-id') == $counseling->id )
+                                                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                                        @endif
+                                                        @enderror
                                                     </div>
                                                     <div class="col-md-6 mt-3 mt-md-0">
                                                         <h4>Precio U$D</h4><input
                                                             class="form-control form-control-lg rounded-pill"
                                                             type="text" name="price_usd" form="editForm-{{ $counseling->id }}" value="{{ $counseling->price_usd }}">
+                                                        @error('price_usd')
+                                                        @if ( $errors->first('counseling-id') == $counseling->id )
+                                                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                                        @endif
+                                                        @enderror
                                                     </div>
                                                 </div>
                                                 <h4 class="mt-5">Link de video (Youtube)</h4>
                                                 <input class="form-control form-control-lg rounded-pill" form="editForm-{{ $counseling->id }}" name=video type="text"
                                                     value="{{ $counseling->video }}">
+                                                @error('video')
+                                                @if ( $errors->first('counseling-id') == $counseling->id )
+                                                <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                                @endif
+                                                @enderror
                                             </div>
                                         </div>
                                     </div>
@@ -66,7 +82,9 @@
                                         <img id="preview-image-{{$counseling->id}}" class="d-block mx-auto img-fluid" width=150px height=150px src="{{ asset($counseling->image)}}" alt="">
                                         <input type="file" name="image" form="editForm-{{ $counseling->id }}" class="image-upload" id="image-upload-{{$counseling->id}}" style="display: none;" />
                                         @error('image')
+                                        @if ( $errors->first('counseling-id') == $counseling->id )
                                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                        @endif
                                         @enderror
                                         <div class="d-block d-md-flex justify-content-center mb-3 mb-md-0">
                                             <label for="image-upload-{{$counseling->id}}" class="btn btn-primary mt-4">Subir imagen</label>
@@ -93,11 +111,10 @@
 @section('scripts')
 <script type="text/javascript">
 var newDesc = function(c_id){
-  console.log(c_id);
   let descContainer = document.getElementById("descriptions-container-"+c_id);
-  let ndesc = String(parseInt(descContainer.getAttribute('data-ndesc')) + 1);
-  descContainer.setAttribute('data-ndesc', ndesc)
-  descContainer.insertAdjacentHTML("beforeEnd", ' <input class="form-control form-control-lg rounded-pill mt-3" name="content-new-'+ndesc+'" type="text" form="editForm-'+c_id+'" value="">');
+  let ndesc = document.getElementById("ndesc-"+c_id);
+  ndesc.value = String(parseInt(ndesc.value) + 1);
+  descContainer.insertAdjacentHTML("beforeEnd", ' <input class="form-control form-control-lg rounded-pill mt-3" name="content-new-'+ndesc.value+'" type="text" form="editForm-'+c_id+'" value="">');
 
 };
 

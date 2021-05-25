@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Counseling;
 use App\Models\CounselingDescription;
 use Illuminate\Http\Request;
+use App\Http\Requests\CounselingUpdateRequest;
 
 class CounselingController extends Controller
 {
@@ -79,7 +80,7 @@ class CounselingController extends Controller
      * @param  \App\Models\Counseling  $counseling
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Counseling $counseling)
+    public function update(CounselingUpdateRequest $request, Counseling $counseling)
     {
       $counseling->description = $request->get('description');
       $counseling->price_ars = $request->get('price_ars');
@@ -88,14 +89,14 @@ class CounselingController extends Controller
 
       $counseling->save();
 
-      for ($i = 1; $i < 10; $i++){
-        if(isset($request['description-'.$i])){
-          $description = CounselingDescription::where('id',$request['description-'.$i])->first();
-          $description->content = $request['content-'.$i];
+      for ($i = 0; $i < $counseling->descriptions->count(); $i++){
+        $description = $counseling->descriptions[$i];
+        if(isset($request['content-'.$description->id])){
+          $description->content = $request['content-'.$description->id];
           $description->save();
         }
       }
-      for ($i = 1; $i < 10; $i++){
+      for ($i = 1; $i <= $request['new-descriptions']; $i++){
         if(isset($request['content-new-'.$i])){
           $description = new CounselingDescription();
           $description->counseling_id = $counseling->id;
@@ -104,10 +105,12 @@ class CounselingController extends Controller
         }
       }
 
-      $extension = $request->file('image')->getClientOriginalExtension();
-      $image_path = $request->file('image')->storeAs('img/counselings', $counseling->id.".".$extension, "public");
-      $counseling->image = "storage/".$image_path;
-      $counseling->save();
+      if($request->file('image')){
+        $extension = $request->file('image')->getClientOriginalExtension();
+        $image_path = $request->file('image')->storeAs('img/counselings', $counseling->id.".".$extension, "public");
+        $counseling->image = "storage/".$image_path;
+        $counseling->save();
+      }
 
       $message = 'Artículo "'.$counseling->title.'" actualizado';
 
