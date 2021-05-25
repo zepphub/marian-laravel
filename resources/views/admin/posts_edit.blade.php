@@ -94,27 +94,15 @@ tinymce.init({
   content_css: 'marian',
   editor_css: 'marian',
 });
-</script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script type="text/javascript">
-      
+
 $(document).ready(function (e) {
- 
-   
    $('#image-upload').change(function(){
-            
     let reader = new FileReader();
- 
-    reader.onload = (e) => { 
- 
-      $('#preview-image').attr('src', e.target.result); 
+    reader.onload = (e) => {
+      $('#preview-image').attr('src', e.target.result);
     }
- 
-    reader.readAsDataURL(this.files[0]); 
-   
-   });
-   
-});
- 
+    reader.readAsDataURL(this.files[0]);
+     });
+  });
 </script>
 @endsection
