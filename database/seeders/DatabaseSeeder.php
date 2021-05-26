@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         CounselingSeeder::class,
         IconSeeder::class,
         MentorshipSeeder::class,
+        EventSeeder::class,
       ]);
     }
 }
