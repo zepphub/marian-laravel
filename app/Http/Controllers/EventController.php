@@ -130,12 +130,16 @@ class EventController extends Controller
 
       if (!empty($request->file('image'))) {
         $extension = $request->file('image')->getClientOriginalExtension();
+        if(is_file($event->image)){
+          unlink($event->image);
+        };
+
         $image_path = $request->file('image')->storeAs('img/events', $event->id.".".$extension, "public");
         $event->image = "storage/".$image_path;
       }
 
       $event->save();
-      $message = 'Nuevo evento "'.$event->title.'" actualizado.';
+      $message = 'Evento "'.$event->title.'" actualizado.';
 
       return redirect()->route('admin.events.index')->withMessage($message);
     }
@@ -149,6 +153,9 @@ class EventController extends Controller
     public function destroy(Event $event)
     {
       $message = 'Evento "'.$event->title.'" borrado.';
+      if(is_file($event->image)){
+        unlink($event->image);
+      };
       $event->delete();
 
       return redirect()->route('admin.events.index')->withMessage($message);

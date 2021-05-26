@@ -144,6 +144,9 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
       $message = 'Artículo "'.$post->title.'" borrado.';
+      if(is_file($post->image)){
+        unlink($post->image);
+      };
       $post->delete();
 
       return redirect()->route('admin.posts.index')->withMessage($message);
