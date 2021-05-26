@@ -86,8 +86,6 @@ tinymce.init({
   content_css: 'marian',
   editor_css: 'marian',
 });
-</script>
-<script type="text/javascript">
 
 $(document).ready(function (e) {
 $('#image-upload').change(function(){
