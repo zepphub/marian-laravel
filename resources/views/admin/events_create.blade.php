@@ -1,7 +1,6 @@
 @extends('admin.layouts.app')
 
 @section('content')
-
             <div class="col-md-9 p-3 p-md-5">
                 <div class="row">
                     <div class="col-md-12">
@@ -20,69 +19,84 @@
                         </div>
                     </div>
                 </div>
+                <form action="{{ route('admin.events.store') }}" method="post" enctype="multipart/form-data">
+                  @csrf
                 <div class="row mt-4">
                     <div class="col-md-8">
                         <h5 class="text-marron-claro font-weight-normal mb-2">Título del evento</h5>
-                        <input class="form-control form-control-lg rounded-pill" type="text"
-                            placeholder="Cafecito: Especial planificación y productividad">
+                        <input class="form-control form-control-lg rounded-pill" name="title" type="text" >
                         <h5 class="mt-5 text-marron-claro font-weight-normal mb-2">Descripción</h5>
-                        <textarea class="form-control" name="" id="" cols="30"
-                            rows="10">Conversamos sobre tu público objetivo. Identificamos al cliente ideal de tu marca generando estrategias para que logres enamorar a tu audiencia, creando contenido auténtico para tus canales digitales, y propuestas acordes a sus principales intereses.</textarea>
+                        <textarea class="form-control" name="description" cols="30" rows="10"></textarea>
                         <div class="row mt-4 mt-md-5">
                             <div class="col-md-4">
                                 <h5 class="text-marron-claro text-medium mb-2">Fecha</h5>
-                                <input class="form-control form-control-lg rounded-pill" type="date">
+                                <input class="form-control form-control-lg rounded-pill" type="date" name="date">
                             </div>
                             <div class="col-md-2 mt-3 mt-md-0">
                                 <h5 class="text-marron-claro text-medium mb-2">Hora</h5>
-                                <input class="form-control form-control-lg rounded-pill" type="time">
+                                <input class="form-control form-control-lg rounded-pill" type="time" name="time">
                             </div>
                             <div class="col-md-6 mt-3 mt-md-0">
                                 <h5 class="text-marron-claro text-medium mb-2">Disertante</h5>
-                                <input class="form-control form-control-lg rounded-pill" type="text"
-                                    placeholder="Mariana Pacheco">
+                                <input class="form-control form-control-lg rounded-pill" type="text" name="lecturer">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="text-center mt-5 mt-md-0">
-                            <img class="d-block img-fluid mx-auto" src="https://via.placeholder.com/150" alt="">
-                            <button class="btn btn-primary mt-4">Subir imagen</button>
+                            <img id="preview-image" class="d-block img-fluid w-100" src="/img/150.png" alt="">
+                            <input type="file" name="image" id="image-upload" value="{{ old('image') }}" style="display: none;" />
+                            @error('image')
+                            <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                            @enderror
+                            <label for="image-upload" class="btn btn-primary mt-4">Subir imagen</label>
                         </div>
                     </div>
                 </div>
                 <div class="row mt-4 mt-md-5">
                     <div class="col-md-5">
                         <h5 class="text-marron-claro text-medium mb-2">Organiza</h5>
-                        <input class="form-control form-control-lg rounded-pill" type="text"
-                            placeholder="Mariana Pacheco">
+                        <input class="form-control form-control-lg rounded-pill" name="host" type="text">
                     </div>
                     <div class="col-md-2 mt-3 mt-md-0">
                         <div class="d-block d-md-flex align-items-center h-100 mt-0 mt-md-3">
                             <h5 class="text-marron-claro text-medium m-0 mb-3 mb-md-0">Inscripción</h5>
                             <div class="custom-control custom-switch.custom-switch-md custom-switch ml-0 ml-md-3">
-                                <input type="checkbox" class="custom-control-input" id="inscripcion">
-                                <label class="custom-control-label" for="inscripcion"></label>
+                                <input type="checkbox" name="inscription" class="custom-control-input" id="inscription">
+                                <label class="custom-control-label" for="inscription"></label>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-5 mt-3 mt-md-0">
                         <h5 class="text-marron-claro text-medium mb-2">URL Evento</h5>
-                        <input class="form-control form-control-lg rounded-pill" type="text"
-                            placeholder="Mariana Pacheco">
+                        <input class="form-control form-control-lg rounded-pill" name="url" type="text">
                     </div>
                     <div class="col-md-12">
                         <h5 class="mt-5 text-marron-claro font-weight-normal mb-2">Acerca de este evento</h5>
-                        <textarea class="form-control" name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        </textarea>
+                        <textarea class="form-control" name="about" cols="30" rows="10"></textarea>
                     </div>
                 </div>
                 <hr class="border-marron-claro my-5 mx-0">
                 <div class="row my-4">
                     <div class="col-md-12">
                         <div class="d-block d-md-flex justify-content-md-end justify-content-center">
-                            <a href=""><button class="btn btn-outline-primary btn-block">Publicar</button></a>
+                            <button type=submit class="btn btn-outline-primary">Publicar</button>
                         </div>
                     </div>
                 </div>
-       @endsection
+                </form>
+@endsection
+
+@section('scripts')
+<script type="text/javascript">
+$(document).ready(function (e) {
+$('#image-upload').change(function(){
+    let reader = new FileReader();
+    reader.onload = (e) => {
+      $('#preview-image').attr('src', e.target.result);
+    }
+    reader.readAsDataURL(this.files[0]);
+   });
+});
+</script>
+@endsection

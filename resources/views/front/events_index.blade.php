@@ -155,24 +155,30 @@
 
   <div class="petalos-right">
     <div class="container py-5">
-    
+
       <div class="row">
         <div class="col-md-12 text-center">
           <h4 class="titulo-home">Próximos eventos</h4>
           <img src="{{ asset('img/separador-svg.svg') }}" alt="">
         </div>
       </div>
-    
+
       <div class="row">
         <div class="col-md-12">
           <div id="carouselTYE" class="carousel slide d-none d-md-block" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselTYE" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselTYE" data-slide-to="1"></li>
+            @foreach ($events as $event)
+              @if ($loop->odd)
+              <li data-target="#carouselTYE" data-slide-to="{{ ($loop->iteration - 1) / 2 }}" @if ($loop->first) class="active" @endif ></li>
+              @endif
+            @endforeach
             </ol>
             <div class="carousel-inner" role="listbox">
-              <div class="carousel-item py-5 active">
+            @foreach ($events as $event)
+              @if ($loop->odd)
+              <div class="carousel-item py-5 @if ($loop->first) active @endif">
                 <div class="row px-md-3">
+              @endif
                   <div class="col-sm-6">
                     <div class="card rounded-0 border-0 shadow" style="max-width: 540px;">
                       <div class="row no-gutters">
@@ -197,7 +203,7 @@
                                       transform="translate(-12.191)" fill="#b46063" />
                                   </g>
                                 </svg>
-                                24 Nov 2020 | 14:00 hs</h5>
+                                {{ $event->dateFormated() }} | {{ $event->timeFormated() }} hs</h5>
                               <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="7.943"
                                   height="11.911" viewBox="0 0 7.943 11.911">
                                   <g id="Icon_feather-mic" data-name="Icon feather-mic" transform="translate(-7 -1)">
@@ -217,381 +223,136 @@
                                       stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
                                   </g>
                                 </svg>
-                                Mariana Pacheco</h5>
+                                {{ $event->lecturer }}</h5>
                             </div>
-                            <h5 class="card-title text-marron-claro titulo-home">Cafecito: Especial planificación
-                              y productividad</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                              exercitation ullamco</p>
-                            <a class="btn btn-primary" href="">Inscribite <svg class="ml-1"
-                                xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367"
-                                viewBox="0 0 8.248 14.367">
-                                <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
-                                  <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
-                                    <path id="Trazado_343" data-name="Trazado 343"
-                                      d="M124.777,6.288,118.622.151a.516.516,0,0,0-.728.73l5.788,5.772-5.788,5.772a.516.516,0,0,0,.729.73l6.154-6.137a.516.516,0,0,0,0-.73Z"
-                                      transform="translate(-117.742 0)" fill="#fff" stroke="#fff" stroke-width="1" />
-                                  </g>
-                                </g>
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="card rounded-0 border-0 shadow" style="max-width: 540px;">
-                      <div class="row no-gutters">
-                        <div class="col-md-5">
-                          <img class="h-100 img-fluid" src="{{ asset('img/tye-card-eventos.jpg') }}" alt="...">
-                        </div>
-                        <div class="col-md-7">
-                          <div class="card-body">
-                            <div>
-                              <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="12.567"
-                                  height="11.601" viewBox="0 0 12.567 11.601">
-                                  <g id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                                    transform="translate(-3.375 -4.5)">
-                                    <path id="Trazado_19" data-name="Trazado 19"
-                                      d="M14.734,6.75H13.526v.725a.242.242,0,0,1-.242.242H12.8a.242.242,0,0,1-.242-.242V6.75h-5.8v.725a.242.242,0,0,1-.242.242H6.033a.242.242,0,0,1-.242-.242V6.75H4.583A1.212,1.212,0,0,0,3.375,7.958v8.217a1.212,1.212,0,0,0,1.208,1.208H14.734a1.212,1.212,0,0,0,1.208-1.208V7.958A1.212,1.212,0,0,0,14.734,6.75Zm.242,9.063a.606.606,0,0,1-.6.6H4.946a.606.606,0,0,1-.6-.6V10.375a.242.242,0,0,1,.242-.242H14.734a.242.242,0,0,1,.242.242Z"
-                                      transform="translate(0 -1.283)" fill="#b46063" />
-                                    <path id="Trazado_20" data-name="Trazado 20"
-                                      d="M9.967,4.742A.242.242,0,0,0,9.725,4.5H9.242A.242.242,0,0,0,9,4.742v.725h.967Z"
-                                      transform="translate(-3.208)" fill="#b46063" />
-                                    <path id="Trazado_21" data-name="Trazado 21"
-                                      d="M25.717,4.742a.242.242,0,0,0-.242-.242h-.483a.242.242,0,0,0-.242.242v.725h.967Z"
-                                      transform="translate(-12.191)" fill="#b46063" />
-                                  </g>
-                                </svg>
-                                24 Nov 2020 | 14:00 hs</h5>
-                              <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="7.943"
-                                  height="11.911" viewBox="0 0 7.943 11.911">
-                                  <g id="Icon_feather-mic" data-name="Icon feather-mic" transform="translate(-7 -1)">
-                                    <path id="Trazado_5" data-name="Trazado 5"
-                                      d="M14.988,1.5A1.488,1.488,0,0,0,13.5,2.988V6.955a1.488,1.488,0,0,0,2.976,0V2.988A1.488,1.488,0,0,0,14.988,1.5Z"
-                                      transform="translate(-4.016 0)" fill="none" stroke="#b46063" stroke-linecap="round"
-                                      stroke-linejoin="round" stroke-width="1" />
-                                    <path id="Trazado_6" data-name="Trazado 6"
-                                      d="M14.443,15v.992a3.472,3.472,0,0,1-6.943,0V15" transform="translate(0 -9.036)"
-                                      fill="none" stroke="#b46063" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="1" />
-                                    <path id="Trazado_7" data-name="Trazado 7" d="M18,28.5v1.984"
-                                      transform="translate(-7.028 -18.073)" fill="none" stroke="#b46063"
-                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                    <path id="Trazado_8" data-name="Trazado 8" d="M12,34.5h3.968"
-                                      transform="translate(-3.012 -22.089)" fill="none" stroke="#b46063"
-                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                  </g>
-                                </svg>
-                                Mariana Pacheco</h5>
-                            </div>
-                            <h5 class="card-title text-marron-claro titulo-home">Cafecito: Especial planificación
-                              y productividad</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                              exercitation ullamco</p>
+                            <h5 class="card-title text-marron-claro titulo-home">{{ $event->title }}</h5>
+                            <p class="card-text">{{ $event->description }}</p>
                             <div class="d-md-flex align-items-baseline justify-content-between">
-                              <a class="btn btn-outline-secondary rounded-circle" href=""><svg
-                                  xmlns="http://www.w3.org/2000/svg" width="15.056" height="14.674"
-                                  viewBox="0 0 15.056 14.674">
-                                  <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
-                                    d="M6.4,16.339l.746.746a.8.8,0,0,0,1.139,0l6.532-6.529a.8.8,0,0,0,0-1.139L8.283,2.884a.8.8,0,0,0-1.139,0L6.4,3.63a.807.807,0,0,0,.013,1.153L10.46,8.64H.8A.8.8,0,0,0,0,9.447v1.075a.8.8,0,0,0,.806.806H10.46L6.411,15.186A.8.8,0,0,0,6.4,16.339Z"
-                                    transform="translate(0.004 -2.647)" fill="currentColor" />
+                              @if ($event->inscription)
+                              <a class="btn btn-primary" href="{{ route('evento', $event->slug) }}">Inscribite <svg class="ml-1"
+                                  xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367"
+                                  viewBox="0 0 8.248 14.367">
+                                  <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
+                                    <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
+                                      <path id="Trazado_343" data-name="Trazado 343"
+                                        d="M124.777,6.288,118.622.151a.516.516,0,0,0-.728.73l5.788,5.772-5.788,5.772a.516.516,0,0,0,.729.73l6.154-6.137a.516.516,0,0,0,0-.73Z"
+                                        transform="translate(-117.742 0)" fill="#fff" stroke="#fff" stroke-width="1" />
+                                    </g>
+                                  </g>
                                 </svg>
-    
-                                </g>
-                                </g>
-                                </svg>
+                              </a>    
+                              @else
+                              <a class="btn btn-outline-secondary rounded-circle" href="{{ route('evento', $event->slug) }}"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="15.056" height="14.674"
+                                viewBox="0 0 15.056 14.674">
+                                <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
+                                  d="M6.4,16.339l.746.746a.8.8,0,0,0,1.139,0l6.532-6.529a.8.8,0,0,0,0-1.139L8.283,2.884a.8.8,0,0,0-1.139,0L6.4,3.63a.807.807,0,0,0,.013,1.153L10.46,8.64H.8A.8.8,0,0,0,0,9.447v1.075a.8.8,0,0,0,.806.806H10.46L6.411,15.186A.8.8,0,0,0,6.4,16.339Z"
+                                  transform="translate(0.004 -2.647)" fill="currentColor" />
+                              </svg>
                               </a>
-                              <p class="text-rosa-oscuro m-0">Organiza: FEDECOM </p>
+                              @endif
+                              @if (isset($event->host))
+                              <p class="text-rosa-oscuro m-0">Organiza: {{$event->host}} </p>
+                              @endif
                             </div>
-    
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+              @if ($loop->even)
                 </div>
               </div>
-              <div class="carousel-item py-5">
-                <div class="row px-md-3">
-                  <div class="col-sm-6">
-                    <div class="card rounded-0 border-0 shadow" style="max-width: 540px;">
-                      <div class="row no-gutters">
-                        <div class="col-md-5">
-                          <img class="h-100 img-fluid" src="{{ asset('img/tye-card-eventos.jpg') }}" alt="...">
-                        </div>
-                        <div class="col-md-7">
-                          <div class="card-body">
-                            <div>
-                              <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="12.567"
-                                  height="11.601" viewBox="0 0 12.567 11.601">
-                                  <g id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                                    transform="translate(-3.375 -4.5)">
-                                    <path id="Trazado_19" data-name="Trazado 19"
-                                      d="M14.734,6.75H13.526v.725a.242.242,0,0,1-.242.242H12.8a.242.242,0,0,1-.242-.242V6.75h-5.8v.725a.242.242,0,0,1-.242.242H6.033a.242.242,0,0,1-.242-.242V6.75H4.583A1.212,1.212,0,0,0,3.375,7.958v8.217a1.212,1.212,0,0,0,1.208,1.208H14.734a1.212,1.212,0,0,0,1.208-1.208V7.958A1.212,1.212,0,0,0,14.734,6.75Zm.242,9.063a.606.606,0,0,1-.6.6H4.946a.606.606,0,0,1-.6-.6V10.375a.242.242,0,0,1,.242-.242H14.734a.242.242,0,0,1,.242.242Z"
-                                      transform="translate(0 -1.283)" fill="#b46063" />
-                                    <path id="Trazado_20" data-name="Trazado 20"
-                                      d="M9.967,4.742A.242.242,0,0,0,9.725,4.5H9.242A.242.242,0,0,0,9,4.742v.725h.967Z"
-                                      transform="translate(-3.208)" fill="#b46063" />
-                                    <path id="Trazado_21" data-name="Trazado 21"
-                                      d="M25.717,4.742a.242.242,0,0,0-.242-.242h-.483a.242.242,0,0,0-.242.242v.725h.967Z"
-                                      transform="translate(-12.191)" fill="#b46063" />
-                                  </g>
-                                </svg>
-                                24 Nov 2020 | 14:00 hs</h5>
-                              <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="7.943"
-                                  height="11.911" viewBox="0 0 7.943 11.911">
-                                  <g id="Icon_feather-mic" data-name="Icon feather-mic" transform="translate(-7 -1)">
-                                    <path id="Trazado_5" data-name="Trazado 5"
-                                      d="M14.988,1.5A1.488,1.488,0,0,0,13.5,2.988V6.955a1.488,1.488,0,0,0,2.976,0V2.988A1.488,1.488,0,0,0,14.988,1.5Z"
-                                      transform="translate(-4.016 0)" fill="none" stroke="#b46063" stroke-linecap="round"
-                                      stroke-linejoin="round" stroke-width="1" />
-                                    <path id="Trazado_6" data-name="Trazado 6"
-                                      d="M14.443,15v.992a3.472,3.472,0,0,1-6.943,0V15" transform="translate(0 -9.036)"
-                                      fill="none" stroke="#b46063" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="1" />
-                                    <path id="Trazado_7" data-name="Trazado 7" d="M18,28.5v1.984"
-                                      transform="translate(-7.028 -18.073)" fill="none" stroke="#b46063"
-                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                    <path id="Trazado_8" data-name="Trazado 8" d="M12,34.5h3.968"
-                                      transform="translate(-3.012 -22.089)" fill="none" stroke="#b46063"
-                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                  </g>
-                                </svg>
-                                Mariana Pacheco</h5>
-                            </div>
-                            <h5 class="card-title text-marron-claro titulo-home">Cafecito: Especial planificación
-                              y productividad</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                              exercitation ullamco</p>
-                            <a class="btn btn-primary" href="">Inscribite <svg class="ml-1"
-                                xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367"
-                                viewBox="0 0 8.248 14.367">
-                                <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
-                                  <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
-                                    <path id="Trazado_343" data-name="Trazado 343"
-                                      d="M124.777,6.288,118.622.151a.516.516,0,0,0-.728.73l5.788,5.772-5.788,5.772a.516.516,0,0,0,.729.73l6.154-6.137a.516.516,0,0,0,0-.73Z"
-                                      transform="translate(-117.742 0)" fill="#fff" stroke="#fff" stroke-width="1" />
-                                  </g>
-                                </g>
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="card rounded-0 border-0 shadow" style="max-width: 540px;">
-                      <div class="row no-gutters">
-                        <div class="col-md-5">
-                          <img class="h-100 img-fluid" src="{{ asset('img/tye-card-eventos.jpg') }}" alt="...">
-                        </div>
-                        <div class="col-md-7">
-                          <div class="card-body">
-                            <div>
-                              <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="12.567"
-                                  height="11.601" viewBox="0 0 12.567 11.601">
-                                  <g id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                                    transform="translate(-3.375 -4.5)">
-                                    <path id="Trazado_19" data-name="Trazado 19"
-                                      d="M14.734,6.75H13.526v.725a.242.242,0,0,1-.242.242H12.8a.242.242,0,0,1-.242-.242V6.75h-5.8v.725a.242.242,0,0,1-.242.242H6.033a.242.242,0,0,1-.242-.242V6.75H4.583A1.212,1.212,0,0,0,3.375,7.958v8.217a1.212,1.212,0,0,0,1.208,1.208H14.734a1.212,1.212,0,0,0,1.208-1.208V7.958A1.212,1.212,0,0,0,14.734,6.75Zm.242,9.063a.606.606,0,0,1-.6.6H4.946a.606.606,0,0,1-.6-.6V10.375a.242.242,0,0,1,.242-.242H14.734a.242.242,0,0,1,.242.242Z"
-                                      transform="translate(0 -1.283)" fill="#b46063" />
-                                    <path id="Trazado_20" data-name="Trazado 20"
-                                      d="M9.967,4.742A.242.242,0,0,0,9.725,4.5H9.242A.242.242,0,0,0,9,4.742v.725h.967Z"
-                                      transform="translate(-3.208)" fill="#b46063" />
-                                    <path id="Trazado_21" data-name="Trazado 21"
-                                      d="M25.717,4.742a.242.242,0,0,0-.242-.242h-.483a.242.242,0,0,0-.242.242v.725h.967Z"
-                                      transform="translate(-12.191)" fill="#b46063" />
-                                  </g>
-                                </svg>
-                                24 Nov 2020 | 14:00 hs</h5>
-                              <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="7.943"
-                                  height="11.911" viewBox="0 0 7.943 11.911">
-                                  <g id="Icon_feather-mic" data-name="Icon feather-mic" transform="translate(-7 -1)">
-                                    <path id="Trazado_5" data-name="Trazado 5"
-                                      d="M14.988,1.5A1.488,1.488,0,0,0,13.5,2.988V6.955a1.488,1.488,0,0,0,2.976,0V2.988A1.488,1.488,0,0,0,14.988,1.5Z"
-                                      transform="translate(-4.016 0)" fill="none" stroke="#b46063" stroke-linecap="round"
-                                      stroke-linejoin="round" stroke-width="1" />
-                                    <path id="Trazado_6" data-name="Trazado 6"
-                                      d="M14.443,15v.992a3.472,3.472,0,0,1-6.943,0V15" transform="translate(0 -9.036)"
-                                      fill="none" stroke="#b46063" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="1" />
-                                    <path id="Trazado_7" data-name="Trazado 7" d="M18,28.5v1.984"
-                                      transform="translate(-7.028 -18.073)" fill="none" stroke="#b46063"
-                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                    <path id="Trazado_8" data-name="Trazado 8" d="M12,34.5h3.968"
-                                      transform="translate(-3.012 -22.089)" fill="none" stroke="#b46063"
-                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                                  </g>
-                                </svg>
-                                Mariana Pacheco</h5>
-                            </div>
-                            <h5 class="card-title text-marron-claro titulo-home">Cafecito: Especial planificación
-                              y productividad</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                              exercitation ullamco</p>
-                            <div class="d-md-flex align-items-baseline justify-content-between">
-                              <a class="btn btn-outline-secondary rounded-circle" href=""><svg
-                                  xmlns="http://www.w3.org/2000/svg" width="15.056" height="14.674"
-                                  viewBox="0 0 15.056 14.674">
-                                  <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
-                                    d="M6.4,16.339l.746.746a.8.8,0,0,0,1.139,0l6.532-6.529a.8.8,0,0,0,0-1.139L8.283,2.884a.8.8,0,0,0-1.139,0L6.4,3.63a.807.807,0,0,0,.013,1.153L10.46,8.64H.8A.8.8,0,0,0,0,9.447v1.075a.8.8,0,0,0,.806.806H10.46L6.411,15.186A.8.8,0,0,0,6.4,16.339Z"
-                                    transform="translate(0.004 -2.647)" fill="currentColor" />
-                                </svg>
-    
-                                </g>
-                                </g>
-                                </svg>
-                              </a>
-                              <p class="text-rosa-oscuro m-0">Organiza: FEDECOM </p>
-                            </div>
-    
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              @endif
+            @endforeach
             </div>
           </div>
           <div id="carouselTYE_mobile" class="carousel slide d-md-none" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselTYE_mobile" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselTYE_mobile" data-slide-to="1"></li>
+              @foreach ($events as $event)
+              <li data-target="#carouselTYE_mobile" data-slide-to="{{ $loop->index }}" @if ($loop->first) class="active" @endif ></li>
+              @endforeach
             </ol>
             <div class="carousel-inner" role="listbox">
-              <div class="carousel-item py-5 active">
+            @foreach ($events as $event)
+              <div class="carousel-item py-5 @if ($loop->first) active @endif">
                 <div class="card border-0 p-4">
                   <img src="{{ asset('img/tye-card-eventos.jpg" class="card-img-top') }}" alt="...">
                   <div class="card-body">
-                    <div>
-                      <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="12.567"
-                          height="11.601" viewBox="0 0 12.567 11.601">
-                          <g id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                            transform="translate(-3.375 -4.5)">
-                            <path id="Trazado_19" data-name="Trazado 19"
-                              d="M14.734,6.75H13.526v.725a.242.242,0,0,1-.242.242H12.8a.242.242,0,0,1-.242-.242V6.75h-5.8v.725a.242.242,0,0,1-.242.242H6.033a.242.242,0,0,1-.242-.242V6.75H4.583A1.212,1.212,0,0,0,3.375,7.958v8.217a1.212,1.212,0,0,0,1.208,1.208H14.734a1.212,1.212,0,0,0,1.208-1.208V7.958A1.212,1.212,0,0,0,14.734,6.75Zm.242,9.063a.606.606,0,0,1-.6.6H4.946a.606.606,0,0,1-.6-.6V10.375a.242.242,0,0,1,.242-.242H14.734a.242.242,0,0,1,.242.242Z"
-                              transform="translate(0 -1.283)" fill="#b46063" />
-                            <path id="Trazado_20" data-name="Trazado 20"
-                              d="M9.967,4.742A.242.242,0,0,0,9.725,4.5H9.242A.242.242,0,0,0,9,4.742v.725h.967Z"
-                              transform="translate(-3.208)" fill="#b46063" />
-                            <path id="Trazado_21" data-name="Trazado 21"
-                              d="M25.717,4.742a.242.242,0,0,0-.242-.242h-.483a.242.242,0,0,0-.242.242v.725h.967Z"
-                              transform="translate(-12.191)" fill="#b46063" />
-                          </g>
-                        </svg>
-                        24 Nov 2020 | 14:00 hs</h5>
-                      <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="7.943" height="11.911"
-                          viewBox="0 0 7.943 11.911">
-                          <g id="Icon_feather-mic" data-name="Icon feather-mic" transform="translate(-7 -1)">
-                            <path id="Trazado_5" data-name="Trazado 5"
-                              d="M14.988,1.5A1.488,1.488,0,0,0,13.5,2.988V6.955a1.488,1.488,0,0,0,2.976,0V2.988A1.488,1.488,0,0,0,14.988,1.5Z"
-                              transform="translate(-4.016 0)" fill="none" stroke="#b46063" stroke-linecap="round"
-                              stroke-linejoin="round" stroke-width="1" />
-                            <path id="Trazado_6" data-name="Trazado 6" d="M14.443,15v.992a3.472,3.472,0,0,1-6.943,0V15"
-                              transform="translate(0 -9.036)" fill="none" stroke="#b46063" stroke-linecap="round"
-                              stroke-linejoin="round" stroke-width="1" />
-                            <path id="Trazado_7" data-name="Trazado 7" d="M18,28.5v1.984"
-                              transform="translate(-7.028 -18.073)" fill="none" stroke="#b46063" stroke-linecap="round"
-                              stroke-linejoin="round" stroke-width="1" />
-                            <path id="Trazado_8" data-name="Trazado 8" d="M12,34.5h3.968"
-                              transform="translate(-3.012 -22.089)" fill="none" stroke="#b46063" stroke-linecap="round"
-                              stroke-linejoin="round" stroke-width="1" />
-                          </g>
-                        </svg>
-                        Mariana Pacheco</h5>
-                      <h5 class="card-title text-marron-claro titulo-home">Cafecito: Especial planificación
-                        y productividad</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco</p>
-                      <div class="d-md-flex align-items-baseline justify-content-between">
-                        <a class="btn btn-outline-secondary rounded-circle" href=""><svg
-                            xmlns="http://www.w3.org/2000/svg" width="15.056" height="14.674" viewBox="0 0 15.056 14.674">
-                            <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
-                              d="M6.4,16.339l.746.746a.8.8,0,0,0,1.139,0l6.532-6.529a.8.8,0,0,0,0-1.139L8.283,2.884a.8.8,0,0,0-1.139,0L6.4,3.63a.807.807,0,0,0,.013,1.153L10.46,8.64H.8A.8.8,0,0,0,0,9.447v1.075a.8.8,0,0,0,.806.806H10.46L6.411,15.186A.8.8,0,0,0,6.4,16.339Z"
-                              transform="translate(0.004 -2.647)" fill="currentColor" />
-                          </svg>
-    
-                          </g>
-                          </g>
-                          </svg>
-                        </a>
-                        <p class="text-rosa-oscuro m-0 mt-3 mt-md-0">Organiza: FEDECOM </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item py-5">
-                <div class="card border-0 p-4">
-                  <img src="{{ asset('img/tye-card-eventos.jpg" class="card-img-top') }}" alt="...">
-                  <div class="card-body">
-                    <div>
-                      <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="12.567"
-                          height="11.601" viewBox="0 0 12.567 11.601">
-                          <g id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
-                            transform="translate(-3.375 -4.5)">
-                            <path id="Trazado_19" data-name="Trazado 19"
-                              d="M14.734,6.75H13.526v.725a.242.242,0,0,1-.242.242H12.8a.242.242,0,0,1-.242-.242V6.75h-5.8v.725a.242.242,0,0,1-.242.242H6.033a.242.242,0,0,1-.242-.242V6.75H4.583A1.212,1.212,0,0,0,3.375,7.958v8.217a1.212,1.212,0,0,0,1.208,1.208H14.734a1.212,1.212,0,0,0,1.208-1.208V7.958A1.212,1.212,0,0,0,14.734,6.75Zm.242,9.063a.606.606,0,0,1-.6.6H4.946a.606.606,0,0,1-.6-.6V10.375a.242.242,0,0,1,.242-.242H14.734a.242.242,0,0,1,.242.242Z"
-                              transform="translate(0 -1.283)" fill="#b46063" />
-                            <path id="Trazado_20" data-name="Trazado 20"
-                              d="M9.967,4.742A.242.242,0,0,0,9.725,4.5H9.242A.242.242,0,0,0,9,4.742v.725h.967Z"
-                              transform="translate(-3.208)" fill="#b46063" />
-                            <path id="Trazado_21" data-name="Trazado 21"
-                              d="M25.717,4.742a.242.242,0,0,0-.242-.242h-.483a.242.242,0,0,0-.242.242v.725h.967Z"
-                              transform="translate(-12.191)" fill="#b46063" />
-                          </g>
-                        </svg>
-                        24 Nov 2020 | 14:00 hs</h5>
-                      <h5 class="font-weight-normal"><svg xmlns="http://www.w3.org/2000/svg" width="7.943" height="11.911"
-                          viewBox="0 0 7.943 11.911">
-                          <g id="Icon_feather-mic" data-name="Icon feather-mic" transform="translate(-7 -1)">
-                            <path id="Trazado_5" data-name="Trazado 5"
-                              d="M14.988,1.5A1.488,1.488,0,0,0,13.5,2.988V6.955a1.488,1.488,0,0,0,2.976,0V2.988A1.488,1.488,0,0,0,14.988,1.5Z"
-                              transform="translate(-4.016 0)" fill="none" stroke="#b46063" stroke-linecap="round"
-                              stroke-linejoin="round" stroke-width="1" />
-                            <path id="Trazado_6" data-name="Trazado 6" d="M14.443,15v.992a3.472,3.472,0,0,1-6.943,0V15"
-                              transform="translate(0 -9.036)" fill="none" stroke="#b46063" stroke-linecap="round"
-                              stroke-linejoin="round" stroke-width="1" />
-                            <path id="Trazado_7" data-name="Trazado 7" d="M18,28.5v1.984"
-                              transform="translate(-7.028 -18.073)" fill="none" stroke="#b46063" stroke-linecap="round"
-                              stroke-linejoin="round" stroke-width="1" />
-                            <path id="Trazado_8" data-name="Trazado 8" d="M12,34.5h3.968"
-                              transform="translate(-3.012 -22.089)" fill="none" stroke="#b46063" stroke-linecap="round"
-                              stroke-linejoin="round" stroke-width="1" />
-                          </g>
-                        </svg>
-                        Mariana Pacheco</h5>
-                      <h5 class="card-title text-marron-claro titulo-home">Cafecito: Especial planificación
-                        y productividad</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco</p>
-                      <div class="d-md-flex align-items-baseline justify-content-between">
-                        <a class="btn btn-primary" href="">Inscribite <svg xmlns="http://www.w3.org/2000/svg"
-                            width="8.248" height="14.367" viewBox="0 0 8.248 14.367">
-                            <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
-                              <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
-                                <path id="Trazado_343" data-name="Trazado 343"
-                                  d="M124.777,6.288,118.622.151a.516.516,0,0,0-.728.73l5.788,5.772-5.788,5.772a.516.516,0,0,0,.729.73l6.154-6.137a.516.516,0,0,0,0-.73Z"
-                                  transform="translate(-117.742 0)" fill="#fff" stroke="#fff" stroke-width="1" />
-                              </g>
+                    <h5 class="font-weight-normal">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12.567"
+                        height="11.601" viewBox="0 0 12.567 11.601">
+                        <g id="Icon_ionic-ios-calendar" data-name="Icon ionic-ios-calendar"
+                          transform="translate(-3.375 -4.5)">
+                          <path id="Trazado_19" data-name="Trazado 19"
+                            d="M14.734,6.75H13.526v.725a.242.242,0,0,1-.242.242H12.8a.242.242,0,0,1-.242-.242V6.75h-5.8v.725a.242.242,0,0,1-.242.242H6.033a.242.242,0,0,1-.242-.242V6.75H4.583A1.212,1.212,0,0,0,3.375,7.958v8.217a1.212,1.212,0,0,0,1.208,1.208H14.734a1.212,1.212,0,0,0,1.208-1.208V7.958A1.212,1.212,0,0,0,14.734,6.75Zm.242,9.063a.606.606,0,0,1-.6.6H4.946a.606.606,0,0,1-.6-.6V10.375a.242.242,0,0,1,.242-.242H14.734a.242.242,0,0,1,.242.242Z"
+                            transform="translate(0 -1.283)" fill="#b46063" />
+                          <path id="Trazado_20" data-name="Trazado 20"
+                            d="M9.967,4.742A.242.242,0,0,0,9.725,4.5H9.242A.242.242,0,0,0,9,4.742v.725h.967Z"
+                            transform="translate(-3.208)" fill="#b46063" />
+                          <path id="Trazado_21" data-name="Trazado 21"
+                            d="M25.717,4.742a.242.242,0,0,0-.242-.242h-.483a.242.242,0,0,0-.242.242v.725h.967Z"
+                            transform="translate(-12.191)" fill="#b46063" />
+                        </g>
+                      </svg>
+                      {{ $event->dateFormated() }} | {{ $event->timeFormated() }} hs
+                    </h5>
+                    <h5 class="font-weight-normal">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="7.943" height="11.911"
+                        viewBox="0 0 7.943 11.911">
+                        <g id="Icon_feather-mic" data-name="Icon feather-mic" transform="translate(-7 -1)">
+                          <path id="Trazado_5" data-name="Trazado 5"
+                            d="M14.988,1.5A1.488,1.488,0,0,0,13.5,2.988V6.955a1.488,1.488,0,0,0,2.976,0V2.988A1.488,1.488,0,0,0,14.988,1.5Z"
+                            transform="translate(-4.016 0)" fill="none" stroke="#b46063" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1" />
+                          <path id="Trazado_6" data-name="Trazado 6" d="M14.443,15v.992a3.472,3.472,0,0,1-6.943,0V15"
+                            transform="translate(0 -9.036)" fill="none" stroke="#b46063" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1" />
+                          <path id="Trazado_7" data-name="Trazado 7" d="M18,28.5v1.984"
+                            transform="translate(-7.028 -18.073)" fill="none" stroke="#b46063" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1" />
+                          <path id="Trazado_8" data-name="Trazado 8" d="M12,34.5h3.968"
+                            transform="translate(-3.012 -22.089)" fill="none" stroke="#b46063" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1" />
+                        </g>
+                      </svg>
+                      {{ $event->lecturer }}
+                    </h5>
+                    <h5 class="card-title text-marron-claro titulo-home">{{ $event->title }}</h5>
+                    <p class="card-text">{{ $event->description }}</p>
+
+                    <div class="d-md-flex align-items-baseline justify-content-between">
+                      @if ($event->inscription)
+                      <a class="btn btn-primary" href="{{ route('evento', $event->slug) }}">Inscribite <svg class="ml-1"
+                          xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367"
+                          viewBox="0 0 8.248 14.367">
+                          <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
+                            <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
+                              <path id="Trazado_343" data-name="Trazado 343"
+                                d="M124.777,6.288,118.622.151a.516.516,0,0,0-.728.73l5.788,5.772-5.788,5.772a.516.516,0,0,0,.729.73l6.154-6.137a.516.516,0,0,0,0-.73Z"
+                                transform="translate(-117.742 0)" fill="#fff" stroke="#fff" stroke-width="1" />
                             </g>
-                          </svg>
-                        </a>
-                      </div>
+                          </g>
+                        </svg>
+                      </a>    
+                      @else
+                      <a class="btn btn-outline-secondary rounded-circle" href="{{ route('evento', $event->slug) }}"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="15.056" height="14.674"
+                        viewBox="0 0 15.056 14.674">
+                        <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
+                          d="M6.4,16.339l.746.746a.8.8,0,0,0,1.139,0l6.532-6.529a.8.8,0,0,0,0-1.139L8.283,2.884a.8.8,0,0,0-1.139,0L6.4,3.63a.807.807,0,0,0,.013,1.153L10.46,8.64H.8A.8.8,0,0,0,0,9.447v1.075a.8.8,0,0,0,.806.806H10.46L6.411,15.186A.8.8,0,0,0,6.4,16.339Z"
+                          transform="translate(0.004 -2.647)" fill="currentColor" />
+                      </svg>
+                      </a>
+                      @endif
+                      @if (isset($event->host))
+                      <p class="text-rosa-oscuro m-0">Organiza: {{$event->host}} </p>
+                      @endif
                     </div>
                   </div>
                 </div>
               </div>
+            @endforeach
             </div>
           </div>
         </div>

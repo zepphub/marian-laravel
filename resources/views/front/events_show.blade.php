@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
 @endsection
 
-@section('title')Evento? - @endsection
+@section('title'){{$event->title}} - @endsection
 
 @section('content')
   <div id="plantilla-evento" class="contenedor-form-home py-5">
@@ -12,23 +12,20 @@
       <div class="row">
         <div class="col-md-7">
           <div class="">
-            <h4 class="titulo-home">Cafecito: Especial planificación y
-              productividad</h4>
-            <p class="mt-3">Conversamos sobre tu público objetivo. Identificamos al cliente ideal de tu marca generando
-              estrategias para que logres enamorar a tu audiencia, creando contenido auténtico para tus canales
-              digitales, y propuestas acordes a sus principales intereses.</p>
+            <h4 class="titulo-home">{{$event->title}}</h4>
+            <div class="mt-3">{{$event->description}}</div>
             <div class="row">
               <div class="col-md-4 d-flex align-items-center">
                 <img src="{{ asset('img/evento-date-icon.svg') }}" alt="">
-                <h5 class="font-weight-normal m-0 text-dark-gray ml-2">24 Nov 2020</h5>
+                <h5 class="font-weight-normal m-0 text-dark-gray ml-2">{{$event->dateFormated() }}</h5>
               </div>
               <div class="col-md-4 d-flex align-items-center my-3 my-md-0">
                 <img src="{{ asset('img/evento-time-icon.svg') }}" alt="">
-                <h5 class="font-weight-normal m-0 text-dark-gray ml-2">14:00 hs</h5>
+                <h5 class="font-weight-normal m-0 text-dark-gray ml-2">{{$event->timeFormated() }} hs</h5>
               </div>
               <div class="col-md-4 d-flex align-items-center">
                 <img src="{{ asset('img/evento-person-icon.svg') }}" alt="">
-                <h5 class="font-weight-normal m-0 text-dark-gray ml-2">Mariana Pacheco</h5>
+                <h5 class="font-weight-normal m-0 text-dark-gray ml-2">{{$event->lecturer}}</h5>
               </div>
             </div>
 
@@ -51,13 +48,7 @@
                 <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne"
                   data-parent="#accordionExample">
                   <div class="card-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-
-                    - sed do eiusmod tempor <br>
-                    - incididunt ut labore et dolore <br>
-                    - magna aliqua. <br> <br>
-
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    {{$event->about}}
                   </div>
                 </div>
               </div>
