@@ -123,7 +123,6 @@ class PostController extends Controller
       $post->body = $request->get('body');
       $post->slug = Str::slug($post->title);
       $post->category_id = $request->get('category_id');
-      $duplicate = Post::where('slug', $post->slug)->first();
       if (!empty($request->file('image'))) {
         $extension = $request->file('image')->getClientOriginalExtension();
         $image_path = $request->file('image')->storeAs('img/posts', $post->id.".".$extension, "public");
