@@ -6,7 +6,7 @@
           <div class="col-md-12 text-center text-md-left">
             <div class="d-md-flex flex-row align-items-center justify-content-between">
               <h2 class="ml-3 ml-md-0">Newsletter</h2>
-              <a style="white-space: nowrap;" href="{{ route('admin.newsletter') }}"><button class="btn btn-primary mt-3 mt-md-0">Descargar
+              <a style="white-space: nowrap;" href="{{ route('admin.newsletter.csv') }}"><button class="btn btn-primary mt-3 mt-md-0">Descargar
                   lista</button></a>
             </div>
           </div>
@@ -24,86 +24,20 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>María</td>
-                      <td>Lopez</td>
-                      <td>mail@gmail.com</td>
-                      <td>3516012877</td>
+                    @foreach ($subscriptions as $subscription)
+                    <tr @if (!$loop->first) scope="row" @endif>
+                      <td>{{$subscription->firstname}}</td>
+                      <td>{{$subscription->lastname}}</td>
+                      <td>{{$subscription->email}}</td>
+                      <td>{{$subscription->whatsapp}}</td>
                     </tr>
-                    <tr>
-                      <td scope="row">María</td>
-                      <td>Lopez</td>
-                      <td>mail@gmail.com</td>
-                      <td>3516012877</td>
-                    </tr>
-                    <tr>
-                      <td scope="row">María</td>
-                      <td>Lopez</td>
-                      <td>mail@gmail.com</td>
-                      <td>3516012877</td>
-                    </tr>
-                    <tr>
-                      <td scope="row">María</td>
-                      <td>Lopez</td>
-                      <td>mail@gmail.com</td>
-                      <td>3516012877</td>
-                    </tr>
-                    <tr>
-                      <td scope="row">María</td>
-                      <td>Lopez</td>
-                      <td>mail@gmail.com</td>
-                      <td>3516012877</td>
-                    </tr>
-                    <tr>
-                      <td scope="row">María</td>
-                      <td>Lopez</td>
-                      <td>mail@gmail.com</td>
-                      <td>3516012877</td>
-                    </tr>
-                    <tr>
-                      <td scope="row">María</td>
-                      <td>Lopez</td>
-                      <td>mail@gmail.com</td>
-                      <td>3516012877</td>
-                    </tr>
-                    <tr>
-                      <td scope="row">María</td>
-                      <td>Lopez</td>
-                      <td>mail@gmail.com</td>
-                      <td>3516012877</td>
-                    </tr>
+                    @endforeach
                   </tbody>
                 </table>
             </div>
           </div>
         </div>
 
-        <div class="row mt-5">
-          <div class="col-md-12">
-            <nav aria-label="...">
-              <ul class="pagination pagination-blog">
-                <li class="page-item">
-                  <a class="page-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                      fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd"
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                    </svg></a>
-                </li>
-                <li class="page-item active" aria-current="page">
-                  <a href="#" class="page-link">1</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                      fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd"
-                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                    </svg></a>
-                </li>
-              </ul>
-            </nav>
-
-          </div>
-        </div>
+      {{ $subscriptions->links() }}
       </div>
 @endsection

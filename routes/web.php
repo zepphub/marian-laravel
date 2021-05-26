@@ -52,13 +52,13 @@ Route::prefix('/admin')
 
     Route::get('/servicios', function(){ return view('admin.services'); })->name('services');
 
-    Route::get('/newsletter', function(){ return view('admin.newsletter'); })->name('newsletter');
+    Route::get('/newsletter', [App\Http\Controllers\NewsletterSubscriptionController::class, 'index'])->name('newsletter');
+    Route::get('/newsletter/csv', [App\Http\Controllers\NewsletterSubscriptionController::class, 'csv'])->name('newsletter.csv');
 
     Route::group(['prefix'=>'csv'], function(){
       Route::get('/tests', function(){ return view('admin.csv.tests'); })->name('csv.tests');
       Route::get('/forms', function(){ return view('admin.csv.forms'); })->name('csv.forms');
       Route::get('/resources', function(){ return view('admin.csv.resources'); })->name('csv.resources');
-      Route::get('/suscriptors', function(){ return view('admin.csv.suscriptors'); })->name('csv.suscriptors');
     });
 
     Route::get('/mentorships/tabtwo', function(){ return view('admin.mentorships_tabtwo'); })->name('mentorships.tabtwo');

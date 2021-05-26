@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class NewsletterSubscription extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'id',
+        'firstname',
+        'lastname',
+        'email',
+        'whatsapp',
+    ];
 }

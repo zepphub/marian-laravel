@@ -14,7 +14,9 @@ class NewsletterSubscriptionController extends Controller
      */
     public function index()
     {
-        //
+        $subscriptions = NewsletterSubscription::paginate(3);
+
+        return view('admin.newsletter', ['subscriptions'=>$subscriptions]);
     }
 
     /**
@@ -81,5 +83,33 @@ class NewsletterSubscriptionController extends Controller
     public function destroy(NewsletterSubscription $newsletterSubscription)
     {
         //
+    }
+
+
+    public function csv()
+    {
+      $subscriptions = NewsletterSubscription::all('firstname','lastname','email','whatsapp');
+
+      $headers = array(
+              "Content-type" => "text/csv",
+              "Pragma" => "no-cache",
+              "Cache-Control" => "must-revalidate, post-check=0, pre-check=0",
+              "Expires" => "0"
+          );
+
+      $columns = array('Nombre', 'Apellido', 'E-mail', 'Whatsapp');
+
+      $callback = function() use ($subscriptions, $columns)
+      {
+        $file = fopen('php://output', 'w');
+        fputcsv($file, $columns);
+
+        foreach($subscriptions as $subscription) {
+            fputcsv($file, $subscription->toArray());
+        }
+        fclose($file);
+      };
+
+      return response()->streamDownload($callback, 'newsletter-' . date('d-m-Y-H:i:s').'.csv', $headers);
     }
 }
