@@ -32,7 +32,7 @@ Route::get('/incrip-exitosa', function(){ return view('front.incrip-exitosa'); }
 Route::get('/mentoria', function(){ return view('front.mentoria'); })->name('mentoria');
 Route::get('/mentoria/mentoria-grupal', [App\Http\Controllers\MentorshipController::class, 'showGroup'])->name('mentoria-grupal');
 Route::get('/mentoria/asesoria-personalizada', [App\Http\Controllers\MentorshipController::class, 'showSingle'])->name('programa-intensivo');
-Route::get('/recursos', function(){ return view('front.recursos'); })->name('recursos');
+Route::get('/recursos', [App\Http\Controllers\ResourceController::class, 'frontIndex'])->name('recursos');
 Route::get('/servicios', function(){ return view('front.servicios'); })->name('servicios');
 Route::get('/sobre-mi', function(){ return view('front.sobre-mi'); })->name('sobre-mi');
 Route::get('/talleres-y-eventos', [App\Http\Controllers\EventController::class, 'frontIndex'])->name('talleres-y-eventos');

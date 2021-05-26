@@ -83,16 +83,13 @@
             </button>
           </div>
         </div>
+        @foreach ($resources as $resource)
         <div class="col-md-4 my-3">
-          <div
-            class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">
-            <h4 class="titulo-recurso-descargable">Pack de planners para organizar el día a día de tu emprendimiento
-            </h4>
-            <p class="text-recurso-descargable my-3 my-md-0">• Calendario A3 <br>
-              • Planner semanal <br>
-              • Planner día</p>
+          <div class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">
+            <h4 class="titulo-recurso-descargable">{{$resource->title}}</h4>
+            <div>{{$resource->description}}</div>
             <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" data-toggle="modal"
-              data-target="#staticBackdrop">Descargar pack <svg xmlns="http://www.w3.org/2000/svg" width="13.414"
+              data-target="#staticBackdrop">{{$resource->button}}<svg xmlns="http://www.w3.org/2000/svg" width="13.414"
                 height="13.074" viewBox="0 0 13.414 13.074">
                 <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
                   d="M5.7,14.846l.665.665a.716.716,0,0,0,1.015,0L13.2,9.693a.716.716,0,0,0,0-1.015l-5.82-5.82a.716.716,0,0,0-1.015,0L5.7,3.523A.719.719,0,0,0,5.712,4.55L9.32,7.987H.715A.717.717,0,0,0,0,8.705v.958a.717.717,0,0,0,.719.719h8.6L5.712,13.819A.714.714,0,0,0,5.7,14.846Z"
@@ -101,6 +98,7 @@
             </button>
           </div>
         </div>
+        @endforeach
         <div class="col-md-4 my-3">
           <div
             class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">

@@ -14,9 +14,19 @@ class ResourceController extends Controller
      */
     public function index()
     {
-        //$resources = Resource::all();
-        //return view('admin.resources_list', ['resources'=>$resources]);
-        return view('admin.resources_index');
+        $resources = Resource::paginate(10);
+        return view('admin.resources_index', ['resources'=>$resources]);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function frontIndex()
+    {
+        $resources = Resource::all();
+        return view('front.recursos', ['resources'=>$resources]);
     }
 
     /**
@@ -37,7 +47,22 @@ class ResourceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $resource = new Resource();
+      $resource->title = $request->get('title');
+      $resource->description = $request->get('description');
+      $resource->button = $request->get('button');
+      $resource->save(); /* pre save to get resource id */
+
+      $extension = $request->file('image')->getClientOriginalExtension();
+      $image_path = $request->file('image')->storeAs('img/resources', $resource->id.".".$extension, "public");
+      $resource->image = "storage/".$image_path;
+      $filename = $request->file('file')->getClientOriginalName();
+      $filename_path = $request->file('file')->storeAs('files/', $filename, "public");
+      $resource->file = "storage/".$filename_path;
+      $resource->save();
+      $message = 'Nuevo recurso "'.$resource->title.'" creado.';
+
+      return redirect()->route('admin.resources.index')->withMessage($message);
     }
 
     /**
@@ -48,7 +73,6 @@ class ResourceController extends Controller
      */
     public function show(Resource $resource)
     {
-        //
     }
 
     /**
@@ -59,7 +83,7 @@ class ResourceController extends Controller
      */
     public function edit(Resource $resource)
     {
-        //
+        return view('admin.resources_edit', ['resource'=>$resource]);
     }
 
     /**
@@ -71,7 +95,33 @@ class ResourceController extends Controller
      */
     public function update(Request $request, Resource $resource)
     {
-        //
+      $resource->title = $request->get('title');
+      $resource->description = $request->get('description');
+      $resource->button = $request->get('button');
+      $resource->save(); /* pre save to get resource id */
+
+      if (!empty($request->file('image'))) {
+        $extension = $request->file('image')->getClientOriginalExtension();
+        if(is_file($resource->image)){
+          unlink($resource->image);
+        };
+
+        $image_path = $request->file('image')->storeAs('img/resources', $resource->id.".".$extension, "public");
+        $resource->image = "storage/".$image_path;
+      }
+      if (!empty($request->file('file'))) {
+        $filename = $request->file('file')->getClientOriginalName();
+        if(is_file($resource->file)){
+          unlink($resource->file);
+        };
+        $filename_path = $request->file('file')->storeAs('files/', $filename, "public");
+        $resource->file = "storage/".$filename_path;
+      }
+
+      $resource->save();
+      $message = 'Recurso "'.$resource->title.'" actualizado.';
+
+      return redirect()->route('admin.resources.index')->withMessage($message);
     }
 
     /**
@@ -82,6 +132,15 @@ class ResourceController extends Controller
      */
     public function destroy(Resource $resource)
     {
-        //
+      $message = 'Recurso "'.$resource->title.'" borrado.';
+      if(is_file($resource->image)){
+        unlink($resource->image);
+      };
+      if(is_file($resource->file)){
+        unlink($resource->file);
+      };
+      $resource->delete();
+
+      return redirect()->route('admin.posts.index')->withMessage($message);
     }
 }

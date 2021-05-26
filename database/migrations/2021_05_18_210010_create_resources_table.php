@@ -18,8 +18,9 @@ class CreateResourcesTable extends Migration
             $table->string("title");
             $table->text("description");
             $table->string("button");
-            $table->string("image");
-            $table->string("file");
+            $table->string("image")->default('');
+            $table->string("file")->default('');
+            $table->integer("downloads")->default(0);
             $table->timestamps();
         });
     }

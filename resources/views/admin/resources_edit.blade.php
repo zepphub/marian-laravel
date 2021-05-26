@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="align-items-md-center d-flex flex-column flex-md-row justify-content-between my-4 my-md-0">
-              <h2 class="order-2 order-md-1">Crear Recurso</h2>
+              <h2 class="order-2 order-md-1">Editar Recurso</h2>
               <a class="order-1 order-md-2" href="{{ route('admin.resources.index') }}"><button class="btn btn-outline-secondary"><svg
                     class="mr-2" style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="7" height="10"
                     viewBox="0 0 7.771 11.157">
@@ -17,22 +17,23 @@
             </div>
           </div>
         </div>
-        <form action="{{ route('admin.resources.store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('admin.resources.update', $resource) }}" method="post" enctype="multipart/form-data">
         @csrf
+        @method('PATCH')
         <div class="row mt-4">
           <div class="col-md-8">
               <h5 class="text-marron-claro font-weight-normal mb-2">Título del recurso</h5>
-              <input class="form-control form-control-lg rounded-pill" type="text" name="title">
+              <input class="form-control form-control-lg rounded-pill" type="text" name="title" value="{{ old('title') ?? $resource->title }}">
               @error('title')
               <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
               @enderror
               <h5 class="mt-5 text-marron-claro font-weight-normal mb-2">Descripción</h5>
               <textarea class="form-control" name="description" cols="30"
-                rows="10"></textarea>
+                rows="10">{{ old('description') ?? $resource->description }}</textarea>
               <div class="row mt-4 mt-md-5">
                 <div class="col-md-12">
                   <h5 class="text-marron-claro text-medium mb-2">Texto botón</h5>
-                  <input class="form-control form-control-lg rounded-pill" name="button" type="text">
+                  <input class="form-control form-control-lg rounded-pill" name="button" type="text" value="{{ old('button') ?? $resource->button }}">
                 </div>
               </div>
               <div class="row mt-4 mt-md-5">
@@ -40,7 +41,7 @@
                   <h5 class="text-marron-claro text-medium m-0">Archivo descargable</h5>
                   <div class="d-md-flex align-items-center">
                     <label for=inputFile id=fileUpload class="btn btn-primary mr-md-4">Subir archivo</label>
-                    <p id=fileName class="m-0">Sin archivo...</p>
+                    <p id=fileName class="m-0">{{ basename($resource->file)}}</p>
                     <input id=inputFile type="file" name="file" style="display: none;">
                     <a class="btn rounded-circle" onclick='deleteFile()'><svg xmlns="http://www.w3.org/2000/svg" width="35.973"
                         height="38.255" viewBox="0 0 35.973 38.255">
@@ -60,7 +61,7 @@
           </div>
           <div class="col-md-4">
             <div class="text-center mt-5 mt-md-0">
-              <img id="preview-image" class="d-block img-fluid mx-auto" src="/img/150.png" alt="">
+              <img id="preview-image" class="d-block img-fluid mx-auto" src="{{ asset($resource->image)}}" alt="">
               <input type="file" name="image" id="image-upload" value="{{ old('image') }}" style="display: none;" />
               @error('image')
               <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
