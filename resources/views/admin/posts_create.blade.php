@@ -30,6 +30,7 @@
               @if ($errors->first('title') == Null)
               <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
               @endif
+              @enderror
               <h5 class="mt-5 text-marron-claro font-weight-normal mb-2">Cuerpo del artículo</h5>
               <textarea class="form-control" id="post-body" name="body" id="" cols="30" rows="10">{{ old('body') }}</textarea>
               @error('body')
@@ -86,25 +87,17 @@ tinymce.init({
   editor_css: 'marian',
 });
 </script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type="text/javascript">
-      
+
 $(document).ready(function (e) {
- 
-   
-   $('#image-upload').change(function(){
-            
+$('#image-upload').change(function(){
     let reader = new FileReader();
- 
-    reader.onload = (e) => { 
- 
-      $('#preview-image').attr('src', e.target.result); 
+    reader.onload = (e) => {
+      $('#preview-image').attr('src', e.target.result);
     }
- 
-    reader.readAsDataURL(this.files[0]); 
-   
+    reader.readAsDataURL(this.files[0]);
    });
-   
+
 });
  
 </script>
