@@ -7,7 +7,9 @@ $servicios_item = \Request::route()->getName() == 'admin.counselings.index' ||
 @endphp
 <div class="px-3 py-5 h-100 dashboard-fixed d-flex flex-column justify-content-between">
     <div>
+        <a href="{{ route('admin.index') }}">
         <img class="img-fluid w-75" src="{{ asset('img/logo-dash-blanco.svg')}}" alt="" />
+        </a>
         <!-- A vertical navbar -->
         <h4 class="mt-4 mb-2">Menú</h4>
         <hr class="border-white border-2 my-3 mx-0">
