@@ -73,10 +73,10 @@ class MentorshipController extends Controller
      */
     public function update(Request $request, Mentorship $mentorship)
     {
-      $mentorship->price_ars = $request->get('price_ars');
-      $mentorship->price_usd = $request->get('price_usd');
+      $mentorship->service->price_ars = $request->get('price_ars');
+      $mentorship->service->price_usd = $request->get('price_usd');
 
-      $mentorship->save();
+      $mentorship->service->save();
 
 
       for ($i = 0; $i < $mentorship->descriptions->count(); $i++){

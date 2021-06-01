@@ -99,7 +99,7 @@
       <div class="col-md-7">
         <h4 class="titulo-home mb-3">Sobre la experiencia</h4>
         {!! $mentorship->descriptions[0]->content !!}
-        <h5 class="font-weight-normal titulo-home mt-3">Costo: <span class="font-weight-bold">${{intval($mentorship->price_ars)}} / USD {{intval($mentorship->price_usd)}}</span></h5>
+        <h5 class="font-weight-normal titulo-home mt-3">Costo: <span class="font-weight-bold">{{ $mentorship->service->price() }}</span></h5>
         <a class="btn btn-primary mt-4" href="">Aplicar al programa</a>
       </div>
       <div class="col-md-5 mt-4 mt-md-0 bg-nude rounded">

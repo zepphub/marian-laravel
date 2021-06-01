@@ -83,10 +83,11 @@ class CounselingController extends Controller
     public function update(CounselingUpdateRequest $request, Counseling $counseling)
     {
       $counseling->description = $request->get('description');
-      $counseling->price_ars = $request->get('price_ars');
-      $counseling->price_usd = $request->get('price_usd');
+      $counseling->service->price_ars = $request->get('price_ars');
+      $counseling->service->price_usd = $request->get('price_usd');
       $counseling->video = $request->get('video');
 
+      $counseling->service->save();
       $counseling->save();
 
       for ($i = 0; $i < $counseling->descriptions->count(); $i++){

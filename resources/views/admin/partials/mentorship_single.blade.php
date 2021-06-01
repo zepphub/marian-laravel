@@ -10,7 +10,7 @@ aria-labelledby="mentoria-tab-{{ $mentorship->id }}">
       <div class="d-flex align-items-center">
         <h4 class="m-0 mr-3 text-rosa-claro">
         Precio</h4><input form="editForm-{{ $mentorship->id }}" name="price_ars"  class="form-control form-control-lg rounded-pill" type="text"
-        value="{{ $mentorship->price_ars }}">
+        value="{{ $mentorship->service->price_ars }}">
       </div>
     </div>
     <div class="col-md-3 mt-3 mt-md-0">
@@ -18,7 +18,7 @@ aria-labelledby="mentoria-tab-{{ $mentorship->id }}">
         <h4 style="white-space: nowrap;" class=
         "m-0 mr-3 text-rosa-claro">Precio U$D</h4><input form="editForm-{{ $mentorship->id }}" name="price_usd" class=
         "form-control form-control-lg rounded-pill" type="text"
-        value="{{ $mentorship->price_usd }}">
+        value="{{ $mentorship->service->price_usd }}">
       </div>
     </div>
   </div>

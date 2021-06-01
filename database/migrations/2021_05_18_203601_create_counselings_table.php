@@ -15,15 +15,15 @@ class CreateCounselingsTable extends Migration
     {
         Schema::create('counselings', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->unsignedBigInteger('service_id');
             $table->text('description');
             $table->text('marked_description')->nullable();
-            $table->unsignedDecimal('price_ars');
-            $table->unsignedDecimal('price_usd');
             $table->string('icon');
             $table->string('image');
             $table->string('video');
-            $table->timestamps();
+        });
+        Schema::table('counselings', function(Blueprint $table) {
+            $table->foreign('service_id')->references('id')->on('services');
         });
     }
 

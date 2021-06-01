@@ -27,7 +27,7 @@
                             @foreach ($mentorships as $mentorship)
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link @if ($mentorship->id == $current_mentorship) active @endif border-0 text-marron-claro font-weight-bold" data-toggle="tab" id="mentoria-tab-{{ $mentorship->id }}" href="#mentoria-tab-{{ $mentorship->id }}-content"
-                                >{{ $mentorship->name }}</a>
+                                >{{ $mentorship->service->name }}</a>
                             </li>
                             @endforeach
                         </ul>

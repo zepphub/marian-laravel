@@ -41,7 +41,7 @@
           compartiendo esta experiencia en comunidad.
         </p>
         <h4 class="text-medium">¡Quiero conocer más detalles!</h4>
-        <a href=""><button class="btn btn-primary mt-3">¡quiero conocer detalles y aplicar al programa! <svg
+        <a href="{{ route( 'carrito.add', $mentorship->service) }}" class="btn btn-primary mt-3">¡quiero conocer detalles y aplicar al programa! <svg
               class="ml-2" xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367" viewBox="0 0 8.248 14.367">
               <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
                 <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
@@ -51,7 +51,7 @@
                 </g>
               </g>
             </svg>
-          </button></a>
+          </a>
       </div>
     </div>
   </div>
@@ -231,7 +231,7 @@
         <div class="row">
           <div class="d-flex align-items-center">
             <h5 class="subrayado-subtitulo pb-1 m-0">Costo del programa grupal</h5>
-            <h4 class="font-weight-bold titulo-home ml-md-3">${{intval($mentorship->price_ars)}} / USD {{intval($mentorship->price_usd)}}</h4>
+            <h4 class="font-weight-bold titulo-home ml-md-3">{{ $mentorship->service->price() }}</h4>
           </div>
         </div>
       </div>

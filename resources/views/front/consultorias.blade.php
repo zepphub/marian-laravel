@@ -180,7 +180,7 @@
           <li class="nav-item text-center" role="presentation">
             <a class="@if ($loop->first)active @endif align-items-center d-flex flex-column nav-link h-100" id="pills-{{ $loop->iteration }}-tab" data-toggle="pill"
               href="#pills-{{ $loop->iteration }}" role="tab" aria-controls="pills-{{ $loop->iteration }}" aria-selected="{{ $loop->first ? true : false }}"><img class="mb-2"
-                src="{{ asset($counseling->icon) }}" alt="">{{$counseling->name}}</a>
+                src="{{ asset($counseling->icon) }}" alt="">{{$counseling->service->name}}</a>
           </li>
           @endforeach
         </ul>
@@ -190,7 +190,7 @@
             <div class="row">
               <div class="col-md-6">
                 <h6 class="text-marron-claro text-medium">Precio</h6>
-                <h4 class="text-coral titulo-home">${{ intval($counseling->price_ars) }} / USD {{ intval($counseling->price_usd) }}</h4>
+                <h4 class="text-coral titulo-home">{{ $counseling->service->price() }}</h4>
                 <p class="my-4">{!! $counseling->description !!}</p>
                 <h6>{{ $counseling->marked_description }}</h6>
                 <ul class="list-unstyled">
@@ -209,11 +209,11 @@
                   @endforeach
                 </ul>
                 <h5 class="text-primary mt-4 mb-4">¡Quiero reservar mi encuentro!</h5>
-                <a class="btn btn-primary mb-4 mb-md-0" href="">Click aquí</a>
+                <a class="btn btn-primary mb-4 mb-md-0" href="{{ route('carrito.add', $counseling->service) }}">Click aquí</a>
               </div>
               <div class="col-md-6">
                 <div class="p-4 p-md-0 d-flex flex-column align-items-center justify-content-center h-100 rounded" style="background:url({{asset($counseling->image)}});background-repeat:no-repeat;background-size:cover;background-position:center center;">
-                  <h4 class="text-white text-medium titulo-home">{{ $counseling->name }}</h4>
+                  <h4 class="text-white text-medium titulo-home">{{ $counseling->service->name }}</h4>
                   <a class="btn btn-sm p-2 btn-white text-primary rounded-pill mt-3" href="">¡Quiero reservar mi
                     encuentro!</a>
                 </div>

@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Service;
 use App\Models\Mentorship;
 use App\Models\MentorshipDescription;
 
@@ -15,16 +16,27 @@ class MentorshipSeeder extends Seeder
      */
     public function run()
     {
-        $mentorship_list = [
+        $mentorship_service_list = [
             [
+               'id'=>'6',
                'name'=>'Asesoría Personalizada',
                'price_ars'=>'777',
                'price_usd'=>'8',
             ],
             [
+               'id'=>'7',
                'name'=>'Mentoría Grupal',
                'price_ars'=>'555',
                'price_usd'=>'6',
+            ],
+        ];
+
+        $mentorship_list = [
+            [
+               'service_id'=>'6',
+            ],
+            [
+               'service_id'=>'7',
             ],
         ];
 
@@ -63,7 +75,9 @@ class MentorshipSeeder extends Seeder
             ],
         ];
 
-
+        foreach ($mentorship_service_list as $key => $value) {
+            Service::create($value);
+        }
         foreach ($mentorship_list as $key => $value) {
             Mentorship::create($value);
         }

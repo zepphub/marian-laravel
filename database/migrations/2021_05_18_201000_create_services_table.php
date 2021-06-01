@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMentorshipsTable extends Migration
+class CreateServicesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateMentorshipsTable extends Migration
      */
     public function up()
     {
-        Schema::create('mentorships', function (Blueprint $table) {
+        Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('service_id');
-        });
-        Schema::table('mentorships', function(Blueprint $table) {
-            $table->foreign('service_id')->references('id')->on('services');
+            $table->string('name');
+            $table->unsignedDecimal('price_ars');
+            $table->unsignedDecimal('price_usd');
         });
     }
 
@@ -29,6 +28,6 @@ class CreateMentorshipsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mentorships');
+        Schema::dropIfExists('services');
     }
 }

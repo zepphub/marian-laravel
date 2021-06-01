@@ -20,7 +20,7 @@
                           <input type=hidden name="counseling-id" value="{{ $counseling->id }}">
                         </form>
                         <div class="shadow rounded-lg p-4 mt-5 @if ($loop->first) mt-md-0 @endif">
-                            <h4 class="m-0"><img class="mr-3" src="{{ asset($counseling->icon) }}" width=47 height=45.294 >{{ $counseling->name }}</h4>
+                            <h4 class="m-0"><img class="mr-3" src="{{ asset($counseling->icon) }}" width=47 height=45.294 >{{ $counseling->service->name }}</h4>
                             <div class="row">
                                 <div class="col-md-9">
                                     <div class="mr-0 mr-md-5">
@@ -47,7 +47,7 @@
                                                     <div class="col-md-6">
                                                         <h4>Precio</h4><input
                                                             class="form-control form-control-lg rounded-pill"
-                                                            type="text" name="price_ars" form="editForm-{{ $counseling->id }}" value="{{ $counseling->price_ars }}">
+                                                            type="text" name="price_ars" form="editForm-{{ $counseling->id }}" value="{{ $counseling->service->price_ars }}">
                                                         @error('price_ars')
                                                         @if ( $errors->first('counseling-id') == $counseling->id )
                                                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
@@ -57,7 +57,7 @@
                                                     <div class="col-md-6 mt-3 mt-md-0">
                                                         <h4>Precio U$D</h4><input
                                                             class="form-control form-control-lg rounded-pill"
-                                                            type="text" name="price_usd" form="editForm-{{ $counseling->id }}" value="{{ $counseling->price_usd }}">
+                                                            type="text" name="price_usd" form="editForm-{{ $counseling->id }}" value="{{ $counseling->service->price_usd }}">
                                                         @error('price_usd')
                                                         @if ( $errors->first('counseling-id') == $counseling->id )
                                                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
