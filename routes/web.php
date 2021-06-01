@@ -37,9 +37,10 @@ Route::get('/servicios', function(){ return view('front.servicios'); })->name('s
 Route::get('/sobre-mi', function(){ return view('front.sobre-mi'); })->name('sobre-mi');
 Route::get('/talleres-y-eventos', [App\Http\Controllers\EventController::class, 'frontIndex'])->name('talleres-y-eventos');
 Route::get('/talleres-y-eventos/{event}', [App\Http\Controllers\EventController::class, 'frontShow'])->name('evento');
-Route::get('/test', function(){ return view('front.test'); })->name('test');
-Route::get('/test-form', function(){ return view('front.test-form'); })->name('test-form');
 
+Route::get('/test', function(){ return view('front.test'); })->name('test');
+Route::get('/test-formulario', function(){ return view('front.test-form'); })->name('test-formulario');
+Route::post('/test-formulario', [App\Http\Controllers\TestResultController::class, 'store'] )->name('test-formulario-send');
 
 /* Admin Routes */
 

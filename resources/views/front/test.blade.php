@@ -18,7 +18,7 @@
             <p>Para comenzar, te propongo que hagas un test sin costo para ayudarte a identificar en qué etapa estás y
               en qué pilar de tu emprendimiento debés enfocarte para mejorar la presencia digital de tu marca y
               potenciar tus resultados. </p>
-            <a href="{{ route('test-form') }}"><button class="btn btn-primary">Quiero hacer el test <svg class="ml-2"
+            <a href="{{ route('test-formulario') }}"><button class="btn btn-primary">Quiero hacer el test <svg class="ml-2"
                   xmlns="http://www.w3.org/2000/svg" width="7.938" height="13.795" viewBox="0 0 7.938 13.795">
                   <g id="next_1_" data-name="next (1)" transform="translate(0.56 0.56)">
                     <g id="Grupo_475" data-name="Grupo 475" transform="translate(0 0)">
@@ -115,7 +115,7 @@
             tu proyecto se encuentra.</p>
         </div>
         <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-end"><a
-            href="{{ route('test-form') }}"><button class="btn btn-sm p-3 btn-white text-primary rounded-pill">¡Quiero hacer el
+            href="{{ route('test-formulario') }}"><button class="btn btn-sm p-3 btn-white text-primary rounded-pill">¡Quiero hacer el
               test gratis!</button></a></div>
       </div>
     </div>

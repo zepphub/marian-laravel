@@ -21,8 +21,8 @@
         <div class="col-md-12">
           <ul class="nav nav-pills justify-content-center mb-3" id="pills-form-test" role="tablist">
             <li class="nav-item" role="presentation">
-              <a class="nav-link mx-md-3 active" id="pills-comenzar-tab" data-toggle="pill" href="#pills-comenzar"
-                role="tab" aria-controls="pills-comenzar" aria-selected="true">
+              <a class="nav-link mx-md-3" id="pills-comenzar-tab" data-toggle="pill" href="#pills-comenzar"
+                role="tab" aria-controls="pills-comenzar" aria-selected="false">
                 <div class="text-center p-md-4 mx-md-3">
                   <img src="{{ asset('img/pill-comenzar.svg') }}" alt="">
                   <h5 class="mt-4 text-marron-claro font-weight-bold">COMENZAR</h5>
@@ -42,8 +42,8 @@
               <a class="nav-link mx-md-3" id="pills-crecer-tab" data-toggle="pill" href="#pills-crecer" role="tab"
                 aria-controls="pills-crecer" aria-selected="false">
                 <div class="text-center p-md-4 mx-md-3">
-                  <img src="{{ asset('img/pill-mejorar.svg') }}" alt="">
-                  <h5 class="mt-4 text-marron-claro font-weight-bold">MEJORAR</h5>
+                  <img src="{{ asset('img/pill-crecer.svg') }}" alt="">
+                  <h5 class="mt-4 text-marron-claro font-weight-bold">CRECER</h5>
                 </div>
               </a>
             </li>
@@ -51,7 +51,7 @@
           <div class="tab-content" id="pills-tabContent">
 
             <!-- TAB COMENZAR -->
-            <div class="tab-pane fade show active text-center mt-4" id="pills-comenzar" role="tabpanel"
+            <div class="tab-pane fade text-center mt-4" id="pills-comenzar" role="tabpanel"
               aria-labelledby="pills-home-tab">
 
               <h5 class="text-medium text-marron-claro my-3">Tengo la idea de proyecto pero, no estoy segura de cómo
@@ -247,23 +247,23 @@
                   class="col-md-5 mt-4 mt-md-0 rounded bg-textura-form-test d-flex flex-column justify-content-center">
                   <div class="p-4 p-md-0 px-md-3">
                     <h4 class="font-weight-bold text-white mb-4">¡Dejame tu mail y, nos vemos allí!</h4>
-                    <form id="result-test" class="needs-validation form-home" novalidate>
+                    <form id="result-test" class="needs-validation form-home" action="{{ route('test-formulario-send') }}" method="post" novalidate>
+                      @csrf
+                      <input type="hidden" name="selection" value="comenzar">
                       <div class="form-row">
                         <div class="col-md-12 mb-3">
-                          <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Tu nombre"
-                            required>
+                          <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Tu nombre" name=name required>
                         </div>
                         <div class="col-md-12 mb-3">
-                          <input type="email" class="form-control rounded-pill" id="email" placeholder="Tu mail"
-                            required>
+                          <input type="email" class="form-control rounded-pill" id="email" placeholder="Tu mail" name=email required>
                         </div>
                       </div>
-                    </form>
 
-                    <div class="text-center mt-md-4">
-                      <button class="btn btn-white text-primary" type="submit">Enviar
-                      </button>
-                    </div>
+                      <div class="text-center mt-md-4">
+                        <button class="btn btn-white text-primary" type="submit">Enviar
+                        </button>
+                      </div>
+                    </form>
 
                     <script>
                       // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -503,23 +503,23 @@
                     <p class="text-white">Para que el contenido llegue a tu correo y además, comenzar a recibir recursos
                       exclusivos para acompañarte en este proceso</p>
                     <h4 class="font-weight-bold text-white mb-4">¡Dejame tu mail y, nos vemos allí!</h4>
-                    <form id="result-test" class="needs-validation form-home" novalidate>
+                    <form id="result-test" class="needs-validation form-home" action="{{ route('test-formulario-send') }}" method="post" novalidate>
+                      @csrf
+                      <input type="hidden" name="selection" value="mejorar">
                       <div class="form-row">
                         <div class="col-md-12 mb-3">
-                          <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Tu nombre"
-                            required>
+                          <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Tu nombre" name=name required>
                         </div>
                         <div class="col-md-12 mb-3">
-                          <input type="email" class="form-control rounded-pill" id="email" placeholder="Tu mail"
-                            required>
+                          <input type="email" class="form-control rounded-pill" id="email" placeholder="Tu mail" name=email required>
                         </div>
                       </div>
-                    </form>
 
-                    <div class="text-center mt-md-4">
-                      <button class="btn btn-white text-primary" type="submit">Enviar
-                      </button>
-                    </div>
+                      <div class="text-center mt-md-4">
+                        <button class="btn btn-white text-primary" type="submit">Enviar
+                        </button>
+                      </div>
+                    </form>
 
                     <script>
                       // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -755,23 +755,23 @@
                     <p class="text-white">Para que el contenido llegue a tu correo y además, comenzar a recibir recursos
                       exclusivos para acompañarte en este proceso</p>
                     <h4 class="font-weight-bold text-white mb-4">¡Dejame tu mail y, nos vemos allí!</h4>
-                    <form id="result-test" class="needs-validation form-home" novalidate>
+                    <form id="result-test" class="needs-validation form-home" action="{{ route('test-formulario-send') }}" method="post" novalidate>
+                      @csrf
+                      <input type="hidden" name="selection" value="crecer">
                       <div class="form-row">
                         <div class="col-md-12 mb-3">
-                          <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Tu nombre"
-                            required>
+                          <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Tu nombre" name=name required>
                         </div>
                         <div class="col-md-12 mb-3">
-                          <input type="email" class="form-control rounded-pill" id="email" placeholder="Tu mail"
-                            required>
+                          <input type="email" class="form-control rounded-pill" id="email" placeholder="Tu mail" name=email required>
                         </div>
                       </div>
-                    </form>
 
-                    <div class="text-center mt-md-4">
-                      <button class="btn btn-white text-primary" type="submit">Enviar
-                      </button>
-                    </div>
+                      <div class="text-center mt-md-4">
+                        <button class="btn btn-white text-primary" type="submit">Enviar
+                        </button>
+                      </div>
+                    </form>
 
                     <script>
                       // Example starter JavaScript for disabling form submissions if there are invalid fields
