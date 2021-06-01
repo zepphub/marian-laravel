@@ -28,6 +28,8 @@ Route::get('/calendario', function(){ return view('front.calendar'); })->name('c
 Route::get('/carrito', function(){ return view('front.carrito'); })->name('carrito');
 Route::get('/checkout', function(){ return view('front.checkout'); })->name('checkout');
 Route::get('/contacto', function(){ return view('front.contacto'); })->name('contacto');
+Route::post('/consulta', [App\Http\Controllers\FormQueryController::class, 'store'])->name('consulta');
+
 Route::get('/incrip-exitosa', function(){ return view('front.incrip-exitosa'); })->name('incrip-exitosa');
 Route::get('/mentoria', function(){ return view('front.mentoria'); })->name('mentoria');
 Route::get('/mentoria/mentoria-grupal', [App\Http\Controllers\MentorshipController::class, 'showGroup'])->name('mentoria-grupal');

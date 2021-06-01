@@ -17,7 +17,7 @@ class CreateFormQueriesTable extends Migration
             $table->id();
             $table->string("firstname");
             $table->string("lastname");
-            $table->string("email")->unique();
+            $table->string("email");
             $table->string("phone");
             $table->text("query");
             $table->timestamps();

@@ -395,29 +395,40 @@
         </div>
         <div class="col-md-7">
           <div class="mt-4 mt-md-0">
-            <form class="needs-validation form-home" novalidate>
+            <form  class="needs-validation form-home" action="{{ route('consulta') }}" method="post">
+              @csrf
               <div class="form-row">
-                <div class="col-md-6 mb-3">                  
-                  <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" required>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" name="firstname" required>
                 </div>
-                <div class="col-md-6 mb-3">                  
-                  <input type="text" class="form-control rounded-pill" id="apellido" placeholder="Apellido" required>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control rounded-pill" id="apellido" placeholder="Apellido" name="lastname" required>
                 </div>
               </div>
               <div class="form-row">
-                <div class="col-md-6 mb-3">                  
-                  <input type="email" class="form-control rounded-pill" placeholder="Email" id="email" required>
+                <div class="col-md-6 mb-3">
+                  <input type="email" class="form-control rounded-pill" placeholder="Email" id="email" name="email" required>
                 </div>
-                <div class="col-md-6 mb-3">                  
-                  <input type="text" class="form-control rounded-pill" placeholder="Teléfono" id="telefono" required>
-                </div>                
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control rounded-pill" placeholder="Teléfono" id="telefono" name="phone" required>
+                </div>
               </div>
               <div class="form-row">
                 <div class="col-md-12 mb-3"> 
-                  <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Dejame tu consulta"></textarea>
+                  <textarea class="form-control" name="query" cols="30" rows="5" placeholder="Dejame tu consulta"></textarea>
                 </div>
               </div>
               <div class="text-right">
+                @if (\Session::has('message'))
+                <div class="row mt-5 mt-md-4">
+                  <div class="col-9 col-md-6">
+                    <div class="alert alert-success" role="alert">
+                      {!! \Session::get('message') !!}
+                    </div>
+                  </div>
+                </div>
+
+                @endif
                 <button class="btn btn-primary" type="submit">Enviar 
                   <svg xmlns="http://www.w3.org/2000/svg" width="21.29"
                     height="21.29" viewBox="0 0 21.29 21.29">
