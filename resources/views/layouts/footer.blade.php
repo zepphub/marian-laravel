@@ -40,25 +40,25 @@
                     <h4 class="text-medium mb-4">Mis enlances</h4>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link pl-0 pt-0" href="index.php">Inicio</a>
+                            <a class="nav-link pl-0 pt-0" href="{{ route('index') }}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="sobre-mi.php">Sobre Mi</a>
+                            <a class="nav-link pl-0" href="{{ route('sobre-mi') }}">Sobre Mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="test.php">Hola por aquí</a>
+                            <a class="nav-link pl-0" href="{{ route('test') }}">Hola por aquí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="servicios.php">Trabajá conmigo</a>
+                            <a class="nav-link pl-0" href="{{ route('servicios') }}">Trabajá conmigo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="recursos.php">Recursos para ti</a>
+                            <a class="nav-link pl-0" href="{{ route('recursos') }}">Recursos para ti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="blog.php">Blog</a>
+                            <a class="nav-link pl-0" href="{{ route('blog') }}">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="contacto.php">Contacto</a>
+                            <a class="nav-link pl-0" href="{{ route('contacto') }}">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -67,13 +67,13 @@
                 <h4 class="text-medium mb-4">Trabajá conmigo</h4>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link pl-0 pt-0" href="asesoria.php">Consultoría Personalizada</a>
+                        <a class="nav-link pl-0 pt-0" href="{{ route('consultorias') }}">Consultoría Personalizada</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pl-0" href="mentoria.php">Mentoría</a>
+                        <a class="nav-link pl-0" href="{{ route('mentoria') }}">Mentoría</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pl-0" href="talleres-y-eventos.php">Talleres y Conferencias</a>
+                        <a class="nav-link pl-0" href="{{ route('talleres-y-eventos') }}">Talleres y Conferencias</a>
                     </li>                    
                 </ul>
             </div>
@@ -84,8 +84,7 @@
                 @endphp
                 @foreach ($footer_posts as $post)
                 <div>
-                    <a href="{{ route('blog.post', [ 'category' => $post->category->slug,
-                                                 'post' => $post->slug ]) }}"><h6 class="text-marron">{{ $post->title }}</h6></a>
+                    <a href="{{ route('blog.post', [ 'category' => $post->category->slug, 'post' => $post->slug ]) }}"><h6 class="text-marron">{{ $post->title }}</h6></a>
                     <p class="date-input"><span>{{ $post->author }}</span>. <span>{{ $post->created_at->format('d M Y') }}</span></p>
                     <hr>
                 </div>
