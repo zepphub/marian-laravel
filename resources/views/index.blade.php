@@ -19,14 +19,14 @@
           </div>
         </div>
         <div class="col-md-5 d-none d-md-block">
-          <img class="img-fluid" src="assets/img/Background.png" alt="">
+          <img class="img-fluid" src="{{ asset('/img/Background.png') }}" alt="">
         </div>
       </div>
     </div>
   </div>
   <div class="divisor-con-forma">
     <img style="margin-top: -12px !important;" class="img-fluid w-100 img-rotate-180"
-      src="assets/img/separador-seccion-svg2.svg" alt="">
+      src="{{ asset('/img/separador-seccion-svg2.svg') }}" alt="">
   </div>
   <!-- Portada Home -->
 
@@ -35,13 +35,13 @@
     <div class="container sobre-mi">
       <div class="row">
         <div class="col-md-5">
-          <img class="img-fluid d-none d-md-block" src="assets/img/celu.png" alt="">
+          <img class="img-fluid d-none d-md-block" src="{{ asset('/img/celu.png') }}" alt="">
         </div>
         <div class="col-md-7">
           <div
             class="d-flex flex-column align-items-center align-items-md-baseline text-center text-md-left justify-content-center h-100">
             <h4 class="titulo-home mt-4 mt-md-0">¡Hola por aquí!</h4>
-            <img src="assets/img/separador-svg.svg" alt="">
+            <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
             <h5 class="mt-4 my-3 text-marron text-medium titulo-home">¡Qué lindo encontrarte en este espacio!</h5>
             <p class="mb-3 text-marron">Para comenzar, te propongo que hagas un test sin costo para ayudarte a
               identificar en qué etapa estás y, en cuál pilar de tu emprendimiento debes enfocarte para mejorar la
@@ -78,13 +78,13 @@
     <div class="container py-5 contenedor-portada-home">
       <div class="row">
         <div class="col-md-5 text-center text-md-left">
-          <img class="img-fluid" src="assets/img/home-sobre-mi.png" alt="">
+          <img class="img-fluid" src="{{ asset('/img/home-sobre-mi.png') }}" alt="">
         </div>
         <div class="col-md-7">
           <div
             class="align-items-center align-items-md-baseline text-center text-md-left d-flex flex-column h-100 justify-content-center pr-md-5">
             <h4 class="titulo-home mt-4 mt-md-0">Sobre Mí</h4>
-            <img src="assets/img/separador-svg.svg" alt="">
+            <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
             <h6 class="mb-3 mt-4 titulo-home text-marron text-medium">Si pudieras hacer realidad la idea que hace tiempo
               tenes… Si
               pudieses construir una marca uniendo todas las actividades,
@@ -106,7 +106,7 @@
   </div>
   <div class="divisor-con-forma">
     <img style="margin-top: -12px !important;" class="img-fluid w-100 img-rotate-180"
-      src="assets/img/separador-seccion-svg.svg" alt="">
+      src="{{ asset('/img/separador-seccion-svg.svg') }}" alt="">
   </div>
   <!-- Fin Seccion Sobre Mi -->
 
@@ -116,7 +116,7 @@
       <div class="col-md-12">
         <div class="text-center">
           <h4 class="titulo-home">Trabajemos Juntas</h4>
-          <img src="assets/img/separador-svg.svg" alt="">
+          <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
           <p class="my-4">Construyamos juntas el universo de tu marca de la mano a diversas estrategias de Marketing
             Digital, Comunicación y Branding que te ayuden a posicionarte a través de una propuesta
             auténtica y diferente</p>
@@ -140,7 +140,7 @@
     <div class="row mt-5">
       <div class="col-md-4">
         <div class="card border-secondary text-center card-propuestas shadow">
-          <img src="assets/img/card-mentoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
+          <img src="{{ asset('/img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
           <div class="card-body">
             <h5 class="card-title titulo-home">Mentoría</h5>
             <p class="card-text">Trabajamos en el universo de tu marca, fortaleciendo los pilares más importantes y
@@ -152,7 +152,7 @@
       </div>
       <div class="col-md-4 my-4 my-md-0">
         <div class="card border-secondary text-center card-propuestas shadow">
-          <img src="assets/img/card-asesoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
+          <img src="{{ asset('/img/card-asesoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
           <div class="card-body">
             <h5 class="card-title titulo-home">Asesoría Personalizada</h5>
             <p class="card-text">Te ayudo a potenciar tu estrategia
@@ -165,7 +165,7 @@
       </div>
       <div class="col-md-4">
         <div class="card border-secondary text-center card-propuestas shadow">
-          <img src="assets/img/card-talleres-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
+          <img src="{{ asset('/img/card-talleres-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
           <div class="card-body">
             <h5 class="card-title titulo-home">Talleres y Conferencias</h5>
             <p class="card-text">Experiencias especialmente creadas
@@ -204,7 +204,7 @@
       <div class="col-md-6">
         <div class="igualar-altura-blog">
           <h4 class="titulo-home">Blog</h4>
-          <img src="assets/img/separador-svg.svg" alt="">
+          <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
         </div>
 
         <div class="mt-4 mt-md-0">
@@ -312,14 +312,14 @@
   <!-- Seccion Newsletter -->
 
   <div class="m-0 p-0"><img style="margin-bottom: -12px !important;" class="img-fluid w-100"
-      src="assets/img/separador-superior-seccion-svg.svg" alt=""></div>
+      src="{{ asset('/img/separador-superior-seccion-svg.svg') }}" alt=""></div>
   <div class="bg-crema-suave contenedor-form-home py-5">
     <div class="container bg-white p-4 rounded-lg">
       <div class="row">
         <div class="col-md-5">
           <div class="bg-textura-form rounded-lg p-md-4 p-3">
             <h4 class="titulo-home text-medium text-white">Contacta conmigo, me encantará leerte</h4>
-            <img src="assets/img/separador-secondary-svg.svg" alt="">
+            <img src="{{ asset('/img/separador-secondary-svg.svg') }}" alt="">
             <p class="text-white mt-3">Si estas por aquí es porque hay algo que quieres decirme o preguntarme.</p>
             <div>
               <ul class="list-group">
