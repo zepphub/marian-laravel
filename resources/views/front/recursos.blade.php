@@ -20,25 +20,25 @@
         <div class="modal-body text-center">
           <h4 class="modal-title titulo-home" id="staticBackdropLabel">Ya casi tenés tus recursos</h4>
           <p>Para obtenerlo solo deja tus datos y la descarga se iniciará de manera automática</p>
-          <form class="form-border-1-px">
+          <form class="form-border-1-px" action="{{ route('recursos-descarga') }}" method="post">
+              @csrf
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label class="d-none" for="nombre">Nombre</label>
-                <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" required>
+                <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" name="firstname" required>
               </div>
               <div class="col-md-4 mb-3">
                 <label class="d-none" for="apellido">Apellido</label>
-                <input type="text" class="form-control rounded-pill" id="apellido" placeholder="Apellido" required>
+                <input type="text" class="form-control rounded-pill" id="apellido" placeholder="Apellido" name="lastname" required>
               </div>
               <div class="col-md-4 mb-3">
                 <label class="d-none" for="email">Correo Electrónico</label>
-                <input type="text" class="form-control rounded-pill" id="email" placeholder="Correo electrónico"
-                  required>
+                <input type="text" class="form-control rounded-pill" id="email" placeholder="Correo electrónico" name="email" required>
               </div>
             </div>
             <div class="form-group mt-4">
               <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="acepta" name="acepta" class="custom-control-input">
+                <input type="radio" id="acepta" name="newsletter" class="custom-control-input" value="true">
                 <label class="custom-control-label" for="acepta">Acepto la suscripción al newsletter</label>
               </div>
             </div>
@@ -74,13 +74,13 @@
             <p class="text-recurso-descargable my-3 my-md-0">Hacé el test sin costo para ayudarte a identificar en qué
               etapa estás y en qué pilar de tu emprendimiento
               debés enfocarte para mejorar la presencia digital de tu marca y potenciar tus resultados.</p>
-            <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables">Quiero hacer el test
+            <a class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" href="{{ route('test') }}">Quiero hacer el test
               <svg xmlns="http://www.w3.org/2000/svg" width="13.414" height="13.074" viewBox="0 0 13.414 13.074">
                 <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
                   d="M5.7,14.846l.665.665a.716.716,0,0,0,1.015,0L13.2,9.693a.716.716,0,0,0,0-1.015l-5.82-5.82a.716.716,0,0,0-1.015,0L5.7,3.523A.719.719,0,0,0,5.712,4.55L9.32,7.987H.715A.717.717,0,0,0,0,8.705v.958a.717.717,0,0,0,.719.719h8.6L5.712,13.819A.714.714,0,0,0,5.7,14.846Z"
                   transform="translate(0.004 -2.647)" fill="currentColor" />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
         @foreach ($resources as $resource)
@@ -99,57 +99,6 @@
           </div>
         </div>
         @endforeach
-        <div class="col-md-4 my-3">
-          <div
-            class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">
-            <h4 class="titulo-recurso-descargable">30 ideas de contenido para conectar con tu público ideal</h4>
-            <p class="text-recurso-descargable my-3 my-md-0">En esta guía te comparto el paso a paso para generar
-              propuestas auténticas para tu audiencia: más 30 ideas de contenido para conectar con tu público ideal.</p>
-            <a href=""><button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables">Descargar
-                mini guía
-                de
-                contenido <svg xmlns="http://www.w3.org/2000/svg" width="13.414" height="13.074"
-                  viewBox="0 0 13.414 13.074">
-                  <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
-                    d="M5.7,14.846l.665.665a.716.716,0,0,0,1.015,0L13.2,9.693a.716.716,0,0,0,0-1.015l-5.82-5.82a.716.716,0,0,0-1.015,0L5.7,3.523A.719.719,0,0,0,5.712,4.55L9.32,7.987H.715A.717.717,0,0,0,0,8.705v.958a.717.717,0,0,0,.719.719h8.6L5.712,13.819A.714.714,0,0,0,5.7,14.846Z"
-                    transform="translate(0.004 -2.647)" fill="currentColor" />
-                </svg>
-              </button></a>
-          </div>
-        </div>
-        <div class="col-md-4 my-3">
-          <div
-            class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">
-            <h4 class="titulo-recurso-descargable">En esta guía te comparto los pasos a seguir para definir los
-              objetivos
-              de tu marca y generar acciones acordes a ellos</h4>
-            <p class="text-recurso-descargable my-3 my-md-0">&nbsp</p>
-            <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" data-toggle="modal"
-              data-target="#staticBackdrop">Descargar mini guía
-              <svg xmlns="http://www.w3.org/2000/svg" width="13.414" height="13.074" viewBox="0 0 13.414 13.074">
-                <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
-                  d="M5.7,14.846l.665.665a.716.716,0,0,0,1.015,0L13.2,9.693a.716.716,0,0,0,0-1.015l-5.82-5.82a.716.716,0,0,0-1.015,0L5.7,3.523A.719.719,0,0,0,5.712,4.55L9.32,7.987H.715A.717.717,0,0,0,0,8.705v.958a.717.717,0,0,0,.719.719h8.6L5.712,13.819A.714.714,0,0,0,5.7,14.846Z"
-                  transform="translate(0.004 -2.647)" fill="currentColor" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="col-md-4 my-3">
-          <div
-            class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">
-            <h4 class="titulo-recurso-descargable">Curso gratuito</h4>
-            <p class="text-recurso-descargable my-3 my-md-0">Activá tu magia en el mundo online:
-              ”5 pilares que te ayudarán a diferenciarte en el universo digital”</p>
-            <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" data-toggle="modal"
-              data-target="#staticBackdrop">Quiero hacer el test
-              <svg xmlns="http://www.w3.org/2000/svg" width="13.414" height="13.074" viewBox="0 0 13.414 13.074">
-                <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
-                  d="M5.7,14.846l.665.665a.716.716,0,0,0,1.015,0L13.2,9.693a.716.716,0,0,0,0-1.015l-5.82-5.82a.716.716,0,0,0-1.015,0L5.7,3.523A.719.719,0,0,0,5.712,4.55L9.32,7.987H.715A.717.717,0,0,0,0,8.705v.958a.717.717,0,0,0,.719.719h8.6L5.712,13.819A.714.714,0,0,0,5.7,14.846Z"
-                  transform="translate(0.004 -2.647)" fill="currentColor" />
-              </svg>
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -177,19 +126,20 @@
       </div>
     </div>
     <div class="row mt-3">
-      <form class="w-100">
+      <form class="w-100" action="{{ route('newsletter-subscription') }}" method="post">
+              @csrf
         <div class="form-row">
-          <div class="form-group col-md-3">            
-            <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre">
+          <div class="form-group col-md-3">
+            <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
           </div>
           <div class="form-group col-md-3">
-            <input class="form-control rounded-pill border-0" type="text" placeholder="Apellido">            
+            <input class="form-control rounded-pill border-0" type="text" placeholder="Apellido" name="lastname">
           </div>
           <div class="form-group col-md-3">
-          <input class="form-control rounded-pill border-0" type="email" placeholder="Correo electrónico">      
+          <input class="form-control rounded-pill border-0" type="email" placeholder="Correo electrónico" name="email">
           </div>
           <div class="form-group col-md-3">
-          <input class="form-control rounded-pill border-0" type="text" placeholder="Whatsapp">      
+          <input class="form-control rounded-pill border-0" type="text" placeholder="Whatsapp" name="whatsapp">
           </div>
         </div>
         <div class="mt-3 d-block d-md-flex w-100 justify-content-end px-3">
