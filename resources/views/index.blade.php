@@ -208,58 +208,36 @@
         </div>
 
         <div class="mt-4 mt-md-0">
-          <img class="img-fluid" src="assets/img/blog-img-entry.png" alt="">
-          <p class="text-coral m-0 mt-4">Categoría</p>
-          <h4 class="titulo-home text-marron my-2">Primer posteo de sitio web</h4>
-          <p class="entry-date">Marian . 11 Nov 2020</p>
+          <a href="{{ route('blog.post', [ 'category' => $latest_posts->first()->category->slug, 'post' => $latest_posts->first()->slug ]) }}">
+          <img class="img-fluid" src="{{ asset($latest_posts->first()->image) }}" alt=""></a>
+          <p class="text-coral m-0 mt-4">{{ $latest_posts->first()->category->name }}</p>
+          <a href="{{ route('blog.post', [ 'category' => $latest_posts->first()->category->slug, 'post' => $latest_posts->first()->slug ]) }}">
+          <h4 class="titulo-home text-marron my-2">{{ $latest_posts->first()->title }}</h4>
+          </a>
+          <p class="entry-date"><span>{{ $latest_posts->first()->author }}</span>. <span>{{ $latest_posts->first()->created_at->format('d M Y') }}</span></p>
         </div>
       </div>
       <div class="col-md-6 mt-4 mt-md-0">
         <div class="text-left text-md-right igualar-altura-blog">
-          <h5 class=""><a class="text-coral" href="">¡Ver todos los artículos! <svg xmlns="http://www.w3.org/2000/svg"
+          <h5><a class="text-coral" href="{{ route('blog') }}">¡Ver todos los artículos! <svg xmlns="http://www.w3.org/2000/svg"
                 width="15.26" height="9.537" viewBox="0 0 15.26 9.537">
                 <path id="Icon_open-arrow-right" data-name="Icon open-arrow-right"
                   d="M9.537,0V3.815H0V5.722H9.537V9.537L15.26,4.711Z" fill="#e67161" />
               </svg></a>
           </h5>
         </div>
+        @foreach ($latest_posts as $post)
+        @if ($loop->first) @continue @endif
         <div class="row entry-post">
           <div class="col-md-12">
             <div class="ml-md-3">
-              <h5 class="titulo-home text-medium text-marron my-2">Otro posteito de sitio web</h5>
-              <p class="entry-date m-0">Marian . 11 Nov 2020</p>
+              <h5 class="titulo-home text-medium text-marron my-2">{{ $post->title }}</h5>
+              <p class="entry-date m-0"><span>{{ $post->author }}</span>. <span>{{ $post->created_at->format('d M Y') }}</span></p>
               <hr>
             </div>
           </div>
         </div>
-        <div class="row entry-post">
-          <div class="col-md-12">
-            <div class="ml-md-3">
-              <h5 class="titulo-home text-medium text-marron my-2">Otro posteito de sitio web</h5>
-              <p class="entry-date m-0">Marian . 11 Nov 2020</p>
-              <hr>
-            </div>
-          </div>
-        </div>
-        <div class="row entry-post">
-          <div class="col-md-12">
-            <div class="ml-md-3">
-              <h5 class="titulo-home text-medium text-marron my-2">Otro posteito de sitio web</h5>
-              <p class="entry-date m-0">Marian . 11 Nov 2020</p>
-              <hr>
-            </div>
-          </div>
-        </div>
-        <div class="row entry-post">
-          <div class="col-md-12">
-            <div class="ml-md-3">
-              <h5 class="titulo-home text-medium text-marron my-2">Otro posteito de sitio web</h5>
-              <p class="entry-date m-0">Marian . 11 Nov 2020</p>
-              <hr>
-            </div>
-          </div>
-        </div>
-
+        @endforeach
       </div>
     </div>
   </div>
@@ -305,8 +283,8 @@
               </g>
             </svg>
           </button></a>
-      </div>
-
+        </div>
+      </form>
     </div>
   </div>
   <!-- Seccion Newsletter -->
@@ -487,31 +465,33 @@
                 </button>
               </div>
             </form>
-
-            <script>
-              // Example starter JavaScript for disabling form submissions if there are invalid fields
-              (function () {
-                'use strict';
-                window.addEventListener('load', function () {
-                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                  var forms = document.getElementsByClassName('needs-validation');
-                  // Loop over them and prevent submission
-                  var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                      if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                      }
-                      form.classList.add('was-validated');
-                    }, false);
-                  });
-                }, false);
-              })();
-
-            </script>
           </div>
         </div>
       </div>
     </div>
   </div>
+@endsection
+
+@section('scripts')
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+
+</script>
 @endsection
