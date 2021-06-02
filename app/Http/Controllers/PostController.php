@@ -19,7 +19,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::paginate(10);
+        $posts = Post::latest()->paginate(10);
         return view('admin.posts_index', ['posts'=>$posts]);
     }
     /**
@@ -33,7 +33,7 @@ class PostController extends Controller
           $category = Category::where('slug', $category)->first();
           $posts = Post::where("category_id", $category->id)->paginate(10);
         } else {
-          $posts = Post::paginate(10);
+          $posts = Post::latest()->paginate(10);
         };
 
         $categories = Category::all();
