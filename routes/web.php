@@ -43,6 +43,7 @@ Route::get('/talleres-y-eventos/{event}', [App\Http\Controllers\EventController:
 Route::get('/test', function(){ return view('front.test'); })->name('test');
 Route::get('/test-formulario', function(){ return view('front.test-form'); })->name('test-formulario');
 Route::post('/test-formulario', [App\Http\Controllers\TestResultController::class, 'store'] )->name('test-formulario-send');
+Route::post('/newsletter-subscription', [App\Http\Controllers\NewsletterSubscriptionController::class, 'store'] )->name('newsletter-subscription');
 
 /* Admin Routes */
 
@@ -56,15 +57,15 @@ Route::prefix('/admin')
     Route::get('/servicios', function(){ return view('admin.services'); })->name('services');
 
     Route::get('/newsletter', [App\Http\Controllers\NewsletterSubscriptionController::class, 'index'])->name('newsletter');
-    Route::get('/newsletter/csv', [App\Http\Controllers\NewsletterSubscriptionController::class, 'csv'])->name('newsletter.csv');
 
-    Route::group(['prefix'=>'csv'], function(){
-      Route::get('/tests', function(){ return view('admin.csv.tests'); })->name('csv.tests');
-      Route::get('/forms', function(){ return view('admin.csv.forms'); })->name('csv.forms');
-      Route::get('/resources', function(){ return view('admin.csv.resources'); })->name('csv.resources');
+    Route::prefix('/csv')
+      ->name('csv.')
+      ->group(function(){
+      Route::get('/newsletter', [App\Http\Controllers\NewsletterSubscriptionController::class, 'csv'])->name('newsletter');
+      Route::get('/test_results', [App\Http\Controllers\TestResultController::class, 'csv'])->name('test_results');
+      Route::get('/form_queries', [App\Http\Controllers\FormQueryController::class, 'csv'])->name('form_queries');
+      Route::get('/resources', [App\Http\Controllers\ResourcesController::class, 'csv'])->name('resources');
     });
-
-    Route::get('/mentorships/tabtwo', function(){ return view('admin.mentorships_tabtwo'); })->name('mentorships.tabtwo');
 
     Route::resources([
       'resources' => ResourceController::class,

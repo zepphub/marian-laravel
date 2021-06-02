@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\NewsletterSubscription;
 use Illuminate\Http\Request;
+use App\Http\Requests\NewsletterSubscriptionRequest;
 
 class NewsletterSubscriptionController extends Controller
 {
@@ -20,71 +21,25 @@ class NewsletterSubscriptionController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(NewsletterSubscriptionRequest $request)
     {
-        //
-    }
+      $newsletter_subscription = new NewsletterSubscription();
+      $newsletter_subscription->firstname = $request->get('firstname');
+      $newsletter_subscription->lastname = $request->get('lastname');
+      $newsletter_subscription->email = $request->get('email');
+      $newsletter_subscription->whatsapp = $request->get('whatsapp');
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\NewsletterSubscription  $newsletterSubscription
-     * @return \Illuminate\Http\Response
-     */
-    public function show(NewsletterSubscription $newsletterSubscription)
-    {
-        //
-    }
+      $newsletter_subscription->save();
+      $message = 'Tu consulta ha sido registrada. Nos contactaremos a la brevedad.';
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\NewsletterSubscription  $newsletterSubscription
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(NewsletterSubscription $newsletterSubscription)
-    {
-        //
-    }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\NewsletterSubscription  $newsletterSubscription
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, NewsletterSubscription $newsletterSubscription)
-    {
-        //
+      return back()->withMessage($message);
     }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\NewsletterSubscription  $newsletterSubscription
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(NewsletterSubscription $newsletterSubscription)
-    {
-        //
-    }
-
 
     public function csv()
     {
