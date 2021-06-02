@@ -20,23 +20,32 @@ Auth::routes();
 /* Frontpage routes */
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
+
 Route::get('/consultorias', [App\Http\Controllers\CounselingController::class, 'frontIndex'])->name('consultorias');
+
 Route::get('/blog', [App\Http\Controllers\PostController::class, 'frontIndex'])->name('blog');
 Route::get('/blog/{category}', [App\Http\Controllers\PostController::class, 'frontIndex'])->name('blog.category');
 Route::get('/blog/{category}/{post}', [App\Http\Controllers\PostController::class, 'frontShow'])->name('blog.post');
+
 Route::get('/calendario', function(){ return view('front.calendar'); })->name('calendario');
 Route::get('/carrito', function(){ return view('front.carrito'); })->name('carrito');
 Route::get('/checkout', function(){ return view('front.checkout'); })->name('checkout');
+
 Route::get('/contacto', function(){ return view('front.contacto'); })->name('contacto');
 Route::post('/consulta', [App\Http\Controllers\FormQueryController::class, 'store'])->name('consulta');
 
 Route::get('/incrip-exitosa', function(){ return view('front.incrip-exitosa'); })->name('incrip-exitosa');
+
 Route::get('/mentoria', function(){ return view('front.mentoria'); })->name('mentoria');
 Route::get('/mentoria/mentoria-grupal', [App\Http\Controllers\MentorshipController::class, 'showGroup'])->name('mentoria-grupal');
 Route::get('/mentoria/asesoria-personalizada', [App\Http\Controllers\MentorshipController::class, 'showSingle'])->name('programa-intensivo');
+
 Route::get('/recursos', [App\Http\Controllers\ResourceController::class, 'frontIndex'])->name('recursos');
+
 Route::get('/servicios', function(){ return view('front.servicios'); })->name('servicios');
+
 Route::get('/sobre-mi', function(){ return view('front.sobre-mi'); })->name('sobre-mi');
+
 Route::get('/talleres-y-eventos', [App\Http\Controllers\EventController::class, 'frontIndex'])->name('talleres-y-eventos');
 Route::get('/talleres-y-eventos/{event}', [App\Http\Controllers\EventController::class, 'frontShow'])->name('evento');
 
