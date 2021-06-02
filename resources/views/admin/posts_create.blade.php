@@ -86,7 +86,6 @@ tinymce.init({
   content_css: 'marian',
   editor_css: 'marian',
 });
-
 $(document).ready(function (e) {
 $('#image-upload').change(function(){
     let reader = new FileReader();
@@ -97,6 +96,5 @@ $('#image-upload').change(function(){
    });
 
 });
- 
 </script>
 @endsection
