@@ -28,7 +28,10 @@ Route::get('/blog/{category}', [App\Http\Controllers\PostController::class, 'fro
 Route::get('/blog/{category}/{post}', [App\Http\Controllers\PostController::class, 'frontShow'])->name('blog.post');
 
 Route::get('/calendario', function(){ return view('front.calendar'); })->name('calendario');
-Route::get('/carrito', function(){ return view('front.carrito'); })->name('carrito');
+
+Route::get('/carrito', [App\Http\Controllers\CartController::class, 'show'])->name('carrito');
+Route::get('/carrito/{service}', [App\Http\Controllers\CartController::class, 'add'])->name('carrito.add');
+Route::get('/carrito/{key}/delete', [App\Http\Controllers\CartController::class, 'delete'])->name('carrito.delete');
 Route::get('/checkout', function(){ return view('front.checkout'); })->name('checkout');
 
 Route::get('/contacto', function(){ return view('front.contacto'); })->name('contacto');
