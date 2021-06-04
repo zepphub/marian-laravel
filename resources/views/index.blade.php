@@ -208,6 +208,7 @@
         </div>
 
         <div class="mt-4 mt-md-0">
+          @if (!is_null($latest_posts->first()))
           <a href="{{ route('blog.post', [ 'category' => $latest_posts->first()->category->slug, 'post' => $latest_posts->first()->slug ]) }}">
           <img class="img-fluid" src="{{ asset($latest_posts->first()->image) }}" alt=""></a>
           <p class="text-coral m-0 mt-4">{{ $latest_posts->first()->category->name }}</p>
@@ -215,6 +216,7 @@
           <h4 class="titulo-home text-marron my-2">{{ $latest_posts->first()->title }}</h4>
           </a>
           <p class="entry-date"><span>{{ $latest_posts->first()->author }}</span>. <span>{{ $latest_posts->first()->created_at->format('d M Y') }}</span></p>
+          @endif
         </div>
       </div>
       <div class="col-md-6 mt-4 mt-md-0">
