@@ -260,7 +260,7 @@
                       </div>
                     </div>
                   </div>
-              @if ($loop->even)
+              @if ($loop->even || $loop->last)
                 </div>
               </div>
               @endif
