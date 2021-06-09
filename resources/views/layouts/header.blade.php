@@ -78,7 +78,7 @@
                                     <a class="nav-link text-marron" href="{{ route('blog') }}">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-marron" href="{{ route('contacto') }}">Contacto</a>
+                                    <a class="nav-link text-marron" href="{{ route('index') }}#contacto">Contacto</a>
                                 </li>
 
                             </ul>

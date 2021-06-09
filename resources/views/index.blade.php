@@ -293,7 +293,7 @@
 
   <div class="m-0 p-0"><img style="margin-bottom: -12px !important;" class="img-fluid w-100"
       src="{{ asset('/img/separador-superior-seccion-svg.svg') }}" alt=""></div>
-  <div class="bg-crema-suave contenedor-form-home py-5">
+  <div id="contacto" class="bg-crema-suave contenedor-form-home py-5">
     <div class="container bg-white p-4 rounded-lg">
       <div class="row">
         <div class="col-md-5">
