@@ -25,7 +25,7 @@ aria-labelledby="mentoria-tab-{{ $mentorship->id }}">
   <div class="row mt-5">
     <div class="col-md-12">
       <h4 class="text-rosa-claro">Sobre la experiencia</h4>
-      <textarea class="form-control" name="content-{{ $mentorship->descriptions->first()->id }}" form="editForm-{{ $mentorship->id }}" cols="30"
+      <textarea class="form-control content-single" name="content-{{ $mentorship->descriptions->first()->id }}" form="editForm-{{ $mentorship->id }}" cols="30"
       rows="10">{{ $mentorship->descriptions->first()->content }} </textarea>
     </div>
   </div>
