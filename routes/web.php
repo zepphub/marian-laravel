@@ -77,7 +77,7 @@ Route::prefix('/admin')
       Route::get('/newsletter', [App\Http\Controllers\NewsletterSubscriptionController::class, 'csv'])->name('newsletter');
       Route::get('/test_results', [App\Http\Controllers\TestResultController::class, 'csv'])->name('test_results');
       Route::get('/form_queries', [App\Http\Controllers\FormQueryController::class, 'csv'])->name('form_queries');
-      Route::get('/resources', [App\Http\Controllers\ResourcesController::class, 'csv'])->name('resources');
+      Route::get('/resources', [App\Http\Controllers\ResourceController::class, 'csv'])->name('resources');
     });
 
     Route::resources([

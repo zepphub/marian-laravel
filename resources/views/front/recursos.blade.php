@@ -20,8 +20,13 @@
         <div class="modal-body text-center">
           <h4 class="modal-title titulo-home" id="staticBackdropLabel">Ya casi tenés tus recursos</h4>
           <p>Para obtenerlo solo deja tus datos y la descarga se iniciará de manera automática</p>
+          <form id="hidden-download" action="{{ route('recursos-descarga') }}" method="post" class="d-none">
+           @csrf
+           <input type=hidden name=resource id="hidden-resource" value=1>
+          </form>
           <form class="form-border-1-px" action="{{ route('recursos-descarga') }}" method="post">
-              @csrf
+            @csrf
+            <input type=hidden name=resource id=resource value=1>
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label class="d-none" for="nombre">Nombre</label>
@@ -38,11 +43,11 @@
             </div>
             <div class="form-group mt-4">
               <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="acepta" name="newsletter" class="custom-control-input" value="true">
+                <input type="checkbox" id="acepta" name="newsletter" class="custom-control-input" value="true" onchange="document.getElementById('modalSubmit').disabled = !this.checked;">
                 <label class="custom-control-label" for="acepta">Acepto la suscripción al newsletter</label>
               </div>
             </div>
-            <button class="btn btn-primary my-4" type="submit">Descargar mi recurso gratuito</button>
+            <button class="btn btn-primary my-4" disabled=true id="modalSubmit" type="submit" onclick="newUnregisteredDownload()">Descargar mi recurso gratuito</button>
           </form>
         </div>
       </div>
@@ -88,8 +93,7 @@
           <div class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">
             <h4 class="titulo-recurso-descargable">{{$resource->title}}</h4>
             <div>{{$resource->description}}</div>
-            <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" data-toggle="modal"
-              data-target="#staticBackdrop">{{$resource->button}}<svg xmlns="http://www.w3.org/2000/svg" width="13.414"
+            <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" onclick="newDownload('{{$resource->id}}')">{{$resource->button}}<svg xmlns="http://www.w3.org/2000/svg" width="13.414"
                 height="13.074" viewBox="0 0 13.414 13.074">
                 <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
                   d="M5.7,14.846l.665.665a.716.716,0,0,0,1.015,0L13.2,9.693a.716.716,0,0,0,0-1.015l-5.82-5.82a.716.716,0,0,0-1.015,0L5.7,3.523A.719.719,0,0,0,5.712,4.55L9.32,7.987H.715A.717.717,0,0,0,0,8.705v.958a.717.717,0,0,0,.719.719h8.6L5.712,13.819A.714.714,0,0,0,5.7,14.846Z"
@@ -143,7 +147,7 @@
           </div>
         </div>
         <div class="mt-3 d-block d-md-flex w-100 justify-content-end px-3">
-        <a href="#"><button type="submit" class="btn btn-blanco btn-block">Suscribirme <svg class="mb-1 ml-1"
+        <button type="submit" class="btn btn-blanco btn-block">Suscribirme <svg class="mb-1 ml-1"
               xmlns="http://www.w3.org/2000/svg" width="9.476" height="16.638" viewBox="0 0 9.476 16.638">
               <g id="next_1_" data-name="next (1)" transform="translate(-60.433 -1.433)">
                 <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
@@ -153,7 +157,7 @@
                 </g>
               </g>
             </svg>
-          </button></a>
+          </button>
       </div>
       </form>
 
@@ -161,4 +165,29 @@
     </div>
   </div>
   <!-- Seccion Newsletter -->
+@endsection
+
+@section('scripts')
+<script type="text/javascript">
+var registered = {!! json_encode($registered) !!};
+var resource_id = 1;
+var newDownload = function(r_id){
+  let resourceidhi = document.getElementById("resource");
+  let hresourceidhi = document.getElementById("hidden-resource");
+  resourceidhi.value = r_id;
+  hresourceidhi.value = r_id;
+  if (registered) {
+    document.getElementById('hidden-download').submit();
+  }
+  else {
+    resource_id = r_id;
+    $("#staticBackdrop").modal("show");
+  }
+};
+
+var newUnregisteredDownload = function(r_id){
+  registered = true;
+  $("#staticBackdrop").modal("hide");
+};
+</script>
 @endsection
