@@ -16,8 +16,14 @@
             <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="index.php">Inicio</a></li>
             <li class="breadcrumb-item text-secondary active font-weight-bold" aria-current="page">Calendario de Sesiones</li>
           </ol>
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/jlneder/15min" style="min-width:320px;height:660px;"></div>
+          <!-- Calendly inline widget end -->
         </nav>
       </div>
     </div>
   </div>
+@endsection
+@section('scripts')
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 @endsection

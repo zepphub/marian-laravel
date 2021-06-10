@@ -11,7 +11,7 @@ class Service extends Model
 
     public $timestamps = false;
 
-    private function is_argentina(){
+    public static function is_argentina(){
       $country_name = request()->session()->get('country', ""); // Second argument is a default value
       if ($country_name == ""){
         $ip = request()->ip();

@@ -32,7 +32,10 @@ Route::get('/calendario', function(){ return view('front.calendar'); })->name('c
 Route::get('/carrito', [App\Http\Controllers\CartController::class, 'show'])->name('carrito');
 Route::get('/carrito/{service}', [App\Http\Controllers\CartController::class, 'add'])->name('carrito.add');
 Route::get('/carrito/{key}/delete', [App\Http\Controllers\CartController::class, 'delete'])->name('carrito.delete');
-Route::get('/checkout', function(){ return view('front.checkout'); })->name('checkout');
+
+Route::get('/checkout', [App\Http\Controllers\CheckoutController::class, 'checkout'])->name('checkout');
+Route::get('/checkout-cancel', [App\Http\Controllers\CheckoutController::class, 'paymentCancel'])->name('checkout.cancel');
+Route::get('/checkout-success', [App\Http\Controllers\CheckoutController::class, 'checkoutSuccess'])->name('checkout.success');
 
 Route::get('/contacto', function(){ return view('front.contacto'); })->name('contacto');
 Route::post('/consulta', [App\Http\Controllers\FormQueryController::class, 'store'])->name('consulta');
@@ -67,7 +70,7 @@ Route::prefix('/admin')
   ->group(function(){
     Route::get('/', 'HomeController@adminIndex')->name('index');
 
-    Route::get('/servicios', function(){ return view('admin.services'); })->name('services');
+    Route::get('/services', function(){ return view('admin.services'); })->name('services');
 
     Route::get('/newsletter', [App\Http\Controllers\NewsletterSubscriptionController::class, 'index'])->name('newsletter');
 
@@ -80,6 +83,7 @@ Route::prefix('/admin')
       Route::get('/resources', [App\Http\Controllers\ResourceController::class, 'csv'])->name('resources');
     });
 
+    Route::resource('counselingdescriptions', CounselingDescriptionController::class)->only(['destroy']);
     Route::resources([
       'resources' => ResourceController::class,
       'events' => EventController::class,
