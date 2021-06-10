@@ -53,7 +53,7 @@
             </svg>
           </button></a>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 mt-4 mt-md-0">
         <img class="w-100 img-fluid" src="{{ asset('img/talleres-y-eventos-img-1.png') }}" alt="">
       </div>
     </div>
@@ -364,14 +364,14 @@
 
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-5 d-flex align-items-center">
+      <div class="col-md-4 d-flex align-items-center">
         <h4 class="font-weight-bold titulo-home">
           Marcas a las que he
           acompañado
         </h4>
       </div>
-      <div class="col-md-7">
-        <div id="brandsCarousel" class="carousel slide" data-ride="carousel">
+      <div class="col-md-8">
+        <div id="brandsCarousel" class="carousel slide d-none d-md-block" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item py-5 active">
               <div class="row align-items-center">
@@ -399,6 +399,87 @@
                 <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-10.png') }}" alt=""></div>
                 <div class="col-4 p-0 text-center"><img src="" alt=""></div>
                 <div class="col-4 p-0 text-center"><img src="" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#brandsCarousel" role="button" data-slide="prev">
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="14.753" height="26.388" viewBox="0 0 14.753 26.388">
+                <g id="next_1_" data-name="next (1)" transform="translate(0.5 0.59)">
+                  <g id="Grupo_475" data-name="Grupo 475" transform="translate(0 0)">
+                    <path id="Trazado_343" data-name="Trazado 343"
+                      d="M118.03,11.955,129.732.286a.981.981,0,1,1,1.385,1.389l-11,10.975,11.005,10.975a.981.981,0,0,1-1.385,1.389l-11.7-11.669a.98.98,0,0,1,0-1.389Z"
+                      transform="translate(-117.742 0)" fill="#e67161" stroke="#e67161" stroke-width="1" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+          <a class="carousel-control-next" href="#brandsCarousel" role="button" data-slide="next">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14.753" height="26.388" viewBox="0 0 14.753 26.388">
+                <g id="next_1_" data-name="next (1)" transform="translate(-117.153 0.589)">
+                  <g id="Grupo_475" data-name="Grupo 475" transform="translate(117.742 0)">
+                    <path id="Trazado_343" data-name="Trazado 343"
+                      d="M131.117,11.955,119.416.286a.981.981,0,1,0-1.385,1.389l11,10.975L118.03,23.624a.981.981,0,0,0,1.385,1.389l11.7-11.669a.98.98,0,0,0,0-1.389Z"
+                      transform="translate(-117.742 0)" fill="#e67161" stroke="#e67161" stroke-width="1" />
+                  </g>
+                </g>
+              </svg>
+
+            </div>
+          </a>
+        </div>
+
+        <div id="brandsCarouselMob" class="carousel slide d-md-none" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item py-5 active">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-1.png') }}" alt=""></div>               
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-2.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-3.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-4.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-5.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-6.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-7.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-8.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-9.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-10.png') }}" alt=""></div>
               </div>
             </div>
           </div>
@@ -464,9 +545,9 @@
                 </li>
               </ul>
             </div>
-            <div class="social-group w-50 mt-5">
-              <ul class="list-group list-group-horizontal">
-                <li style="padding-left:0 !important;" class="list-group-item border-0 bg-transparent p-2 pl-0">
+            <div class="social-group mt-5">
+              <div class="d-flex">
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_2_9" data-name="Componente 2 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -477,8 +558,8 @@
                       </svg>
                     </a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_3_9" data-name="Componente 3 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -488,8 +569,8 @@
                           transform="translate(-1229.01 -1125.2)" fill="#fff" />
                       </svg></a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_4_15" data-name="Componente 4 – 15"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -500,8 +581,8 @@
                       </svg>
                     </a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_4_16" data-name="Componente 4 – 16"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -511,8 +592,8 @@
                           transform="translate(11.066 11.066)" fill="#fff" />
                       </svg></a>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

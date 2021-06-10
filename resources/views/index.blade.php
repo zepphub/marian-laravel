@@ -15,7 +15,7 @@
             <h2>¡Soy Marian!</h2>
             <h4 class="text-medium text-marron my-4 my-md-3">Consultora de Marcas Auténticas.
               Especialista en Marketing y Estrategias Digitales</h4>
-            <button class="btn btn-primary">Mis propuestas para vos</button>
+            <a href="{{ route('servicios') }}" class="btn btn-primary">Mis propuestas para vos</a>
           </div>
         </div>
         <div class="col-md-5 d-none d-md-block">
@@ -28,6 +28,14 @@
     <img style="margin-top: -12px !important;" class="img-fluid w-100 img-rotate-180"
       src="{{ asset('/img/separador-seccion-svg2.svg') }}" alt="">
   </div>
+  <div class="container d-md-none my-3">
+    <div class="row">
+      <div class="col-md-12">
+        <img class="img-fluid" src="{{ asset('/img/Background.png') }}" alt="">
+      </div>
+    </div>
+  </div>
+  
   <!-- Portada Home -->
 
   <!-- Seccion Sobre Mi -->
@@ -47,7 +55,7 @@
               identificar en qué etapa estás y, en cuál pilar de tu emprendimiento debes enfocarte para mejorar la
               presencia digital de tu marca y potenciar tus resultados</p>
             <h5 class="my-3 text-medium">¡Quiero hacer el test!</h5>
-            <a href="text-form.php"><button class="btn btn-primary mb-5 mb-md-0">Iniciar ahora <svg xmlns="http://www.w3.org/2000/svg" width="17"
+            <a href="{{ route('test') }}"><button class="btn btn-primary mb-5 mb-md-0">Iniciar ahora <svg xmlns="http://www.w3.org/2000/svg" width="17"
                 height="17" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
@@ -86,11 +94,11 @@
             <h4 class="titulo-home mt-4 mt-md-0">Sobre Mí</h4>
             <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
             <h6 class="mb-3 mt-4 titulo-home text-marron text-medium">Si pudieras hacer realidad la idea que hace tiempo
-              tenes… Si
-              pudieses construir una marca uniendo todas las actividades,
+              tenes… <br>
+              Si pudieses construir una marca uniendo todas las actividades,
               proyectos e ilusiones que te movilizan…
             </h6>
-            <h6 class="mb-3 titulo-home text-secondary text-medium">¿Lo imaginas? Ok, allí aparezco yo.</h6>
+            <h6 class="mb-3 titulo-home text-secondary text-medium">¿Lo imaginas? <br> Ok, allí aparezco yo.</h6>
             <p class="mb-3 text-marron">Juntas podemos construir el universo de tu marca de la mano a diversas
               estrategias de Marketing Digital, Comunicación y Branding que te ayuden a
               posicionarte a través de una propuesta auténtica y diferente.
@@ -117,9 +125,9 @@
         <div class="text-center">
           <h4 class="titulo-home">Trabajemos Juntas</h4>
           <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
-          <p class="my-4">Construyamos juntas el universo de tu marca de la mano a diversas estrategias de Marketing
+          <p class="my-4 w-75 mx-auto">Construyamos juntas el universo de tu marca de la mano a diversas estrategias de Marketing
             Digital, Comunicación y Branding que te ayuden a posicionarte a través de una propuesta
-            auténtica y diferente</p>
+            auténtica y diferente.</p>
 
           <h5 class="text-marron-claro titulo-home text-medium">Mis propuestas</h5>
           <div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="4"
@@ -154,7 +162,7 @@
         <div class="card border-secondary text-center card-propuestas shadow">
           <img src="{{ asset('/img/card-asesoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
           <div class="card-body">
-            <h5 class="card-title titulo-home">Asesoría Personalizada</h5>
+            <h5 class="card-title titulo-home">Consultoría Estratégica</h5>
             <p class="card-text">Te ayudo a potenciar tu estrategia
               digital resaltando la esencia y los
               valores de tu marca.</p>
@@ -186,13 +194,13 @@
     <div class="container py-5 py-md-0">
       <div class="row text-center text-md-left">
         <div class="col-md-9">
-          <h4 class="text-white titulo-home">Eleva tu marca con mis recursos descargables</h4>
-          <p class="text-white">Obtené mis guías, planners y cursos sin costo para activar tu magia en el universo
+          <h4 class="text-white titulo-home my-md-3">Elevá tu marca con mis recursos descargables</h4>
+          <p class="text-white my-md-3">Obtené mis guías, planners y cursos sin costo para activar tu magia en el universo
             digital</p>
         </div>
         <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-end"><a href=""><button
               class="btn btn-blanco">Ver
-              Recursos</button></a></div>
+              Recurso</button></a></div>
       </div>
     </div>
   </div>
@@ -261,16 +269,24 @@
       <form class="w-100">
         <div class="form-row">
           <div class="form-group col-md-3">            
-            <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre">
+            <div class="px-3">
+              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre">
+            </div>
           </div>
           <div class="form-group col-md-3">
-            <input class="form-control rounded-pill border-0" type="text" placeholder="Apellido">            
+            <div class="px-3">
+              <input class="form-control rounded-pill border-0" type="text" placeholder="Apellido">
+            </div>            
           </div>
           <div class="form-group col-md-3">
-          <input class="form-control rounded-pill border-0" type="email" placeholder="Correo electrónico">      
+          <div class="px-3">
+            <input class="form-control rounded-pill border-0" type="email" placeholder="Correo electrónico">
+          </div>     
           </div>
           <div class="form-group col-md-3">
-          <input class="form-control rounded-pill border-0" type="text" placeholder="Whatsapp">      
+          <div class="px-3">
+            <input class="form-control rounded-pill border-0" type="tel" placeholder="Whatsapp">
+          </div>     
           </div>
         </div>
         <div class="mt-3 d-block d-md-flex w-100 justify-content-end px-3">
@@ -280,7 +296,7 @@
                 <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
                   <path id="Trazado_343" data-name="Trazado 343"
                     d="M125.974,7.358l-7.2-7.182a.6.6,0,1,0-.852.855l6.773,6.755L117.92,14.54a.6.6,0,0,0,.853.855l7.2-7.182a.6.6,0,0,0,0-.855Z"
-                    transform="translate(-117.742 0)" fill="#f8337a" stroke="#f8337a" stroke-width="1" />
+                    transform="translate(-117.742 0)" fill="currentColor" stroke="currentColor" stroke-width="1" />
                 </g>
               </g>
             </svg>
@@ -294,7 +310,7 @@
   <div class="m-0 p-0"><img style="margin-bottom: -12px !important;" class="img-fluid w-100"
       src="{{ asset('/img/separador-superior-seccion-svg.svg') }}" alt=""></div>
   <div class="bg-crema-suave contenedor-form-home py-5">
-    <div class="container bg-white p-4 rounded-lg">
+    <div id="contact-home" class="container bg-white py-3 p-md-4 rounded-lg">
       <div class="row">
         <div class="col-md-5">
           <div class="bg-textura-form rounded-lg p-md-4 p-3">
@@ -303,17 +319,17 @@
             <p class="text-white mt-3">Si estas por aquí es porque hay algo que quieres decirme o preguntarme.</p>
             <div>
               <ul class="list-group">
-                <li class="list-group-item border-0 bg-transparent pl-md-0 py-1">
+                <li class="list-group-item border-0 bg-transparent p-0 pl-md-0 py-md-1">
                   <div class="d-flex text-white align-items-center"><svg class="mr-2 text-secondary"
-                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                       class="bi bi-envelope" viewBox="0 0 16 16">
                       <path
                         d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
                     </svg>contacto@marianpd.com</div>
                 </li>
-                <li class="list-group-item border-0 bg-transparent pl-md-0 py-1">
+                <li class="list-group-item border-0 bg-transparent p-0 pl-md-0 py-md-1 my-2 my-md-0">
                   <div class="d-flex text-white align-items-center"><svg class="mr-2 text-secondary"
-                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                       class="bi bi-whatsapp" viewBox="0 0 16 16">
                       <path
                         d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
@@ -321,9 +337,9 @@
                 </li>
               </ul>
             </div>
-            <div class="social-group w-50 mt-5">
-              <ul class="list-group list-group-horizontal">
-                <li style="padding-left:0 !important;" class="list-group-item border-0 bg-transparent p-2 pl-0">
+            <div class="social-group mt-5">
+              <div class="d-flex">
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_2_9" data-name="Componente 2 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -334,8 +350,8 @@
                       </svg>
                     </a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_3_9" data-name="Componente 3 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -345,8 +361,8 @@
                           transform="translate(-1229.01 -1125.2)" fill="#fff" />
                       </svg></a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_4_15" data-name="Componente 4 – 15"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -357,8 +373,8 @@
                       </svg>
                     </a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_4_16" data-name="Componente 4 – 16"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -368,8 +384,8 @@
                           transform="translate(11.066 11.066)" fill="#fff" />
                       </svg></a>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

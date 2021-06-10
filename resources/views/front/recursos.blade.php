@@ -130,16 +130,24 @@
               @csrf
         <div class="form-row">
           <div class="form-group col-md-3">
-            <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
+            <div class="px-3">
+              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
+            </div>
           </div>
           <div class="form-group col-md-3">
-            <input class="form-control rounded-pill border-0" type="text" placeholder="Apellido" name="lastname">
+            <div class="px-3">
+              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
+            </div>
           </div>
           <div class="form-group col-md-3">
-          <input class="form-control rounded-pill border-0" type="email" placeholder="Correo electrónico" name="email">
+            <div class="px-3">
+              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
+            </div>
           </div>
           <div class="form-group col-md-3">
-          <input class="form-control rounded-pill border-0" type="text" placeholder="Whatsapp" name="whatsapp">
+            <div class="px-3">
+              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
+            </div>
           </div>
         </div>
         <div class="mt-3 d-block d-md-flex w-100 justify-content-end px-3">
@@ -149,7 +157,7 @@
                 <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
                   <path id="Trazado_343" data-name="Trazado 343"
                     d="M125.974,7.358l-7.2-7.182a.6.6,0,1,0-.852.855l6.773,6.755L117.92,14.54a.6.6,0,0,0,.853.855l7.2-7.182a.6.6,0,0,0,0-.855Z"
-                    transform="translate(-117.742 0)" fill="#f8337a" stroke="#f8337a" stroke-width="1" />
+                    transform="translate(-117.742 0)" fill="currentColor" stroke="currentColor" stroke-width="1" />
                 </g>
               </g>
             </svg>

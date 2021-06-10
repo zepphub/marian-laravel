@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col-5">
+      <div class="col-12 col-md-5">
         <div class="nav flex-column nav-pills" id="pills-vertical" role="tablist" aria-orientation="vertical">
           <a class="nav-link rounded font-weight-bold active" id="v-pills-home-tab" data-toggle="pill"
             href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Consultorías estratégicas
@@ -38,10 +38,10 @@
                   <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
                     <path id="Trazado_343" data-name="Trazado 343"
                       d="M125.974,7.358l-7.2-7.182a.6.6,0,1,0-.852.855l6.773,6.755L117.92,14.54a.6.6,0,0,0,.853.855l7.2-7.182a.6.6,0,0,0,0-.855Z"
-                      transform="translate(-117.742 0)" fill="#FFF" stroke="#FFF" stroke-width="1" />
+                      transform="translate(-117.742 0)" fill="currentColor" stroke="currentColor" stroke-width="1" />
                   </g>
                 </g>
-                <g id="Elipse_53" data-name="Elipse 53" transform="translate(353 14)" fill="none" stroke="#FFF"
+                <g id="Elipse_53" data-name="Elipse 53" transform="translate(353 14)" fill="none" stroke="currentColor"
                   stroke-width="1">
                   <circle cx="14" cy="14" r="14" stroke="none" />
                   <circle cx="14" cy="14" r="13.5" fill="none" />
@@ -51,17 +51,17 @@
           </a>
           <a class="nav-link rounded font-weight-bold" id="v-pills-profile-tab" data-toggle="pill"
             href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Programa intensivo
-            de 6 semanas <svg class="float-right d-none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+            de 8 semanas <svg class="float-right d-none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
               viewBox="0 0 28 28">
               <g id="icon-pills-vertical" transform="translate(-353 -14)">
                 <g id="next_1_" data-name="next (1)" transform="translate(302 18.215)">
                   <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
                     <path id="Trazado_343" data-name="Trazado 343"
                       d="M125.974,7.358l-7.2-7.182a.6.6,0,1,0-.852.855l6.773,6.755L117.92,14.54a.6.6,0,0,0,.853.855l7.2-7.182a.6.6,0,0,0,0-.855Z"
-                      transform="translate(-117.742 0)" fill="#FFF" stroke="#FFF" stroke-width="1" />
+                      transform="translate(-117.742 0)" fill="currentColor" stroke="currentColor" stroke-width="1" />
                   </g>
                 </g>
-                <g id="Elipse_53" data-name="Elipse 53" transform="translate(353 14)" fill="none" stroke="#FFF"
+                <g id="Elipse_53" data-name="Elipse 53" transform="translate(353 14)" fill="none" stroke="currentColor"
                   stroke-width="1">
                   <circle cx="14" cy="14" r="14" stroke="none" />
                   <circle cx="14" cy="14" r="13.5" fill="none" />
@@ -77,10 +77,10 @@
                   <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
                     <path id="Trazado_343" data-name="Trazado 343"
                       d="M125.974,7.358l-7.2-7.182a.6.6,0,1,0-.852.855l6.773,6.755L117.92,14.54a.6.6,0,0,0,.853.855l7.2-7.182a.6.6,0,0,0,0-.855Z"
-                      transform="translate(-117.742 0)" fill="#FFF" stroke="#FFF" stroke-width="1" />
+                      transform="translate(-117.742 0)" fill="currentColor" stroke="currentColor" stroke-width="1" />
                   </g>
                 </g>
-                <g id="Elipse_53" data-name="Elipse 53" transform="translate(353 14)" fill="none" stroke="#FFF"
+                <g id="Elipse_53" data-name="Elipse 53" transform="translate(353 14)" fill="none" stroke="currentColor"
                   stroke-width="1">
                   <circle cx="14" cy="14" r="14" stroke="none" />
                   <circle cx="14" cy="14" r="13.5" fill="none" />
@@ -96,10 +96,10 @@
                   <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
                     <path id="Trazado_343" data-name="Trazado 343"
                       d="M125.974,7.358l-7.2-7.182a.6.6,0,1,0-.852.855l6.773,6.755L117.92,14.54a.6.6,0,0,0,.853.855l7.2-7.182a.6.6,0,0,0,0-.855Z"
-                      transform="translate(-117.742 0)" fill="#FFF" stroke="#FFF" stroke-width="1" />
+                      transform="translate(-117.742 0)" fill="currentColor" stroke="currentColor" stroke-width="1" />
                   </g>
                 </g>
-                <g id="Elipse_53" data-name="Elipse 53" transform="translate(353 14)" fill="none" stroke="#FFF"
+                <g id="Elipse_53" data-name="Elipse 53" transform="translate(353 14)" fill="none" stroke="currentColor"
                   stroke-width="1">
                   <circle cx="14" cy="14" r="14" stroke="none" />
                   <circle cx="14" cy="14" r="13.5" fill="none" />
@@ -108,7 +108,7 @@
             </svg></a>
         </div>
       </div>
-      <div class="col-7">
+      <div class="col-12 col-md-7 mt-4 mt-md-0">
         <div class="tab-content" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             <div class="d-flex align-items-center">
@@ -124,7 +124,7 @@
               comenzás: aplicamos todo a tu proyecto de forma práctica y personalizada, basándonos en tu situación
               actual y en tus principales inquietudes.
             </p>
-            <a href=""><button class="btn btn-outline-primary mt-2">¡Quiero conocer detalles y reservar mi
+            <a href="{{ route('consultorias') }}"><button class="btn btn-outline-primary mt-2">¡Quiero conocer detalles y reservar mi
                 encuentro!</button></a>
           </div>
 
@@ -144,7 +144,7 @@
               calendarización del contenido que te llevará a enamorar a tu audiencia.
             </p>
             <h4 class="text-rosa-oscuro text-medium">Solo 5 plazas por bimestre</h4>
-            <a href=""><button class="btn btn-outline-primary mt-2">¡Quiero conocer detalles y reservar mi
+            <a href="{{ route('programa-intensivo') }}"><button class="btn btn-outline-primary mt-2">¡Quiero conocer detalles y reservar mi
                 encuentro!</button></a>
           </div>
 
@@ -166,7 +166,7 @@
             </p>
             <h4 class="text-rosa-oscuro text-medium my-3">Abro este programa solo 2 veces al año.</h4>
             <h5 class="text-marron-claro text-medium">Si te gustaría ser parte de la próxima edición, aplica acá.</h5>
-            <a href=""><button class="btn btn-outline-primary mt-2">¡Quiero conocer más detalles!</button></a>
+            <a href="{{ route('mentoria-grupal') }}"><button class="btn btn-outline-primary mt-2">¡Quiero conocer más detalles!</button></a>
           </div>
 
 
@@ -185,7 +185,7 @@
               próximas experiencias, ¡charlemos!
 
             </p>
-            <a href=""><button class="btn btn-outline-primary mt-2">¡Quiero saber más!</button></a>
+            <a href="{{ route('talleres-y-eventos') }}"><button class="btn btn-outline-primary mt-2">¡Quiero saber más!</button></a>
           </div>
 
 
@@ -200,7 +200,7 @@
         <h4 class="font-weight-bold titulo-home">Empresas e Instituciones con las que he colaborado</h4>
       </div>
       <div class="col-md-7">
-        <div id="brandsCarousel" class="carousel slide" data-ride="carousel">
+        <div id="brandsCarousel" class="carousel slide d-none d-md-block" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item py-5 active">
               <div class="row align-items-center">
@@ -237,6 +237,77 @@
             </div>
           </a>
           <a class="carousel-control-next" href="#brandsCarousel" role="button" data-slide="next">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14.753" height="26.388" viewBox="0 0 14.753 26.388">
+                <g id="next_1_" data-name="next (1)" transform="translate(-117.153 0.589)">
+                  <g id="Grupo_475" data-name="Grupo 475" transform="translate(117.742 0)">
+                    <path id="Trazado_343" data-name="Trazado 343"
+                      d="M131.117,11.955,119.416.286a.981.981,0,1,0-1.385,1.389l11,10.975L118.03,23.624a.981.981,0,0,0,1.385,1.389l11.7-11.669a.98.98,0,0,0,0-1.389Z"
+                      transform="translate(-117.742 0)" fill="#e67161" stroke="#e67161" stroke-width="1" />
+                  </g>
+                </g>
+              </svg>
+
+            </div>
+          </a>
+        </div>
+
+        <div id="brandsCarouselMob" class="carousel slide d-md-none my-3" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item py-3 active">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/servicios-logo-1.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-3">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/servicios-logo-2.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-3">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/servicios-logo-3.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-3">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/servicios-logo-4.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-3">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/servicios-logo-5.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-3">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/servicios-logo-6.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-3">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/servicios-logo-7.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-3">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/servicios-logo-8.png') }}" alt=""></div>
+              </div>
+            </div>            
+          </div>
+          <a class="carousel-control-prev" href="#brandsCarouselMob" role="button" data-slide="prev">
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="14.753" height="26.388" viewBox="0 0 14.753 26.388">
+                <g id="next_1_" data-name="next (1)" transform="translate(0.5 0.59)">
+                  <g id="Grupo_475" data-name="Grupo 475" transform="translate(0 0)">
+                    <path id="Trazado_343" data-name="Trazado 343"
+                      d="M118.03,11.955,129.732.286a.981.981,0,1,1,1.385,1.389l-11,10.975,11.005,10.975a.981.981,0,0,1-1.385,1.389l-11.7-11.669a.98.98,0,0,1,0-1.389Z"
+                      transform="translate(-117.742 0)" fill="#e67161" stroke="#e67161" stroke-width="1" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+          <a class="carousel-control-next" href="#brandsCarouselMob" role="button" data-slide="next">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="14.753" height="26.388" viewBox="0 0 14.753 26.388">
                 <g id="next_1_" data-name="next (1)" transform="translate(-117.153 0.589)">
