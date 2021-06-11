@@ -67,7 +67,7 @@
                 <h4 class="text-medium mb-3">Trabajá conmigo</h4>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link pl-0 pt-0" href="{{ route('consultorias') }}">Consultorías Estratégicas</a>
+                        <a class="nav-link pl-0 pt-0" href="{{ route('consultorias') }}">Consultoría Estretégica</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link pl-0" href="{{ route('mentoria') }}">Mentoría</a>

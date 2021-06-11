@@ -5,6 +5,25 @@
 @section('title')@endsection
 
 @section('content')
+
+<!-- Modal -->
+<div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="successFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <h4 class="text-verde">Envio exitoso</h4>
+          <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Portada Home -->
   <div class="bg-crema-suave">
     <div class="container py-5 contenedor-portada-home">
@@ -425,7 +444,8 @@
                 </div>
 
                 @endif
-                <button class="btn btn-primary" type="submit">Enviar 
+                <button type="button" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#successForm">
+                Enviar 
                   <svg xmlns="http://www.w3.org/2000/svg" width="21.29"
                     height="21.29" viewBox="0 0 21.29 21.29">
                     <g id="avion-de-papel" transform="translate(0 0)">

@@ -241,7 +241,7 @@
         <div class="card border-secondary text-center card-propuestas shadow">
           <img src="{{ asset('img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
           <div class="card-body">
-            <h5 class="card-title titulo-home">Asesoría Personalizada</h5>
+            <h5 class="card-title titulo-home">Consultoría Estretégica</h5>
             <p class="card-text">Te ayudo a potenciar tu estrategia 
 digital resaltando la esencia y los 
 valores de tu marca.</p>
