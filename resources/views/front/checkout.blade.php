@@ -70,10 +70,10 @@
                     </div>
                     @foreach ($cart_items as $key => $cart_item)
                     <div class="row @if ($loop->first) mt-3 @endif">
-                        <div class="col-6 col-md-6">
-                            <h5 class="font-weight-normal text-marron-claro">{{ $cart_item->name }}</h5>
+                        <div class="col-8 col-md-8">
+                            <h5 class="font-weight-normal text-marron-claro">{{ $cart_item->fullname() }}</h5>
                         </div>
-                        <div class="col-6 col-md-6 text-right">
+                        <div class="col-4 col-md-4 text-right">
                             <h5 class="text-marron-claro">{{ $cart_item->price() }}</h5>
                         </div>
                     </div>
