@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Counseling;
 
 class Service extends Model
 {
@@ -49,5 +50,14 @@ class Service extends Model
     public function price()
     {
       return $this->price_symbol() . $this->price_raw();
+    }
+
+    public function fullname(){
+      $counseling = Counseling::where('service_id', $this->id)->first();
+      if (!is_null($counseling)){
+        return 'Consultoría Estrategica "' . $this->name . '"';
+      } else {
+        return $this->name;
+      }
     }
 }

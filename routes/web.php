@@ -34,7 +34,7 @@ Route::get('/carrito/{service}', [App\Http\Controllers\CartController::class, 'a
 Route::get('/carrito/{key}/delete', [App\Http\Controllers\CartController::class, 'delete'])->name('carrito.delete');
 
 Route::get('/checkout', [App\Http\Controllers\CheckoutController::class, 'checkout'])->name('checkout');
-Route::get('/order', [App\Http\Controllers\CheckoutController::class, 'order'])->name('order');
+Route::post('/order', [App\Http\Controllers\CheckoutController::class, 'order'])->name('order');
 Route::get('/order-cancel', [App\Http\Controllers\CheckoutController::class, 'checkoutCancel'])->name('order.cancel');
 Route::get('/order-success', [App\Http\Controllers\CheckoutController::class, 'checkoutSuccess'])->name('order.success');
 

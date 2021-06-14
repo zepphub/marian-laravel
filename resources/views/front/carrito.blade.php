@@ -43,7 +43,7 @@
                                                 transform="translate(-11.285 -11.289)" fill="#b46063" />
                                         </svg>
                                     </a></th>
-                                <td><span class="descripcion-item">{{ $cart_item->name }}</span></td>
+                                <td><span class="descripcion-item">{{ $cart_item->fullname() }}</span></td>
                                 <td><span class="costo-item"> {{ $cart_item->price() }}</span></td>
                             </tr>
                             @endforeach

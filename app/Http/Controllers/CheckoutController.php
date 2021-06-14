@@ -6,14 +6,18 @@ use Illuminate\Http\Request;
 use Srmklive\PayPal\Services\PayPal;
 use MercadoPago\SDK;
 use App\Models\Service;
+use App\Http\Requests\OrderRequest;
 
 class CheckoutController extends Controller
 {
-  private function total($services)
+  private function total($services, $symbol = false)
   {
     $total = 0;
     foreach ($services as $key => $service){
       $total += $service->price_raw();
+      end($services);
+      if ($symbol && $key === key($services))
+        $total = $service->price_symbol() . $total;
     }
 
     return $total;
@@ -99,7 +103,12 @@ class CheckoutController extends Controller
     return view('front.agendar', ['captured_order' => $captured, 'cart_items'=>$cart_items, 'total'=>$total]);
   }
 
-  public function order(Request $request){
+  public function order(OrderRequest $request){
+    $request->session()->put('last_order_firstname', $request->get('firstname'));
+    $request->session()->put('last_order_lastname', $request->get('lastname'));
+    $request->session()->put('last_order_email', $request->get('email'));
+    $request->session()->put('last_order_whatsapp', $request->get('whatsapp'));
+
     if(Service::is_argentina()) {
       return $this->checkoutMercadoPago($request);
     } else {
@@ -142,7 +151,9 @@ class CheckoutController extends Controller
 
   public function checkout(Request $request){
     $is_argentina = Service::is_argentina();
+    $cart_items = $request->session()->get('cart.items', []); // Second argument is a default value
+    $total = $this->total($cart_items, true);
 
-    return view('front.checkout', ['is_argentina' => $is_argentina]);
+    return view('front.checkout', ['cart_items'=>$cart_items, 'total'=>$total, 'is_argentina' => $is_argentina]);
   }
 }
