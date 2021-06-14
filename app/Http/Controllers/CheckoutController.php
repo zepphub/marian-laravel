@@ -7,6 +7,8 @@ use Srmklive\PayPal\Services\PayPal;
 use MercadoPago\SDK;
 use App\Models\Service;
 use App\Http\Requests\OrderRequest;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\OrderProcessed;
 
 class CheckoutController extends Controller
 {
@@ -105,14 +107,15 @@ class CheckoutController extends Controller
     $cart_items = $request->session()->get('cart.items', []); // Second argument is a default value
     $total = $this->total($cart_items);
 
-    return view('front.agendar', ['captured_order' => $captured, 'cart_items'=>$cart_items, 'total'=>$total]);
+    return redirect()->route('front.checkout');
   }
 
   public function order(OrderRequest $request){
-    $request->session()->put('last_order_firstname', $request->get('firstname'));
-    $request->session()->put('last_order_lastname', $request->get('lastname'));
-    $request->session()->put('last_order_email', $request->get('email'));
-    $request->session()->put('last_order_whatsapp', $request->get('whatsapp'));
+    $request->session()->put('last_order.firstname', $request->get('firstname'));
+    $request->session()->put('last_order.lastname', $request->get('lastname'));
+    $request->session()->put('last_order.email', $request->get('email'));
+    $request->session()->put('last_order.whatsapp', $request->get('whatsapp'));
+    //$request->session()->put('last_order.cart.items', $request->get('cart.items'));
 
     if(Service::is_argentina()) {
       return $this->checkoutMercadoPago($request);
@@ -132,25 +135,60 @@ class CheckoutController extends Controller
     $items = array();
     foreach ($cart_items as $key => $service){
       $item = new \MercadoPago\Item();
-      $item->title = $service->name;
+      $item->title = $service->fullname();
       $item->quantity = 1;
       $item->unit_price = $service->price_raw();
       $items[]=$item;
     }
     $preference->items = $items;
+    $preference->back_urls = array(
+        "success" => route('order.success'),
+        "failure" => route('order.cancel'),
+        "pending" => ""
+    );
+    $preference->auto_return = "approved";
     $preference->save();
 
-    return view('front.checkout_mercadopago', ['preference' => $preference]);
+    return redirect($preference->init_point);
+  }
+
+  private function checkoutMercadoPagoSuccess(Request $request){
+    $cart_items = $request->session()->get('cart.items', []); // Second argument is a default value
+    $total = $this->total($cart_items);
+
+    if (count($cart_items) == 1){
+      return view('front.calendar', ['service' =>$cart_items[0]]);
+    } else {
+      // disabled
+      //return view('front.agendar', ['captured_order' => $captured, 'cart_items'=>$cart_items, 'total'=>$total]);
+    }
   }
 
 
   public function checkoutSuccess(Request $request){
-    // convert cart items to calendly items?
-    return $this->checkoutPaypalSuccess($request);
+    $firstname = $request->session()->get('last_order.firstname', "");
+    $lastname = $request->session()->get('last_order.lastname', "");
+    $email = $request->session()->get('last_order.email', "");
+    $cart_items = $request->session()->get('cart.items', []);
+
+    if (count($cart_items) == 1) {
+      Mail::to([$email])->send(new OrderProcessed($firstname, $lastname, $cart_items[0]));
+    }
+
+    if(Service::is_argentina()) {
+      return $this->checkoutMercadoPagoSuccess($request);
+    } else {
+      return $this->checkoutPaypalSuccess($request);
+    }
   }
 
   public function checkoutCancel(Request $request){
-    return $this->checkoutPaypalCancel($request);
+    if(Service::is_argentina()) {
+      //return $this->checkoutMercadoPagoCancel($request);
+      return redirect()->route('front.checkout');
+    } else {
+      return $this->checkoutPaypalCancel($request);
+    }
   }
 
   public function checkout(Request $request){
