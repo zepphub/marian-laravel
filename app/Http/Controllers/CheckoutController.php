@@ -36,11 +36,11 @@ class CheckoutController extends Controller
     $items = array();
     foreach ($cart_items as $key => $service){
       $items[] = [
-        "name"=> $service->name,
+        "name"=> $service->fullname(),
         "unit_amount"=>["currency_code"=>"USD",
                         "value"=> strval($service->price_raw())],
         "quantity"=>"1",
-        "description"=>"consultoria personalizada",
+        //"description"=>"consultoria personalizada",
         "category"=>"DIGITAL_GOODS"
       ];
     }
@@ -86,7 +86,12 @@ class CheckoutController extends Controller
     $cart_items = $request->session()->get('cart.items', []); // Second argument is a default value
     $total = $this->total($cart_items);
 
-    return view('front.agendar', ['captured_order' => $captured, 'cart_items'=>$cart_items, 'total'=>$total]);
+    if (count($cart_items) == 1){
+      return view('front.calendar', ['service' =>$cart_items[0]]);
+    } else {
+      // disabled
+      //return view('front.agendar', ['captured_order' => $captured, 'cart_items'=>$cart_items, 'total'=>$total]);
+    }
   }
 
   private function checkoutPaypalCancel(Request $request){
@@ -145,7 +150,6 @@ class CheckoutController extends Controller
   }
 
   public function checkoutCancel(Request $request){
-    // delete cart items
     return $this->checkoutPaypalCancel($request);
   }
 

@@ -18,6 +18,15 @@
     </div>
 
     <div class="container">
+        @if (\Session::has('message'))
+        <div class="row mt-5 mt-md-4">
+          <div class="col-md-12">
+            <div class="alert alert-success" role="alert">
+              {!! \Session::get('message') !!}
+            </div>
+          </div>
+        </div>
+        @endif
         <div class="row">
             <div class="col-md-12">
                 <div class="">
