@@ -11,8 +11,8 @@
         <h2>Consultorías Estratégicas</h2>
         <nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center bg-transparent text-marron-claro">
-            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="index.php">Inicio</a></li>
-            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="mentoria.php">Mentoría</a></li>
+            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="{{ route('index') }}">Inicio</a></li>
+            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="{{ route('mentoria') }}">Mentoría</a></li>
             <li class="breadcrumb-item text-secondary active font-weight-bold" aria-current="page">Programa intensivo de
               8 semanas</li>
           </ol>
@@ -100,7 +100,7 @@
         <h4 class="titulo-home mb-3">Sobre la experiencia</h4>
         {!! $mentorship->descriptions[0]->content !!}
         <h5 class="font-weight-normal titulo-home mt-3">Costo: <span class="font-weight-bold">{{ $mentorship->service->price() }}</span></h5>
-        <a class="btn btn-primary mt-4" href="">Aplicar al programa</a>
+        <a class="btn btn-primary mt-4" href="{{ route('carrito.add', $mentorship->service) }}">Aplicar al programa</a>
       </div>
       <div class="col-md-5 mt-4 mt-md-0 bg-nude rounded">
         <div class="py-4 pm-d-4">

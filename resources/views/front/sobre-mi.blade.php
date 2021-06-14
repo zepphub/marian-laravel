@@ -182,7 +182,7 @@
               <p class="card-text">Trabajamos en el universo de tu marca, fortaleciendo los pilares más importantes y
                 consolidando tu presencia digital, de forma grupal o personalizada.</p>
               <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-              <a href="mentoria.php" class="btn btn-primary">Click Aquí</a>
+              <a href="{{ route('mentoria-grupal') }}" class="btn btn-primary">Click Aquí</a>
             </div>
           </div>
         </div>
@@ -195,7 +195,7 @@
                 digital resaltando la esencia y los
                 valores de tu marca.</p>
               <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-              <a href="asesoria.php" class="btn btn-primary">Click Aquí</a>
+              <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">Click Aquí</a>
             </div>
           </div>
         </div>
@@ -209,7 +209,7 @@
                 profesionales con visión de
                 crecimiento.</p>
               <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-              <a href="talleres-y-conferencias.php" class="btn btn-primary">Click Aquí</a>
+              <a href="{{ route('talleres-y-eventos') }}" class="btn btn-primary">Click Aquí</a>
             </div>
           </div>
         </div>

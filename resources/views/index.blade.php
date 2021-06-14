@@ -47,7 +47,7 @@
               identificar en qué etapa estás y, en cuál pilar de tu emprendimiento debes enfocarte para mejorar la
               presencia digital de tu marca y potenciar tus resultados</p>
             <h5 class="my-3 text-medium">¡Quiero hacer el test!</h5>
-            <a href="text-form.php"><button class="btn btn-primary mb-5 mb-md-0">Iniciar ahora <svg xmlns="http://www.w3.org/2000/svg" width="17"
+            <a href="{{ route('test') }}"><button class="btn btn-primary mb-5 mb-md-0">Iniciar ahora <svg xmlns="http://www.w3.org/2000/svg" width="17"
                 height="17" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
@@ -97,7 +97,7 @@
             </p>
             <p class="mb-3 text-marron">Si alguna de estas palabras resuena en vos, ¡Bienvenida!, estas en el lugar
               correcto.</p>
-            <button class="btn btn-outline-secondary">Más por aquí</button>
+            <a href="{{ route('sobre-mi') }}" class="btn btn-outline-secondary">Más por aquí</a>
           </div>
         </div>
       </div>
@@ -146,7 +146,7 @@
             <p class="card-text">Trabajamos en el universo de tu marca, fortaleciendo los pilares más importantes y
               consolidando tu presencia digital, de forma grupal o personalizada.</p>
             <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-            <a href="mentoria.php" class="btn btn-primary">Click Aquí</a>
+            <a href="{{ route('mentoria-grupal') }}" class="btn btn-primary">Click Aquí</a>
           </div>
         </div>
       </div>
@@ -159,7 +159,7 @@
               digital resaltando la esencia y los
               valores de tu marca.</p>
             <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-            <a href="asesoria.php" class="btn btn-primary">Click Aquí</a>
+            <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">Click Aquí</a>
           </div>
         </div>
       </div>
@@ -173,7 +173,7 @@
               profesionales con visión de
               crecimiento.</p>
             <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-            <a href="talleres-y-conferencias.php" class="btn btn-primary">Click Aquí</a>
+            <a href="{{ route('talleres-y-eventos') }}" class="btn btn-primary">Click Aquí</a>
           </div>
         </div>
       </div>
@@ -190,7 +190,7 @@
           <p class="text-white">Obtené mis guías, planners y cursos sin costo para activar tu magia en el universo
             digital</p>
         </div>
-        <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-end"><a href=""><button
+        <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-end"><a href="{{ route('recursos') }}"><button
               class="btn btn-blanco">Ver
               Recursos</button></a></div>
       </div>

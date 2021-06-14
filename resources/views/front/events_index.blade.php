@@ -13,7 +13,7 @@
         <h2>Talleres y Conferencias</h2>
         <nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center bg-transparent text-marron-claro">
-            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="index.php">Inicio</a></li>
+            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="{{ route('index') }}">Inicio</a></li>
             <li class="breadcrumb-item text-secondary active font-weight-bold" aria-current="page">Talleres y
               Conferencias</li>
           </ol>

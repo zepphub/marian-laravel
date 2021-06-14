@@ -13,8 +13,8 @@
         <h2>Mentoría Grupal “Activá tu magia”</h2>
         <nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center bg-transparent text-marron-claro">
-            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="index.php">Inicio</a></li>
-            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="mentoria.php">Mentoría</a></li>
+            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="{{ route('index') }}">Inicio</a></li>
+            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="{{ route('mentoria') }}">Mentoría</a></li>
             <li class="breadcrumb-item text-secondary active font-weight-bold" aria-current="page">Mentoría Grupal
               "Activá tu magia" </li>
           </ol>
@@ -246,8 +246,8 @@
         <h4 class="text-white titulo-home">¡Aplicá para la próxima edición!</h4>
       </div>
       <div class="col-md-4 d-flex flex-md-column align-items-center justify-content-center justify-content-md-end">
-        <a href=""><button class="btn btn-blanco">¡quiero reservar mi lugar!</button></a>
-        <h5 class="text-white mt-3">Costo <span>$500 / USD 80</span></h5>
+        <a href="{{ route('carrito.add', $mentorship->service) }}"><button class="btn btn-blanco">¡quiero reservar mi lugar!</button></a>
+        <h5 class="text-white mt-3">Costo <span>{{ $mentorship->service->price() }}</span></h5>
       </div>
     </div>
   </div>
@@ -281,7 +281,7 @@
 digital resaltando la esencia y los 
 valores de tu marca.</p>
             <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-            <a href="asesoria.php" class="btn btn-primary">Click Aquí</a>
+            <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">Click Aquí</a>
           </div>
         </div>
       </div>
@@ -295,7 +295,7 @@ para mujeres emprendedoras y
 profesionales con visión de 
 crecimiento.</p>
             <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-            <a href="talleres-y-eventos.php" class="btn btn-primary">Click Aquí</a>
+            <a href="{{ route('talleres-y-eventos') }}" class="btn btn-primary">Click Aquí</a>
           </div>
         </div>
       </div>
