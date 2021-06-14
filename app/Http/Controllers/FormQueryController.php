@@ -27,8 +27,8 @@ class FormQueryController extends Controller
       $formquery->save();
       $message = 'Tu consulta ha sido registrada. Nos contactaremos a la brevedad.';
 
-
-      return redirect()->route('index')->withMessage($message);
+      //return Response::json($response)->withMessage($message);
+      return response()->json(['success'=>$message]);
     }
 
     public function csv()

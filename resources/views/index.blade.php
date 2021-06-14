@@ -258,23 +258,24 @@
       </div>
     </div>
     <div class="row mt-3">
-      <form class="w-100">
+      <form id="newsletterForm" class="needs-validation w-100" action="{{ route('newsletter-subscription') }}" method="post">
+        @csrf
         <div class="form-row">
-          <div class="form-group col-md-3">            
-            <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre">
+          <div class="form-group col-md-3">
+            <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname" required>
           </div>
           <div class="form-group col-md-3">
-            <input class="form-control rounded-pill border-0" type="text" placeholder="Apellido">            
+            <input class="form-control rounded-pill border-0" type="text" placeholder="Apellido" name="lastname" required>
           </div>
           <div class="form-group col-md-3">
-          <input class="form-control rounded-pill border-0" type="email" placeholder="Correo electrónico">      
+          <input class="form-control rounded-pill border-0" type="email" placeholder="Correo electrónico" name="email" required>
           </div>
           <div class="form-group col-md-3">
-          <input class="form-control rounded-pill border-0" type="text" placeholder="Whatsapp">      
+          <input class="form-control rounded-pill border-0" type="text" placeholder="Whatsapp" name="whatsapp" required>
           </div>
         </div>
         <div class="mt-3 d-block d-md-flex w-100 justify-content-end px-3">
-          <a href="#"><button type="submit" class="btn btn-blanco btn-block">Suscribirme <svg class="mb-1 ml-1"
+          <button type="submit" class="btn btn-blanco">Suscribirme <svg class="mb-1 ml-1"
               xmlns="http://www.w3.org/2000/svg" width="9.476" height="16.638" viewBox="0 0 9.476 16.638">
               <g id="next_1_" data-name="next (1)" transform="translate(-60.433 -1.433)">
                 <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
@@ -284,7 +285,7 @@
                 </g>
               </g>
             </svg>
-          </button></a>
+          </button>
         </div>
       </form>
     </div>
@@ -375,7 +376,7 @@
         </div>
         <div class="col-md-7">
           <div class="mt-4 mt-md-0">
-            <form  class="needs-validation form-home" action="{{ route('consulta') }}" method="post">
+            <form id="contactForm" class="needs-validation form-home" action="{{ route('consulta') }}" method="post">
               @csrf
               <div class="form-row">
                 <div class="col-md-6 mb-3">
@@ -399,16 +400,6 @@
                 </div>
               </div>
               <div class="text-right">
-                @if (\Session::has('message'))
-                <div class="row mt-5 mt-md-4">
-                  <div class="col-9 col-md-6">
-                    <div class="alert alert-success" role="alert">
-                      {!! \Session::get('message') !!}
-                    </div>
-                  </div>
-                </div>
-
-                @endif
                 <button class="btn btn-primary" type="submit">Enviar 
                   <svg xmlns="http://www.w3.org/2000/svg" width="21.29"
                     height="21.29" viewBox="0 0 21.29 21.29">
@@ -472,28 +463,101 @@
       </div>
     </div>
   </div>
+  <!-- Modal Envio Exitoso Form contacto Home -->
+  <div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="successFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Envio exitoso</h4>
+            <p id="successFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Modal Envio Fallido Form contacto Home -->
+  <div class="modal fade" id="errorForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="errorFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Error</h4>
+            <p id="errorFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-fallido.svg') }}" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
 @endsection
 
 @section('scripts')
 <script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function () {
-    'use strict';
-    window.addEventListener('load', function () {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function (form) {
-        form.addEventListener('submit', function (event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict';
+  window.addEventListener('load', function () {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
 
+$('#contactForm').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "{{ route('consulta') }}",
+        data: $(this).serialize(),
+        success: function(msg) {
+          $('#successFormMsg').text(msg.success);
+          $('#successForm').modal();
+          console.log(msg.success);
+        },
+        error: function(xhr, status, error){
+          //muestra solo el primer error
+          firstKey = Object.keys(xhr.responseJSON.errors)[0];
+          $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
+          $('#errorForm').modal();
+        }
+    });
+});
+
+$('#newsletterForm').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "{{ route('newsletter-subscription') }}",
+        data: $(this).serialize(),
+        success: function(msg) {
+          $('#successFormMsg').text(msg.success);
+          $('#successForm').modal();
+          console.log(msg.success);
+        },
+        error: function(xhr, status, error){
+          //muestra solo el primer error
+          firstKey = Object.keys(xhr.responseJSON.errors)[0];
+          $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
+          $('#errorForm').modal();
+        }
+    });
+});
 </script>
 @endsection

@@ -44,6 +44,7 @@ class NewsletterSubscriptionRequest extends FormRequest
     public function messages()
      {
           return [
+            'email.unique' => 'Este email ya esta registrado.'
           ];
      }
 }
