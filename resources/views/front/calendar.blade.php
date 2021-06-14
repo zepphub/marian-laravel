@@ -17,7 +17,7 @@
             <li class="breadcrumb-item text-secondary active font-weight-bold" aria-current="page">Calendario de Sesiones</li>
           </ol>
           <!-- Calendly inline widget begin -->
-          <div class="calendly-inline-widget" data-url="https://calendly.com/jlneder/15min" style="min-width:320px;height:660px;"></div>
+          <div class="calendly-inline-widget" data-url="{{ $service->calendly }}" style="min-width:320px;height:660px;"></div>
           <!-- Calendly inline widget end -->
         </nav>
       </div>
