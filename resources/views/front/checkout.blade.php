@@ -85,27 +85,16 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-md-12">
-                            <h4 class="font-weight-bold">Método de Pago</h4>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="MP" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="MP">MercadoPago</label>
-                            </div>
-                            <div class="custom-control custom-radio mt-2">
-                                <input type="radio" id="PayPal" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="PayPal">Paypal</label>
-                            </div>
+                          @if ($is_argentina)
+                          <p>MercadoPago (es argentina!)</p>
+                          @else
+                          <p>Paypal (no es argentina!)</p>
+                          @endif
                         </div>
                     </div>
-                    <a href=""><button class="btn btn-primary btn-block mt-4">Finalizar pedido</button></a>
+                    <button class="btn btn-primary btn-block mt-4">Finalizar pedido</button>
                 </div>
             </div>
         </div>
     </div>
-
-    <?php include 'footer.php';?>     
-
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script type="module" src="{{ asset('js/starter.js') }}"></script>
-</body>
-
-</html>
+@endsection

@@ -25,7 +25,6 @@ class CheckoutController extends Controller
   }
 
   private function checkoutPaypal(Request $request){
-
     $cart_items = $request->session()->get('cart.items', []); // Second argument is a default value
     $total = $this->total($cart_items);
 
@@ -57,8 +56,8 @@ class CheckoutController extends Controller
               "items"=> $items
       ]],
       "application_context" => [
-        "cancel_url" => route('checkout.cancel'),
-        "return_url" => route('checkout.success'),
+        "cancel_url" => route('order.cancel'),
+        "return_url" => route('order.success'),
         "shipping_preference" => "NO_SHIPPING"
       ]
     ]);
@@ -99,10 +98,12 @@ class CheckoutController extends Controller
     return view('front.agendar', ['captured_order' => $captured, 'cart_items'=>$cart_items, 'total'=>$total]);
   }
 
-  public function checkout(Request $request){
-    if(!Service::is_argentina()) {
-    return $this->checkoutPaypal($request);
-    } else return dd("no es argentina??");
+  public function order(Request $request){
+    if(Service::is_argentina()) {
+      return $this->checkoutMercadoPago($request);
+    } else {
+      return $this->checkoutPaypal($request);
+    }
   }
 
   public function checkoutSuccess(Request $request){
@@ -115,4 +116,9 @@ class CheckoutController extends Controller
     return $this->checkoutPaypalCancel($request);
   }
 
+  public function checkout(Request $request){
+    $is_argentina = Service::is_argentina();
+
+    return view('front.checkout', ['is_argentina' => $is_argentina]);
+  }
 }
