@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Srmklive\PayPal\Services\PayPal;
+use MercadoPago\SDK;
 use App\Models\Service;
 
 class CheckoutController extends Controller
@@ -105,6 +106,29 @@ class CheckoutController extends Controller
       return $this->checkoutPaypal($request);
     }
   }
+
+  private function checkoutMercadoPago(Request $request){
+    \MercadoPago\SDK::setAccessToken(env("MERCADOPAGO_SANDBOX_TOKEN"));
+
+    $preference = new \MercadoPago\Preference();
+
+    $cart_items = $request->session()->get('cart.items', []);
+    $total = $this->total($cart_items);
+
+    $items = array();
+    foreach ($cart_items as $key => $service){
+      $item = new \MercadoPago\Item();
+      $item->title = $service->name;
+      $item->quantity = 1;
+      $item->unit_price = $service->price_raw();
+      $items[]=$item;
+    }
+    $preference->items = $items;
+    $preference->save();
+
+    return view('front.checkout_mercadopago', ['preference' => $preference]);
+  }
+
 
   public function checkoutSuccess(Request $request){
     // convert cart items to calendly items?

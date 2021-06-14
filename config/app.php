@@ -215,6 +215,7 @@ return [
         'Location' => Stevebauman\Location\Facades\Location::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
+        'MercadoPago' => MercadoPago\SDK::class,
         'Notification' => Illuminate\Support\Facades\Notification::class,
         'Password' => Illuminate\Support\Facades\Password::class,
         'PayPal' => Srmklive\PayPal\Facades\PayPal::class,
