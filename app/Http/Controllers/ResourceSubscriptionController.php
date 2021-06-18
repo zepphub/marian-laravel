@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CounselingDescription;
+use App\Models\ResourceSubscription;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
-class CounselingDescriptionController extends Controller
+class ResourceSubscriptionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,10 +41,10 @@ class CounselingDescriptionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CounselingDescription  $counselingDescription
+     * @param  \App\Models\ResourceSubscription  $resourceSubscription
      * @return \Illuminate\Http\Response
      */
-    public function show(CounselingDescription $counselingDescription)
+    public function show(ResourceSubscription $resourceSubscription)
     {
         //
     }
@@ -53,10 +52,10 @@ class CounselingDescriptionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CounselingDescription  $counselingDescription
+     * @param  \App\Models\ResourceSubscription  $resourceSubscription
      * @return \Illuminate\Http\Response
      */
-    public function edit(CounselingDescription $counselingDescription)
+    public function edit(ResourceSubscription $resourceSubscription)
     {
         //
     }
@@ -65,10 +64,10 @@ class CounselingDescriptionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\CounselingDescription  $counselingDescription
+     * @param  \App\Models\ResourceSubscription  $resourceSubscription
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CounselingDescription $counselingDescription)
+    public function update(Request $request, ResourceSubscription $resourceSubscription)
     {
         //
     }
@@ -76,13 +75,11 @@ class CounselingDescriptionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CounselingDescription  $counselingDescription
+     * @param  \App\Models\ResourceSubscription  $resourceSubscription
      * @return \Illuminate\Http\Response
      */
-    public function destroy($counselingDescription)
+    public function destroy(ResourceSubscription $resourceSubscription)
     {
-      CounselingDescription::destroy($counselingDescription);
-
-      return redirect()->route('admin.counselings.index');
+        //
     }
 }

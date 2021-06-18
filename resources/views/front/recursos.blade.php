@@ -20,8 +20,13 @@
         <div class="modal-body text-center">
           <h4 class="modal-title titulo-home" id="staticBackdropLabel">Ya casi tenés tus recursos</h4>
           <p>Para obtenerlo solo deja tus datos y la descarga se iniciará de manera automática</p>
+          <form id="hidden-download" action="{{ route('recursos-descarga') }}" method="post" class="d-none">
+           @csrf
+           <input type=hidden name=resource id="hidden-resource" value=1>
+          </form>
           <form class="form-border-1-px" action="{{ route('recursos-descarga') }}" method="post">
-              @csrf
+            @csrf
+            <input type=hidden name=resource id=resource value=1>
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label class="d-none" for="nombre">Nombre</label>
@@ -38,11 +43,11 @@
             </div>
             <div class="form-group mt-4">
               <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="acepta" name="newsletter" class="custom-control-input" value="true">
+                <input type="checkbox" id="acepta" name="newsletter" class="custom-control-input" value="true" onchange="document.getElementById('modalSubmit').disabled = !this.checked;">
                 <label class="custom-control-label" for="acepta">Acepto la suscripción al newsletter</label>
               </div>
             </div>
-            <button class="btn btn-primary my-4" type="submit">Descargar mi recurso gratuito</button>
+            <button class="btn btn-primary my-4" disabled=true id="modalSubmit" type="submit" onclick="newUnregisteredDownload()">Descargar mi recurso gratuito</button>
           </form>
         </div>
       </div>
@@ -88,8 +93,7 @@
           <div class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">
             <h4 class="titulo-recurso-descargable">{{$resource->title}}</h4>
             <div>{{$resource->description}}</div>
-            <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" data-toggle="modal"
-              data-target="#staticBackdrop">{{$resource->button}}<svg xmlns="http://www.w3.org/2000/svg" width="13.414"
+            <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" onclick="newDownload('{{$resource->id}}')">{{$resource->button}}<svg xmlns="http://www.w3.org/2000/svg" width="13.414"
                 height="13.074" viewBox="0 0 13.414 13.074">
                 <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
                   d="M5.7,14.846l.665.665a.716.716,0,0,0,1.015,0L13.2,9.693a.716.716,0,0,0,0-1.015l-5.82-5.82a.716.716,0,0,0-1.015,0L5.7,3.523A.719.719,0,0,0,5.712,4.55L9.32,7.987H.715A.717.717,0,0,0,0,8.705v.958a.717.717,0,0,0,.719.719h8.6L5.712,13.819A.714.714,0,0,0,5.7,14.846Z"
@@ -126,34 +130,42 @@
       </div>
     </div>
     <div class="row mt-3">
-      <form class="w-100" action="{{ route('newsletter-subscription') }}" method="post">
-              @csrf
+      <form id="newsletterForm" class="needs-validation w-100" action="{{ route('newsletter-subscription') }}" method="post">
+        @csrf
         <div class="form-row">
           <div class="form-group col-md-3">
-            <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
+            <div class="px-3">
+              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
+            </div>
           </div>
           <div class="form-group col-md-3">
-            <input class="form-control rounded-pill border-0" type="text" placeholder="Apellido" name="lastname">
+            <div class="px-3">
+              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
+            </div>
           </div>
           <div class="form-group col-md-3">
-          <input class="form-control rounded-pill border-0" type="email" placeholder="Correo electrónico" name="email">
+            <div class="px-3">
+              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
+            </div>
           </div>
           <div class="form-group col-md-3">
-          <input class="form-control rounded-pill border-0" type="text" placeholder="Whatsapp" name="whatsapp">
+            <div class="px-3">
+              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
+            </div>
           </div>
         </div>
         <div class="mt-3 d-block d-md-flex w-100 justify-content-end px-3">
-        <a href="#"><button type="submit" class="btn btn-blanco btn-block">Suscribirme <svg class="mb-1 ml-1"
+        <button type="submit" class="btn btn-blanco">Suscribirme <svg class="mb-1 ml-1"
               xmlns="http://www.w3.org/2000/svg" width="9.476" height="16.638" viewBox="0 0 9.476 16.638">
               <g id="next_1_" data-name="next (1)" transform="translate(-60.433 -1.433)">
                 <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
                   <path id="Trazado_343" data-name="Trazado 343"
                     d="M125.974,7.358l-7.2-7.182a.6.6,0,1,0-.852.855l6.773,6.755L117.92,14.54a.6.6,0,0,0,.853.855l7.2-7.182a.6.6,0,0,0,0-.855Z"
-                    transform="translate(-117.742 0)" fill="#f8337a" stroke="#f8337a" stroke-width="1" />
+                    transform="translate(-117.742 0)" fill="currentColor" stroke="currentColor" stroke-width="1" />
                 </g>
               </g>
             </svg>
-          </button></a>
+          </button>
       </div>
       </form>
 
@@ -161,4 +173,102 @@
     </div>
   </div>
   <!-- Seccion Newsletter -->
+  <!-- Modal Envio Exitoso Form contacto Home -->
+  <div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="successFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Envio exitoso</h4>
+            <p id="successFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Modal Envio Exitoso Form contacto Home -->
+  <div class="modal fade" id="errorForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="errorFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Error</h4>
+            <p id="errorFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-fallido.svg') }}" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+@endsection
+
+@section('scripts')
+<script type="text/javascript">
+var registered = {!! json_encode($registered) !!};
+var resource_id = 1;
+var newDownload = function(r_id){
+  let resourceidhi = document.getElementById("resource");
+  let hresourceidhi = document.getElementById("hidden-resource");
+  resourceidhi.value = r_id;
+  hresourceidhi.value = r_id;
+  if (registered) {
+    document.getElementById('hidden-download').submit();
+  }
+  else {
+    resource_id = r_id;
+    $("#staticBackdrop").modal("show");
+  }
+};
+
+var newUnregisteredDownload = function(r_id){
+  registered = true;
+  $("#staticBackdrop").modal("hide");
+};
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict';
+  window.addEventListener('load', function () {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+$('#newsletterForm').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "{{ route('newsletter-subscription') }}",
+        data: $(this).serialize(),
+        success: function(msg) {
+        $('#successFormMsg').text(msg.success);
+        $('#successForm').modal();
+        console.log(msg.success);
+        },
+        error: function(xhr, status, error){
+          //muestra solo el primer error
+          firstKey = Object.keys(xhr.responseJSON.errors)[0];
+          $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
+          $('#errorForm').modal();
+     }
+    });
+});
+</script>
 @endsection

@@ -64,8 +64,8 @@ border-marron-claro border-top
 @endif "><a href="{{ route('blog.category', $category->slug) }}">{{ $category->name }}</a></li>
             @endforeach
               </ul>
-              <div class="shadow rounded text-center p-3 mt-md-2">
-                <h5>¡Sumate a mi newsletter!</h5>
+              <div class="shadow rounded text-center p-3 p-md-4 mt-md-2">
+                <h4>¡Sumate a mi newsletter!</h4>
                 <p>Para ser parte de mi comunidad y recibir contenido exclusivo</p>
                 <form class="form-border-1-px">
                   <div class="form-group">

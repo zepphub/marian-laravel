@@ -11,8 +11,8 @@
         <h2>Consultorías Estratégicas</h2>
         <nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center bg-transparent text-marron-claro">
-            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="index.php">Inicio</a></li>
-            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="mentoria.php">Mentoría</a></li>
+            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="{{ route('index') }}">Inicio</a></li>
+            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="{{ route('mentoria') }}">Mentoría</a></li>
             <li class="breadcrumb-item text-secondary active font-weight-bold" aria-current="page">Programa intensivo de
               8 semanas</li>
           </ol>
@@ -31,7 +31,7 @@
           presencia de tu marca en el mundo online y desarrollamos diversas estrategias de marketing digital y ventas
           para que logres los objetivos deseados.
         </p>
-        <a href=""><button class="btn btn-primary">¡quiero conocer detalles y aplicar al programa!</button></a>
+        <a href="#programa-section-para-vos"><button class="btn btn-primary">¡quiero conocer detalles y aplicar al programa!</button></a>
       </div>
       <div class="col-md-5">
         <img class="w-100 img-fluid" src="{{ asset('img/programa-img-1.png') }}" alt="">
@@ -74,7 +74,7 @@
             <div class="card-body">
               <h4 class="card-text text-marron-claro">Si alguna de estas frases resuena en vos, ¡estás en el lugar
                 correcto!</h4>
-              <ul class="my-3">
+              <ul class="my-3 pl-md-4">
                 <li>Lidero una marca y/o emprendimiento y tengo intenciones de renovarlo en el universo digital de
                   manera estratégica.</li>
                 <li>Tengo una idea de proyecto y quiero hacerla realidad con un emprendimiento que conecte y atraiga.
@@ -100,7 +100,7 @@
         <h4 class="titulo-home mb-3">Sobre la experiencia</h4>
         {!! $mentorship->descriptions[0]->content !!}
         <h5 class="font-weight-normal titulo-home mt-3">Costo: <span class="font-weight-bold">{{ $mentorship->service->price() }}</span></h5>
-        <a class="btn btn-primary mt-4" href="">Aplicar al programa</a>
+        <a class="btn btn-primary mt-4" href="{{ route('carrito.add', $mentorship->service) }}">Aplicar al programa</a>
       </div>
       <div class="col-md-5 mt-4 mt-md-0 bg-nude rounded">
         <div class="py-4 pm-d-4">
@@ -142,8 +142,8 @@
       <div class="row text-center text-md-left">
         <div class="col-md-12 text-center">
           <h5 class="text-white titulo-home">Consultoría Estratégica</h5>
-          <h5 class="text-white titulo-home my-4 font-weight-normal">Si te gustaría trabajar solo en algunos de los pilares de tu proyecto, las sesiones de consultoría personalizada son ideales para vos</h5>
-          <a href=""><button class="btn btn-outline-white">¡Quiero ver detalles!</button></a>
+          <h5 class="text-white titulo-home my-4 font-weight-normal w-50 mx-auto">Si te gustaría trabajar solo en algunos de los pilares de tu proyecto, las sesiones de consultoría personalizada son ideales para vos</h5>
+          <a href="{{ route('consultorias') }}"><button class="btn btn-outline-white">¡Quiero ver detalles!</button></a>
         </div>
       </div>
     </div>
@@ -180,9 +180,9 @@
                 </li>
               </ul>
             </div>
-            <div class="social-group w-50 mt-5">
-              <ul class="list-group list-group-horizontal">
-                <li style="padding-left:0 !important;" class="list-group-item border-0 bg-transparent p-2 pl-0">
+            <div class="social-group mt-5">
+              <div class="d-flex">
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_2_9" data-name="Componente 2 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -193,8 +193,8 @@
                       </svg>
                     </a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_3_9" data-name="Componente 3 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -204,8 +204,8 @@
                           transform="translate(-1229.01 -1125.2)" fill="#fff" />
                       </svg></a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_4_15" data-name="Componente 4 – 15"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -216,8 +216,8 @@
                       </svg>
                     </a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_4_16" data-name="Componente 4 – 16"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -227,8 +227,8 @@
                           transform="translate(11.066 11.066)" fill="#fff" />
                       </svg></a>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

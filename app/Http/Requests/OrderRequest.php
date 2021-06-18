@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Str;
 
-class NewsletterSubscriptionRequest extends FormRequest
+class OrderRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -36,7 +36,7 @@ class NewsletterSubscriptionRequest extends FormRequest
         return [
           'firstname' => 'required|string|max:250',
           'lastname' => 'required|string|max:250',
-          'email' => 'required|unique:newsletter_subscriptions|email:rfc,dns',
+          'email' => 'required|email:rfc,dns',
           'whatsapp' => 'required|string|max:250',
         ];
     }
@@ -44,7 +44,6 @@ class NewsletterSubscriptionRequest extends FormRequest
     public function messages()
      {
           return [
-            'email.unique' => 'Este email ya esta registrado.'
           ];
      }
 }

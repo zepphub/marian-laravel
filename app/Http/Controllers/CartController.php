@@ -41,7 +41,8 @@ class CartController extends Controller
       if (empty($cart_items)){
         $cart_items = $request->session()->put('cart.items', [$service]);
       } else {
-        $cart_items = $request->session()->push('cart.items', $service);
+        //$cart_items = $request->session()->push('cart.items', $service);
+        return redirect()->route('carrito')->withMessage("Por favor, finalice su pedido antes de agregar mas servicios al carrito");
       };
 
       return redirect()->route('carrito');

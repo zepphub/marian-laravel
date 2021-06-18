@@ -18,15 +18,6 @@
     </div>
 
     <div class="container">
-        @if (\Session::has('message'))
-        <div class="row mt-5 mt-md-4">
-          <div class="col-md-12">
-            <div class="alert alert-success" role="alert">
-              {!! \Session::get('message') !!}
-            </div>
-          </div>
-        </div>
-        @endif
         <div class="row">
             <div class="col-md-12">
                 <div class="">
@@ -52,7 +43,7 @@
                                                 transform="translate(-11.285 -11.289)" fill="#b46063" />
                                         </svg>
                                     </a></th>
-                                <td><span class="descripcion-item">{{ $cart_item->fullname() }}</span></td>
+                                <td><span class="descripcion-item">{{ $cart_item->name }}</span></td>
                                 <td><span class="costo-item"> {{ $cart_item->price() }}</span></td>
                             </tr>
                             @endforeach
@@ -70,7 +61,11 @@
                 </div>
             </div>
         </div>
-
+        <div class="row my-4 my-md-5">
+            <div class="col-md-12">
+            <pre>{!! print_r($captured_order) !!}</pre>
+            </div>
+        </div>
         <div class="row my-4 my-md-5">
             <div class="col-md-12">
                 <div class="d-block d-md-flex justify-content-end">

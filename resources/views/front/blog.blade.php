@@ -13,7 +13,7 @@
         <h2>Blog</h2>
         <nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center bg-transparent text-marron-claro">
-            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="index.php">Inicio</a></li>
+            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="{{ route('index') }}">Inicio</a></li>
             <li class="breadcrumb-item text-secondary active font-weight-bold" aria-current="page">Blog</li>
           </ol>
         </nav>
@@ -87,29 +87,27 @@ font-weight-bold
 @endif "><a href="{{ route('blog.category', $category->slug) }}">{{ $category->name }}</a></li>
             @endforeach
           </ul>
-          <div class="shadow rounded text-center p-3 mt-md-5">
-            <h5>¡Sumate a mi newsletter!</h5>
+          <div class="shadow rounded text-center p-3 p-md-4 mt-md-5">
+            <h4>¡Sumate a mi newsletter!</h4>
             <p>Para ser parte de mi comunidad y recibir contenido exclusivo</p>
-            <form class="form-border-1-px">
+            <form id="newsletterForm" class="needs-validation form-border-1-px" action="{{ route('newsletter-subscription') }}" method="post">
+              @csrf
               <div class="form-group">
                 <label class="d-none" for="nombre">Nombre</label>
-                <input type="text" class="form-control rounded-pill form-control-sm p-3" placeholder="Nombre"
-                  id="nombre">
+                <input type="text" class="form-control rounded-pill form-control-sm p-3" placeholder="Nombre" id="nombre" name="firstname" required>
               </div>
               <div class="form-group">
                 <label class="d-none" for="apellido">Apellido</label>
-                <input type="text" class="form-control rounded-pill form-control-sm p-3" placeholder="Apellido"
-                  id="apellido">
+                <input type="text" class="form-control rounded-pill form-control-sm p-3" placeholder="Apellido" id="apellido" name="lastname" required>
               </div>
               <div class="form-group">
                 <label class="d-none" for="email">Correo electrónico</label>
                 <input type="email" class="form-control rounded-pill form-control-sm p-3"
-                  placeholder="Correo electrónico" id="email" aria-describedby="emailHelp">
+                  placeholder="Correo electrónico" id="email" aria-describedby="emailHelp" name="email" required>
               </div>
               <div class="form-group">
                 <label class="d-none" for="whatsapp">Whatsapp</label>
-                <input type="text" class="form-control rounded-pill form-control-sm p-3" placeholder="Whatsapp"
-                  id="whatsapp">
+                <input type="text" class="form-control rounded-pill form-control-sm p-3" placeholder="Whatsapp" id="whatsapp" name="whatsapp" required>
               </div>
               <button type="submit" class="btn btn-primary btn-block btn-sm p-2">Suscribirme</button>
             </form>
@@ -119,4 +117,80 @@ font-weight-bold
     </div>
     {{ $posts->links() }}
   </div>
+  <!-- Modal Envio Exitoso Form contacto Home -->
+  <div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="successFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Envio exitoso</h4>
+            <p id="successFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Modal Envio Fallido Form contacto Home -->
+  <div class="modal fade" id="errorForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="errorFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Error</h4>
+            <p id="errorFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-fallido.svg') }}" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+@endsection
+@section('scripts')
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict';
+  window.addEventListener('load', function () {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+$('#newsletterForm').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "{{ route('newsletter-subscription') }}",
+        data: $(this).serialize(),
+        success: function(msg) {
+          $('#successFormMsg').text(msg.success);
+          $('#successForm').modal();
+          console.log(msg.success);
+        },
+        error: function(xhr, status, error){
+          //muestra solo el primer error
+          firstKey = Object.keys(xhr.responseJSON.errors)[0];
+          $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
+          $('#errorForm').modal();
+        }
+    });
+});
+</script>
 @endsection

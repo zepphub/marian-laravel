@@ -35,10 +35,10 @@ class NewsletterSubscriptionController extends Controller
       $newsletter_subscription->whatsapp = $request->get('whatsapp');
 
       $newsletter_subscription->save();
-      $message = 'Tu consulta ha sido registrada. Nos contactaremos a la brevedad.';
+      $message = 'Gracias por suscribirte al Newsletter.';
 
 
-      return back()->withMessage($message);
+      return response()->json(['success'=>$message]);
     }
 
     public function csv()

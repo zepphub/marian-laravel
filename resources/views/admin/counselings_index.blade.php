@@ -34,7 +34,15 @@
                                                 <div id='descriptions-container-{{$counseling->id}}'>
                                                   <input type=hidden id="ndesc-{{$counseling->id}}" name="new-descriptions" form="editForm-{{ $counseling->id }}" value="0">
                                                 @foreach ($counseling->descriptions as $description)
-                                                  <input class="form-control form-control-lg rounded-pill @if (!$loop->first) mt-3 @endif" name="content-{{$description->id}}" type="text" form="editForm-{{ $counseling->id }}" value="{{ $description->content }}">
+                                                <div class="d-flex align-items-center @if (!$loop->first) mt-3 @endif">
+                                                  <input class="form-control form-control-lg rounded-pill" name="content-{{$description->id}}" type="text" form="editForm-{{ $counseling->id }}" value="{{ $description->content }}">
+                                                  <form class="ml-2 d-inline-flex" action="{{ route('admin.counselingdescriptions.destroy', $description) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <input type=image alt="Borrar" src='data:image/svg+xml;utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="44.028" height="46.889" viewBox="0 0 44.028 46.889"%3E%3Cg id="Button" transform="translate(-850.386 -2499.575)"%3E%3Crect id="Background" width="44.028" height="46.889" rx="22" transform="translate(850.386 2499.575)" fill="%23e67161" /%3E%3Cpath id="Icon_open-trash" data-name="Icon open-trash" d="M8.583,0A2.869,2.869,0,0,0,5.722,2.861H2.861A2.869,2.869,0,0,0,0,5.722H20.028a2.869,2.869,0,0,0-2.861-2.861H14.305A2.869,2.869,0,0,0,11.444,0ZM2.861,8.583V22.345a.526.526,0,0,0,.544.544H16.652a.526.526,0,0,0,.544-.544V8.583H14.334V18.6a1.431,1.431,0,0,1-2.861,0V8.583H8.612V18.6a1.431,1.431,0,1,1-2.861,0V8.583H2.89Z" transform="translate(862.386 2511.575)" fill="%23fff" /%3E%3C/g%3E%3C/svg%3E'>
+                                                    </input>
+                                                  </form>
+                                                </div>
                                                 @endforeach
                                                 </div>
 

@@ -22,12 +22,14 @@ class MentorshipSeeder extends Seeder
                'name'=>'Asesoría Personalizada',
                'price_ars'=>'777',
                'price_usd'=>'8',
+               'calendly'=>'https://calendly.com/marianpd/sesion',
             ],
             [
                'id'=>'7',
                'name'=>'Mentoría Grupal',
                'price_ars'=>'555',
                'price_usd'=>'6',
+               'calendly'=>'https://calendly.com/marianpd/sesion',
             ],
         ];
 

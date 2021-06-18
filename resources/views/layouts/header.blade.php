@@ -45,7 +45,8 @@
     </div>
 
     <div class="shadow py-2">
-        <div class="container">
+        <!-- NAV DEKSTOP -->
+        <div class="container d-none d-md-block">
             <div class="row">
                 <div class="col-md-5 pl-0 d-flex align-items-center">
                     <nav class="navbar main-navigation navbar-expand-lg navbar-light pl-0">
@@ -69,7 +70,7 @@
                                         Trabajá conmigo
                                     </a>
                                     <div class="dropdown-menu border-0" aria-labelledby="trabajaConmigo">
-                                        <a class="dropdown-item" href="{{ route('consultorias') }}">Consultorías Personalizadas</a>
+                                        <a class="dropdown-item" href="{{ route('consultorias') }}">Consultoría Estratégica</a>
                                         <a class="dropdown-item" href="{{ route('mentoria') }}">Mentoría</a>
                                         <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Talleres y Eventos</a>
                                     </div>
@@ -78,7 +79,7 @@
                                     <a class="nav-link text-marron" href="{{ route('blog') }}">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-marron" href="{{ route('contacto') }}">Contacto</a>
+                                    <a class="nav-link text-marron" href="{{ route('index') }}#contacto">Contacto</a>
                                 </li>
 
                             </ul>
@@ -91,6 +92,102 @@
                         <h6 class="font-weight-normal text-center bajada-logo">Consultora de marcas auténticas</h6>
                     </div>
                 </div>
+                <div class="col-md-5 d-md-flex align-items-center justify-content-between pr-0 pl-md-5 d-none">
+                    <a href="{{ route('carrito') }}"><svg xmlns="http://www.w3.org/2000/svg" width="19.374" height="18.562"
+                            viewBox="0 0 19.374 18.562">
+                            <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart"
+                                transform="translate(-0.75 -0.75)">
+                                <path id="Trazado_25" data-name="Trazado 25"
+                                    d="M13.625,30.812A.812.812,0,1,1,12.812,30,.812.812,0,0,1,13.625,30.812Z"
+                                    transform="translate(-4.813 -13.063)" fill="none" stroke="#b46063"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                <path id="Trazado_26" data-name="Trazado 26"
+                                    d="M30.125,30.812A.812.812,0,1,1,29.312,30,.812.812,0,0,1,30.125,30.812Z"
+                                    transform="translate(-12.376 -13.063)" fill="none" stroke="#b46063"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                <path id="Trazado_27" data-name="Trazado 27"
+                                    d="M1.5,1.5H4.75L6.927,12.379a1.625,1.625,0,0,0,1.625,1.308h7.9a1.625,1.625,0,0,0,1.625-1.308l1.3-6.817H5.562"
+                                    fill="none" stroke="#b46063" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="{{ route('recursos') }}"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Recursos para
+                            tí</button></a>
+                    <a href="{{ route('test') }}"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Test</button></a>
+                    <a href="{{ route('talleres-y-eventos') }}"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Talleres y
+                            Eventos</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- NAV MOBILE -->
+        <div class="container d-block d-md-none">
+            <div class="row">
+                <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="logo-mobile">
+                        <img src="{{ asset('img/logo-marian-nav.svg') }}" alt="">                        
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end">
+                    <a class="mr-3" href="{{ route('carrito') }}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 19.374 18.562">
+                            <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart"
+                                transform="translate(-0.75 -0.75)">
+                                <path id="Trazado_25" data-name="Trazado 25"
+                                    d="M13.625,30.812A.812.812,0,1,1,12.812,30,.812.812,0,0,1,13.625,30.812Z"
+                                    transform="translate(-4.813 -13.063)" fill="none" stroke="#b46063"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                <path id="Trazado_26" data-name="Trazado 26"
+                                    d="M30.125,30.812A.812.812,0,1,1,29.312,30,.812.812,0,0,1,30.125,30.812Z"
+                                    transform="translate(-12.376 -13.063)" fill="none" stroke="#b46063"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                <path id="Trazado_27" data-name="Trazado 27"
+                                    d="M1.5,1.5H4.75L6.927,12.379a1.625,1.625,0,0,0,1.625,1.308h7.9a1.625,1.625,0,0,0,1.625-1.308l1.3-6.817H5.562"
+                                    fill="none" stroke="#b46063" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </g>
+                        </svg>
+                    </a>
+                    <nav class="navbar main-navigation navbar-expand-lg navbar-light p-1">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavDropdownMob" aria-controls="navbarNavDropdownMob" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdownMob">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-marron pl-0" href="{{ route('index') }}">Inicio <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-marron" href="{{ route('sobre-mi') }}">Sobre Mi</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-marron dropdown-toggle" href="{{ route('servicios') }}" id="trabajaConmigo"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Trabajá conmigo
+                                    </a>
+                                    <div class="dropdown-menu border-0" aria-labelledby="trabajaConmigo">
+                                        <a class="dropdown-item" href="{{ route('consultorias') }}">Consultoría Estratégica</a>
+                                        <a class="dropdown-item" href="{{ route('mentoria') }}">Mentoría</a>
+                                        <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Talleres y Eventos</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-marron" href="{{ route('blog') }}">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-marron" href="{{ route('index') }}">Contacto</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                
                 <div class="col-md-5 d-md-flex align-items-center justify-content-between pr-0 pl-md-5 d-none">
                     <a href="{{ route('carrito') }}"><svg xmlns="http://www.w3.org/2000/svg" width="19.374" height="18.562"
                             viewBox="0 0 19.374 18.562">

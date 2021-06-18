@@ -68,7 +68,7 @@
                     <input type="radio" id="comenzar_1" name="comenzar_step_2" class="custom-control-input">
                     <label class="custom-control-label" for="comenzar_1">&zwnj;</label>
                   </div>
-                  <p class="mt-3">No se por donde comenzar</p>
+                  <p class="mt-3">No sé por donde comenzar</p>
                 </div>
                 <div class="col-md-3 mb-3 mb-md-0">
                   <div class="custom-control custom-radio custom-control-inline ml-4">
@@ -89,7 +89,7 @@
                     <input type="radio" id="comenzar_4" name="comenzar_step_2" class="custom-control-input">
                     <label class="custom-control-label" for="comenzar_4">&zwnj;</label>
                   </div>
-                  <p class="mt-3">Quiero crear una marca diferente, con esencia y corazón pero, no se como trabajar en
+                  <p class="mt-3">Quiero crear una marca diferente, con esencia y corazón pero, no sé como trabajar en
                     ello</p>
                 </div>
               </div>
