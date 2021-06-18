@@ -29,7 +29,7 @@
         <img class="w-100 img-fluid" src="{{ asset('img/mentoria-grupal-img-1.png') }}" alt="">
       </div>
       <div class="col-md-7 pl-md-5">
-        <h4 class="font-weight-bold titulo-home mb-4">Si sos una Emprendedora apasionada por su proyecto, con ánimos de
+        <h4 class="font-weight-bold titulo-home mb-4 mt-5 mt-md-0">Si sos una Emprendedora apasionada por su proyecto, con ánimos de
           crecer en comunidad, ¡esta propuesta es para vos! </h4>
         <p class="my-4">
           <span class="text-medium">¿Qué es una mentoría grupal? </span> <br><br>
@@ -41,7 +41,7 @@
           compartiendo esta experiencia en comunidad.
         </p>
         <h4 class="text-medium">¡Quiero conocer más detalles!</h4>
-        <a href="{{ route( 'carrito.add', $mentorship->service) }}" class="btn btn-primary mt-3">¡quiero conocer detalles y aplicar al programa! <svg
+        <a href="{{ route( 'carrito.add', $mentorship->service) }}" class="btn btn-primary mt-3">Quiero reservar mi lugar <svg
               class="ml-2" xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367" viewBox="0 0 8.248 14.367">
               <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
                 <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
@@ -98,56 +98,21 @@
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
               <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-5.svg') }}" alt="">
-              <h5>Mejorar la estética de tus canales digitales</h5>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-6.svg') }}" alt="">
               <h5>Planificar y ordenar tus ideas</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-7.svg') }}" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-6.svg') }}" alt="">
               <h5>Crear tu calendario contenido para redes sociales</h5>
             </div>
           </div>
           <div class="item">
             <div
               class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-1.svg') }}" alt="">
+              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-7.svg') }}" alt="">
               <h5>Conocer a emprendedoras muy lo más, con quienes crearás las mejores alianzas</h5>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-1.svg') }}" alt="">
-              <h5>Elevar tu propuesta de valor</h5>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-1.svg') }}" alt="">
-              <h5>Elevar tu propuesta de valor</h5>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-1.svg') }}" alt="">
-              <h5>Elevar tu propuesta de valor</h5>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="item-carousel m-3 m-md-0 p-5 p-md-4 bg-white d-flex flex-column h-100 justify-content-center text-center">
-              <img class="icon-owl-carousel mb-3" src="{{ asset('img/owl-carousel-item-1.svg') }}" alt="">
-              <h5>Elevar tu propuesta de valor</h5>
             </div>
           </div>
         </div>
@@ -175,7 +140,7 @@
       <div class="col-md-3">
         <div class="d-md-flex align-items-center text-center text-md-left my-3 my-md-0">
           <img src="{{ asset('img/mentoria-g-exp-2.svg') }}" alt="">
-          <h5 class="text-marron-claro m-md-0 ml-md-3 mt-2 mt-md-0">Cápsulas de contenido pre-grabados con acceso
+          <h5 class="text-marron-claro m-md-0 ml-md-3 mt-2 mt-md-0">Cápsulas de contenido <br> pre-grabados con acceso
             ilimitado</h5>
         </div>
       </div>
@@ -222,16 +187,16 @@
         <h4 class="titulo-home">Ser parte de la Mentoría Grupal te dará acceso a:</h4>
         @foreach ($mentorship->descriptions as $description)
         <div class="row align-items-center my-4">
-          <div class="col-md-2 pr-md-0"><img src="{{ asset($description->icon->url) }}" alt=""></div>
-          <div class="col-md-10 p-md-0">
+          <div class="col-md-2 pr-md-0 text-center text-md-left"><img class="mb-3 mb-md-0" src="{{ asset($description->icon->url) }}" alt=""></div>
+          <div class="col-md-10 p-md-0 text-center text-md-left">
             <p class="m-0">{{$description->content}}</p>
           </div>
         </div>
         @endforeach
-        <div class="row">
-          <div class="d-flex align-items-center">
+        <div class="row justify-content-center justify-content-md-start">
+          <div class="d-flex align-items-center align-items-center d-flex flex-column flex-md-row justify-content-center">
             <h5 class="subrayado-subtitulo pb-1 m-0">Costo del programa grupal</h5>
-            <h4 class="font-weight-bold titulo-home ml-md-3">{{ $mentorship->service->price() }}</h4>
+            <h4 class="font-weight-bold titulo-home ml-md-3 mt-3 mt-md-0">{{ $mentorship->service->price() }}</h4>
           </div>
         </div>
       </div>
@@ -245,8 +210,8 @@
           Abro este programa solo 2 veces al año y los cupos son limitados.</h5>
         <h4 class="text-white titulo-home">¡Aplicá para la próxima edición!</h4>
       </div>
-      <div class="col-md-4 d-flex flex-md-column align-items-center justify-content-center justify-content-md-end">
-        <a href="{{ route('carrito.add', $mentorship->service) }}"><button class="btn btn-blanco">¡quiero reservar mi lugar!</button></a>
+      <div class="col-md-4 d-flex flex-column flex-md-column align-items-center justify-content-center justify-content-md-end">
+        <a href="{{ route('carrito.add', $mentorship->service) }}"><button class="btn btn-blanco mt-3 mt-md-0">¡quiero reservar mi lugar!</button></a>
         <h5 class="text-white mt-3">Costo <span>{{ $mentorship->service->price() }}</span></h5>
       </div>
     </div>
@@ -276,7 +241,7 @@
         <div class="card border-secondary text-center card-propuestas shadow">
           <img src="{{ asset('img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
           <div class="card-body">
-            <h5 class="card-title titulo-home">Asesoría Personalizada</h5>
+            <h5 class="card-title titulo-home">Consultoría Estretégica</h5>
             <p class="card-text">Te ayudo a potenciar tu estrategia 
 digital resaltando la esencia y los 
 valores de tu marca.</p>

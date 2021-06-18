@@ -13,16 +13,16 @@
           <h4 class="text-white font-weight-normal my-5 my-md-4">Emprendedora, Consultora, Mentora de Estrategia y
             Marketing
             para marcas auténticas. </h4>
-          <button class="btn btn-outline-white">Conocé mi Historia</button>
+          <a href="#mi-historia"><button class="btn btn-outline-white">Conocé mi Historia</button></a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container my-5">
+  <div class="container my-5 py-md-5" id="mi-historia">
     <div class="row">
       <div class="col-md-5">
-        <div class="bg-textura-form p-4 rounded-lg h-100 d-flex flex-column justify-content-center"><svg
+        <div class="bg-textura-form p-4 p-md-5 rounded-lg h-100 d-flex flex-column justify-content-center"><svg
             xmlns="http://www.w3.org/2000/svg" width="48" height="60" viewBox="0 0 48 60">
             <text id="_" data-name="&quot;" fill="#fff" font-size="84" font-family="Ubuntu-Bold, Ubuntu"
               font-weight="700">
@@ -69,7 +69,7 @@
               experiencias que te comparto... Hoy decido comunicar, proyectar y ayudar a todas las marcas que tengan la
               intención de contar su historia y dejar huellas. Lo hago a través de mi Marca Personal, como consultora de
               marcas auténticas.</p>
-            <a href=""><button class="btn btn-outline-secondary">Trabajemos juntas</button></a>
+            <a href="{{ route('servicios') }}"><button class="btn btn-outline-secondary">Trabajemos juntas</button></a>
           </div>
         </div>
         <div class="col-md-7 order-1 order-md-2">
@@ -190,7 +190,7 @@
           <div class="card border-secondary text-center card-propuestas shadow">
             <img src="{{ asset('img/card-asesoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
             <div class="card-body">
-              <h5 class="card-title titulo-home">Asesoría Personalizada</h5>
+              <h5 class="card-title titulo-home">Consultoría Estratégica</h5>
               <p class="card-text">Te ayudo a potenciar tu estrategia
                 digital resaltando la esencia y los
                 valores de tu marca.</p>

@@ -87,8 +87,8 @@ font-weight-bold
 @endif "><a href="{{ route('blog.category', $category->slug) }}">{{ $category->name }}</a></li>
             @endforeach
           </ul>
-          <div class="shadow rounded text-center p-3 mt-md-5">
-            <h5>¡Sumate a mi newsletter!</h5>
+          <div class="shadow rounded text-center p-3 p-md-4 mt-md-5">
+            <h4>¡Sumate a mi newsletter!</h4>
             <p>Para ser parte de mi comunidad y recibir contenido exclusivo</p>
             <form id="newsletterForm" class="needs-validation form-border-1-px" action="{{ route('newsletter-subscription') }}" method="post">
               @csrf
