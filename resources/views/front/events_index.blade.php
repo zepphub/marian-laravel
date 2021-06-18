@@ -182,8 +182,8 @@
                   <div class="col-sm-6">
                     <div class="card rounded-0 border-0 shadow" style="max-width: 540px;">
                       <div class="row no-gutters">
-                        <div class="col-md-5">
-                          <img class="h-100 img-fluid" src="{{ asset('img/tye-card-eventos.jpg') }}" alt="...">
+                        <div class="col-md-5 overflow-hidden">
+                          <img class="h-100 img-fluid" style="max-width: unset;" src="{{ asset('img/tye-card-eventos.jpg') }}" alt="...">
                         </div>
                         <div class="col-md-7">
                           <div class="card-body">
@@ -277,7 +277,7 @@
             @foreach ($events as $event)
               <div class="carousel-item py-5 @if ($loop->first) active @endif">
                 <div class="card border-0 p-4">
-                  <img src="{{ asset('img/tye-card-eventos.jpg" class="card-img-top') }}" alt="...">
+                  <img src="{{ asset('img/tye-card-eventos.jpg') }}" class="card-img-top' alt="...">
                   <div class="card-body">
                     <h5 class="font-weight-normal">
                       <svg xmlns="http://www.w3.org/2000/svg" width="12.567"
@@ -735,7 +735,7 @@
         items: 1
       },
       600: {
-        items: 1
+        items: 2
       },
       1000: {
         items: 4
