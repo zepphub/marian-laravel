@@ -24,7 +24,7 @@
            @csrf
            <input type=hidden name=resource id="hidden-resource" value=1>
           </form>
-          <form class="form-border-1-px" action="{{ route('recursos-descarga') }}" method="post">
+          <form class="form-border-1-px form-download" action="{{ route('recursos-descarga') }}" method="post">
             @csrf
             <input type=hidden name=resource id=resource value=1>
             <div class="form-row">
@@ -172,8 +172,7 @@
 
     </div>
   </div>
-  <!-- Seccion Newsletter -->
-  <!-- Modal Envio Exitoso Form contacto Home -->
+  <!-- Modal Envio Exitoso Form -->
   <div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="successFormLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -190,7 +189,7 @@
         </div>
       </div>
   </div>
-  <!-- Modal Envio Exitoso Form contacto Home -->
+  <!-- Modal Envio Fallido Form -->
   <div class="modal fade" id="errorForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="errorFormLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -219,7 +218,22 @@ var newDownload = function(r_id){
   resourceidhi.value = r_id;
   hresourceidhi.value = r_id;
   if (registered) {
-    document.getElementById('hidden-download').submit();
+    $.ajax({
+            type: "POST",
+            url: "{{ route('recursos-descarga') }}",
+            data: $('#hidden-download').serialize(),
+            success: function(msg) {
+            $('#successFormMsg').text(msg.success);
+            $('#successForm').modal();
+            console.log(msg.success);
+            },
+            error: function(xhr, status, error){
+              //muestra solo el primer error
+              firstKey = Object.keys(xhr.responseJSON.errors)[0];
+              $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
+              $('#errorForm').modal();
+         }
+        });
   }
   else {
     resource_id = r_id;
@@ -256,6 +270,26 @@ $('#newsletterForm').on('submit', function(e) {
     $.ajax({
         type: "POST",
         url: "{{ route('newsletter-subscription') }}",
+        data: $(this).serialize(),
+        success: function(msg) {
+        $('#successFormMsg').text(msg.success);
+        $('#successForm').modal();
+        console.log(msg.success);
+        },
+        error: function(xhr, status, error){
+          //muestra solo el primer error
+          firstKey = Object.keys(xhr.responseJSON.errors)[0];
+          $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
+          $('#errorForm').modal();
+     }
+    });
+});
+
+$('.form-download').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "{{ route('recursos-descarga') }}",
         data: $(this).serialize(),
         success: function(msg) {
         $('#successFormMsg').text(msg.success);
