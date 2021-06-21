@@ -55,6 +55,7 @@ Route::get('/sobre-mi', function(){ return view('front.sobre-mi'); })->name('sob
 
 Route::get('/talleres-y-eventos', [App\Http\Controllers\EventController::class, 'frontIndex'])->name('talleres-y-eventos');
 Route::get('/talleres-y-eventos/{event}', [App\Http\Controllers\EventController::class, 'frontShow'])->name('evento');
+Route::post('/talleres-y-eventos/{event}', [App\Http\Controllers\EventController::class, 'subscribe'])->name('suscribir-evento');
 
 Route::get('/test', function(){ return view('front.test'); })->name('test');
 Route::get('/test-formulario', function(){ return view('front.test-form'); })->name('test-formulario');
