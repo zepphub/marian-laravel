@@ -60,7 +60,7 @@ $servicios_item = \Request::route()->getName() == 'admin.counselings.index' ||
     </div>
 <form method="POST" action="{{ route('logout') }}" accept-charset="UTF-8" name="logout-form" id="logout-form">
     {{ csrf_field() }}
-    <button class="text-bold" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit">
+    <button class="text-bold" style="background: none; color: #B46063; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit; font-weight:bold" type="submit">
       <svg class="mb-1 mr-2" xmlns="http://www.w3.org/2000/svg" width="14.389" height="15.348" viewBox="0 0 14.389 15.348">
         <path id="Icon_metro-exit" data-name="Icon metro-exit" d="M14.082,11.521V9.6h-4.8V7.684h4.8V5.765L16.96,8.643Zm-.959-.959V14.4h-4.8v2.878L2.571,14.4V1.928H13.123v4.8h-.959V2.887H4.489L8.326,4.806v8.633h3.837V10.561Z" transform="translate(-2.571 -1.928)" fill="#b46063"/>
       </svg>Cerrar Sesión</button>
