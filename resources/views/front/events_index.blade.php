@@ -13,7 +13,7 @@
         <h2>Talleres y Conferencias</h2>
         <nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center bg-transparent text-marron-claro">
-            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="index.php">Inicio</a></li>
+            <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="{{ route('index') }}">Inicio</a></li>
             <li class="breadcrumb-item text-secondary active font-weight-bold" aria-current="page">Talleres y
               Conferencias</li>
           </ol>
@@ -53,7 +53,7 @@
             </svg>
           </button></a>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 mt-4 mt-md-0">
         <img class="w-100 img-fluid" src="{{ asset('img/talleres-y-eventos-img-1.png') }}" alt="">
       </div>
     </div>
@@ -182,8 +182,8 @@
                   <div class="col-sm-6">
                     <div class="card rounded-0 border-0 shadow" style="max-width: 540px;">
                       <div class="row no-gutters">
-                        <div class="col-md-5">
-                          <img class="h-100 img-fluid" src="{{ asset('img/tye-card-eventos.jpg') }}" alt="...">
+                        <div class="col-md-5 overflow-hidden">
+                          <img class="h-100 img-fluid" style="max-width: unset;" src="{{ asset('img/tye-card-eventos.jpg') }}" alt="...">
                         </div>
                         <div class="col-md-7">
                           <div class="card-body">
@@ -277,7 +277,7 @@
             @foreach ($events as $event)
               <div class="carousel-item py-5 @if ($loop->first) active @endif">
                 <div class="card border-0 p-4">
-                  <img src="{{ asset('img/tye-card-eventos.jpg" class="card-img-top') }}" alt="...">
+                  <img src="{{ asset('img/tye-card-eventos.jpg') }}" class="card-img-top' alt="...">
                   <div class="card-body">
                     <h5 class="font-weight-normal">
                       <svg xmlns="http://www.w3.org/2000/svg" width="12.567"
@@ -364,14 +364,14 @@
 
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-5 d-flex align-items-center">
+      <div class="col-md-4 d-flex align-items-center">
         <h4 class="font-weight-bold titulo-home">
           Marcas a las que he
           acompañado
         </h4>
       </div>
-      <div class="col-md-7">
-        <div id="brandsCarousel" class="carousel slide" data-ride="carousel">
+      <div class="col-md-8">
+        <div id="brandsCarousel" class="carousel slide d-none d-md-block" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item py-5 active">
               <div class="row align-items-center">
@@ -399,6 +399,87 @@
                 <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-10.png') }}" alt=""></div>
                 <div class="col-4 p-0 text-center"><img src="" alt=""></div>
                 <div class="col-4 p-0 text-center"><img src="" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#brandsCarousel" role="button" data-slide="prev">
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="14.753" height="26.388" viewBox="0 0 14.753 26.388">
+                <g id="next_1_" data-name="next (1)" transform="translate(0.5 0.59)">
+                  <g id="Grupo_475" data-name="Grupo 475" transform="translate(0 0)">
+                    <path id="Trazado_343" data-name="Trazado 343"
+                      d="M118.03,11.955,129.732.286a.981.981,0,1,1,1.385,1.389l-11,10.975,11.005,10.975a.981.981,0,0,1-1.385,1.389l-11.7-11.669a.98.98,0,0,1,0-1.389Z"
+                      transform="translate(-117.742 0)" fill="#e67161" stroke="#e67161" stroke-width="1" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+          <a class="carousel-control-next" href="#brandsCarousel" role="button" data-slide="next">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14.753" height="26.388" viewBox="0 0 14.753 26.388">
+                <g id="next_1_" data-name="next (1)" transform="translate(-117.153 0.589)">
+                  <g id="Grupo_475" data-name="Grupo 475" transform="translate(117.742 0)">
+                    <path id="Trazado_343" data-name="Trazado 343"
+                      d="M131.117,11.955,119.416.286a.981.981,0,1,0-1.385,1.389l11,10.975L118.03,23.624a.981.981,0,0,0,1.385,1.389l11.7-11.669a.98.98,0,0,0,0-1.389Z"
+                      transform="translate(-117.742 0)" fill="#e67161" stroke="#e67161" stroke-width="1" />
+                  </g>
+                </g>
+              </svg>
+
+            </div>
+          </a>
+        </div>
+
+        <div id="brandsCarouselMob" class="carousel slide d-md-none" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item py-5 active">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-1.png') }}" alt=""></div>               
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-2.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-3.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-4.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-5.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-6.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-7.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-8.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-9.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-10.png') }}" alt=""></div>
               </div>
             </div>
           </div>
@@ -464,9 +545,9 @@
                 </li>
               </ul>
             </div>
-            <div class="social-group w-50 mt-5">
-              <ul class="list-group list-group-horizontal">
-                <li style="padding-left:0 !important;" class="list-group-item border-0 bg-transparent p-2 pl-0">
+            <div class="social-group mt-5">
+              <div class="d-flex">
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_2_9" data-name="Componente 2 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -477,8 +558,8 @@
                       </svg>
                     </a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_3_9" data-name="Componente 3 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -488,8 +569,8 @@
                           transform="translate(-1229.01 -1125.2)" fill="#fff" />
                       </svg></a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_4_15" data-name="Componente 4 – 15"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -500,8 +581,8 @@
                       </svg>
                     </a>
                   </div>
-                </li>
-                <li class="list-group-item border-0 bg-transparent p-2">
+                </div>
+                <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
                     <a class="" href=""><svg id="Componente_4_16" data-name="Componente 4 – 16"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
@@ -511,33 +592,34 @@
                           transform="translate(11.066 11.066)" fill="#fff" />
                       </svg></a>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-7">
           <div class="mt-4 mt-md-0">
-            <form class="needs-validation form-home" novalidate>
+            <form id="contactForm" class="needs-validation form-home" action="{{ route('consulta') }}" method="post">
+              @csrf
               <div class="form-row">
-                <div class="col-md-6 mb-3">                  
-                  <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" required>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" name="firstname" required>
                 </div>
-                <div class="col-md-6 mb-3">                  
-                  <input type="text" class="form-control rounded-pill" id="apellido" placeholder="Apellido" required>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control rounded-pill" id="apellido" placeholder="Apellido" name="lastname" required>
                 </div>
               </div>
               <div class="form-row">
-                <div class="col-md-6 mb-3">                  
-                  <input type="email" class="form-control rounded-pill" placeholder="Email" id="email" required>
+                <div class="col-md-6 mb-3">
+                  <input type="email" class="form-control rounded-pill" placeholder="Email" id="email" name="email" required>
                 </div>
-                <div class="col-md-6 mb-3">                  
-                  <input type="text" class="form-control rounded-pill" placeholder="Teléfono" id="telefono" required>
-                </div>                
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control rounded-pill" placeholder="Teléfono" id="telefono" name="phone" required>
+                </div>
               </div>
               <div class="form-row">
                 <div class="col-md-12 mb-3"> 
-                  <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Dejame tu consulta"></textarea>
+                  <textarea class="form-control" name="query" cols="30" rows="5" placeholder="Dejame tu consulta"></textarea>
                 </div>
               </div>
               <div class="text-right">
@@ -600,62 +682,115 @@
               </div>
             </form>
 
-            <script>
-              // Example starter JavaScript for disabling form submissions if there are invalid fields
-              (function () {
-                'use strict';
-                window.addEventListener('load', function () {
-                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                  var forms = document.getElementsByClassName('needs-validation');
-                  // Loop over them and prevent submission
-                  var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                      if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                      }
-                      form.classList.add('was-validated');
-                    }, false);
-                  });
-                }, false);
-              })();
-
-            </script>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- Modal Envio Exitoso Form contacto Home -->
+  <div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="successFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Envio exitoso</h4>
+            <p id="successFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Modal Envio Fallido Form contacto Home -->
+  <div class="modal fade" id="errorForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="errorFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Error</h4>
+            <p id="errorFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-fallido.svg') }}" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
 @endsection
 
 @section('scripts')
-  <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-  <script type="text/javascript">
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      loop: true,
-      margin: 10,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        1000: {
-          items: 4
-        }
+<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+<script type="text/javascript">
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+    loop: true,
+    margin: 10,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 4
       }
+    }
+  });
+  // Go to the next item
+  $('.customNextBtn').click(function () {
+    owl.trigger('next.owl.carousel');
+  })
+  // Go to the previous item
+  $('.customPrevBtn').click(function () {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owl.trigger('prev.owl.carousel', [300]);
+  });
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict';
+  window.addEventListener('load', function () {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
     });
-    // Go to the next item
-    $('.customNextBtn').click(function () {
-      owl.trigger('next.owl.carousel');
-    })
-    // Go to the previous item
-    $('.customPrevBtn').click(function () {
-      // With optional speed parameter
-      // Parameters has to be in square bracket '[]'
-      owl.trigger('prev.owl.carousel', [300]);
-    })
-  </script>
+  }, false);
+})();
+
+$('#contactForm').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "{{ route('consulta') }}",
+        data: $(this).serialize(),
+        success: function(msg) {
+          $('#successFormMsg').text(msg.success);
+          $('#successForm').modal();
+          console.log(msg.success);
+        },
+        error: function(xhr, status, error){
+          //muestra solo el primer error
+          firstKey = Object.keys(xhr.responseJSON.errors)[0];
+          $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
+          $('#errorForm').modal();
+        }
+    });
+});
+
+</script>
 @endsection

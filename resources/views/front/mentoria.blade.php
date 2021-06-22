@@ -26,7 +26,7 @@
           <h4 class="text-white titulo-home">Viajamos juntas al corazón de tu marca y aplicamos herramientas adaptadas
             de forma práctica a tu proyecto. </h4>
           <img src="{{ asset('img/separador-titulo-blanco-svg.svg') }}" alt="">
-          <a href=""><button class="btn btn-outline-white d-block mt-4">Ver mis programas </button></a>
+          <a href="#mentoria-propuestas"><button class="btn btn-outline-white d-block mt-4">Ver mis programas </button></a>
         </div>
       </div>
     </div>
@@ -47,10 +47,8 @@
               <div class="card border-secondary text-center card-propuestas shadow">
                 <img src="{{ asset('img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title titulo-home">Mentoría</h5>
-                  <p class="card-text">Trabajamos en el universo de tu marca, fortaleciendo los pilares más importantes
-                    y
-                    consolidando tu presencia digital, de forma grupal o personalizada.</p>
+                  <h5 class="card-title titulo-home">Mentoría Grupal</h5>
+                  <p class="card-text">Trabajamos el universo de tu marca y fortalecemos los pilares más importantes de tu proyecto, en un proceso compartido con otras emprendedoras, para crecer aún más en comunidad. </p>
                   <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
                   <a href="{{ route('mentoria-grupal') }}" class="btn btn-primary">Click Aquí</a>
                 </div>
@@ -60,10 +58,8 @@
               <div class="card border-secondary text-center card-propuestas shadow">
                 <img src="{{ asset('img/card-asesoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title titulo-home">Asesoría Personalizada</h5>
-                  <p class="card-text">Te ayudo a potenciar tu estrategia
-                    digital resaltando la esencia y los
-                    valores de tu marca.</p>
+                  <h5 class="card-title titulo-home">Consultoría Estratégica</h5>
+                  <p class="card-text">Te ayudo a crear tu estrategia digital para resaltar la esencia y los valores de tu marca, de forma intensiva y personalizada. </p>
                   <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
                   <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">Click Aquí</a>
                 </div>

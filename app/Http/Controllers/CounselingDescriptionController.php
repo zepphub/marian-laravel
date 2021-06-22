@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CounselingDescription;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class CounselingDescriptionController extends Controller
 {
@@ -78,8 +79,10 @@ class CounselingDescriptionController extends Controller
      * @param  \App\Models\CounselingDescription  $counselingDescription
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CounselingDescription $counselingDescription)
+    public function destroy($counselingDescription)
     {
-        //
+      CounselingDescription::destroy($counselingDescription);
+
+      return redirect()->route('admin.counselings.index');
     }
 }

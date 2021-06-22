@@ -46,6 +46,7 @@
 
 @section('scripts')
 <script src="{{ asset('js/image-picker.min.js') }}"></script>
+<script src="/js/tinymce/tinymce.min.js"></script>
 <script>
 $(document).ready(function(){
 
@@ -78,5 +79,23 @@ var selectIcon = function(d_id){
   image_icon.src = selected_icon.getAttribute('data-img-src');
   input_icon.value = selected_icon.getAttribute('value');
 };
+
+tinymce.init({
+  selector:'textarea.content-single',
+  height: 300,
+  menubar: false,
+  plugins: [
+    'advlist autolink lists link image charmap print preview anchor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table paste code help wordcount'
+  ],
+  toolbar: 'undo redo | formatselect | ' +
+  'bold italic forecolor backcolor | alignleft aligncenter ' +
+  'alignright alignjustify | bullist numlist outdent indent | ' +
+  'removeformat | help',
+  skin: 'marian',
+  content_css: 'marian',
+  editor_css: 'marian',
+});
 </script>
 @endsection

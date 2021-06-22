@@ -18,6 +18,15 @@
     </div>
 
     <div class="container">
+        @if (\Session::has('message'))
+        <div class="row mt-5 mt-md-4">
+          <div class="col-md-12">
+            <div class="alert alert-success" role="alert">
+              {!! \Session::get('message') !!}
+            </div>
+          </div>
+        </div>
+        @endif
         <div class="row">
             <div class="col-md-12">
                 <div class="">
@@ -43,7 +52,7 @@
                                                 transform="translate(-11.285 -11.289)" fill="#b46063" />
                                         </svg>
                                     </a></th>
-                                <td><span class="descripcion-item">{{ $cart_item->name }}</span></td>
+                                <td><span class="descripcion-item">{{ $cart_item->fullname() }}</span></td>
                                 <td><span class="costo-item"> {{ $cart_item->price() }}</span></td>
                             </tr>
                             @endforeach
@@ -66,7 +75,7 @@
             <div class="col-md-12">
                 <div class="d-block d-md-flex justify-content-end">
                     <a href="{{ route('carrito') }}" class="btn btn-outline-primary rounded-pill mb-3 mr-md-3 mb-md-0">Actualizar mi pedido</a>
-                    <a href="checkout.php" class="btn btn-primary rounded-pill">Continuar <svg class="mb-1 ml-1" xmlns="http://www.w3.org/2000/svg"
+                    <a href="{{ route('checkout') }}" class="btn btn-primary rounded-pill">Continuar <svg class="mb-1 ml-1" xmlns="http://www.w3.org/2000/svg"
                             width="9.55" height="16.775" viewBox="0 0 9.55 16.775">
                             <g id="next_1_" data-name="next (1)" transform="translate(0.567 0.567)">
                                 <g>

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\TestResult;
+use App\Mail\TestResultMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class TestResultController extends Controller
 {
@@ -21,9 +23,10 @@ class TestResultController extends Controller
       $testresult->email = $request->get('email');
 
       $testresult->save();
-      $message = 'Nos vemos allí.';
+      Mail::to([$testresult->email])->send(new TestResultMail($testresult));
+      $message = 'Te enviamos un mail con tu resultado.';
 
-      return redirect()->route('test-formulario')->withMessage($message);
+      return response()->json(['success'=>$message]);
     }
 
     public function csv()

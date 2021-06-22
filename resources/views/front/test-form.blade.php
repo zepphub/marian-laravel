@@ -68,7 +68,7 @@
                     <input type="radio" id="comenzar_1" name="comenzar_step_2" class="custom-control-input">
                     <label class="custom-control-label" for="comenzar_1">&zwnj;</label>
                   </div>
-                  <p class="mt-3">No se por donde comenzar</p>
+                  <p class="mt-3">No sé por donde comenzar</p>
                 </div>
                 <div class="col-md-3 mb-3 mb-md-0">
                   <div class="custom-control custom-radio custom-control-inline ml-4">
@@ -89,7 +89,7 @@
                     <input type="radio" id="comenzar_4" name="comenzar_step_2" class="custom-control-input">
                     <label class="custom-control-label" for="comenzar_4">&zwnj;</label>
                   </div>
-                  <p class="mt-3">Quiero crear una marca diferente, con esencia y corazón pero, no se como trabajar en
+                  <p class="mt-3">Quiero crear una marca diferente, con esencia y corazón pero, no sé como trabajar en
                     ello</p>
                 </div>
               </div>
@@ -247,7 +247,7 @@
                   class="col-md-5 mt-4 mt-md-0 rounded bg-textura-form-test d-flex flex-column justify-content-center">
                   <div class="p-4 p-md-0 px-md-3">
                     <h4 class="font-weight-bold text-white mb-4">¡Dejame tu mail y, nos vemos allí!</h4>
-                    <form id="result-test" class="needs-validation form-home" action="{{ route('test-formulario-send') }}" method="post" novalidate>
+                    <form class="needs-validation form-home form-test" action="{{ route('test-formulario-send') }}" method="post" novalidate>
                       @csrf
                       <input type="hidden" name="selection" value="comenzar">
                       <div class="form-row">
@@ -503,7 +503,7 @@
                     <p class="text-white">Para que el contenido llegue a tu correo y además, comenzar a recibir recursos
                       exclusivos para acompañarte en este proceso</p>
                     <h4 class="font-weight-bold text-white mb-4">¡Dejame tu mail y, nos vemos allí!</h4>
-                    <form id="result-test" class="needs-validation form-home" action="{{ route('test-formulario-send') }}" method="post" novalidate>
+                    <form class="needs-validation form-home form-test" action="{{ route('test-formulario-send') }}" method="post" novalidate>
                       @csrf
                       <input type="hidden" name="selection" value="mejorar">
                       <div class="form-row">
@@ -755,7 +755,7 @@
                     <p class="text-white">Para que el contenido llegue a tu correo y además, comenzar a recibir recursos
                       exclusivos para acompañarte en este proceso</p>
                     <h4 class="font-weight-bold text-white mb-4">¡Dejame tu mail y, nos vemos allí!</h4>
-                    <form id="result-test" class="needs-validation form-home" action="{{ route('test-formulario-send') }}" method="post" novalidate>
+                    <form class="needs-validation form-home form-test" action="{{ route('test-formulario-send') }}" method="post" novalidate>
                       @csrf
                       <input type="hidden" name="selection" value="crecer">
                       <div class="form-row">
@@ -773,27 +773,6 @@
                       </div>
                     </form>
 
-                    <script>
-                      // Example starter JavaScript for disabling form submissions if there are invalid fields
-                      (function () {
-                        'use strict';
-                        window.addEventListener('load', function () {
-                          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                          var forms = document.getElementsByClassName('needs-validation');
-                          // Loop over them and prevent submission
-                          var validation = Array.prototype.filter.call(forms, function (form) {
-                            form.addEventListener('submit', function (event) {
-                              if (form.checkValidity() === false) {
-                                event.preventDefault();
-                                event.stopPropagation();
-                              }
-                              form.classList.add('was-validated');
-                            }, false);
-                          });
-                        }, false);
-                      })();
-
-                    </script>
                   </div>
                 </div>
               </div>
@@ -805,4 +784,82 @@
       </div>
     </div>
   </div>
+    <!-- Modal Envio Exitoso -->
+  <div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="successFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Envio exitoso</h4>
+            <p id="successFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Modal Envio Fallido -->
+  <div class="modal fade" id="errorForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="errorFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Error</h4>
+            <p id="errorFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-fallido.svg') }}" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+@endsection
+
+@section('scripts')
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict';
+  window.addEventListener('load', function () {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+$('.form-test').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "{{ route('test-formulario-send') }}",
+        data: $(this).serialize(),
+        success: function(msg) {
+          $('#successFormMsg').text(msg.success);
+          $('#successForm').modal();
+          console.log(msg.success);
+        },
+        error: function(xhr, status, error){
+          //muestra solo el primer error
+          firstKey = Object.keys(xhr.responseJSON.errors)[0];
+          $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
+          $('#errorForm').modal();
+        }
+    });
+});
+
+</script>
 @endsection

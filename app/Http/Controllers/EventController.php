@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 
 use App\Models\Event;
+use App\Models\EventSubscription;
 
 class EventController extends Controller
 {
@@ -159,5 +160,20 @@ class EventController extends Controller
       $event->delete();
 
       return redirect()->route('admin.events.index')->withMessage($message);
+    }
+
+    public function subscribe(Request $request, Event $event){
+      $event_subscription  = new EventSubscription();
+      $event_subscription->firstname = $request->firstname;
+      $event_subscription->lastname = $request->lastname;
+      $event_subscription->email = $request->email;
+      $event_subscription->whatsapp = $request->whatsapp;
+      $event_subscription->localidad = $request->localidad;
+      $event_subscription->event_id = $event->id;
+      $event_subscription->save();
+
+      $message = 'Ya estas inscripto al evento.';
+
+      return response()->json(['success'=>$message]);
     }
 }

@@ -32,7 +32,11 @@ Route::get('/calendario', function(){ return view('front.calendar'); })->name('c
 Route::get('/carrito', [App\Http\Controllers\CartController::class, 'show'])->name('carrito');
 Route::get('/carrito/{service}', [App\Http\Controllers\CartController::class, 'add'])->name('carrito.add');
 Route::get('/carrito/{key}/delete', [App\Http\Controllers\CartController::class, 'delete'])->name('carrito.delete');
-Route::get('/checkout', function(){ return view('front.checkout'); })->name('checkout');
+
+Route::get('/checkout', [App\Http\Controllers\CheckoutController::class, 'checkout'])->name('checkout');
+Route::post('/order', [App\Http\Controllers\CheckoutController::class, 'order'])->name('order');
+Route::get('/order-cancel', [App\Http\Controllers\CheckoutController::class, 'checkoutCancel'])->name('order.cancel');
+Route::get('/order-success', [App\Http\Controllers\CheckoutController::class, 'checkoutSuccess'])->name('order.success');
 
 Route::get('/contacto', function(){ return view('front.contacto'); })->name('contacto');
 Route::post('/consulta', [App\Http\Controllers\FormQueryController::class, 'store'])->name('consulta');
@@ -51,6 +55,7 @@ Route::get('/sobre-mi', function(){ return view('front.sobre-mi'); })->name('sob
 
 Route::get('/talleres-y-eventos', [App\Http\Controllers\EventController::class, 'frontIndex'])->name('talleres-y-eventos');
 Route::get('/talleres-y-eventos/{event}', [App\Http\Controllers\EventController::class, 'frontShow'])->name('evento');
+Route::post('/talleres-y-eventos/{event}', [App\Http\Controllers\EventController::class, 'subscribe'])->name('suscribir-evento');
 
 Route::get('/test', function(){ return view('front.test'); })->name('test');
 Route::get('/test-formulario', function(){ return view('front.test-form'); })->name('test-formulario');
@@ -67,7 +72,7 @@ Route::prefix('/admin')
   ->group(function(){
     Route::get('/', 'HomeController@adminIndex')->name('index');
 
-    Route::get('/servicios', function(){ return view('admin.services'); })->name('services');
+    Route::get('/services', function(){ return view('admin.services'); })->name('services');
 
     Route::get('/newsletter', [App\Http\Controllers\NewsletterSubscriptionController::class, 'index'])->name('newsletter');
 
@@ -77,9 +82,10 @@ Route::prefix('/admin')
       Route::get('/newsletter', [App\Http\Controllers\NewsletterSubscriptionController::class, 'csv'])->name('newsletter');
       Route::get('/test_results', [App\Http\Controllers\TestResultController::class, 'csv'])->name('test_results');
       Route::get('/form_queries', [App\Http\Controllers\FormQueryController::class, 'csv'])->name('form_queries');
-      Route::get('/resources', [App\Http\Controllers\ResourcesController::class, 'csv'])->name('resources');
+      Route::get('/resources', [App\Http\Controllers\ResourceController::class, 'csv'])->name('resources');
     });
 
+    Route::resource('counselingdescriptions', CounselingDescriptionController::class)->only(['destroy']);
     Route::resources([
       'resources' => ResourceController::class,
       'events' => EventController::class,

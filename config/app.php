@@ -166,6 +166,7 @@ return [
          * Package Service Providers...
          */
         Stevebauman\Location\LocationServiceProvider::class,
+        Srmklive\PayPal\Providers\PayPalServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -214,8 +215,10 @@ return [
         'Location' => Stevebauman\Location\Facades\Location::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
+        'MercadoPago' => MercadoPago\SDK::class,
         'Notification' => Illuminate\Support\Facades\Notification::class,
         'Password' => Illuminate\Support\Facades\Password::class,
+        'PayPal' => Srmklive\PayPal\Facades\PayPal::class,
         'Queue' => Illuminate\Support\Facades\Queue::class,
         'Redirect' => Illuminate\Support\Facades\Redirect::class,
         // 'Redis' => Illuminate\Support\Facades\Redis::class,

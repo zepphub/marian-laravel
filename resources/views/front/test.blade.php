@@ -111,7 +111,7 @@
       <div class="row text-center text-md-left">
         <div class="col-md-9">
           <h4 class="text-white">Haciendo el test, podrás identificar en qué pilar debes enfocarte para avanzar</h4>
-          <p class="text-white">Al finalizar, te regalaré una guía práctica especialmente creada para la etapa en la que
+          <p class="text-white mb-0">Al finalizar, te regalaré una guía práctica especialmente creada para la etapa en la que
             tu proyecto se encuentra.</p>
         </div>
         <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-end"><a
