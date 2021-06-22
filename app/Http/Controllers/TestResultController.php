@@ -29,9 +29,9 @@ class TestResultController extends Controller
       return response()->json(['success'=>$message]);
     }
 
-    public function csv()
+    public function csv($selection)
     {
-      $test_results = TestResult::all('name','email','selection');
+      $test_results = TestResult::all('name','email','selection')->where('selection',$selection);
 
       $headers = array(
               "Content-type" => "text/csv",
@@ -53,6 +53,6 @@ class TestResultController extends Controller
         fclose($file);
       };
 
-      return response()->streamDownload($callback, 'resultados_test-' . date('d-m-Y-H:i:s').'.csv', $headers);
+      return response()->streamDownload($callback, 'resultados_test-' . strtolower($selection) . "-" . date('d-m-Y-H:i:s').'.csv', $headers);
     }
 }

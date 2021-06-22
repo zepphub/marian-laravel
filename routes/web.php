@@ -80,7 +80,7 @@ Route::prefix('/admin')
       ->name('csv.')
       ->group(function(){
       Route::get('/newsletter', [App\Http\Controllers\NewsletterSubscriptionController::class, 'csv'])->name('newsletter');
-      Route::get('/test_results', [App\Http\Controllers\TestResultController::class, 'csv'])->name('test_results');
+      Route::get('/test_results/{selection}', [App\Http\Controllers\TestResultController::class, 'csv'])->name('test_results');
       Route::get('/form_queries', [App\Http\Controllers\FormQueryController::class, 'csv'])->name('form_queries');
       Route::get('/resources', [App\Http\Controllers\ResourceController::class, 'csv'])->name('resources');
     });
