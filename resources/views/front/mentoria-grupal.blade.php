@@ -211,7 +211,7 @@
         <h4 class="text-white titulo-home">¡Aplicá para la próxima edición!</h4>
       </div>
       <div class="col-md-4 d-flex flex-column flex-md-column align-items-center justify-content-center justify-content-md-end">
-        <a href="{{ route('carrito.add', $mentorship->service) }}"><button class="btn btn-blanco mt-3 mt-md-0">¡quiero reservar mi lugar!</button></a>
+        <a href="{{ route('index') }}#contacto"><button class="btn btn-blanco mt-3 mt-md-0">¡quiero reservar mi lugar!</button></a>
         <h5 class="text-white mt-3">Costo <span>{{ $mentorship->service->price() }}</span></h5>
       </div>
     </div>
