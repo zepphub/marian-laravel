@@ -1,0 +1,160 @@
+h2{
+    font-size:7em;
+    letter-spacing: -2px;
+}
+.btn-primary{
+    background-color: #F8337A;
+}
+.btn-primary:hover{
+    background-color: #c92360;
+}
+.btn{
+    padding: .7rem 1.4rem;
+}
+button.btn.btn-blanco:hover {
+    background: #F8337A;
+    color: #FFF;
+}
+.card-propuestas:hover{
+    border: 2px solid #FFF !important;
+}
+footer p{
+    font-size: 1.1em;
+}
+
+#carouselAsesoria .card:hover p{
+    font-weight: bold;
+    transition: all .3s;
+}
+
+#mentoria-g-owl-carousel h5 {
+    color: #937A69;
+    font-size: 1rem;
+    min-height: 30px;
+}
+#tye-owl-carousel h5 {
+    color: #937A69;
+    font-size: 1rem;
+    min-height: 40px;
+}
+#pills-vertical a.nav-link{
+    background: url(../img/servicios-bg-tabs.png);
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pills-vertical a.nav-link.active{
+    color: #937A69;
+}
+#pills-vertical .nav-link.active svg {
+    margin-top: -3px;
+}
+.line-h-low {
+    line-height: 3rem !important;
+}
+div#navbarNavDropdownMob.show {
+    position: absolute;
+    padding: 20px;
+    top: 50px;
+    right: -15px;
+    background: #FFF;
+    width: 100vw;
+    z-index: 20;
+}
+div#navbarNavDropdownMob.collapsing {
+    position: absolute;
+    padding: 20px;
+    top: 50px;
+    right: -15px;
+    background: #FFF;
+    width: 100vw;
+    z-index: 20;
+}
+button.navbar-toggler {
+    margin-top: 3px;
+}
+.navbar-light .navbar-toggler{
+    border: none;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(180, 96, 99, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.dropdown-option:hover, .dropdown-option:focus{
+    background: none !important;
+}
+a.text-white:hover, a.text-white:focus {
+    color: #eaeaea !important;
+}
+@media (min-width: 768px){
+    .card-propuestas p.card-text {
+        min-height: 145px;
+    }
+    .social-group{
+        margin-top: 100px !important;
+    }
+    .contenedor-cinco-pilares h5{
+        min-height: 120px;
+    }
+    
+}
+@media (max-width: 768px){
+    h2{
+        margin-bottom: 30px;
+        font-size: 6em;
+        letter-spacing: -2px;
+        line-height: 3rem;
+    }
+    .w-75{
+        width: 100% !important;
+    }
+    #asesoriaTabs .d-flex.flex-column h4{
+        font-size: 1.5em;
+    }
+    .logo-mobile img {
+        width: 150px;
+        height: auto;
+    }
+    .petalos-right.sobre-mi-section::after {
+        bottom: -4%;
+    }
+    footer h4{
+        margin: 25px 0 0 0 !important;
+    }
+    div.col-md-12 > h2{
+        font-size: 5em;
+        letter-spacing: -2px;
+        margin-top: 20px;
+    } 
+    #carouselAsesoriaMob .card-text{
+        min-height: 100px !important;
+        width: 100% !important;
+        padding: 0 15%;
+    }
+
+    #carouselAsesoriaMob .carousel-indicators li {
+        background-color: #B46063;
+    }
+    #carouselAsesoriaMob .carousel-control-next {
+        background-image: none;
+    }
+    #carouselAsesoriaMob .carousel-control-prev {
+        background-image: none;
+    }
+    #carouselAsesoriaMob .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(180, 96, 99, 1)' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+    }
+    #carouselAsesoriaMob .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(180, 96, 99, 1)' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+    }
+    #pills-vertical .nav-link {
+        display: block;
+        padding: 0.7rem .8rem;
+    }
+    #brandsCarouselMob .carousel-control-prev, #brandsCarouselMob .carousel-control-next {
+        width: 0%;
+    }
+    #carouselTYE_mobile .card-body{
+        padding: 0;
+    }
+}
