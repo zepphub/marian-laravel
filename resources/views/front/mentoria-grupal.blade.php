@@ -41,7 +41,7 @@
           compartiendo esta experiencia en comunidad.
         </p>
         <h4 class="text-medium">¡Quiero conocer más detalles!</h4>
-        <a href="{{ route( 'carrito.add', $mentorship->service) }}" class="btn btn-primary mt-3">Quiero reservar mi lugar <svg
+        <a href="{{ route( 'index') }}#contacto" class="btn btn-primary mt-3"> Quiero reservar mi lugar <svg
               class="ml-2" xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367" viewBox="0 0 8.248 14.367">
               <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
                 <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
