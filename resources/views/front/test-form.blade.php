@@ -216,8 +216,8 @@
                   </div>
                   <div class="opcion-step-5">
                     <div class="custom-control custom-radio custom-control-inline ml-4">
-                      <input type="radio" id="comenzar_5_4" name="comenzar_5" class="custom-control-input">
-                      <label class="custom-control-label" for="comenzar_5_4">&zwnj;</label>
+                      <input type="radio" id="comenzar_5_5" name="comenzar_5" class="custom-control-input">
+                      <label class="custom-control-label" for="comenzar_5_5">&zwnj;</label>
                     </div>
                     <p class="mt-3">Ninguna de las anteriores</p>
                   </div>
@@ -696,8 +696,8 @@
                   </div>
                   <div class="opcion-step-5">
                     <div class="custom-control custom-radio custom-control-inline ml-4">
-                      <input type="radio" id="crecer_5_4" name="crecer_5" class="custom-control-input">
-                      <label class="custom-control-label" for="crecer_5_4">&zwnj;</label>
+                      <input type="radio" id="crecer_5_5" name="crecer_5" class="custom-control-input">
+                      <label class="custom-control-label" for="crecer_5_5">&zwnj;</label>
                     </div>
                     <p class="mt-3">Ninguna de las anteriores</p>
                   </div>
