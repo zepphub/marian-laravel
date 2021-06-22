@@ -52,10 +52,11 @@ class Service extends Model
       return $this->price_symbol() . $this->price_raw();
     }
 
-    public function fullname(){
+    public function fullname($full = true){
       $counseling = Counseling::where('service_id', $this->id)->first();
       if (!is_null($counseling)){
-        return 'Consultoría Estrategica "' . $this->name . '"';
+        $pre = $full ? 'Consultoría Estrategica “' : '“' ;
+        return $pre . $this->name . '”';
       } else {
         return $this->name;
       }
