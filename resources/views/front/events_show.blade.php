@@ -55,6 +55,7 @@
             </div>
           </div>
         </div>
+        @if ($event->inscription)
         <div class="col-md-5">
           <div class="mt-4 mt-md-0 rounded-lg p-md-4 p-3 bg-textura-form text-md-center">
             <h5 class="text-white titulo-home mb-4">Reserva tu lugar</h5>
@@ -90,6 +91,7 @@
 
           </div>
         </div>
+        @endif
       </div>
     </div>
   </div>
