@@ -176,4 +176,32 @@ class EventController extends Controller
 
       return response()->json(['success'=>$message]);
     }
+
+    public function csv(Event $event)
+    {
+      $subscriptions = EventSubscription::all('firstname','lastname','email','whatsapp','localidad')->where('event_id', $event->id);
+
+      $headers = array(
+              "Content-type" => "text/csv",
+              "Pragma" => "no-cache",
+              "Cache-Control" => "must-revalidate, post-check=0, pre-check=0",
+              "Expires" => "0"
+          );
+
+      $columns = array('Nombre', 'Apellido', 'E-mail', 'Whatsapp', 'Localidad');
+
+      $callback = function() use ($subscriptions, $columns)
+      {
+        $file = fopen('php://output', 'w');
+        fputcsv($file, $columns);
+
+        foreach($subscriptions as $subscription) {
+            fputcsv($file, $subscription->toArray());
+        }
+        fclose($file);
+      };
+
+      return response()->streamDownload($callback, 'evento-' . $event->slug . "-" . date('d-m-Y-H:i:s').'.csv', $headers);
+
+    }
 }

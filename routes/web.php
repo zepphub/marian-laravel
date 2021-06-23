@@ -83,6 +83,7 @@ Route::prefix('/admin')
       Route::get('/test_results/{selection}', [App\Http\Controllers\TestResultController::class, 'csv'])->name('test_results');
       Route::get('/form_queries', [App\Http\Controllers\FormQueryController::class, 'csv'])->name('form_queries');
       Route::get('/resources', [App\Http\Controllers\ResourceController::class, 'csv'])->name('resources');
+      Route::get('/event/{event}', [App\Http\Controllers\EventController::class, 'csv'])->name('event');
     });
 
     Route::resource('counselingdescriptions', CounselingDescriptionController::class)->only(['destroy']);
