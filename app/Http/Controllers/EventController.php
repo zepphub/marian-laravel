@@ -179,7 +179,7 @@ class EventController extends Controller
 
     public function csv(Event $event)
     {
-      $subscriptions = EventSubscription::all('firstname','lastname','email','whatsapp','localidad')->where('event_id', $event->id);
+      $subscriptions = EventSubscription::where('event_id', $event->id)->select('firstname','lastname','email','whatsapp','localidad')->get();
 
       $headers = array(
               "Content-type" => "text/csv",
