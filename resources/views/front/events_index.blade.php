@@ -229,7 +229,7 @@
                             <p class="card-text">{{ $event->description }}</p>
                             <div class="d-md-flex align-items-center justify-content-between">
                               @if ($event->inscription)
-                              <a class="btn btn-primary" href="{{ route('evento', $event->slug) }}">Inscribite <svg class="ml-1"
+                              <a class="btn btn-primary w-100" href="{{ route('evento', $event->slug) }}">Inscribite <svg class="ml-1"
                                   xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367"
                                   viewBox="0 0 8.248 14.367">
                                   <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
