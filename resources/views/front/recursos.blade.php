@@ -24,7 +24,7 @@
            @csrf
            <input type=hidden name=resource id="hidden-resource" value=1>
           </form>
-          <form class="form-border-1-px" action="{{ route('recursos-descarga') }}" method="post">
+          <form class="form-border-1-px form-download" action="{{ route('recursos-descarga') }}" method="post">
             @csrf
             <input type=hidden name=resource id=resource value=1>
             <div class="form-row">
@@ -74,13 +74,15 @@
       <div class="row">
         <div class="col-md-4 my-3">
           <div
-            class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">
-            <h4 class="titulo-recurso-descargable">Test sin cargo</h4>
-            <p class="text-recurso-descargable my-3 my-md-0">Hacé el test sin costo para ayudarte a identificar en qué
-              etapa estás y en qué pilar de tu emprendimiento
-              debés enfocarte para mejorar la presencia digital de tu marca y potenciar tus resultados.</p>
+            class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-between">
+            <div>
+              <h4 class="titulo-recurso-descargable">Test sin cargo</h4>
+              <p class="text-recurso-descargable my-3 my-md-0">Hacé el test sin costo para ayudarte a identificar en qué
+                etapa estás y en qué pilar de tu emprendimiento
+                debés enfocarte para mejorar la presencia digital de tu marca y potenciar tus resultados.</p>
+            </div>
             <a class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" href="{{ route('test') }}">Quiero hacer el test
-              <svg xmlns="http://www.w3.org/2000/svg" width="13.414" height="13.074" viewBox="0 0 13.414 13.074">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ml-md-2" width="13.414" height="13.074" viewBox="0 0 13.414 13.074">
                 <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
                   d="M5.7,14.846l.665.665a.716.716,0,0,0,1.015,0L13.2,9.693a.716.716,0,0,0,0-1.015l-5.82-5.82a.716.716,0,0,0-1.015,0L5.7,3.523A.719.719,0,0,0,5.712,4.55L9.32,7.987H.715A.717.717,0,0,0,0,8.705v.958a.717.717,0,0,0,.719.719h8.6L5.712,13.819A.714.714,0,0,0,5.7,14.846Z"
                   transform="translate(0.004 -2.647)" fill="currentColor" />
@@ -90,10 +92,12 @@
         </div>
         @foreach ($resources as $resource)
         <div class="col-md-4 my-3">
-          <div class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">
-            <h4 class="titulo-recurso-descargable">{{$resource->title}}</h4>
-            <div>{{$resource->description}}</div>
-            <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" onclick="newDownload('{{$resource->id}}')">{{$resource->button}}<svg xmlns="http://www.w3.org/2000/svg" width="13.414"
+          <div class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-between">
+            <div>
+              <h4 class="titulo-recurso-descargable">{{$resource->title}}</h4>
+              <div>{{$resource->description}}</div>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" onclick="newDownload('{{$resource->id}}')">{{$resource->button}}<svg class="ml-md-2" xmlns="http://www.w3.org/2000/svg" width="13.414"
                 height="13.074" viewBox="0 0 13.414 13.074">
                 <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
                   d="M5.7,14.846l.665.665a.716.716,0,0,0,1.015,0L13.2,9.693a.716.716,0,0,0,0-1.015l-5.82-5.82a.716.716,0,0,0-1.015,0L5.7,3.523A.719.719,0,0,0,5.712,4.55L9.32,7.987H.715A.717.717,0,0,0,0,8.705v.958a.717.717,0,0,0,.719.719h8.6L5.712,13.819A.714.714,0,0,0,5.7,14.846Z"
@@ -172,8 +176,7 @@
 
     </div>
   </div>
-  <!-- Seccion Newsletter -->
-  <!-- Modal Envio Exitoso Form contacto Home -->
+  <!-- Modal Envio Exitoso Form -->
   <div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="successFormLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -190,7 +193,7 @@
         </div>
       </div>
   </div>
-  <!-- Modal Envio Exitoso Form contacto Home -->
+  <!-- Modal Envio Fallido Form -->
   <div class="modal fade" id="errorForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="errorFormLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -219,7 +222,22 @@ var newDownload = function(r_id){
   resourceidhi.value = r_id;
   hresourceidhi.value = r_id;
   if (registered) {
-    document.getElementById('hidden-download').submit();
+    $.ajax({
+            type: "POST",
+            url: "{{ route('recursos-descarga') }}",
+            data: $('#hidden-download').serialize(),
+            success: function(msg) {
+            $('#successFormMsg').text(msg.success);
+            $('#successForm').modal();
+            console.log(msg.success);
+            },
+            error: function(xhr, status, error){
+              //muestra solo el primer error
+              firstKey = Object.keys(xhr.responseJSON.errors)[0];
+              $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
+              $('#errorForm').modal();
+         }
+        });
   }
   else {
     resource_id = r_id;
@@ -256,6 +274,26 @@ $('#newsletterForm').on('submit', function(e) {
     $.ajax({
         type: "POST",
         url: "{{ route('newsletter-subscription') }}",
+        data: $(this).serialize(),
+        success: function(msg) {
+        $('#successFormMsg').text(msg.success);
+        $('#successForm').modal();
+        console.log(msg.success);
+        },
+        error: function(xhr, status, error){
+          //muestra solo el primer error
+          firstKey = Object.keys(xhr.responseJSON.errors)[0];
+          $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
+          $('#errorForm').modal();
+     }
+    });
+});
+
+$('.form-download').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "{{ route('recursos-descarga') }}",
         data: $(this).serialize(),
         success: function(msg) {
         $('#successFormMsg').text(msg.success);

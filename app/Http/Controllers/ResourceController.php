@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Resource;
 use App\Models\ResourceSubscription;
 use Illuminate\Http\Request;
+use App\Mail\ResourceMail;
+use Illuminate\Support\Facades\Mail;
 
 class ResourceController extends Controller
 {
@@ -158,13 +160,20 @@ class ResourceController extends Controller
           $resource_subscription->email = $request->email;
           $resource_subscription->save();
         };
+        $email = $request->session()->put('email', $request->email);
         $registered = $request->session()->put('registered', true);
       }
 
       $resource->downloads = $resource->downloads + 1;
       $resource->save();
+      $email = $request->session()->get('email', false);
+      if ($email){
+        Mail::to([$email])->send(new ResourceMail($resource->file));
+      }
+      $message = 'Te enviamos un mail con tu recurso.';
 
-      return response()->download($resource->file);
+      //return response()->download($resource->file);
+      return response()->json(['success'=>$message]);
     }
 
     public function csv()

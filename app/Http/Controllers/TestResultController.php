@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\TestResult;
+use App\Mail\TestResultMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class TestResultController extends Controller
 {
@@ -21,14 +23,15 @@ class TestResultController extends Controller
       $testresult->email = $request->get('email');
 
       $testresult->save();
-      $message = 'Nos vemos allí.';
+      Mail::to([$testresult->email])->send(new TestResultMail($testresult));
+      $message = 'Te enviamos un mail con tu resultado.';
 
-      return redirect()->route('test-formulario')->withMessage($message);
+      return response()->json(['success'=>$message]);
     }
 
-    public function csv()
+    public function csv($selection)
     {
-      $test_results = TestResult::all('name','email','selection');
+      $test_results = TestResult::all('name','email','selection')->where('selection',$selection);
 
       $headers = array(
               "Content-type" => "text/csv",
@@ -50,6 +53,6 @@ class TestResultController extends Controller
         fclose($file);
       };
 
-      return response()->streamDownload($callback, 'resultados_test-' . date('d-m-Y-H:i:s').'.csv', $headers);
+      return response()->streamDownload($callback, 'resultados_test-' . strtolower($selection) . "-" . date('d-m-Y-H:i:s').'.csv', $headers);
     }
 }

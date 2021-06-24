@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -85,7 +86,7 @@ class CategoryController extends Controller
         $message = 'Categoría "'.$category->name.'" renombrada a "'.$request->name.'".';
         $category->name = $request->name;
         $category->slug = Str::slug($request->name);
-        $duplicate = Category::where('name', $category->name)->ignore($category->id)->first();
+        $duplicate = Category::where('name', $category->name)->where('id', "!=", $category->id)->first();
         if ($duplicate) {
           return redirect()->route('admin.categories.index')->withErrors('Existe otra categoría con ese nombre.')->withInput();
         }

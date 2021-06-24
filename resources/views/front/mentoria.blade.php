@@ -58,7 +58,7 @@
               <div class="card border-secondary text-center card-propuestas shadow">
                 <img src="{{ asset('img/card-asesoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title titulo-home">Consultoría Estratégica</h5>
+                  <h5 class="card-title titulo-home">Programa Intensivo de 8 semanas</h5>
                   <p class="card-text">Te ayudo a crear tu estrategia digital para resaltar la esencia y los valores de tu marca, de forma intensiva y personalizada. </p>
                   <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
                   <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">Click Aquí</a>
