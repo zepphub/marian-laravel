@@ -51,8 +51,8 @@
 <div class="container-fluid my-5">
     <div class="row">
         <div class="col-md-12 p-0">
-            <a href="" data-bs-toggle="modal" data-bs-target="#consultoria-video">
-                <img src="{{ asset('img/video-placeholder.png') }}" class="w-100" alt="">
+            <a href="#modal" data-bs-toggle="modal" data-bs-target="#consultoria-video">
+                <img src="{{ asset('img/video-placeholder2.png') }}" class="w-100" alt="">
                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 <lottie-player class="play-bt2" src="https://assets10.lottiefiles.com/packages/lf20_fcloo4ce.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;"  loop  autoplay data-bs-toggle="modal" data-bs-target="#consultoria-video"></lottie-player>
             </a>
@@ -562,23 +562,25 @@
   </div>
 @endsection
 @section('scripts')
+
 <!-- Modal video -->
-<div class="modal fade" id="consultoria-video" tabindex="1" aria-labelledby="consultoria-video" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header border-0">
+<div class="modal fade" id="consultoria-video" tabindex="1" aria-labelledby="mentoriavideo" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent shadow-none border-0">
+            <div class="modal-header border-0 py-0">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+                <span aria-hidden="true">&times;</span>
             </button>
-          </div>
-          <div class="modal-body text-center">
-            <video id="ban_video" class="tv_video" controls>
+            </div>
+            <div class="modal-body text-center">
+            <video id="ban_video" class="tv_video" width="100%" controls>
                 <source src="{{ asset('videos/consultoria.mp4') }}" type="video/mp4">
             </video>
-          </div>
+            </div>
         </div>
-      </div>
-  </div>
+    </div>
+</div>
+
 <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
@@ -618,6 +620,10 @@ $('#contactForm').on('submit', function(e) {
         }
     });
 });
+
+$('a[href$="#modal"]').on( "click", function() {
+      $('#consultoria-video').modal('show');
+    });
 
 // $(document).ready(function () {
 //         var video1 = document.getElementById("ban_video");

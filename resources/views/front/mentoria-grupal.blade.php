@@ -59,8 +59,8 @@
   <div class="container-fluid my-5">
     <div class="row">
         <div class="col-md-12 p-0">
-            <a href="" data-bs-toggle="modal" data-bs-target="#mentoriaVideo">
-                <img src="{{ asset('img/video-placeholder.png') }}" class="w-100" alt="">
+            <a href="#modal"  data-bs-toggle="modal" data-bs-target="#mentoriaVideo">
+                <img src="{{ asset('img/video-placeholder2.png') }}" class="w-100" alt="">
                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 <lottie-player class="play-bt2" src="https://assets10.lottiefiles.com/packages/lf20_fcloo4ce.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;"  loop  autoplay ></lottie-player>
             </a>
@@ -296,15 +296,15 @@ crecimiento.</p>
 
 <!-- Modal video -->
 <div class="modal fade" id="mentoriaVideo" tabindex="1" aria-labelledby="mentoriavideo" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header border-0">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent shadow-none border-0">
+          <div class="modal-header border-0 py-0">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body text-center">
-            <video id="ban_video" class="tv_video" controls>
+            <video id="ban_video" class="tv_video" width="100%" controls>
                 <source src="{{ asset('videos/mentoria-grupal.mp4') }}" type="video/mp4">
             </video>
           </div>
@@ -316,7 +316,7 @@ crecimiento.</p>
   <!-- Modal Envio Exitoso Form contacto Home -->
   <div class="modal fade" id="video-modal" data-backdrop="static" data-keyboard="false" tabindex="-1"
       aria-labelledby="successFormLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog  modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header border-0">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -359,6 +359,9 @@ crecimiento.</p>
       owl.trigger('prev.owl.carousel', [300]);
     })
 
+    $('a[href$="#modal"]').on( "click", function() {
+      $('#mentoriaVideo').modal('show');
+    });
     // $(document).ready(function () {
     //     var video1 = document.getElementById("ban_video");
     //     video1.currentTime = 0;
