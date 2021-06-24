@@ -59,21 +59,24 @@
   <div class="container-fluid my-5">
     <div class="row">
         <div class="col-md-12 p-0">
-            
-            <div class="video-consultoria">
+            <a href="" data-bs-toggle="modal" data-bs-target="#mentoriaVideo">
+                <img src="{{ asset('img/video-placeholder.png') }}" class="w-100" alt="">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player class="play-bt2" src="https://assets10.lottiefiles.com/packages/lf20_fcloo4ce.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;"  loop  autoplay ></lottie-player>
+            </a>
+            <!-- <div class="video-consultoria">
 				<video id="ban_video" class="tv_video">
-                     <source src="{{ asset('videos/mentoria-grupal.mp4') }}" type="video/mp4">
+                     <source src="{{ asset('videos/consultoria.mp4') }}" type="video/mp4">
                      Tu navegador no puede reproducir este video.
                 </video>
                 
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player class="play-bt" src="https://assets10.lottiefiles.com/packages/lf20_fcloo4ce.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;"  loop  autoplay></lottie-player>
+                
                 <div class="pause-bt" style="display:none;"></div>
                 
-             </div>
+             </div> -->
         </div>
     </div>
-</div>
+  </div>
 
   <div class="d-flex align-items-center" id="mentoria-g-owl-carousel">
     <div class="container">
@@ -290,6 +293,44 @@ crecimiento.</p>
 
 @section('scripts')
   <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+
+<!-- Modal video -->
+<div class="modal fade" id="mentoriaVideo" tabindex="1" aria-labelledby="mentoriavideo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <video id="ban_video" class="tv_video" controls>
+                <source src="{{ asset('videos/mentoria-grupal.mp4') }}" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <!-- Modal Envio Exitoso Form contacto Home -->
+  <div class="modal fade" id="video-modal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="successFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Envio exitoso</h4>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+
   <script type="text/javascript">
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -318,47 +359,47 @@ crecimiento.</p>
       owl.trigger('prev.owl.carousel', [300]);
     })
 
-    $(document).ready(function () {
-        var video1 = document.getElementById("ban_video");
-        video1.currentTime = 0;
-        $(".mute-bt").click(function () {
-            if ($(this).hasClass("stop")) {
-                var ban_video = document.getElementById("ban_video");
-                $("#ban_video").prop('muted', false);
-                $(this).removeClass("stop");
-            } else {
-                var ban_video = document.getElementById("ban_video");
-                $("#ban_video").prop('muted', true);
-                $(this).addClass("stop");
-            }
-        });
+    // $(document).ready(function () {
+    //     var video1 = document.getElementById("ban_video");
+    //     video1.currentTime = 0;
+    //     $(".mute-bt").click(function () {
+    //         if ($(this).hasClass("stop")) {
+    //             var ban_video = document.getElementById("ban_video");
+    //             $("#ban_video").prop('muted', false);
+    //             $(this).removeClass("stop");
+    //         } else {
+    //             var ban_video = document.getElementById("ban_video");
+    //             $("#ban_video").prop('muted', true);
+    //             $(this).addClass("stop");
+    //         }
+    //     });
 
-        $(".play-bt").click(function () {
-            $(".play-bt").hide();
-            $(".pause-bt").show();
-            var ban_video = document.getElementById("ban_video");
-            if ($(".stop-bt").hasClass("active")) {
-                ban_video.currentTime = 0;
-            }
-            ban_video.play();
-        });
-        $(".pause-bt").click(function () {
-            $(".play-bt").show();
-            $(".pause-bt").hide();
-            $(".pause-bt").addClass("active");
-            $(".stop-bt").removeClass("active");
-            var ban_video = document.getElementById("ban_video");
-            ban_video.pause();
-        });
-        $(".stop-bt").click(function () {
-            $(".play-bt").show();
-            $(".pause-bt").hide();
-            $(".pause-bt").removeClass("active");
-            $(".stop-bt").addClass("active");
-            var ban_video = document.getElementById("ban_video");
-            stop
-            ban_video.pause();
-        });
-    });
+    //     $(".play-bt").click(function () {
+    //         $(".play-bt").hide();
+    //         $(".pause-bt").show();
+    //         var ban_video = document.getElementById("ban_video");
+    //         if ($(".stop-bt").hasClass("active")) {
+    //             ban_video.currentTime = 0;
+    //         }
+    //         ban_video.play();
+    //     });
+    //     $(".pause-bt").click(function () {
+    //         $(".play-bt").show();
+    //         $(".pause-bt").hide();
+    //         $(".pause-bt").addClass("active");
+    //         $(".stop-bt").removeClass("active");
+    //         var ban_video = document.getElementById("ban_video");
+    //         ban_video.pause();
+    //     });
+    //     $(".stop-bt").click(function () {
+    //         $(".play-bt").show();
+    //         $(".pause-bt").hide();
+    //         $(".pause-bt").removeClass("active");
+    //         $(".stop-bt").addClass("active");
+    //         var ban_video = document.getElementById("ban_video");
+    //         stop
+    //         ban_video.pause();
+    //     });
+    // });
   </script>
 @endsection
