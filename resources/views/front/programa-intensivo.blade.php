@@ -184,7 +184,7 @@
               <div class="d-flex">
                 <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
-                    <a class="" href=""><svg id="Componente_2_9" data-name="Componente 2 – 9"
+                    <a class="" href="https://twitter.com/Marianaapd?s=08" target="_blank"><svg id="Componente_2_9" data-name="Componente 2 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
                         <circle id="Elipse_1" data-name="Elipse 1" cx="21" cy="21" r="21" fill="#f8337a" opacity="0" />
                         <path id="Twitter"
@@ -196,7 +196,7 @@
                 </div>
                 <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
-                    <a class="" href=""><svg id="Componente_3_9" data-name="Componente 3 – 9"
+                    <a class="" href="https://www.facebook.com/Mariana-Pacheco-D-109043760426352" target="_blank"><svg id="Componente_3_9" data-name="Componente 3 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
                         <circle id="Elipse_2" data-name="Elipse 2" cx="21" cy="21" r="21" fill="#f8337a" opacity="0" />
                         <path id="Facebook"
@@ -207,7 +207,7 @@
                 </div>
                 <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
-                    <a class="" href=""><svg id="Componente_4_15" data-name="Componente 4 – 15"
+                    <a class="" href="https://www.instagram.com/mariann.pd/?hl=es-la" target="_blank"><svg id="Componente_4_15" data-name="Componente 4 – 15"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
                         <circle id="Elipse_3" data-name="Elipse 3" cx="21" cy="21" r="21" fill="#f8337a" opacity="0" />
                         <path id="instagram"
@@ -219,7 +219,7 @@
                 </div>
                 <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
-                    <a class="" href=""><svg id="Componente_4_16" data-name="Componente 4 – 16"
+                    <a class="" href="https://www.linkedin.com/in/mariana-pacheco-d-aquila-ba537375/" target="_blank"><svg id="Componente_4_16" data-name="Componente 4 – 16"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
                         <circle id="Elipse_3" data-name="Elipse 3" cx="21" cy="21" r="21" fill="#f8337a" opacity="0" />
                         <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in"

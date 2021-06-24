@@ -227,7 +227,7 @@
                             </div>
                             <h5 class="card-title text-marron-claro titulo-home">{{ $event->title }}</h5>
                             <p class="card-text">{{ $event->description }}</p>
-                            <div class="d-md-flex align-items-baseline justify-content-between">
+                            <div class="d-md-flex align-items-center justify-content-between">
                               @if ($event->inscription)
                               <a class="btn btn-primary" href="{{ route('evento', $event->slug) }}">Inscribite <svg class="ml-1"
                                   xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367"
@@ -252,7 +252,7 @@
                               </a>
                               @endif
                               @if (isset($event->host))
-                              <p class="text-rosa-oscuro m-0">Organiza: {{$event->host}} </p>
+                              <p class="text-rosa-oscuro m-0 ml-md-3">Organiza: {{$event->host}} </p>
                               @endif
                             </div>
                           </div>
@@ -321,7 +321,7 @@
                     <h5 class="card-title text-marron-claro titulo-home">{{ $event->title }}</h5>
                     <p class="card-text">{{ $event->description }}</p>
 
-                    <div class="d-md-flex align-items-baseline justify-content-between">
+                    <div class="d-md-flex align-items-center justify-content-between">
                       @if ($event->inscription)
                       <a class="btn btn-primary" href="{{ route('evento', $event->slug) }}">Inscribite <svg class="ml-1"
                           xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367"
@@ -346,7 +346,7 @@
                       </a>
                       @endif
                       @if (isset($event->host))
-                      <p class="text-rosa-oscuro m-0">Organiza: {{$event->host}} </p>
+                      <p class="text-rosa-oscuro ml-md-3 m-0">Organiza: {{$event->host}} </p>
                       @endif
                     </div>
                   </div>
@@ -549,7 +549,7 @@
               <div class="d-flex">
                 <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
-                    <a class="" href=""><svg id="Componente_2_9" data-name="Componente 2 – 9"
+                    <a class="" href="https://twitter.com/Marianaapd?s=08"><svg id="Componente_2_9" data-name="Componente 2 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
                         <circle id="Elipse_1" data-name="Elipse 1" cx="21" cy="21" r="21" fill="#f8337a" opacity="0" />
                         <path id="Twitter"
@@ -561,7 +561,7 @@
                 </div>
                 <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
-                    <a class="" href=""><svg id="Componente_3_9" data-name="Componente 3 – 9"
+                    <a class="" href="https://www.facebook.com/Mariana-Pacheco-D-109043760426352"><svg id="Componente_3_9" data-name="Componente 3 – 9"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
                         <circle id="Elipse_2" data-name="Elipse 2" cx="21" cy="21" r="21" fill="#f8337a" opacity="0" />
                         <path id="Facebook"
@@ -572,7 +572,7 @@
                 </div>
                 <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
-                    <a class="" href=""><svg id="Componente_4_15" data-name="Componente 4 – 15"
+                    <a class="" href="https://www.instagram.com/mariann.pd/?hl=es-la"><svg id="Componente_4_15" data-name="Componente 4 – 15"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
                         <circle id="Elipse_3" data-name="Elipse 3" cx="21" cy="21" r="21" fill="#f8337a" opacity="0" />
                         <path id="instagram"
@@ -584,7 +584,7 @@
                 </div>
                 <div class="list-group-item border-0 bg-transparent p-0">
                   <div class="btn-social-group d-flex align-items-center justify-content-center">
-                    <a class="" href=""><svg id="Componente_4_16" data-name="Componente 4 – 16"
+                    <a class="" href="https://www.linkedin.com/in/mariana-pacheco-d-aquila-ba537375/"><svg id="Componente_4_16" data-name="Componente 4 – 16"
                         xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
                         <circle id="Elipse_3" data-name="Elipse 3" cx="21" cy="21" r="21" fill="#f8337a" opacity="0" />
                         <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in"

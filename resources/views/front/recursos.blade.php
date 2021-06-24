@@ -74,11 +74,13 @@
       <div class="row">
         <div class="col-md-4 my-3">
           <div
-            class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">
-            <h4 class="titulo-recurso-descargable">Test sin cargo</h4>
-            <p class="text-recurso-descargable my-3 my-md-0">Hacé el test sin costo para ayudarte a identificar en qué
-              etapa estás y en qué pilar de tu emprendimiento
-              debés enfocarte para mejorar la presencia digital de tu marca y potenciar tus resultados.</p>
+            class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-between">
+            <div>
+              <h4 class="titulo-recurso-descargable">Test sin cargo</h4>
+              <p class="text-recurso-descargable my-3 my-md-0">Hacé el test sin costo para ayudarte a identificar en qué
+                etapa estás y en qué pilar de tu emprendimiento
+                debés enfocarte para mejorar la presencia digital de tu marca y potenciar tus resultados.</p>
+            </div>
             <a class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" href="{{ route('test') }}">Quiero hacer el test
               <svg xmlns="http://www.w3.org/2000/svg" width="13.414" height="13.074" viewBox="0 0 13.414 13.074">
                 <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
@@ -90,9 +92,11 @@
         </div>
         @foreach ($resources as $resource)
         <div class="col-md-4 my-3">
-          <div class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-around">
-            <h4 class="titulo-recurso-descargable">{{$resource->title}}</h4>
-            <div>{{$resource->description}}</div>
+          <div class="bg-crema-suave-2 p-4 contenedor-recurso d-flex flex-column align-items-baseline justify-content-between">
+            <div>
+              <h4 class="titulo-recurso-descargable">{{$resource->title}}</h4>
+              <div>{{$resource->description}}</div>
+            </div>
             <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" onclick="newDownload('{{$resource->id}}')">{{$resource->button}}<svg xmlns="http://www.w3.org/2000/svg" width="13.414"
                 height="13.074" viewBox="0 0 13.414 13.074">
                 <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
