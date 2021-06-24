@@ -53,8 +53,10 @@
                   </video>-->
                     <img class="img-fluid" src="{{ asset('/img/celu.png') }}" alt="">
                     <div class="play-bt"></div>
-                    <div class="pause-bt" style="display:none;"></div>
-                    <div class="mute-bt"></div>
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player class="play-bt" src="https://assets10.lottiefiles.com/packages/lf20_fcloo4ce.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;"  loop  autoplay></lottie-player>
+                    <!--<div class="pause-bt" style="display:none;"></div>-->
+                    
 
                 </div>
             </div>
@@ -569,6 +571,7 @@
 
 @section('scripts')
 <script>
+    
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function () {
         'use strict';
