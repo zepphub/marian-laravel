@@ -55,7 +55,7 @@
 <div style="height:20px"></div>
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Quedo al pendiente de tu respuesta. Si surge alguna inquietud podés responderme este mismo correo a fin de que lo conversemos y analicemos juntas como avanzar.</p>
 
-										<p style="margin:22px 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;"><a style="text-decoration: none; background-color: #B46063; color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: bold;" href="#">Botón</a></p>
+										<!-- <p style="margin:22px 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;"><a style="text-decoration: none; background-color: #B46063; color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: bold;" href="#">Botón</a></p> -->
 	@break
 @default
 	<!-- MAIL SERVICIOS DE CONSULTORIA -->
