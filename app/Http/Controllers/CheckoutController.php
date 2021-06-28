@@ -85,16 +85,7 @@ class CheckoutController extends Controller
 
     $captured = $provider->capturePaymentOrder($order_id); //order id from the createOrder step
 
-    $cart_items = $request->session()->get('cart.items', []); // Second argument is a default value
-    $total = $this->total($cart_items);
-
-    $request->session()->forget('cart.items'); // Delete cart list
-    if (count($cart_items) == 1){
-      return view('front.calendar', ['service' =>$cart_items[0]]);
-    } else {
-      // disabled
-      //return view('front.agendar', ['captured_order' => $captured, 'cart_items'=>$cart_items, 'total'=>$total]);
-    }
+    return;
   }
 
   private function checkoutPaypalCancel(Request $request){
@@ -153,34 +144,24 @@ class CheckoutController extends Controller
     return redirect($preference->init_point);
   }
 
-  private function checkoutMercadoPagoSuccess(Request $request){
-    $cart_items = $request->session()->get('cart.items', []); // Second argument is a default value
-    $total = $this->total($cart_items);
-    $request->session()->forget('cart.items'); // Delete cart list
-
-    if (count($cart_items) == 1){
-      return view('front.calendar', ['service' =>$cart_items[0]]);
-    } else {
-      // disabled
-      //return view('front.agendar', ['captured_order' => $captured, 'cart_items'=>$cart_items, 'total'=>$total]);
-    }
-  }
-
-
   public function checkoutSuccess(Request $request){
     $firstname = $request->session()->get('last_order.firstname', "");
     $lastname = $request->session()->get('last_order.lastname', "");
     $email = $request->session()->get('last_order.email', "");
     $cart_items = $request->session()->get('cart.items', []);
 
-    if (count($cart_items) == 1) {
-      Mail::to([$email])->send(new OrderProcessed($firstname, $lastname, $cart_items[0]));
+    if(!Service::is_argentina()) {
+      $this->checkoutPaypalSuccess($request);
     }
 
-    if(Service::is_argentina()) {
-      return $this->checkoutMercadoPagoSuccess($request);
+    $request->session()->forget('cart.items'); // Delete cart list
+
+    if (count($cart_items) == 1) {
+      Mail::to([$email])->send(new OrderProcessed($firstname, $lastname, $cart_items[0]));
+      return view('front.calendar', ['service' =>$cart_items[0]]);
     } else {
-      return $this->checkoutPaypalSuccess($request);
+      // disabled
+      //return view('front.agendar', ['captured_order' => $captured, 'cart_items'=>$cart_items, 'total'=>$total]);
     }
   }
 
