@@ -63,7 +63,7 @@
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Gracias por contar conmigo para acompañarte en el proceso de profesionalizar tu marca a través de la sesión {{ $service->fullname(false) }} .</p>
 											<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Con este correo quiero compartirte un formulario previo a la consultoría para poder conocerte un poquito mejor de la mano con tu proyecto y estudiar tu caso, previo a nuestro encuentro.
 											</p>
-										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;"><a style="text-decoration: none; background-color: #B46063; color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: bold;" href="PONER LINK CORRESPONDIENTE A CADA UNO">RESPONDER FORMULARIO</a>
+										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;"><a style="text-decoration: none; background-color: #B46063; color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: bold;" href="https://docs.google.com/forms/d/1mokVFdwFO76eMaU1SqnOYKgVswdIGdyvwZ7vATBmWZg/viewform?edit_requested=true">RESPONDER FORMULARIO</a>
 										</p>
 										<div style="height:20px"></div>
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Quedo atenta. Dentro de muy poquito nos veremos en nuestra consultoría programada.<br>Estoy a tu disposición por cualquier duda o inquietud que surja previo la sesión.
