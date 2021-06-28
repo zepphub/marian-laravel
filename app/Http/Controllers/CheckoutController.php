@@ -88,6 +88,7 @@ class CheckoutController extends Controller
     $cart_items = $request->session()->get('cart.items', []); // Second argument is a default value
     $total = $this->total($cart_items);
 
+    $request->session()->forget('cart.items'); // Delete cart list
     if (count($cart_items) == 1){
       return view('front.calendar', ['service' =>$cart_items[0]]);
     } else {
@@ -155,6 +156,7 @@ class CheckoutController extends Controller
   private function checkoutMercadoPagoSuccess(Request $request){
     $cart_items = $request->session()->get('cart.items', []); // Second argument is a default value
     $total = $this->total($cart_items);
+    $request->session()->forget('cart.items'); // Delete cart list
 
     if (count($cart_items) == 1){
       return view('front.calendar', ['service' =>$cart_items[0]]);
