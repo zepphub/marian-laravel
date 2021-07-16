@@ -11,13 +11,13 @@
                                 fill="#b46063" />
                         </svg>
                         contacto@marianpd.com</h6>
-                    <h6 class="font-weight-normal ml-5 mb-0"><svg class="mr-1" xmlns="http://www.w3.org/2000/svg"
+                    <!-- <h6 class="font-weight-normal ml-5 mb-0"><svg class="mr-1" xmlns="http://www.w3.org/2000/svg"
                             width="12" height="12" viewBox="0 0 12 12">
                             <path id="icon"
                                 d="M291.413,1143.193a10.1,10.1,0,0,0,4.393,4.393l1.467-1.467a.663.663,0,0,1,.68-.16,7.607,7.607,0,0,0,2.38.38.669.669,0,0,1,.667.667v2.327a.669.669,0,0,1-.667.667A11.332,11.332,0,0,1,289,1138.667a.669.669,0,0,1,.667-.667H292a.669.669,0,0,1,.667.667,7.575,7.575,0,0,0,.38,2.38.669.669,0,0,1-.167.68l-1.467,1.467Z"
                                 transform="translate(-289 -1138)" fill="#b46063" />
                         </svg>
-                        +549- 3537-536010</h6>
+                        +549- 3537-536010</h6> -->
                 </div>
                 <div class="col-3 col-md-3 pr-0">
                     <div class="d-flex justify-content-end">

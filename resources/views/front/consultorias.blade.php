@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title')Asesorías - @endsection
+@section('title')Consultorías Estratégicas - @endsection
 
 @section('content')
 <div class="container">

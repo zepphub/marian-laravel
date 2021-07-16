@@ -56,7 +56,7 @@
 										</p>
   @break
 @case("crecer")
-										<p style="margin:0 0 12px 0;font-size:14px;line-height:24px;font-family: Arial, Helvetica, sans-serif;"><a style="text-decoration: none; background-color: #B46063; color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: bold;" href="TODO - FALTA LINK">Cómo escalar tu negocio en el universo digital</a>
+										<p style="margin:0 0 12px 0;font-size:14px;line-height:24px;font-family: Arial, Helvetica, sans-serif;"><a style="text-decoration: none; background-color: #B46063; color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: bold;" href="{{ asset('guias/Guía 3 - ¿cómo escalar tu negocio digital_.pdf') }}">Cómo escalar tu negocio en el universo digital</a>
 										</p>
 										<div style="height:20px"></div>
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Este material está pensado especialmente para que puedas consolidar tu marca en el universo digital con estrategias que te ayuden a elevar su esencia, conectar con tu audiencia y mejorar resultados.</p>

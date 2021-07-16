@@ -122,6 +122,17 @@ a.text-white:hover, a.text-white:focus {
 .social-footer .btn:focus{
     box-shadow: none !important;
 }
+.wp {
+    position: fixed;
+    bottom: 24px;
+    right: 21px;
+    z-index: 1310;
+    background: #69c589;
+    opacity: 1;
+    padding: 9px 12px;
+    border-radius: 100px;
+    transition: all .3s ease-in;
+}
 @media (min-width: 768px){
     .card-propuestas p.card-text {
         min-height: 145px;

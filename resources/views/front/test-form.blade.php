@@ -240,7 +240,7 @@
                       exclusivos para acompañarte en este proceso, ¡dejame tu mail y nos
                       vemos allí!</p>
                     <a href="">
-                      <h4 class="text-primary text-medium">Descargar Video <svg xmlns="http://www.w3.org/2000/svg"
+                      <h4 class="text-primary text-medium">Descargar Guía <svg xmlns="http://www.w3.org/2000/svg"
                           width="16.703" height="14.317" viewBox="0 0 16.703 14.317">
                           <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right"
                             d="M14.887,19.752l5.966-5.966a1.193,1.193,0,0,0,0-1.687L14.887,6.134A1.193,1.193,0,0,0,13.2,7.821l3.929,3.929H5.692a1.193,1.193,0,1,0,0,2.386H17.129L13.2,18.065a1.193,1.193,0,0,0,1.687,1.687Z"
@@ -479,7 +479,7 @@
                     <p class=" text-marron-claro">Para que el contenido llegue a tu correo y para recibir recursos
                       exclusivos para acompañarte en este proceso, ¡dejame tu mail y nos vemos allí!</p>
                     <a href="">
-                      <h4 class="text-primary text-medium">Descargar Video <svg xmlns="http://www.w3.org/2000/svg"
+                      <h4 class="text-primary text-medium">Descargar Guía <svg xmlns="http://www.w3.org/2000/svg"
                           width="16.703" height="14.317" viewBox="0 0 16.703 14.317">
                           <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right"
                             d="M14.887,19.752l5.966-5.966a1.193,1.193,0,0,0,0-1.687L14.887,6.134A1.193,1.193,0,0,0,13.2,7.821l3.929,3.929H5.692a1.193,1.193,0,1,0,0,2.386H17.129L13.2,18.065a1.193,1.193,0,0,0,1.687,1.687Z"
