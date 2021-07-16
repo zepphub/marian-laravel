@@ -197,7 +197,7 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-5 d-flex align-items-center">
-        <h4 class="font-weight-bold titulo-home">Empresas e Instituciones con las que he colaborado</h4>
+        <h4 class="font-weight-bold titulo-home">Marcas con las que he colaborado</h4>
       </div>
       <div class="col-md-7">
         <div id="brandsCarousel" class="carousel slide d-none d-md-block" data-ride="carousel">
@@ -213,14 +213,14 @@
               <div class="row align-items-center">
               <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-4.png') }}" alt=""></div>
                 <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-5.png') }}" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-6.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/cafe-amigas.png') }}" alt=""></div>
               </div>
             </div>
             <div class="carousel-item py-5">
               <div class="row align-items-center">
-                <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-7.png') }}" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="{{ asset('img/servicios-logo-8.png') }}" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/ambrosia.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/gerogia.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/rio-de-papel.png') }}" alt=""></div>                
               </div>
             </div>
           </div>
@@ -281,17 +281,22 @@
             </div>
             <div class="carousel-item py-3">
               <div class="row align-items-center">
-                <div class="col-12 p-0 text-center"><img src="{{ asset('img/servicios-logo-6.png') }}" alt=""></div>
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/cafe-amigas.png') }}" alt=""></div>
               </div>
             </div>
             <div class="carousel-item py-3">
               <div class="row align-items-center">
-                <div class="col-12 p-0 text-center"><img src="{{ asset('img/servicios-logo-7.png') }}" alt=""></div>
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/ambrosia.png') }}" alt=""></div>
               </div>
             </div>
             <div class="carousel-item py-3">
               <div class="row align-items-center">
-                <div class="col-12 p-0 text-center"><img src="{{ asset('img/servicios-logo-8.png') }}" alt=""></div>
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/gerogia.png') }}" alt=""></div>
+              </div>
+            </div>            
+            <div class="carousel-item py-3">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/rio-de-papel.png') }}" alt=""></div>
               </div>
             </div>            
           </div>

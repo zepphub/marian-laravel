@@ -19,7 +19,7 @@ class MentorshipSeeder extends Seeder
         $mentorship_service_list = [
             [
                'id'=>'6',
-               'name'=>'Asesoría Personalizada',
+               'name'=>'Programa Intensivo de 8 Semanas ',
                'price_ars'=>'777',
                'price_usd'=>'8',
                'calendly'=>'https://calendly.com/marianpd/sesion',

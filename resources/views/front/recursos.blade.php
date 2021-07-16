@@ -137,27 +137,31 @@
       <form id="newsletterForm" class="needs-validation w-100" action="{{ route('newsletter-subscription') }}" method="post">
         @csrf
         <div class="form-row">
-          <div class="form-group col-md-3">
-            <div class="px-3">
-              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
+                <div class="form-group col-md-3">
+                    <div class="px-3">
+                        <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre"
+                            name="firstname" required>
+                    </div>
+                </div>
+                <div class="form-group col-md-3">
+                    <div class="px-3">
+                        <input class="form-control rounded-pill border-0" type="text" placeholder="Apellido"
+                            name="lastname" required>
+                    </div>
+                </div>
+                <div class="form-group col-md-3">
+                    <div class="px-3">
+                        <input class="form-control rounded-pill border-0" type="email" placeholder="Correo electrónico"
+                            name="email" required>
+                    </div>
+                </div>
+                <div class="form-group col-md-3">
+                    <div class="px-3">
+                        <input class="form-control rounded-pill border-0" type="text" placeholder="Whatsapp"
+                            name="whatsapp" required>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="form-group col-md-3">
-            <div class="px-3">
-              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
-            </div>
-          </div>
-          <div class="form-group col-md-3">
-            <div class="px-3">
-              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
-            </div>
-          </div>
-          <div class="form-group col-md-3">
-            <div class="px-3">
-              <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre" name="firstname">
-            </div>
-          </div>
-        </div>
         <div class="mt-3 d-block d-md-flex w-100 justify-content-end px-3">
         <button type="submit" class="btn btn-blanco">Suscribirme <svg class="mb-1 ml-1"
               xmlns="http://www.w3.org/2000/svg" width="9.476" height="16.638" viewBox="0 0 9.476 16.638">

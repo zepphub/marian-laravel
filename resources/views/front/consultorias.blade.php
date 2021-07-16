@@ -43,7 +43,7 @@
                 con propósito y corazón.
             </p>
             <h4 class="text-secondary my-4 text-medium">¡Quiero conocer detalles y reservar mi encuentro!</h4>
-            <a href=""><button class="btn btn-primary">Click Aquí</button></a>
+            <a href="#sesiones"><button class="btn btn-primary">Click Aquí</button></a>
         </div>
     </div>
 </div>
@@ -82,7 +82,7 @@
                     suma mi mentoría vía mail durante la semana siguiente a nuestra reunión, en la que podrás
                     implementar lo
                     trabajado de forma práctica, con ejercicios y devoluciones de forma permanente. </p>
-                <a href=""><button class="btn btn-outline-white">Trabajemos juntas</button></a>
+                <a href="#sesiones"><button class="btn btn-outline-white">Trabajemos juntas</button></a>
             </div>
         </div>
     </div>
@@ -316,7 +316,7 @@
 <!-- Carousel Asesoria -->
 
 <div class="container my-1 my-md-5">
-    <div class="row">
+    <div class="row" id="sesiones">
         <div class="col-md-12">
             <div class="text-center">
                 <h4 class="titulo-home">¿Cómo puedo acompañarte?</h4>
@@ -373,7 +373,7 @@
                                 style="background:url({{asset($counseling->image)}});background-repeat:no-repeat;background-size:cover;background-position:center center;">
                                 <h4 class="text-white text-medium titulo-home text-center">
                                     {{ $counseling->service->name }}</h4>
-                                <a class="btn btn-sm p-2 btn-white text-primary rounded-pill mt-3" href="">¡Quiero
+                                <a class="btn btn-sm p-2 btn-white text-primary rounded-pill mt-3" href="{{ route('carrito.add', $counseling->service) }}">¡Quiero
                                     reservar mi
                                     encuentro!</a>
                             </div>
@@ -413,17 +413,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <div class="align-items-md-baseline d-md-flex justify-content-center">
+                <!-- <div class="align-items-md-baseline d-md-flex justify-content-center">
                     <h4 class="titulo-home mr-md-3">Plan Personalizado:</h4>
                     <h2>Consultorías a medida</h2>
-                </div>
+                </div> -->
                 <p class="w-75 mx-auto px-md-4">Si considerás que todas las sesiones son para vos, podemos trabajar
                     juntas en el <strong>Programa Intensivo
                         de 8 Semanas.</strong> Allí analizamos los 5 pilares más importantes de tu marca para
                     potenciarla y
                     elevarla en el universo digital.</p>
-                <a class="btn btn-outline-primary" href="">¡Quiero conocer detalles!</a>
-                <h4 class="text-coral mt-5 text-medium">Consultorías a medida</h4>
+                <a class="btn btn-outline-primary" href="#contacto">¡Quiero conocer detalles!</a>
+                <h4 class="text-secondary mt-5 text-medium">Consultorías a medida</h4>
                 <img src="{{ asset('img/separador-svg.svg') }}" alt="">
                 <p class="mt-5 text-marron-claro">No importa la etapa o el tamaño de tu proyecto: las consultorías a
                     medida
@@ -438,7 +438,7 @@
                     encantaría leerte. </p>
             </div>
           </div>
-          <div class="bg-white p-4 rounded-lg mt-md-5">
+          <div class="bg-white p-4 rounded-lg mt-md-5" id="contacto">
             <div class="row">
                 <div class="col-md-6">
                     <div class="bg-marron-claro-2 rounded-lg p-md-4 p-3">

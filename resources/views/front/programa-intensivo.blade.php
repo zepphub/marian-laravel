@@ -8,7 +8,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h2>Consultorías Estratégicas</h2>
+        <h2>Programa Intensivo de 8 Semanas | Eleva tu esencia </h2>
         <nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center bg-transparent text-marron-claro">
             <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="{{ route('index') }}">Inicio</a></li>
@@ -100,7 +100,7 @@
         <h4 class="titulo-home mb-3">Sobre la experiencia</h4>
         {!! $mentorship->descriptions[0]->content !!}
         <h5 class="font-weight-normal titulo-home mt-3">Costo: <span class="font-weight-bold">{{ $mentorship->service->price() }}</span></h5>
-        <a class="btn btn-primary mt-4" href="{{ route('carrito.add', $mentorship->service) }}">Aplicar al programa</a>
+        <a class="btn btn-primary mt-4" href="#contacto">Aplicar al programa</a>
       </div>
       <div class="col-md-5 mt-4 mt-md-0 bg-nude rounded">
         <div class="py-4 pm-d-4">
@@ -129,7 +129,7 @@
             y de marketing que te ayude a dar a conocer la esencia y el enorme valor que tiene tu marca, ¡me encantará
             acompañarte!</h5>
           <h5 class="text-white titulo-home my-4">Te invito a conocernos en una llamada de claridad de 20 minutos </h5>
-          <a href=""><button class="btn btn-outline-white">¡Quiero agendar una reunión!</button></a>
+          <a href="#contacto"><button class="btn btn-outline-white">¡Quiero agendar una reunión!</button></a>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
 
   <div class="m-0 p-0"><img style="margin-bottom: -12px !important;" class="img-fluid w-100"
       src="{{ asset('img/separador-superior-seccion-svg.svg') }}" alt=""></div>
-  <div class="bg-crema-suave contenedor-form-home py-5">
+  <div class="bg-crema-suave contenedor-form-home py-5" id="contacto">
     <div class="container bg-white p-4 rounded-lg">
       <div class="row">
         <div class="col-md-5">

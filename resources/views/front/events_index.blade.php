@@ -41,7 +41,7 @@
           conferencia que deciden realizar.
 
         </p>
-        <a href=""><button class="btn btn-primary mt-3">¡Quiero saber más! <svg class="ml-2"
+        <a href="#contacto"><button class="btn btn-primary mt-3">¡Quiero saber más! <svg class="ml-2"
               xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367" viewBox="0 0 8.248 14.367">
               <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
                 <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
@@ -366,8 +366,7 @@
     <div class="row">
       <div class="col-md-4 d-flex align-items-center">
         <h4 class="font-weight-bold titulo-home">
-          Marcas a las que he
-          acompañado
+          Instituciones a las que he acompañado
         </h4>
       </div>
       <div class="col-md-8">
@@ -389,7 +388,7 @@
             </div>
             <div class="carousel-item py-5">
               <div class="row align-items-center">
-                <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-7.png') }}" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/cosquin.png') }}" alt=""></div>
                 <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-8.png') }}" alt=""></div>
                 <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-9.png') }}" alt=""></div>
               </div>
@@ -397,7 +396,7 @@
             <div class="carousel-item py-5">
               <div class="row align-items-center">
                 <div class="col-4 p-0 text-center"><img src="{{ asset('img/tye-marcas-10.png') }}" alt=""></div>
-                <div class="col-4 p-0 text-center"><img src="" alt=""></div>
+                <div class="col-4 p-0 text-center"><img src="{{ asset('img/ibanez.png') }}" alt=""></div>
                 <div class="col-4 p-0 text-center"><img src="" alt=""></div>
               </div>
             </div>
@@ -464,7 +463,7 @@
             </div>
             <div class="carousel-item py-5">
               <div class="row align-items-center">
-                <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-7.png') }}" alt=""></div>
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/cosquin.png') }}" alt=""></div>
               </div>
             </div>
             <div class="carousel-item py-5">
@@ -480,6 +479,11 @@
             <div class="carousel-item py-5">
               <div class="row align-items-center">
                 <div class="col-12 p-0 text-center"><img src="{{ asset('img/tye-marcas-10.png') }}" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row align-items-center">
+                <div class="col-12 p-0 text-center"><img src="{{ asset('img/ibanez.png') }}" alt=""></div>
               </div>
             </div>
           </div>
@@ -516,7 +520,7 @@
 
   <div class="m-0 p-0"><img style="margin-bottom: -12px !important;" class="img-fluid w-100"
       src="{{ asset('img/separador-superior-seccion-svg.svg') }}" alt=""></div>
-  <div class="bg-crema-suave contenedor-form-home py-5">
+  <div class="bg-crema-suave contenedor-form-home py-5" id="contacto">
     <div class="container bg-white p-4 rounded-lg">
       <div class="row">
         <div class="col-md-5">
