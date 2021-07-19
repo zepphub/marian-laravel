@@ -146,7 +146,7 @@ class ResourceController extends Controller
       };
       $resource->delete();
 
-      return redirect()->route('admin.posts.index')->withMessage($message);
+      return redirect()->route('admin.resources.index')->withMessage($message);
     }
 
     public function download(Request $request){
