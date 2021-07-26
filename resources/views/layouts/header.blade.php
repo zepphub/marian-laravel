@@ -72,9 +72,13 @@
                                     <a class="nav-link text-marron" href="{{ route('sobre-mi') }}">Sobre Mi</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link text-marron dropdown-toggle" href="{{ route('servicios') }}" id="trabajaConmigo"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="nav-link text-marron d-inline-block pr-0" href="{{ route('servicios') }}" 
+                                        role="button">
                                         Trabajá conmigo
+                                    </a>
+                                    <a class="nav-link text-marron dropdown-toggle d-inline-block pl-0" href="{{ route('servicios') }}" id="trabajaConmigo"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        
                                     </a>
                                     <div class="dropdown-menu border-0" aria-labelledby="trabajaConmigo">
                                         <a class="dropdown-item" href="{{ route('consultorias') }}">Consultoría Estratégica</a>

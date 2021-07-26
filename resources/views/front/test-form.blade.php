@@ -476,8 +476,8 @@
                     <p class="mt-3 text-marron-claro">Teniendo en cuenta tus respuestas, quiero compartirte una guía con
                       el paso a paso para que logres afianzar tu marca en el universo digital.
                     </p>
-                    <p class=" text-marron-claro">Para que el contenido llegue a tu correo y para recibir recursos
-                      exclusivos para acompañarte en este proceso, ¡dejame tu mail y nos vemos allí!</p>
+                    <!-- <p class=" text-marron-claro">Para que el contenido llegue a tu correo y para recibir recursos
+                      exclusivos para acompañarte en este proceso, ¡dejame tu mail y nos vemos allí!</p> -->
                     <a href="">
                       <h4 class="text-primary text-medium">Descargar Guía <svg xmlns="http://www.w3.org/2000/svg"
                           width="16.703" height="14.317" viewBox="0 0 16.703 14.317">
@@ -490,7 +490,7 @@
                 </div>
                 <div
                   class="col-md-5 mt-4 mt-md-0 rounded bg-textura-form-test d-flex flex-column justify-content-center">
-                  <div class="p-4 p-md-0 px-md-3">
+                  <div class="p-4">
                     <p class="text-white">Para que el contenido llegue a tu correo y además, comenzar a recibir recursos
                       exclusivos para acompañarte en este proceso</p>
                     <h4 class="font-weight-bold text-white mb-4">¡Dejame tu mail y, nos vemos allí!</h4>
@@ -727,7 +727,7 @@
                 </div>
                 <div
                   class="col-md-5 mt-4 mt-md-0 rounded bg-textura-form-test d-flex flex-column justify-content-center">
-                  <div class="p-4 p-md-0 px-md-3">
+                  <div class="p-4 px-md-3">
                     <p class="text-white">Para que el contenido llegue a tu correo y además, comenzar a recibir recursos
                       exclusivos para acompañarte en este proceso</p>
                     <h4 class="font-weight-bold text-white mb-4">¡Dejame tu mail y, nos vemos allí!</h4>

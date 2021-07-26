@@ -178,7 +178,7 @@
                         importantes y
                         consolidando tu presencia digital, de forma grupal o personalizada.</p>
                     <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-                    <a href="{{ route('mentoria-grupal') }}" class="btn btn-primary">Click Aquí</a>
+                    <a href="{{ route('mentoria') }}" class="btn btn-primary">Click Aquí</a>
                 </div>
             </div>
         </div>
@@ -192,7 +192,7 @@
                         digital resaltando la esencia y los
                         valores de tu marca.</p>
                     <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-                    <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">Click Aquí</a>
+                    <a href="{{ route('consultorias') }}" class="btn btn-primary">Click Aquí</a>
                 </div>
             </div>
         </div>

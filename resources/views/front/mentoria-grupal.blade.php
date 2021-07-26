@@ -41,7 +41,7 @@
           compartiendo esta experiencia en comunidad.
         </p>
         <h4 class="text-medium">¡Quiero conocer más detalles!</h4>
-        <a href="{{ route( 'index') }}#contacto" class="btn btn-primary mt-3"> Quiero reservar mi lugar <svg
+        <a href="https://www.dopplerpages.com/marianapd.tur-C0AD3/Listadeespera-Mentoragrupalsept2021-57364" class="btn btn-primary mt-3"> Quiero reservar mi lugar <svg
               class="ml-2" xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367" viewBox="0 0 8.248 14.367">
               <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
                 <g id="Grupo_475" data-name="Grupo 475" transform="translate(61 2)">
@@ -215,12 +215,12 @@
           </div>
         </div>
         @endforeach
-        <div class="row justify-content-center justify-content-md-start">
+        <!-- <div class="row justify-content-center justify-content-md-start">
           <div class="d-flex align-items-center align-items-center d-flex flex-column flex-md-row justify-content-center">
             <h5 class="subrayado-subtitulo pb-1 m-0">Costo del programa grupal</h5>
             <h4 class="font-weight-bold titulo-home ml-md-3 mt-3 mt-md-0">{{ $mentorship->service->price() }}</h4>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -230,11 +230,11 @@
       <div class="col-md-8">
         <h5 class="text-white font-weight-normal">Si algo de todo esto resuena en vos, ¡me encantaría que seas parte!
           Abro este programa solo 2 veces al año y los cupos son limitados.</h5>
-        <h4 class="text-white titulo-home">¡Aplicá para la próxima edición!</h4>
+        <h4 class="text-white titulo-home">¡Suscribite a lista de espera para la edición Septiembre 2021!</h4>
       </div>
-      <div class="col-md-4 d-flex flex-column flex-md-column align-items-center justify-content-center justify-content-md-end">
-        <a href="{{ route('index') }}#contacto"><button class="btn btn-blanco mt-3 mt-md-0">¡Quiero reservar mi lugar!</button></a>
-        <h5 class="text-white mt-3">Costo <span>{{ $mentorship->service->price() }}</span></h5>
+      <div class="col-md-4 d-flex flex-column flex-md-column align-items-center justify-content-center ">
+        <a href="https://www.dopplerpages.com/marianapd.tur-C0AD3/Listadeespera-Mentoragrupalsept2021-57364"><button class="btn btn-blanco mt-3 mt-md-0">¡Quiero reservar mi lugar!</button></a>
+        <!-- <h5 class="text-white mt-3">Costo <span>{{ $mentorship->service->price() }}</span></h5> -->
       </div>
     </div>
   </div>
@@ -268,7 +268,7 @@
 digital resaltando la esencia y los 
 valores de tu marca.</p>
             <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-            <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">Click Aquí</a>
+            <a href="{{ route('consultorias') }}" class="btn btn-primary">Click Aquí</a>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h2>Programa Intensivo de Ocho Semanas | Eleva tu esencia </h2>
+        <h4 class="titulo-home line-h-low mt-5 mt-md-4" style="font-family:'Gotham';">Programa Intensivo de Ocho Semanas <br class="d-block d-md-none"><span style="font-family:'Reinata';font-size:100px" class="font-weight-light">Eleva tu esencia</span></h4>
         <nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center bg-transparent text-marron-claro">
             <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="{{ route('index') }}">Inicio</a></li>
@@ -24,8 +24,7 @@
   <div class="container my-5">
     <div class="row">
       <div class="col-md-7">
-        <h4 class="font-weight-bold titulo-home mb-4">Un programa creado especialmente para pequeñas empresarias,
-          emprendedoras y profesionales independientes. </h4>
+        <h4 class="font-weight-bold titulo-home mb-4">Un programa de mentoría personalizado y creado especialmente para emprendedoras y profesionales independientes. </h4>
         <p class="my-4">
           Durante 8 semanas trabajamos juntas con un asesoramiento personalizado e intensivo en el que analizamos la
           presencia de tu marca en el mundo online y desarrollamos diversas estrategias de marketing digital y ventas
@@ -75,18 +74,18 @@
               <h4 class="card-text text-marron-claro">Si alguna de estas frases resuena en vos, ¡estás en el lugar
                 correcto!</h4>
               <ul class="my-3 pl-md-4">
-                <li>Lidero una marca y/o emprendimiento y tengo intenciones de renovarlo en el universo digital de
+                <!-- <li>Lidero una marca y/o emprendimiento y tengo intenciones de renovarlo en el universo digital de
                   manera estratégica.</li>
                 <li>Tengo una idea de proyecto y quiero hacerla realidad con un emprendimiento que conecte y atraiga.
                 </li>
                 <li>Necesito una estrategia digital de la mano con un plan de acción que me guíe paso a paso para
-                  potenciar mi emprendimiento.</li>
+                  potenciar mi emprendimiento.</li> -->
                 <li>Emprendo desde mi profesión y quiero crear mi Marca Personal para consolidar mi posicionamiento.
                 </li>
                 <li>Necesito una mirada objetiva y profesional sobre mi estrategia y modelo de negocios en el ecosistema
                   digital.</li>
               </ul>
-              <h5 class="text-secondary">¡Quiero agendar una llamada de claridad para saber más!</h5>
+              <!-- <h5 class="text-secondary">¡Quiero agendar una llamada de claridad para saber más!</h5> -->
             </div>
           </div>
         </div>
@@ -100,10 +99,10 @@
         <h4 class="titulo-home mb-3">Sobre la experiencia</h4>
         {!! $mentorship->descriptions[0]->content !!}
         <h5 class="font-weight-normal titulo-home mt-3">Costo: <span class="font-weight-bold">{{ $mentorship->service->price() }}</span></h5>
-        <a class="btn btn-primary mt-4" href="#contacto">Aplicar al programa</a>
+        <a class="btn btn-primary mt-4" href="https://docs.google.com/forms/d/1AukTT81-id5xx_1Esf4N00hAR2rlpun3AtM60aKi94U/edit">Aplicar al programa</a>
       </div>
       <div class="col-md-5 mt-4 mt-md-0 bg-nude rounded">
-        <div class="py-4 pm-d-4">
+        <div class="py-4 px-3 pm-d-4">
           <h4 class="text-white titulo-home">Ejes de trabajo</h4>
           <img src="{{ asset('img/separador-secondary-svg.svg') }}" alt="">
           <ul class="list-unstyled mt-4">
@@ -125,10 +124,10 @@
     <div class="container py-5">
       <div class="row text-center text-md-left">
         <div class="col-md-12 text-center">
-          <h5 class="text-white titulo-home font-weight-normal">Si estás decidida a crear una estrategia de comunicación
+          <h5 class="text-white titulo-home font-weight-normal mb-4">Si estás decidida a crear una estrategia de comunicación
             y de marketing que te ayude a dar a conocer la esencia y el enorme valor que tiene tu marca, ¡me encantará
             acompañarte!</h5>
-          <h5 class="text-white titulo-home my-4">Te invito a conocernos en una llamada de claridad de 20 minutos </h5>
+          <!-- <h5 class="text-white titulo-home my-4">Te invito a conocernos en una llamada de claridad de 20 minutos </h5> -->
           <a href="#contacto"><button class="btn btn-outline-white">¡Quiero agendar una reunión!</button></a>
         </div>
       </div>

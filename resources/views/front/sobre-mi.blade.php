@@ -73,7 +73,7 @@
           </div>
         </div>
         <div class="col-md-7 order-1 order-md-2">
-          <img class="img-fluid" src="{{ asset('img/video-image.jpg') }}" alt="">
+          <img class="img-fluid" src="{{ asset('img/about-us.jpg') }}" alt="">
         </div>
       </div>
     </div>
@@ -101,7 +101,7 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="rounded-circle" src="https://via.placeholder.com/75" alt="">
+                <img class="rounded-circle" src="{{ asset('img/testimonial3.png') }}" alt="">
                 <h4 class="text-white mt-2">Jorgelina Vasconi</h4>
                 <h5 class="">Consultora en Porteo y Doula</h5>
                 <h5 class="text-nude">Proceso intensivo de 6 semanas</h5>
@@ -112,15 +112,15 @@
                   repensar. Una mujer que potencia la esencia y es feliz con vos".</p>
               </div>
               <div class="carousel-item">
-                <img class="rounded-circle" src="https://via.placeholder.com/75" alt="">
+                <img class="rounded-circle" src="{{ asset('img/testimonial1.png') }}" alt="">
                 <h4 class="text-white mt-2">Eugenia Fernandez</h4>
-                <h5 class="">Consultora Fundadora de Utera de Fuego</h5>
+                <h5 class="">Fundadora de Utera de Fuego</h5>
                 <h5 class="text-nude">Proceso intensivo de 6 semanas</h5>
                 <p class="text-white mt-4 descripcion-testimonio">"Fue como si algo se destrabara para fluir y crecer.
                   Agradezco mucho la amorosidad y el profesionalismo con el que trabajás, eso lo es TODO."</p>
               </div>
               <div class="carousel-item">
-                <img class="rounded-circle" src="https://via.placeholder.com/75" alt="">
+                <img class="rounded-circle" src="{{ asset('img/testimonial4.png') }}" alt="">
                 <h4 class="text-white mt-2">Melisa Figuera</h4>
                 <h5 class="">Lider en Cruz Naranja y miembro de Grupo Crecer</h5>
                 <h5 class="text-nude">Mentoría Grupal para Emprendedoras</h5>
@@ -129,7 +129,7 @@
                   compartiendo."</p>
               </div>
               <div class="carousel-item">
-                <img class="rounded-circle" src="https://via.placeholder.com/75" alt="">
+                <img class="rounded-circle" src="{{ asset('img/testimonial2.png') }}" alt="">
                 <h4 class="text-white mt-2">Graciela Vargas Landrieli</h4>
                 <h5 class="">Contadora – Esp. En emprendedores</h5>
                 <h5 class="text-nude">Mentoría Grupal para Emprendedoras</h5>
@@ -182,7 +182,7 @@
               <p class="card-text">Trabajamos en el universo de tu marca, fortaleciendo los pilares más importantes y
                 consolidando tu presencia digital, de forma grupal o personalizada.</p>
               <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-              <a href="{{ route('mentoria-grupal') }}" class="btn btn-primary">Click Aquí</a>
+              <a href="{{ route('mentoria') }}" class="btn btn-primary">Click Aquí</a>
             </div>
           </div>
         </div>
@@ -195,7 +195,7 @@
                 digital resaltando la esencia y los
                 valores de tu marca.</p>
               <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-              <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">Click Aquí</a>
+              <a href="{{ route('consultorias') }}" class="btn btn-primary">Click Aquí</a>
             </div>
           </div>
         </div>

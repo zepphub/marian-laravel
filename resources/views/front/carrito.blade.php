@@ -74,7 +74,7 @@
         <div class="row my-4 my-md-5">
             <div class="col-md-12">
                 <div class="d-block d-md-flex justify-content-end">
-                    <a href="{{ route('carrito') }}" class="btn btn-outline-primary rounded-pill mb-3 mr-md-3 mb-md-0">Actualizar mi pedido</a>
+                    <!-- <a href="{{ route('carrito') }}" class="btn btn-outline-primary rounded-pill mb-3 mr-md-3 mb-md-0">Actualizar mi pedido</a> -->
                     <a href="{{ route('checkout') }}" class="btn btn-primary rounded-pill">Continuar <svg class="mb-1 ml-1" xmlns="http://www.w3.org/2000/svg"
                             width="9.55" height="16.775" viewBox="0 0 9.55 16.775">
                             <g id="next_1_" data-name="next (1)" transform="translate(0.567 0.567)">

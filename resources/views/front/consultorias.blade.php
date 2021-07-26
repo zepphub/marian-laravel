@@ -23,10 +23,10 @@
         <div class="col-md-5"><img class="w-100 img-fluid" src="{{ asset('img/asesoria-img-portada.png') }}" alt="">
         </div>
         <div class="col-md-7 pl-md-5">
-            <h4 class="font-weight-bold titulo-home mb-4 mt-4 mt-md-0">Consultorías Estratégicas</h4>
+            <h5 class="font-weight-bold titulo-home mb-4 mt-4 mt-md-0">Te ayudo a potenciar tu estrategia digital resaltando la esencia y los valores de tu marca</h5>
             <p>
-                Te ayudo a potenciar tu estrategia digital resaltando la esencia y los valores de tu marca. <br>
-                Nos encontramos durante 2 horas y luego trabajamos juntas por 7 días. <br>
+                <!-- Te ayudo a potenciar tu estrategia digital resaltando la esencia y los valores de tu marca. <br> -->
+                <!-- Nos encontramos durante 2 horas y luego trabajamos juntas por 7 días. <br> -->
                 Las sesiones están creadas especialmente para emprendedoras y profesionales que tienen presencia
                 digital. El
                 objetivo de las mismas es trabajar sobre temáticas específicas relacionadas a la comunicación de los
@@ -422,7 +422,7 @@
                         de 8 Semanas.</strong> Allí analizamos los 5 pilares más importantes de tu marca para
                     potenciarla y
                     elevarla en el universo digital.</p>
-                <a class="btn btn-outline-primary" href="#contacto">¡Quiero conocer detalles!</a>
+                <a class="btn btn-outline-primary" href="{{ route('programa-intensivo') }}">¡Quiero conocer detalles!</a>
                 <h4 class="text-secondary mt-5 text-medium">Consultorías a medida</h4>
                 <img src="{{ asset('img/separador-svg.svg') }}" alt="">
                 <p class="mt-5 text-marron-claro">No importa la etapa o el tamaño de tu proyecto: las consultorías a
@@ -458,7 +458,7 @@
                         </div>
                         <div class="row align-items-center">
                             <div class="col-md-3">
-                                <img class="rounded-circle img-fluid w-100" src="/img/jorgelina-vasconi.png" alt="">
+                                <img class="rounded-circle img-fluid w-100" src="{{ asset('img/testimonial3.png') }}" alt="">
                             </div>
                             <div class="col-md-9">
                                 <h4 class="text-white mt-2">Jorgelina Vasconi</h4>
