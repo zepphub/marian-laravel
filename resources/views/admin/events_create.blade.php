@@ -24,28 +24,28 @@
                 <div class="row mt-4">
                     <div class="col-md-8">
                         <h5 class="text-marron-claro font-weight-normal mb-2">Título del evento</h5>
-                        <input class="form-control form-control-lg rounded-pill" name="title" type="text" >
+                        <input class="form-control form-control-lg rounded-pill" name="title" type="text" required>
                         <h5 class="mt-5 text-marron-claro font-weight-normal mb-2">Descripción</h5>
-                        <textarea class="form-control" name="description" cols="30" rows="10"></textarea>
+                        <textarea class="form-control" name="description" cols="30" rows="10" required></textarea>
                         <div class="row mt-4 mt-md-5">
                             <div class="col-md-4">
                                 <h5 class="text-marron-claro text-medium mb-2">Fecha</h5>
-                                <input class="form-control form-control-lg rounded-pill" type="date" name="date">
+                                <input class="form-control form-control-lg rounded-pill" type="date" name="date" required>
                             </div>
                             <div class="col-md-2 mt-3 mt-md-0">
                                 <h5 class="text-marron-claro text-medium mb-2">Hora</h5>
-                                <input class="form-control form-control-lg rounded-pill" type="time" name="time">
+                                <input class="form-control form-control-lg rounded-pill" type="time" name="time" required>
                             </div>
                             <div class="col-md-6 mt-3 mt-md-0">
                                 <h5 class="text-marron-claro text-medium mb-2">Disertante</h5>
-                                <input class="form-control form-control-lg rounded-pill" type="text" name="lecturer">
+                                <input class="form-control form-control-lg rounded-pill" type="text" name="lecturer" required>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="text-center mt-5 mt-md-0">
                             <img id="preview-image" class="d-block img-fluid w-100" src="/img/150.png" alt="">
-                            <input type="file" name="image" id="image-upload" value="{{ old('image') }}" style="display: none;" />
+                            <input type="file" name="image" id="image-upload" value="{{ old('image') }}" style="display: none;" required/>
                             @error('image')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                             @enderror
@@ -56,7 +56,7 @@
                 <div class="row mt-4 mt-md-5">
                     <div class="col-md-5">
                         <h5 class="text-marron-claro text-medium mb-2">Organiza</h5>
-                        <input class="form-control form-control-lg rounded-pill" name="host" type="text">
+                        <input class="form-control form-control-lg rounded-pill" name="host" type="text" required>
                     </div>
                     <div class="col-md-2 mt-3 mt-md-0">
                         <div class="d-block d-md-flex align-items-center h-100 mt-0 mt-md-3">
@@ -69,11 +69,11 @@
                     </div>
                     <div class="col-md-5 mt-3 mt-md-0">
                         <h5 class="text-marron-claro text-medium mb-2">URL Evento</h5>
-                        <input class="form-control form-control-lg rounded-pill" name="url" type="text">
+                        <input class="form-control form-control-lg rounded-pill" name="url" type="text" required>
                     </div>
                     <div class="col-md-12">
                         <h5 class="mt-5 text-marron-claro font-weight-normal mb-2">Acerca de este evento</h5>
-                        <textarea class="form-control" name="about" cols="30" rows="10"></textarea>
+                        <textarea class="form-control" name="about" cols="30" rows="10" required></textarea>
                     </div>
                 </div>
                 <hr class="border-marron-claro my-5 mx-0">
