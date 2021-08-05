@@ -153,6 +153,12 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
+      $subscriptions = EventSubscription::where('event_id',$event->id)->get(); 
+
+      foreach($subscriptions as $subscription) {
+        $subscription->delete();
+      }
+
       $message = 'Evento "'.$event->title.'" borrado.';
       if(is_file($event->image)){
         unlink($event->image);
