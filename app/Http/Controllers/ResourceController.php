@@ -109,16 +109,16 @@ class ResourceController extends Controller
       $resource->button = $request->get('button');
       $resource->save(); /* pre save to get resource id */
 
-      if (!empty($request->file('image'))) {
-        $extension = $request->file('image')->getClientOriginalExtension();
-        if(is_file($resource->image)){
-          unlink($resource->image);
-        };
+      if ($request->hasFile('image')) {
+          $extension = $request->file('image')->getClientOriginalExtension();
+          if(is_file($resource->image)){
+            unlink($resource->image);
+          };
 
         $image_path = $request->file('image')->storeAs('img/resources', $resource->id.".".$extension, "public");
         $resource->image = "storage/".$image_path;
       }
-      if (!empty($request->file('file'))) {
+      if ($request->hasFile('file')) {
         $filename = $request->file('file')->getClientOriginalName();
         if(is_file($resource->file)){
           unlink($resource->file);
