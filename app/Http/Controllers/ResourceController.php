@@ -58,12 +58,16 @@ class ResourceController extends Controller
       $resource->button = $request->get('button');
       $resource->save(); /* pre save to get resource id */
 
-      $extension = $request->file('image')->getClientOriginalExtension();
-      $image_path = $request->file('image')->storeAs('img/resources', $resource->id.".".$extension, "public");
-      $resource->image = "storage/".$image_path;
-      $filename = $request->file('file')->getClientOriginalName();
-      $filename_path = $request->file('file')->storeAs('files/', $filename, "public");
-      $resource->file = "storage/".$filename_path;
+      if($request->hasFile('image')) {
+        $extension = $request->file('image')->getClientOriginalExtension();
+        $image_path = $request->file('image')->storeAs('img/resources', $resource->id.".".$extension, "public");
+        $resource->image = "storage/".$image_path;
+      };
+      if($request->hasFile('file')) {
+        $filename = $request->file('file')->getClientOriginalName();
+        $filename_path = $request->file('file')->storeAs('files', $filename, "public");
+        $resource->file = "storage/".$filename_path;
+      };
       $resource->save();
       $message = 'Nuevo recurso "'.$resource->title.'" creado.';
 
