@@ -99,7 +99,7 @@
         <h4 class="titulo-home mb-3">Sobre la experiencia</h4>
         {!! $mentorship->descriptions[0]->content !!}
         <h5 class="font-weight-normal titulo-home mt-3">Costo: <span class="font-weight-bold">{{ $mentorship->service->price() }}</span></h5>
-        <a class="btn btn-primary mt-4" href="https://docs.google.com/forms/d/1AukTT81-id5xx_1Esf4N00hAR2rlpun3AtM60aKi94U/edit">Aplicar al programa</a>
+        <a class="btn btn-primary mt-4" href="https://www.dopplerpages.com/marianapd.tur-C0AD3/ProgramaIntensivo ">Aplicar al programa</a>
       </div>
       <div class="col-md-5 mt-4 mt-md-0 bg-nude rounded">
         <div class="py-4 px-3 pm-d-4">
