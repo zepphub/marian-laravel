@@ -105,8 +105,8 @@
             </button>
           </div>
           <div class="modal-body text-center">
-            <h4 class="text-verde">Envio exitoso</h4>
-            <p id="successFormMsg"></p>
+            <h4 class="text-verde">Inscripción exitosa</h4>
+            <!-- <p id="successFormMsg"></p> -->
             <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="">
           </div>
         </div>
@@ -161,6 +161,9 @@ $('#form-event').on('submit', function(e) {
           $('#successFormMsg').text(msg.success);
           $('#successForm').modal();
           console.log(msg.success);
+          setInterval(function(){
+          window.location = "/gracias";
+          },3000)
         },
         error: function(xhr, status, error){
           //muestra solo el primer error
