@@ -99,8 +99,10 @@
                 </div>
                 <div class="col-md-2 d-flex flex-column align-items-center">
                     <div class="">
-                        <img src="{{ asset('img/logo-marian-nav.svg') }}" alt="">
-                        <h6 class="font-weight-normal text-center bajada-logo">Consultora de marcas auténticas</h6>
+                        <a href="https://marianpd.com">
+                            <img src="{{ asset('img/logo-marian-nav.svg') }}" alt="">
+                            <h6 class="font-weight-normal text-center bajada-logo">Consultora de marcas auténticas</h6>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-5 d-md-flex align-items-center justify-content-between pr-0 pl-md-5 d-none">
@@ -137,9 +139,11 @@
         <div class="container d-block d-md-none">
             <div class="row">
                 <div class="col-6 d-flex flex-column justify-content-center">
-                    <div class="logo-mobile">
-                        <img src="{{ asset('img/logo-marian-nav.svg') }}" alt="">                        
-                    </div>
+                    <a href="https://marianpd.com">
+                        <div class="logo-mobile">
+                            <img src="{{ asset('img/logo-marian-nav.svg') }}" alt="">                        
+                        </div>
+                    </a>
                 </div>
                 <div class="col-6 d-flex align-items-center justify-content-end">
                     <a class="mr-3" href="{{ route('carrito') }}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -192,6 +196,17 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-marron" href="{{ route('index') }}">Contacto</a>
+                                </li>
+                                <li class="d-flex d-md-none flex-column">
+                                    <a href="{{ route('recursos') }}" class="mb-2">
+                                        <div class="btn btn-sm text-secondary p-0">Recursos para tí</div>
+                                    </a>
+                                    <a href="{{ route('test') }}" class="mb-2">
+                                        <div class="btn btn-sm text-secondary p-0">Test</div>
+                                    </a>
+                                    <a href="{{ route('talleres-y-eventos') }}" class="mb-2">
+                                        <div class="btn btn-sm text-secondary p-0">Talleres y Eventos</div>
+                                    </a>
                                 </li>
 
                             </ul>
