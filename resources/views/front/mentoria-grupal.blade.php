@@ -330,7 +330,14 @@ crecimiento.</p>
         </div>
       </div>
   </div>
-
+  <script>
+    $('#mentoriaVideo').on('hide.bs.modal', function(e) {    
+    var $if = $(e.delegateTarget).find('video');
+    var src = $if.attr("src");
+    $if.attr("src", "{{ asset('videos/mentoria-grupal.mp4') }}");
+    $if.attr("src", src);
+    });
+  </script>
   <script type="text/javascript">
     var owl = $('.owl-carousel');
     owl.owlCarousel({

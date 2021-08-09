@@ -580,7 +580,14 @@
         </div>
     </div>
 </div>
-
+<script>
+    $('#consultoria-video').on('hide.bs.modal', function(e) {    
+    var $if = $(e.delegateTarget).find('video');
+    var src = $if.attr("src");
+    $if.attr("src", "{{ asset('videos/consultoria.mp4') }}");
+    $if.attr("src", src);
+    });
+</script>
 <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
