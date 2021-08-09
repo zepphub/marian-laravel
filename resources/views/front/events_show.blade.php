@@ -14,7 +14,7 @@
           <div class="">
             <h4 class="titulo-home">{{$event->title}}</h4>
             <div class="mt-3">{{$event->description}}</div>
-            <div class="row">
+            <div class="row mt-3">
               <div class="col-md-4 d-flex align-items-center">
                 <img src="{{ asset('img/evento-date-icon.svg') }}" alt="">
                 <h5 class="font-weight-normal m-0 text-dark-gray ml-2">{{$event->dateFormated() }}</h5>
