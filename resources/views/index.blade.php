@@ -43,8 +43,8 @@
 <div class="petalos-right sobre-mi-section">
     <div class="container sobre-mi">
         <div class="row">
-            <div class="col-md-5">
-                <div class="position-relative contenedor-celu text-center text-md-left">
+            <div class="col-md-5 d-none d-md-block">
+                <div class="position-relative contenedor-celu text-center text-md-left ">
                     <video id="ban_video" class="tv_video video-portada video-celu-home">
                         <source src="{{ asset('/videos/video-celu-home.mp4') }}" type="video/mp4">
                         Tu navegador no puede reproducir este video.
@@ -78,6 +78,21 @@
                                 <path fill-rule="evenodd"
                                     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                             </svg></button></a>
+                </div>
+            </div>
+            <div class="col-md-5 d-block d-md-none">
+                <div class="position-relative contenedor-celu text-center text-md-left ">
+                    <video id="ban_video" class="tv_video video-portada video-celu-home">
+                        <source src="{{ asset('/videos/video-celu-home.mp4') }}" type="video/mp4">
+                        Tu navegador no puede reproducir este video.
+                    </video>
+                    <!--<video class="video-portada video-celu-home" src="{{ asset('/videos/video-celu-home.mp4') }}" autoplay="" loop="" muted="" playsinline="" preload="">
+                    </video>-->
+                    <img class="img-fluid" src="{{ asset('/img/celu.png') }}" alt="">
+                    <div class="play-bt"></div>
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player class="play-bt" src="https://assets10.lottiefiles.com/packages/lf20_fcloo4ce.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;"  loop  autoplay></lottie-player>
+                    <div class="pause-bt" style="display:none;"></div>
                 </div>
             </div>
         </div>
