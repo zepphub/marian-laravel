@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
   @yield('head')
   <title>@yield('title')Mariann</title>
+  <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}" type="image/x-icon">
 
   <!-- Facebook Pixel Code -->
   <script>
