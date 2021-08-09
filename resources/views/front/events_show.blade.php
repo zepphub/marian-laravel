@@ -19,11 +19,11 @@
                 <img src="{{ asset('img/evento-date-icon.svg') }}" alt="">
                 <h5 class="font-weight-normal m-0 text-dark-gray ml-2">{{$event->dateFormated() }}</h5>
               </div>
-              <div class="col-md-4 d-flex align-items-center my-3 my-md-0">
+              <div class="col-md-3 d-flex align-items-center my-3 my-md-0">
                 <img src="{{ asset('img/evento-time-icon.svg') }}" alt="">
                 <h5 class="font-weight-normal m-0 text-dark-gray ml-2">{{$event->timeFormated() }} hs</h5>
               </div>
-              <div class="col-md-4 d-flex align-items-center">
+              <div class="col-md-5 d-flex align-items-center">
                 <img src="{{ asset('img/evento-person-icon.svg') }}" alt="">
                 <h5 class="font-weight-normal m-0 text-dark-gray ml-2">{{$event->lecturer}}</h5>
               </div>
