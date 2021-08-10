@@ -277,7 +277,7 @@
             @foreach ($events as $event)
               <div class="carousel-item py-5 @if ($loop->first) active @endif">
                 <div class="card border-0 p-3">
-                  <img src="{{ asset($event->image) }}" class="card-img-top' alt="...">
+                  <img src="{{ asset($event->image) }}" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="font-weight-normal">
                       <svg xmlns="http://www.w3.org/2000/svg" width="12.567"
