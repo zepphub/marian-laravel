@@ -226,7 +226,7 @@
                                 {{ $event->lecturer }}</h5>
                             </div>
                             <h5 class="card-title text-marron-claro titulo-home">{{ $event->title }}</h5>
-                            <p class="card-text">{{ $event->description }}</p>
+                            <p class="card-text" style="white-space:pre-line;" >{{ $event->description }}</p>
                             <div class="d-md-flex align-items-center justify-content-between">
                               @if ($event->inscription)
                               <a class="btn btn-primary w-100" href="{{ route('evento', $event->slug) }}">Inscribite <svg class="ml-1"

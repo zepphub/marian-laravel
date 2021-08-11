@@ -35,7 +35,7 @@
 									<td style="padding:0 0 36px 0;color:#153643;">
 										<h1 style="font-size:26px;margin:0 0 20px 0;font-family: Arial, Helvetica, sans-serif; color: #B46063; font-weight: bold;">Hola por aquí, ¿cómo estás?</h1>
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">A continuación podrás descargar tu recurso para que sigas elevando tu marca en el universo digital:</p>
-										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;"><a style="text-decoration: none; background-color: #B46063; color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: bold;" href="{{asset($file)}}">Descargar recurso</a>
+										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;"><a style="text-decoration: none; background-color: #B46063; color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: bold;" href="{{asset($file)}}" download>Descargar recurso</a>
 										</p>
 										<div style="height:20px"></div>
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">A partir de este momento comenzarás a recibir mi Letter Coffe quincenal, un correo en donde te compartiré recursos e información súper valiosa relacionada al emprendimiento, el marketing, la comunicación y mucho más.</p>

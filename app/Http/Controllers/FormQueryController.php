@@ -6,7 +6,7 @@ use App\Models\FormQuery;
 use Illuminate\Http\Request;
 use App\Http\Requests\FormQueryRequest;
 
-class FormQueryController extends Controller
+class FormQueryController extends DopplerController
 {
 
     /**
@@ -23,6 +23,15 @@ class FormQueryController extends Controller
       $formquery->email = $request->get('email');
       $formquery->phone = $request->get('phone');
       $formquery->query = $request->get('query');
+
+      $subscriber = $request->get('email');
+      $listid = env('DOPPLER_CONTACTO_LIST_ID','');
+      $fields = [];
+      $fields[] = array("name" => "FIRSTNAME", "value" => $request->get('firstname'));
+      $fields[] = array("name" => "LASTNAME", "value" => $request->get('lastname'));
+      $fields[] = array("name" => "Whatsapp", "value" => $request->get('phone'));
+      $fields[] = array("name" => "Consulta", "value" => $request->get('query'));
+      $this->SubscribersToList($listid, $subscriber, $fields);
 
       $formquery->save();
       $message = 'Tu consulta ha sido registrada. Nos contactaremos a la brevedad.';

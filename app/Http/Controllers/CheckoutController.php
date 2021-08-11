@@ -10,7 +10,7 @@ use App\Http\Requests\OrderRequest;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\OrderProcessed;
 
-class CheckoutController extends Controller
+class CheckoutController extends DopplerController
 {
   private function total($services, $symbol = false)
   {
@@ -108,6 +108,18 @@ class CheckoutController extends Controller
     $request->session()->put('last_order.email', $request->get('email'));
     $request->session()->put('last_order.whatsapp', $request->get('whatsapp'));
     //$request->session()->put('last_order.cart.items', $request->get('cart.items'));
+    //
+    $cart_items = $request->session()->get('cart.items', []);
+    $subscriber = $request->get('email');
+    $listid = env('DOPPLER_SERVICIOS_LIST_ID','');
+    $fields = [];
+    $fields[] = array("name" => "FIRSTNAME", "value" => $request->get('firstname'));
+    $fields[] = array("name" => "LASTNAME", "value" => $request->get('lastname'));
+    $fields[] = array("name" => "Whatsapp", "value" => $request->get('whatsapp'));
+    if (count($cart_items) > 0){
+      $fields[] = array("name" => "Servicio", "value" => $cart_items[0]->fullname());
+    }
+    $this->SubscribersToList($listid, $subscriber, $fields);
 
     if(Service::is_argentina()) {
       return $this->checkoutMercadoPago($request);

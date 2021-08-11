@@ -6,7 +6,8 @@ use App\Models\NewsletterSubscription;
 use Illuminate\Http\Request;
 use App\Http\Requests\NewsletterSubscriptionRequest;
 
-class NewsletterSubscriptionController extends Controller
+
+class NewsletterSubscriptionController extends DopplerController
 {
     /**
      * Display a listing of the resource.
@@ -35,8 +36,17 @@ class NewsletterSubscriptionController extends Controller
       $newsletter_subscription->whatsapp = $request->get('whatsapp');
 
       $newsletter_subscription->save();
-      $message = 'Gracias por suscribirte al Newsletter.';
 
+      //$listId = CreateList($apikey, $accountName, "lista creada por api");
+      $subscriber = $request->get('email');
+      $listid = env('DOPPLER_NEWSLETTER_LIST_ID',''); // Lista "Newsletter"
+      $fields = [];
+      $fields[] = array("name" => "FIRSTNAME", "value" => $request->get('firstname'));
+      $fields[] = array("name" => "LASTNAME", "value" => $request->get('lastname'));
+      $fields[] = array("name" => "Whatsapp", "value" => $request->get('whatsapp'));
+      $this->SubscribersToList($listid, $subscriber, $fields);
+
+      $message = 'Gracias por suscribirte al Newsletter.';
 
       return response()->json(['success'=>$message]);
     }

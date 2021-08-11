@@ -6,8 +6,9 @@ use App\Models\TestResult;
 use App\Mail\TestResultMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 
-class TestResultController extends Controller
+class TestResultController extends DopplerController
 {
     /**
      * Store a newly created resource in storage.
@@ -21,6 +22,28 @@ class TestResultController extends Controller
       $testresult->selection = $request->get('selection');
       $testresult->name = $request->get('name');
       $testresult->email = $request->get('email');
+
+      $subscriber = $request->get('email');
+      $listid = '';
+      switch ($request->get('selection')) {
+        case "comenzar":
+          $listid = env('DOPPLER_TEST_COMENZAR_LIST_ID','');
+          break;
+        case "mejorar":
+          $listid = env('DOPPLER_TEST_MEJORAR_LIST_ID','');
+          break;
+        case "crecer":
+          $listid = env('DOPPLER_TEST_CRECER_LIST_ID','');
+          break;
+      };
+      $fields = [];
+      $fields[] = array("name" => "FIRSTNAME", "value" => $request->get('name'));
+      $fields[] = array("name" => "LASTNAME", "value" => $request->get('name'));
+      Log::debug($subscriber);
+      Log::debug($listid);
+      Log::debug($request->get('selection'));
+      Log::debug($fields);
+      $this->SubscribersToList($listid, $subscriber, $fields);
 
       $testresult->save();
       Mail::to([$testresult->email])->send(new TestResultMail($testresult));

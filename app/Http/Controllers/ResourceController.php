@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use App\Mail\ResourceMail;
 use Illuminate\Support\Facades\Mail;
 
-class ResourceController extends Controller
+class ResourceController extends DopplerController
 {
     /**
      * Display a listing of the resource.
@@ -157,12 +157,19 @@ class ResourceController extends Controller
       $resource = Resource::where('id', $request->resource)->first();
       $registered = $request->session()->get('registered', false);
       if (!$registered) {
-        if(empty(ResourceSubscription::where('email', $request->email))){
+        if(!ResourceSubscription::where('email', $request->email)->exists()){
           $resource_subscription  = new ResourceSubscription();
           $resource_subscription->firstname = $request->firstname;
           $resource_subscription->lastname = $request->lastname;
           $resource_subscription->email = $request->email;
           $resource_subscription->save();
+
+          $subscriber = $request->email;
+          $listid = env('DOPPLER_RECURSOS_LIST_ID','');
+          $fields = [];
+          $fields[] = array("name" => "FIRSTNAME", "value" => $request->firstname);
+          $fields[] = array("name" => "LASTNAME", "value" => $request->lastname);
+          $this->SubscribersToList($listid, $subscriber, $fields);
         };
         $email = $request->session()->put('email', $request->email);
         $registered = $request->session()->put('registered', true);

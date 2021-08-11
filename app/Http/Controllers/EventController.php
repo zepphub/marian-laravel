@@ -9,7 +9,9 @@ use Carbon\Carbon;
 use App\Models\Event;
 use App\Models\EventSubscription;
 
-class EventController extends Controller
+use Illuminate\Support\Facades\Log;
+
+class EventController extends DopplerController
 {
     /**
      * Display a listing of the resource.
@@ -68,6 +70,8 @@ class EventController extends Controller
       $extension = $request->file('image')->getClientOriginalExtension();
       $image_path = $request->file('image')->storeAs('img/events', $event->id.".".$extension, "public");
       $event->image = "storage/".$image_path;
+      $event->list_id = $this->CreateList("Evento - ".$request->get('title'));
+
       $event->save();
       $message = 'Nuevo evento "'.$event->title.'" creado.';
 
@@ -176,6 +180,17 @@ class EventController extends Controller
       $event_subscription->whatsapp = $request->whatsapp;
       $event_subscription->localidad = $request->localidad;
       $event_subscription->event_id = $event->id;
+
+      $subscriber = $request->email;
+      $listid = $event->list_id;
+      Log::debug($listid);
+      $fields = [];
+      $fields[] = array("name" => "FIRSTNAME", "value" => $request->firstname);
+      $fields[] = array("name" => "LASTNAME", "value" => $request->lastname);
+      $fields[] = array("name" => "Whatsapp", "value" => $request->whatsapp);
+      $fields[] = array("name" => "Ciudad", "value" => $request->localidad);
+      $this->SubscribersToList($listid, $subscriber, $fields);
+
       $event_subscription->save();
 
       $message = 'Ya estas inscripto al evento.';
