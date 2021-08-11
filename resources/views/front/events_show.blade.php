@@ -13,7 +13,7 @@
         <div class="col-md-7">
           <div class="">
             <h4 class="titulo-home">{{$event->title}}</h4>
-            <div class="mt-3">{{$event->description}}</div>
+            <div class="mt-3" style="white-space:pre-wrap;">{{$event->description}}</div>
             <div class="row mt-3">
               <div class="col-md-4 d-flex align-items-center">
                 <img src="{{ asset('img/evento-date-icon.svg') }}" alt="">
