@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\FormQuery;
 use Illuminate\Http\Request;
 use App\Http\Requests\FormQueryRequest;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\QueryMade;
 
 class FormQueryController extends DopplerController
 {
@@ -32,8 +34,10 @@ class FormQueryController extends DopplerController
       $fields[] = array("name" => "Whatsapp", "value" => $request->get('phone'));
       $fields[] = array("name" => "Consulta", "value" => $request->get('query'));
       $this->SubscribersToList($listid, $subscriber, $fields);
-
       $formquery->save();
+
+      Mail::to([env('MAIL_CONSULTAS','')])->send(new QueryMade($formquery));
+
       $message = 'Tu consulta ha sido registrada. Nos contactaremos a la brevedad.';
 
       //return Response::json($response)->withMessage($message);
