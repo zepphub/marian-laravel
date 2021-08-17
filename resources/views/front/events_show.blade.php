@@ -47,24 +47,8 @@
 
                 <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne"
                   data-parent="#accordionExample">
-                  <div class="card-body">
-                    <!-- {{$event->about}} -->
-                    <p>Un espacio para conocernos, encontrarnos y potenciarnos. </p>
-
-                    <p>El cafecito virtual es un encuentro en vivo y online en donde comparto con vos muchas herramientas prácticas y accionables para que eleves tu marca y potencies tu emprendimiento en digital.</p>
-
-                    <p>Al día de hoy vamos por la octava edición y más de 500 emprendedoras vivieron la experiencia. </p>
-
-                    <p>Muy pronto nos volvemos a encontrar en vivo y en esta oportunidad conversamos sobre:
-                    Tu Marca Online: Bases, Estrategia y Mentalidad.</p>
-
-                    <p>1- Los pilares esenciales para consolidar las bases de un negocio online sostenible en el largo plazo.<br>
-
-                    2- Estrategias de posicionamiento y contenido como claves para que tu marca tome impulso y se eleve en redes sociales.<br>
-
-                    3- La decisión de tener un negocio que esté alineado a la forma en la que queres vivir tu vida, en base a tus tiempos, ritmo y facturación. </p>
-
-                    Antes de que termine el encuentro te invitaré a participar de mi programa de Mentoría Grupal "Eleva tu Marca en el Mundo Online".
+                  <div class="card-body" style="white-space:pre-wrap;">
+                    {{$event->about}}
                   </div>
                 </div>
               </div>
