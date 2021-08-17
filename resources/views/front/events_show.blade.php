@@ -48,8 +48,8 @@
                 <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne"
                   data-parent="#accordionExample">
                   <div class="card-body">
-                    {{$event->about}}
-                    <!-- <p>Un espacio para conocernos, encontrarnos y potenciarnos. </p>
+                    <!-- {{$event->about}} -->
+                    <p>Un espacio para conocernos, encontrarnos y potenciarnos. </p>
 
                     <p>El cafecito virtual es un encuentro en vivo y online en donde comparto con vos muchas herramientas prácticas y accionables para que eleves tu marca y potencies tu emprendimiento en digital.</p>
 
@@ -64,7 +64,7 @@
 
                     3- La decisión de tener un negocio que esté alineado a la forma en la que queres vivir tu vida, en base a tus tiempos, ritmo y facturación. </p>
 
-                    Antes de que termine el encuentro te invitaré a participar de mi programa de Mentoría Grupal "Eleva tu Marca en el Mundo Online". -->
+                    Antes de que termine el encuentro te invitaré a participar de mi programa de Mentoría Grupal "Eleva tu Marca en el Mundo Online".
                   </div>
                 </div>
               </div>
