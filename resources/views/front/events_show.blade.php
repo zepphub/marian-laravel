@@ -47,7 +47,7 @@
 
                 <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne"
                   data-parent="#accordionExample">
-                  <div class="card-body" style="white-space:pre-wrap;">
+                  <div class="card-body" style="white-space:pre-line;">
                     {{$event->about}}
                   </div>
                 </div>
