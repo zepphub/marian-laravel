@@ -43,24 +43,27 @@
 										<p style="margin:0 0 12px 0;font-size:14px;line-height:24px;font-family: Arial, Helvetica, sans-serif;"><a style="text-decoration: none; background-color: #B46063; color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: bold;" href="{{ asset('guias/Guía 1 - ¿Cómo construir una marca de forma estratégica_.pdf') }}">Cómo construir una marca de forma estratégica sin perder la esencia</a>
 										</p>
 										<div style="height:20px"></div>
-										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Este material está pensado especialmente para que puedas construir tu marca a partir de propuestas auténticas, destacando los valores y la esencia de tu emprendimiento.</p>
-										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Espero que la disfrutes mucho. No dudes en escribirme para contarme cómo fue tu proceso trabajando con esta guía. Si quisieras profundizar, en mi Programa Intensivo de 8 Semanas trabajamos sobre cada detalle.<br><a href="{{ route('programa-intensivo') }}" style="color: #b46063;font-weight: bold;">¡Hacé click para encontrar más información!</a>
+										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Este material está diseñado especialmente para que puedas construir tu marca a partir de propuestas auténticas, destacando los valores y la esencia de tu emprendimiento.</p>
+										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Estate atenta al correo porque, dentro de pocos días te enviaré un nuevo mail contándote mi propia experiencia construyendo mi Marca Personal junto a mis aciertos y desaciertos de la mano con los primeros emprendimientos que impulsé.
+										<!-- <br><a href="{{ route('programa-intensivo') }}" style="color: #b46063;font-weight: bold;">¡Hacé click para encontrar más información!</a> -->
 										</p>
   @break
 @case("mejorar")
 										<p style="margin:0 0 12px 0;font-size:12px;line-height:24px;font-family: Arial, Helvetica, sans-serif;"><a style="text-decoration: none; background-color: #B46063; color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: bold;" href="{{ asset('guias/Guía 2 - ¿Cómo consolidar tu marca en el universo digital_.pdf') }}">Cómo consolidar tu marca en el universo digital a través de propuestas auténticas</a>
 										</p>
 										<div style="height:20px"></div>
-										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Este material está pensado especialmente para que puedas consolidar tu marca en el universo digital con estrategias que te ayuden a elevar su esencia, conectar con tu audiencia y mejorar resultados.</p>
-										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Espero que la disfrutes mucho. No dudes en escribirme para contarme cómo fue tu proceso trabajando con esta guía. Si quisieras profundizar, en mi Programa Intensivo de 8 Semanas y en mi Mentoría Grupal -Activá tu magia en el mundo online- trabajamos sobre cada detalle.<br><a href="{{ route('mentoria') }}#mentoria-propuestas" target="_blank" style="color: #b46063;font-weight: bold;">¡Hacé click para encontrar más información!</a>
+										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Este material está diseñado especialmente para que puedas consolidar tu marca en el universo digital, repasando las áreas estratégicas que van a ayudarte a elevar su esencia, conectar con la audiencia ideal y mejorar resultados.</p>
+										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Estate atenta al correo porque, dentro de pocos días te enviaré un nuevo mail contándote mi propia experiencia sentando las bases de mi marca y trabajando en su posicionamiento online.
+										<!-- <br><a href="{{ route('mentoria') }}#mentoria-propuestas" target="_blank" style="color: #b46063;font-weight: bold;">¡Hacé click para encontrar más información!</a> -->
 										</p>
   @break
 @case("crecer")
 										<p style="margin:0 0 12px 0;font-size:14px;line-height:24px;font-family: Arial, Helvetica, sans-serif;"><a style="text-decoration: none; background-color: #B46063; color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: bold;" href="{{ asset('guias/Guía 3 - ¿cómo escalar tu negocio digital_.pdf') }}">Cómo escalar tu negocio en el universo digital</a>
 										</p>
 										<div style="height:20px"></div>
-										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Este material está pensado especialmente para que puedas consolidar tu marca en el universo digital con estrategias que te ayuden a elevar su esencia, conectar con tu audiencia y mejorar resultados.</p>
-										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Espero que la disfrutes mucho. No dudes en escribirme para contarme cómo fue tu proceso trabajando con esta guía. Si quisieras profundizar, en mi <strong>Programa Intensivo de 8 Semanas</strong> y en mi <strong>Mentoría Grupal -Activá tu magia en el mundo online-</strong> trabajamos sobre cada detalle.<br><a href="{{ route('mentoria') }}#mentoria-propuestas" target="_blank" style="color: #b46063;font-weight: bold;">¡Hacé click para encontrar más información!</a>
+										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Este material está diseñado especialmente para que puedas superar la agenda completa de clientes y escalar tus resultados con productos digitales, ganando el tiempo necesario que te ayudará a llevar tu marca al próximo nivel.</p>
+										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Estate atenta al correo porque, dentro de pocos días te enviaré un nuevo mail contándote mi propia experiencia consolidando una estructura digital y creando un modelo de negocio alineado a la vida que quiero vivir, en base a mis tiempos, ritmo y facturación.
+										<!-- <br><a href="{{ route('mentoria') }}#mentoria-propuestas" target="_blank" style="color: #b46063;font-weight: bold;">¡Hacé click para encontrar más información!</a> -->
 										</p>
   @break
 @endswitch
@@ -72,7 +75,7 @@
 											<tr>
 												<td style="padding:0;width:50%;" align="left">
 													<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif; color:#B46063; font-weight: bold;">Me encanta acompañarte.<br>
-Saluditos,<br> Marian.
+													Un abrazo virtual.<br> Marian.
 													</p>
 												</td>
 												<td style="padding:0;width:50%;" align="right">
