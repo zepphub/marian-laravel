@@ -239,7 +239,7 @@
                     <p class=" text-marron-claro">Para que el contenido llegue a tu correo y para recibir recursos
                       exclusivos para acompañarte en este proceso, ¡dejame tu mail y nos
                       vemos allí!</p>
-                    <a href="">
+                    <a>
                       <h4 class="text-primary text-medium">Descargar Guía <svg xmlns="http://www.w3.org/2000/svg"
                           width="16.703" height="14.317" viewBox="0 0 16.703 14.317">
                           <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right"
@@ -478,7 +478,7 @@
                     </p>
                     <!-- <p class=" text-marron-claro">Para que el contenido llegue a tu correo y para recibir recursos
                       exclusivos para acompañarte en este proceso, ¡dejame tu mail y nos vemos allí!</p> -->
-                    <a href="">
+                    <a>
                       <h4 class="text-primary text-medium">Descargar Guía <svg xmlns="http://www.w3.org/2000/svg"
                           width="16.703" height="14.317" viewBox="0 0 16.703 14.317">
                           <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right"
@@ -715,7 +715,7 @@
                     <p class="mt-3 text-marron-claro">Teniendo en cuenta tus respuestas, quiero compartirte una guía que creé específicamente para ayudarte a crear tu plan de acción, con herramientas para identificar los distintos productos digitales que podés crear desde tu marca. 
                     </p>
                     <p class="text-secondary">Para obtener la guía y recibir contenido exclusivo para acompañarte en este proceso, ¡dejame tu mail y nos vemos allí!</p>
-                    <a href="">
+                    <a >
                       <h4 class="text-primary text-medium">Descargar Guía <svg xmlns="http://www.w3.org/2000/svg"
                           width="16.703" height="14.317" viewBox="0 0 16.703 14.317">
                           <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right"
