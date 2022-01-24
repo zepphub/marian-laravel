@@ -440,6 +440,7 @@
                 <div class="mt-4 mt-md-0">
                     <form id="contactForm" class="needs-validation form-home" action="{{ route('consulta') }}"
                         method="post">
+                        <x-honeypot />
                         @csrf
                         <div class="form-row">
                             <div class="col-md-6 mb-3">

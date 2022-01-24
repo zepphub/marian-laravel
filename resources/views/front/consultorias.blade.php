@@ -489,6 +489,7 @@
                     <h4 class="text-secondary mb-3">Charlemos y recibí una propuesta personalizada</h4>
                     <div class="mt-4 mt-md-0">
                         <form id="contactForm" class="needs-validation form-home" action="{{ route('consulta') }}" method="post">
+                            <x-honeypot />
                             @csrf
                             <div class="form-row">
                             <div class="col-md-6 mb-3">
