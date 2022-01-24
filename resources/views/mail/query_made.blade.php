@@ -39,7 +39,7 @@
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Nombre: {{$firstname}}</p>
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Apellido: {{$lastname}}</p>
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Teléfono: {{$phone}}</p>
-										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Email: <a href="mailto:{{$email}}">{{$email}}</p>
+										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Email: <a href="mailto:{{$email}}">{{$email}}</a></p>
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif;">Consulta:</p>
 										<p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family: Arial, Helvetica, sans-serif; white-space:pre-wrap;">{{$query}}</p>
 									</td>
