@@ -489,8 +489,11 @@
                     <h4 class="text-secondary mb-3">Charlemos y recibí una propuesta personalizada</h4>
                     <div class="mt-4 mt-md-0">
                         <form id="contactForm" class="needs-validation form-home" action="{{ route('consulta') }}" method="post">
-                            <x-honeypot />
                             @csrf
+                            <div class="g-recaptcha" id="g-recaptcha"
+                                data-sitekey="6Lfy1BEeAAAAAEAMf_DVWGxdFUEJUmTqmdrSXvNO"
+                                data-size="invisible">
+                            </div>
                             <div class="form-row">
                             <div class="col-md-6 mb-3">
                                 <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" name="firstname" required>
@@ -512,8 +515,64 @@
                                 <textarea class="form-control" name="query" cols="30" rows="5" placeholder="Dejame tu consulta"></textarea>
                             </div>
                             </div>
+                            <input type="hidden" name="q_action" id="q_action" value="murcielago"/>
                             <div class="text-right">
-                            <button class="btn btn-primary" type="submit">Enviar</button>
+                            <button class="btn btn-primary" type="submit">Enviar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.29"
+                                    height="21.29" viewBox="0 0 21.29 21.29">
+                                    <g id="avion-de-papel" transform="translate(0 0)">
+                                    <g id="Grupo_536" data-name="Grupo 536" transform="translate(2.246 0)">
+                                        <g id="Grupo_535" data-name="Grupo 535" transform="translate(0 0)">
+                                        <path id="Trazado_388" data-name="Trazado 388"
+                                            d="M72.834.054a.416.416,0,0,0-.418,0L64.8,4.564a.416.416,0,1,0,.423.716l5.467-3.233L60.5,12.613l-5.065-1.55,6.61-3.909a.416.416,0,0,0-.423-.716L54.2,10.827a.416.416,0,0,0,.09.756l6.049,1.851,2.669,4.857.009.013a.415.415,0,0,0,.646.084l3.069-3,5.772,1.766a.416.416,0,0,0,.537-.4V.416A.416.416,0,0,0,72.834.054Zm-9.8,13.635a.416.416,0,0,0-.074.237V16.47l-1.822-3.317L69.2,4.787Zm.758,3.413V14.489l2.037.623Zm8.421-.908-8.171-2.5L72.212,1.9Z"
+                                            transform="translate(-53.999 0)" fill="#fff" />
+                                        </g>
+                                    </g>
+                                    <g id="Grupo_538" data-name="Grupo 538" transform="translate(2.246 14.331)">
+                                        <g id="Grupo_537" data-name="Grupo 537">
+                                        <path id="Trazado_389" data-name="Trazado 389"
+                                            d="M58.591,344.77a.416.416,0,0,0-.588,0l-3.882,3.882a.416.416,0,0,0,.588.588l3.882-3.882A.416.416,0,0,0,58.591,344.77Z"
+                                            transform="translate(-53.999 -344.648)" fill="#fff" />
+                                        </g>
+                                    </g>
+                                    <g id="Grupo_540" data-name="Grupo 540" transform="translate(0 19.502)">
+                                        <g id="Grupo_539" data-name="Grupo 539" transform="translate(0)">
+                                        <path id="Trazado_390" data-name="Trazado 390"
+                                            d="M1.666,469.123a.416.416,0,0,0-.588,0l-.956.956a.416.416,0,1,0,.588.588l.956-.956A.416.416,0,0,0,1.666,469.123Z"
+                                            transform="translate(0 -469.001)" fill="#fff" />
+                                        </g>
+                                    </g>
+                                    <g id="Grupo_542" data-name="Grupo 542" transform="translate(5.222 20.434)">
+                                        <g id="Grupo_541" data-name="Grupo 541">
+                                        <path id="Trazado_391" data-name="Trazado 391"
+                                            d="M126.29,491.532a.415.415,0,1,0,.122.294A.419.419,0,0,0,126.29,491.532Z"
+                                            transform="translate(-125.58 -491.41)" fill="#fff" />
+                                        </g>
+                                    </g>
+                                    <g id="Grupo_544" data-name="Grupo 544" transform="translate(6.26 17.34)">
+                                        <g id="Grupo_543" data-name="Grupo 543">
+                                        <path id="Trazado_392" data-name="Trazado 392"
+                                            d="M153.3,417.128a.416.416,0,0,0-.588,0l-2.056,2.056a.416.416,0,1,0,.588.588l2.056-2.056A.416.416,0,0,0,153.3,417.128Z"
+                                            transform="translate(-150.534 -417.006)" fill="#fff" />
+                                        </g>
+                                    </g>
+                                    <g id="Grupo_546" data-name="Grupo 546" transform="translate(13.35 17.182)">
+                                        <g id="Grupo_545" data-name="Grupo 545">
+                                        <path id="Trazado_393" data-name="Trazado 393"
+                                            d="M323.825,413.333a.416.416,0,0,0-.588,0l-2.062,2.062a.416.416,0,1,0,.588.588l2.062-2.062A.416.416,0,0,0,323.825,413.333Z"
+                                            transform="translate(-321.053 -413.211)" fill="#fff" />
+                                        </g>
+                                    </g>
+                                    <g id="Grupo_548" data-name="Grupo 548" transform="translate(11.079 5.546)">
+                                        <g id="Grupo_547" data-name="Grupo 547">
+                                        <path id="Trazado_394" data-name="Trazado 394"
+                                            d="M267.14,133.5a.416.416,0,1,0,.122.294A.419.419,0,0,0,267.14,133.5Z"
+                                            transform="translate(-266.43 -133.38)" fill="#fff" />
+                                        </g>
+                                    </g>
+                                    </g>
+                                </svg>
+                            </button>
                             </div>
                         </form>
                     </div>
@@ -592,21 +651,71 @@
 <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
-  'use strict';
-  window.addEventListener('load', function () {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function (form) {
-      form.addEventListener('submit', function (event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+
+				// console.dir( validation );
+
+				// declare vars ##
+				var sitekey;
+				var q_action;
+
+				// check if recaptcha is enabled, if so, fire off ##
+				if ( 
+					null !== document.getElementById( 'g-recaptcha' ) 
+					&& null !== document.getElementById( 'g-recaptcha' ).getAttribute("data-sitekey")
+					&& null !== document.getElementById( 'q_action' ) 
+				) {
+
+					// get action ##
+					q_action = document.getElementById( 'q_action' ).value;
+					console.log( 'recaptcha action: '+q_action );
+
+					// get sitekey ##
+					sitekey = document.getElementById( 'g-recaptcha' ).getAttribute("data-sitekey");
+					console.log( 'recaptcha key: '+sitekey );
+
+					grecaptcha.ready(function () {
+						grecaptcha.execute( sitekey, { action: q_action }).then(function ( token ) {
+							
+							console.log( 'recapatcha token: '+token );
+							
+							var input = document.createElement( 'input' );// prepare a new input DOM element
+							input.setAttribute( 'name','q_recaptcha' ); // set the param name
+							input.setAttribute( 'value', token ); // set the value
+							input.setAttribute( 'type', 'hidden' ) // set the type, like "hidden" or other
+						
+							form.appendChild(input); // append the input to the form
+							
+							// in case we go again ..
+							grecaptcha.reset();
+
+							if (
+								form.checkValidity() === true
+							) {
+
+								console.log( 'OK to submit..' );
+
+								// submit ##
+								// form.submit();
+
+							}
+						});
+					});
+				}
+			}, false);
+		});
+	}, false);
 })();
 
 $('#contactForm').on('submit', function(e) {

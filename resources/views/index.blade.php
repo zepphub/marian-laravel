@@ -471,8 +471,8 @@
                                     placeholder="Dejame tu consulta"></textarea>
                             </div>
                         </div>
+                        <input type="hidden" name="q_action" id="q_action" value="murcielago"/>
                         <div class="text-right">
-                            <input type="hidden" name="q_action" id="q_action" value="murcielago"/>
                             <button class="btn btn-primary" type="submit">Enviar
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21.29" height="21.29"
                                     viewBox="0 0 21.29 21.29">
