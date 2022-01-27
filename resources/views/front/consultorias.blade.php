@@ -494,6 +494,7 @@
                                 data-sitekey="6Lfy1BEeAAAAAEAMf_DVWGxdFUEJUmTqmdrSXvNO"
                                 data-size="invisible">
                             </div>
+                            <input type="hidden" name="q_action" id="q_action" value="murcielago"/>
                             <div class="form-row">
                             <div class="col-md-6 mb-3">
                                 <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" name="firstname" required>
@@ -515,7 +516,6 @@
                                 <textarea class="form-control" name="query" cols="30" rows="5" placeholder="Dejame tu consulta"></textarea>
                             </div>
                             </div>
-                            <input type="hidden" name="q_action" id="q_action" value="murcielago"/>
                             <div class="text-right">
                             <button class="btn btn-primary" type="submit">Enviar
                             <svg xmlns="http://www.w3.org/2000/svg" width="21.29"
