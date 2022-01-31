@@ -96,6 +96,12 @@ tinymce.init({
   skin: 'marian',
   content_css: 'marian',
   editor_css: 'marian',
+  remove_linebreaks: true,
+  convert_newlines_to_brs: false,
+  inline_styles : false,
+  entity_encoding: 'raw',
+  entities: '160,nbsp,38,amp,60,lt,62,gt',
+  paste_auto_cleanup_on_paste: true,
 });
 </script>
 @endsection
