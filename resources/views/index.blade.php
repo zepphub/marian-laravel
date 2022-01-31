@@ -438,147 +438,139 @@
             </div>
             <div class="col-md-7">
                 <div class="mt-4 mt-md-0">
-                    <form id="contactForm" class="needs-validation form-home" action="{{ route('consulta') }}"
-                        method="post">
-                        @csrf
-                        <div class="g-recaptcha" id="g-recaptcha"
-                            data-sitekey="6Lfy1BEeAAAAAEAMf_DVWGxdFUEJUmTqmdrSXvNO"
-                            data-size="invisible">
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre"
-                                    name="firstname" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control rounded-pill" id="apellido"
-                                    placeholder="Apellido" name="lastname" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-6 mb-3">
-                                <input type="email" class="form-control rounded-pill" placeholder="Email" id="email"
-                                    name="email" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control rounded-pill" placeholder="Teléfono"
-                                    id="telefono" name="phone" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-12 mb-3">
-                                <textarea class="form-control" name="query" cols="30" rows="5"
-                                    placeholder="Dejame tu consulta" required></textarea>
-                            </div>
-                        </div>
-                        <input type="hidden" name="q_action" id="q_action" value="murcielago"/>
-                        <div class="text-right">
-                            <button class="btn btn-primary" type="submit">Enviar
-                                <svg xmlns="http://www.w3.org/2000/svg" width="21.29" height="21.29"
-                                    viewBox="0 0 21.29 21.29">
-                                    <g id="avion-de-papel" transform="translate(0 0)">
-                                        <g id="Grupo_536" data-name="Grupo 536" transform="translate(2.246 0)">
-                                            <g id="Grupo_535" data-name="Grupo 535" transform="translate(0 0)">
-                                                <path id="Trazado_388" data-name="Trazado 388"
-                                                    d="M72.834.054a.416.416,0,0,0-.418,0L64.8,4.564a.416.416,0,1,0,.423.716l5.467-3.233L60.5,12.613l-5.065-1.55,6.61-3.909a.416.416,0,0,0-.423-.716L54.2,10.827a.416.416,0,0,0,.09.756l6.049,1.851,2.669,4.857.009.013a.415.415,0,0,0,.646.084l3.069-3,5.772,1.766a.416.416,0,0,0,.537-.4V.416A.416.416,0,0,0,72.834.054Zm-9.8,13.635a.416.416,0,0,0-.074.237V16.47l-1.822-3.317L69.2,4.787Zm.758,3.413V14.489l2.037.623Zm8.421-.908-8.171-2.5L72.212,1.9Z"
-                                                    transform="translate(-53.999 0)" fill="#fff" />
-                                            </g>
-                                        </g>
-                                        <g id="Grupo_538" data-name="Grupo 538" transform="translate(2.246 14.331)">
-                                            <g id="Grupo_537" data-name="Grupo 537">
-                                                <path id="Trazado_389" data-name="Trazado 389"
-                                                    d="M58.591,344.77a.416.416,0,0,0-.588,0l-3.882,3.882a.416.416,0,0,0,.588.588l3.882-3.882A.416.416,0,0,0,58.591,344.77Z"
-                                                    transform="translate(-53.999 -344.648)" fill="#fff" />
-                                            </g>
-                                        </g>
-                                        <g id="Grupo_540" data-name="Grupo 540" transform="translate(0 19.502)">
-                                            <g id="Grupo_539" data-name="Grupo 539" transform="translate(0)">
-                                                <path id="Trazado_390" data-name="Trazado 390"
-                                                    d="M1.666,469.123a.416.416,0,0,0-.588,0l-.956.956a.416.416,0,1,0,.588.588l.956-.956A.416.416,0,0,0,1.666,469.123Z"
-                                                    transform="translate(0 -469.001)" fill="#fff" />
-                                            </g>
-                                        </g>
-                                        <g id="Grupo_542" data-name="Grupo 542" transform="translate(5.222 20.434)">
-                                            <g id="Grupo_541" data-name="Grupo 541">
-                                                <path id="Trazado_391" data-name="Trazado 391"
-                                                    d="M126.29,491.532a.415.415,0,1,0,.122.294A.419.419,0,0,0,126.29,491.532Z"
-                                                    transform="translate(-125.58 -491.41)" fill="#fff" />
-                                            </g>
-                                        </g>
-                                        <g id="Grupo_544" data-name="Grupo 544" transform="translate(6.26 17.34)">
-                                            <g id="Grupo_543" data-name="Grupo 543">
-                                                <path id="Trazado_392" data-name="Trazado 392"
-                                                    d="M153.3,417.128a.416.416,0,0,0-.588,0l-2.056,2.056a.416.416,0,1,0,.588.588l2.056-2.056A.416.416,0,0,0,153.3,417.128Z"
-                                                    transform="translate(-150.534 -417.006)" fill="#fff" />
-                                            </g>
-                                        </g>
-                                        <g id="Grupo_546" data-name="Grupo 546" transform="translate(13.35 17.182)">
-                                            <g id="Grupo_545" data-name="Grupo 545">
-                                                <path id="Trazado_393" data-name="Trazado 393"
-                                                    d="M323.825,413.333a.416.416,0,0,0-.588,0l-2.062,2.062a.416.416,0,1,0,.588.588l2.062-2.062A.416.416,0,0,0,323.825,413.333Z"
-                                                    transform="translate(-321.053 -413.211)" fill="#fff" />
-                                            </g>
-                                        </g>
-                                        <g id="Grupo_548" data-name="Grupo 548" transform="translate(11.079 5.546)">
-                                            <g id="Grupo_547" data-name="Grupo 547">
-                                                <path id="Trazado_394" data-name="Trazado 394"
-                                                    d="M267.14,133.5a.416.416,0,1,0,.122.294A.419.419,0,0,0,267.14,133.5Z"
-                                                    transform="translate(-266.43 -133.38)" fill="#fff" />
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
+                <form id="contactForm" class="needs-validation form-home" action="{{ route('consulta') }}" method="post">
+              @csrf
+              <div class="g-recaptcha" id="g-recaptcha"
+                  data-sitekey="6Lfy1BEeAAAAAEAMf_DVWGxdFUEJUmTqmdrSXvNO"
+                  data-size="invisible">
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" name="firstname" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control rounded-pill" id="apellido" placeholder="Apellido" name="lastname" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <input type="email" class="form-control rounded-pill" placeholder="Email" id="email" name="email" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control rounded-pill" placeholder="Teléfono" id="telefono" name="phone" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3"> 
+                  <textarea class="form-control" name="query" cols="30" rows="5" placeholder="Dejame tu consulta" required></textarea>
+                </div>
+              </div>
+              <input type="hidden" name="q_action" id="q_action" value="murcielago"/>
+              <div class="text-right">
+                <button class="btn btn-primary" type="submit">Enviar 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21.29"
+                    height="21.29" viewBox="0 0 21.29 21.29">
+                    <g id="avion-de-papel" transform="translate(0 0)">
+                      <g id="Grupo_536" data-name="Grupo 536" transform="translate(2.246 0)">
+                        <g id="Grupo_535" data-name="Grupo 535" transform="translate(0 0)">
+                          <path id="Trazado_388" data-name="Trazado 388"
+                            d="M72.834.054a.416.416,0,0,0-.418,0L64.8,4.564a.416.416,0,1,0,.423.716l5.467-3.233L60.5,12.613l-5.065-1.55,6.61-3.909a.416.416,0,0,0-.423-.716L54.2,10.827a.416.416,0,0,0,.09.756l6.049,1.851,2.669,4.857.009.013a.415.415,0,0,0,.646.084l3.069-3,5.772,1.766a.416.416,0,0,0,.537-.4V.416A.416.416,0,0,0,72.834.054Zm-9.8,13.635a.416.416,0,0,0-.074.237V16.47l-1.822-3.317L69.2,4.787Zm.758,3.413V14.489l2.037.623Zm8.421-.908-8.171-2.5L72.212,1.9Z"
+                            transform="translate(-53.999 0)" fill="#fff" />
+                        </g>
+                      </g>
+                      <g id="Grupo_538" data-name="Grupo 538" transform="translate(2.246 14.331)">
+                        <g id="Grupo_537" data-name="Grupo 537">
+                          <path id="Trazado_389" data-name="Trazado 389"
+                            d="M58.591,344.77a.416.416,0,0,0-.588,0l-3.882,3.882a.416.416,0,0,0,.588.588l3.882-3.882A.416.416,0,0,0,58.591,344.77Z"
+                            transform="translate(-53.999 -344.648)" fill="#fff" />
+                        </g>
+                      </g>
+                      <g id="Grupo_540" data-name="Grupo 540" transform="translate(0 19.502)">
+                        <g id="Grupo_539" data-name="Grupo 539" transform="translate(0)">
+                          <path id="Trazado_390" data-name="Trazado 390"
+                            d="M1.666,469.123a.416.416,0,0,0-.588,0l-.956.956a.416.416,0,1,0,.588.588l.956-.956A.416.416,0,0,0,1.666,469.123Z"
+                            transform="translate(0 -469.001)" fill="#fff" />
+                        </g>
+                      </g>
+                      <g id="Grupo_542" data-name="Grupo 542" transform="translate(5.222 20.434)">
+                        <g id="Grupo_541" data-name="Grupo 541">
+                          <path id="Trazado_391" data-name="Trazado 391"
+                            d="M126.29,491.532a.415.415,0,1,0,.122.294A.419.419,0,0,0,126.29,491.532Z"
+                            transform="translate(-125.58 -491.41)" fill="#fff" />
+                        </g>
+                      </g>
+                      <g id="Grupo_544" data-name="Grupo 544" transform="translate(6.26 17.34)">
+                        <g id="Grupo_543" data-name="Grupo 543">
+                          <path id="Trazado_392" data-name="Trazado 392"
+                            d="M153.3,417.128a.416.416,0,0,0-.588,0l-2.056,2.056a.416.416,0,1,0,.588.588l2.056-2.056A.416.416,0,0,0,153.3,417.128Z"
+                            transform="translate(-150.534 -417.006)" fill="#fff" />
+                        </g>
+                      </g>
+                      <g id="Grupo_546" data-name="Grupo 546" transform="translate(13.35 17.182)">
+                        <g id="Grupo_545" data-name="Grupo 545">
+                          <path id="Trazado_393" data-name="Trazado 393"
+                            d="M323.825,413.333a.416.416,0,0,0-.588,0l-2.062,2.062a.416.416,0,1,0,.588.588l2.062-2.062A.416.416,0,0,0,323.825,413.333Z"
+                            transform="translate(-321.053 -413.211)" fill="#fff" />
+                        </g>
+                      </g>
+                      <g id="Grupo_548" data-name="Grupo 548" transform="translate(11.079 5.546)">
+                        <g id="Grupo_547" data-name="Grupo 547">
+                          <path id="Trazado_394" data-name="Trazado 394"
+                            d="M267.14,133.5a.416.416,0,1,0,.122.294A.419.419,0,0,0,267.14,133.5Z"
+                            transform="translate(-266.43 -133.38)" fill="#fff" />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Modal Envio Exitoso Form contacto Home -->
-<div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1"
-    aria-labelledby="successFormLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+<div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="successFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header border-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body text-center">
-                <h4 class="text-verde">Envio exitoso</h4>
-                <p id="successFormMsg"></p>
-                <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="success">
-            </div>
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Envio exitoso</h4>
+            <p id="successFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="">
+          </div>
         </div>
-    </div>
-</div>
-<!-- Modal Envio Fallido Form contacto Home -->
-<div class="modal fade" id="errorForm" data-backdrop="static" data-keyboard="false" tabindex="-1"
-    aria-labelledby="errorFormLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+      </div>
+  </div>
+  <!-- Modal Envio Fallido Form contacto Home -->
+  <div class="modal fade" id="errorForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="errorFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header border-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body text-center">
-                <h4 class="text-verde">Error</h4>
-                <p id="errorFormMsg"></p>
-                <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-fallido.svg') }}" alt="error">
-            </div>
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="text-verde">Error</h4>
+            <p id="errorFormMsg"></p>
+            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-fallido.svg') }}" alt="">
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+  </div>
 @endsection
 
 @section('scripts')
 <script>
     
     // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
+(function () {
         'use strict';
         window.addEventListener('load', function () {
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -591,8 +583,6 @@
                         event.stopPropagation();
                     }
                     form.classList.add('was-validated');
-                
-                    /*
 
 				// console.dir( validation );
 
@@ -640,16 +630,33 @@
 								// form.submit();
 
 							}
-                            else {
-                                console.log( 'Error in the form' );
-                            }
 						});
 					});
-				} */
+				}
 			}, false);
 		});
 	}, false);
 })();
+
+$('#contactForm').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "{{ route('consulta') }}",
+        data: $(this).serialize(),
+        success: function(msg) {
+          $('#successFormMsg').text(msg.success);
+          $('#successForm').modal();
+          console.log(msg.success);
+        },
+        error: function(xhr, status, error){
+          //muestra solo el primer error
+          firstKey = Object.keys(xhr.responseJSON.errors)[0];
+          $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
+          $('#errorForm').modal();
+        }
+    });
+});
 
     $(document).ready(function () {
         var video1 = document.getElementById("ban_video");

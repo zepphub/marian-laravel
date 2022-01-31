@@ -40,8 +40,22 @@
   <meta name="facebook-domain-verification" content="hfblvfyg2gzx25yanjkhqounqjs957" />
   
   <!-- IMPORTANT!!! remember CSRF token -->
-  <meta name="csrf-token" content="{{ csrf_token() }}">
-    
+  <meta name="csrf-token" content="{{ csrf_token() }}">    
+
+  {!! htmlScriptTagJsApi([
+      'action' => 'murcielago',
+      'callback_then' => 'callbackThen',
+      'callback_catch' => 'callbackCatch'
+  ]) !!}
+</head>
+
+<body>
+  @include('layouts.header')
+  @yield('content')
+  @include('layouts.footer')
+
+  <script src="{{ asset('js/jquery.min.js') }}"></script>
+  <script type="module" src="{{ asset('js/starter.js') }}"></script>
   <script type="text/javascript">
       function callbackThen(response){
           // read HTTP status
@@ -55,22 +69,7 @@
       function callbackCatch(error){
           console.error('Error:', error)
       }   
-  </script>    
-
-  {!! htmlScriptTagJsApi([
-      'action' => 'homepage',
-      'callback_then' => 'callbackThen',
-      'callback_catch' => 'callbackCatch'
-  ]) !!}
-</head>
-
-<body>
-  @include('layouts.header')
-  @yield('content')
-  @include('layouts.footer')
-
-  <script src="{{ asset('js/jquery.min.js') }}"></script>
-  <script type="module" src="{{ asset('js/starter.js') }}"></script>
+  </script>
   @yield('scripts')
 </body>
 </html>
