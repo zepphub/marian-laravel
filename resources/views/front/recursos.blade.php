@@ -293,12 +293,12 @@ var newUnregisteredDownload = function(r_id){
 
 					// get sitekey ##
 					sitekey = document.getElementById( 'g-recaptcha' ).getAttribute("data-sitekey");
-					console.log( 'recaptcha key: '+sitekey );
+					// console.log( 'recaptcha key: '+sitekey );
 
 					grecaptcha.ready(function () {
 						grecaptcha.execute( sitekey, { action: q_action }).then(function ( token ) {
 							
-							console.log( 'recapatcha token: '+token );
+							// console.log( 'recapatcha token: '+token );
 							
 							var input = document.createElement( 'input' );// prepare a new input DOM element
 							input.setAttribute( 'name','q_recaptcha' ); // set the param name
@@ -314,7 +314,7 @@ var newUnregisteredDownload = function(r_id){
 								form.checkValidity() === true
 							) {
 
-								console.log( 'OK to submit..' );
+								// console.log( 'OK to submit..' );
 
 								// submit ##
 								// form.submit();

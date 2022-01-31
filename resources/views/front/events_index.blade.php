@@ -627,7 +627,7 @@
               </div>
               <div class="form-row">
                 <div class="col-md-12 mb-3"> 
-                  <textarea class="form-control" name="query" cols="30" rows="5" placeholder="Dejame tu consulta"></textarea>
+                  <textarea class="form-control" name="query" cols="30" rows="5" placeholder="Dejame tu consulta" required></textarea>
                 </div>
               </div>
               <input type="hidden" name="q_action" id="q_action" value="murcielago"/>
@@ -796,12 +796,12 @@
 
 					// get sitekey ##
 					sitekey = document.getElementById( 'g-recaptcha' ).getAttribute("data-sitekey");
-					console.log( 'recaptcha key: '+sitekey );
+					// console.log( 'recaptcha key: '+sitekey );
 
 					grecaptcha.ready(function () {
 						grecaptcha.execute( sitekey, { action: q_action }).then(function ( token ) {
 							
-							console.log( 'recapatcha token: '+token );
+							// console.log( 'recapatcha token: '+token );
 							
 							var input = document.createElement( 'input' );// prepare a new input DOM element
 							input.setAttribute( 'name','q_recaptcha' ); // set the param name
@@ -817,7 +817,7 @@
 								form.checkValidity() === true
 							) {
 
-								console.log( 'OK to submit..' );
+								// console.log( 'OK to submit..' );
 
 								// submit ##
 								// form.submit();

@@ -468,7 +468,7 @@
                         <div class="form-row">
                             <div class="col-md-12 mb-3">
                                 <textarea class="form-control" name="query" cols="30" rows="5"
-                                    placeholder="Dejame tu consulta"></textarea>
+                                    placeholder="Dejame tu consulta" required></textarea>
                             </div>
                         </div>
                         <input type="hidden" name="q_action" id="q_action" value="murcielago"/>
@@ -591,6 +591,8 @@
                         event.stopPropagation();
                     }
                     form.classList.add('was-validated');
+                
+                    /*
 
 				// console.dir( validation );
 
@@ -611,12 +613,12 @@
 
 					// get sitekey ##
 					sitekey = document.getElementById( 'g-recaptcha' ).getAttribute("data-sitekey");
-					console.log( 'recaptcha key: '+sitekey );
+					// console.log( 'recaptcha key: '+sitekey );
 
 					grecaptcha.ready(function () {
 						grecaptcha.execute( sitekey, { action: q_action }).then(function ( token ) {
 							
-							console.log( 'recapatcha token: '+token );
+							// console.log( 'recapatcha token: '+token );
 							
 							var input = document.createElement( 'input' );// prepare a new input DOM element
 							input.setAttribute( 'name','q_recaptcha' ); // set the param name
@@ -632,60 +634,22 @@
 								form.checkValidity() === true
 							) {
 
-								console.log( 'OK to submit..' );
+								// console.log( 'OK to submit..' );
 
 								// submit ##
 								// form.submit();
 
 							}
+                            else {
+                                console.log( 'Error in the form' );
+                            }
 						});
 					});
-				}
+				} */
 			}, false);
 		});
 	}, false);
 })();
-
-    $('#contactForm').on('submit', function (e) {
-        e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: "{{ route('consulta') }}",
-            data: $(this).serialize(),
-            success: function (msg) {
-                $('#successFormMsg').text(msg.success);
-                $('#successForm').modal();
-                console.log('Formulario Enviado');
-            },
-            error: function (xhr, status, error) {
-                //muestra solo el primer error
-                firstKey = Object.keys(xhr.responseJSON.errors)[0];
-                $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
-                $('#errorForm').modal();
-                console.log('Error al enviar formulario');
-            }
-        });
-    });
-
-    $('#newsletterForm').on('submit', function (e) {
-        e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: "{{ route('newsletter-subscription') }}",
-            data: $(this).serialize(),
-            success: function (msg) {
-                $('#successFormMsg').text(msg.success);
-                $('#successForm').modal();
-                console.log(msg.success);
-            },
-            error: function (xhr, status, error) {
-                //muestra solo el primer error
-                firstKey = Object.keys(xhr.responseJSON.errors)[0];
-                $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
-                $('#errorForm').modal();
-            }
-        });
-    });
 
     $(document).ready(function () {
         var video1 = document.getElementById("ban_video");
