@@ -84,26 +84,29 @@
 <script>
 tinymce.init({
   selector:'textarea#post-body',
-  height: 300,
-  menubar: false,
-  plugins: [
-    'advlist autolink lists link image charmap print preview anchor',
-    'searchreplace visualblocks code fullscreen',
-    'insertdatetime media table paste code help wordcount'
-  ],
-  toolbar: 'undo redo | formatselect | ' +
-  'bold italic forecolor backcolor | alignleft aligncenter ' +
-  'alignright alignjustify | bullist numlist outdent indent | ' +
-  'removeformat | help',
   skin: 'marian',
   content_css: 'marian',
   editor_css: 'marian',
-  remove_linebreaks: true,
-  convert_newlines_to_brs: false,
-  inline_styles : false,
+  plugins : "wordcount,paste,help,code,link,image",
+  // menubar: "false",
+  toolbar: 'undo redo | formatselect | ' +
+  'bold italic forecolor backcolor link | alignleft aligncenter ' +
+  'alignright alignjustify | ' +
+  'removeformat code | help',
+  // statusbar:false,
+  // theme_advanced_buttons3_add : "pastetext,pasteword,selectall",
   entity_encoding: 'raw',
   entities: '160,nbsp,38,amp,60,lt,62,gt',
   paste_auto_cleanup_on_paste: true,
+    invalid_styles: 'color font-size text-decoration font-weight',
+    forced_root_block : "",
+    cleanup: true,
+    remove_linebreaks: true,
+    convert_newlines_to_brs: false,
+    paste_postprocess : function(pl, o) {
+            // remove &nbsp
+            o.node.innerHTML = o.node.innerHTML.replace(/&nbsp;/ig, " ");
+         }
 });
 
 $(document).ready(function (e) {
