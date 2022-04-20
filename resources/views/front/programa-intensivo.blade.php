@@ -235,11 +235,7 @@
           <div class="mt-4 mt-md-0">
             <form class="needs-validation form-home" novalidate>
               @csrf
-              <div class="g-recaptcha" id="g-recaptcha"
-                  data-sitekey="6Lfy1BEeAAAAAEAMf_DVWGxdFUEJUmTqmdrSXvNO"
-                  data-size="invisible">
-              </div>
-              <input type="hidden" name="q_action" id="q_action" value="murcielago"/>
+              
               <div class="form-row">
                 <div class="col-md-6 mb-3">                  
                   <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" required>
@@ -337,55 +333,7 @@
                     }
                     form.classList.add('was-validated');
 
-				// console.dir( validation );
-
-				// declare vars ##
-				var sitekey;
-				var q_action;
-
-				// check if recaptcha is enabled, if so, fire off ##
-				if ( 
-					null !== document.getElementById( 'g-recaptcha' ) 
-					&& null !== document.getElementById( 'g-recaptcha' ).getAttribute("data-sitekey")
-					&& null !== document.getElementById( 'q_action' ) 
-				) {
-
-					// get action ##
-					q_action = document.getElementById( 'q_action' ).value;
-					console.log( 'recaptcha action: '+q_action );
-
-					// get sitekey ##
-					sitekey = document.getElementById( 'g-recaptcha' ).getAttribute("data-sitekey");
-					// console.log( 'recaptcha key: '+sitekey );
-
-					grecaptcha.ready(function () {
-						grecaptcha.execute( sitekey, { action: q_action }).then(function ( token ) {
-							
-							// console.log( 'recapatcha token: '+token );
-							
-							var input = document.createElement( 'input' );// prepare a new input DOM element
-							input.setAttribute( 'name','q_recaptcha' ); // set the param name
-							input.setAttribute( 'value', token ); // set the value
-							input.setAttribute( 'type', 'hidden' ) // set the type, like "hidden" or other
-						
-							form.appendChild(input); // append the input to the form
-							
-							// in case we go again ..
-							grecaptcha.reset();
-
-							if (
-								form.checkValidity() === true
-							) {
-
-								// console.log( 'OK to submit..' );
-
-								// submit ##
-								// form.submit();
-
-							}
-						});
-					});
-				}
+				
 			}, false);
 		});
 	}, false);
