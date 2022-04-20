@@ -14,6 +14,7 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.2",
+        "lukeraymonddowning/honey": "^0.3.4",
         "mercadopago/dx-php": "2.3.0",
         "spatie/laravel-honeypot": "^3.0",
         "srmklive/paypal": "~3.0",

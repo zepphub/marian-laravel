@@ -325,6 +325,8 @@
                             name="whatsapp" required>
                     </div>
                 </div>
+                <x-honey/>
+                <x-honey-recaptcha/>
             </div>
             <div class="mt-3 d-block d-md-flex w-100 justify-content-end px-3">
                 <button type="submit" class="btn btn-blanco">Suscribirme <svg class="mb-1 ml-1"

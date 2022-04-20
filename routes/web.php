@@ -60,7 +60,7 @@ Route::post('/talleres-y-eventos/{event}', [App\Http\Controllers\EventController
 Route::get('/test', function(){ return view('front.test'); })->name('test');
 Route::get('/test-formulario', function(){ return view('front.test-form'); })->name('test-formulario');
 Route::post('/test-formulario', [App\Http\Controllers\TestResultController::class, 'store'] )->name('test-formulario-send');
-Route::post('/newsletter-subscription', [App\Http\Controllers\NewsletterSubscriptionController::class, 'store'] )->name('newsletter-subscription');
+Route::post('/newsletter-subscription', [App\Http\Controllers\NewsletterSubscriptionController::class, 'store'] )->middleware(['honey', 'honey-recaptcha'])->name('newsletter-subscription');
 Route::post('/recursos/descarga', [App\Http\Controllers\ResourceController::class, 'download'] )->name('recursos-descarga');
 
 /* Admin Routes */
