@@ -16,7 +16,7 @@ class NewsletterSubscriptionController extends Controller
      */
     public function index()
     {
-        $subscriptions = NewsletterSubscription::paginate(3);
+        $subscriptions = NewsletterSubscription::paginate(15);
 
         return view('admin.newsletter', ['subscriptions'=>$subscriptions]);
     }
