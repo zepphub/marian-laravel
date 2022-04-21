@@ -60,8 +60,7 @@
           <div class="mt-4 mt-md-0 rounded-lg p-md-4 p-3 bg-textura-form text-md-center">
             <h5 class="text-white titulo-home mb-4">Reserva tu lugar</h5>
             <form id="form-event" class="needs-validation" action="{{ route('suscribir-evento', $event) }}" method="post" novalidate>
-              @csrf
-              
+              @csrf  
               <div class="form-row">
                 <div class="col-md-12 mb-3">
                   <input type="text" class="form-control rounded-pill border-0 text-secondary" id="nombre" placeholder="Nombre" name="firstname" required>
