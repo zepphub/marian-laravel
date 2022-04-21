@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\NewsletterSubscriptionRequest;
 
 
-class NewsletterSubscriptionController extends DopplerController
+class NewsletterSubscriptionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -37,14 +37,15 @@ class NewsletterSubscriptionController extends DopplerController
 
       $newsletter_subscription->save();
 
+      //Subscribe to Doppler List
       //$listId = CreateList($apikey, $accountName, "lista creada por api");
-      $subscriber = $request->get('email');
+      /* $subscriber = $request->get('email');
       $listid = env('DOPPLER_NEWSLETTER_LIST_ID',''); // Lista "Newsletter"
       $fields = [];
       $fields[] = array("name" => "FIRSTNAME", "value" => $request->get('firstname'));
       $fields[] = array("name" => "LASTNAME", "value" => $request->get('lastname'));
       $fields[] = array("name" => "Whatsapp", "value" => $request->get('whatsapp'));
-      $this->SubscribersToList($listid, $subscriber, $fields);
+      $this->SubscribersToList($listid, $subscriber, $fields); */
 
       $message = 'Gracias por suscribirte al Newsletter.';
 
