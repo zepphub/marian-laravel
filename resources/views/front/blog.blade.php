@@ -92,6 +92,7 @@ font-weight-bold
             <p>Para ser parte de mi comunidad y recibir contenido exclusivo</p>
             <form id="newsletterForm" class="needs-validation form-border-1-px" action="{{ route('newsletter-subscription') }}" method="post">
               @csrf
+              <x-honeypot />
               <div class="form-group">
                 <label class="d-none" for="nombre">Nombre</label>
                 <input type="text" class="form-control rounded-pill form-control-sm p-3" placeholder="Nombre" id="nombre" name="firstname" required>

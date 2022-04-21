@@ -136,6 +136,7 @@
     <div class="row mt-3">
       <form id="newsletterForm" class="needs-validation w-100" action="{{ route('newsletter-subscription') }}" method="post">
         @csrf
+        <x-honeypot />
         <div class="form-row">
                 <div class="form-group col-md-3">
                     <div class="px-3">

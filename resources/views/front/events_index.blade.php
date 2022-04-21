@@ -605,6 +605,7 @@
           <div class="mt-4 mt-md-0">
             <form id="contactForm" class="needs-validation form-home" action="{{ route('consulta') }}" method="post">
               @csrf
+              <x-honeypot />
               <div class="form-row">
                 <div class="col-md-6 mb-3">
                   <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" name="firstname" required>

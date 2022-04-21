@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\FormQueryController;
+use App\Http\Controllers\NewsletterSubscriptionController;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,7 +42,7 @@ Route::get('/order-cancel', [App\Http\Controllers\CheckoutController::class, 'ch
 Route::get('/order-success', [App\Http\Controllers\CheckoutController::class, 'checkoutSuccess'])->name('order.success');
 
 Route::get('/contacto', function(){ return view('front.contacto'); })->name('contacto');
-Route::post('/consulta', [App\Http\Controllers\FormQueryController::class, 'store'])->name('consulta');
+Route::post('/consulta', [App\Http\Controllers\FormQueryController::class, 'store'])->middleware(ProtectAgainstSpam::class)->name('consulta');
 
 Route::get('/incrip-exitosa', function(){ return view('front.incrip-exitosa'); })->name('incrip-exitosa');
 
@@ -60,7 +63,7 @@ Route::post('/talleres-y-eventos/{event}', [App\Http\Controllers\EventController
 Route::get('/test', function(){ return view('front.test'); })->name('test');
 Route::get('/test-formulario', function(){ return view('front.test-form'); })->name('test-formulario');
 Route::post('/test-formulario', [App\Http\Controllers\TestResultController::class, 'store'] )->name('test-formulario-send');
-Route::post('/newsletter-subscription', [App\Http\Controllers\NewsletterSubscriptionController::class, 'store'] )->name('newsletter-subscription');
+Route::post('/newsletter-subscription', [App\Http\Controllers\NewsletterSubscriptionController::class, 'store'] )->middleware(ProtectAgainstSpam::class)->name('newsletter-subscription');
 Route::post('/recursos/descarga', [App\Http\Controllers\ResourceController::class, 'download'] )->name('recursos-descarga');
 
 /* Admin Routes */
