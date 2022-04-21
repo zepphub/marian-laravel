@@ -579,45 +579,8 @@
         
     </div>
 </div>
-  
-
-    <!-- Modal Envio Exitoso Form contacto Home -->
-  <div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="successFormLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header border-0">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body text-center">
-            <h4 class="text-verde">Envio exitoso</h4>
-            <p id="successFormMsg"></p>
-            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="">
-          </div>
-        </div>
-      </div>
-  </div>
-  <!-- Modal Envio Fallido Form contacto Home -->
-  <div class="modal fade" id="errorForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="errorFormLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header border-0">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body text-center">
-            <h4 class="text-verde">Error</h4>
-            <p id="errorFormMsg"></p>
-            <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-fallido.svg') }}" alt="">
-          </div>
-        </div>
-      </div>
-  </div>
 @endsection
 @section('scripts')
-
 <!-- Modal video -->
 <div class="modal fade" id="consultoria-video" tabindex="1" aria-labelledby="mentoriavideo" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -642,94 +605,9 @@
     $if.attr("src", "{{ asset('videos/consultoria.mp4') }}");
     $if.attr("src", src);
     });
-</script>
-<script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-        'use strict';
-        window.addEventListener('load', function () {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName('needs-validation');
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function (form) {
-                form.addEventListener('submit', function (event) {
-                    if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                    }
-                    form.classList.add('was-validated');
-
-				
-			}, false);
-		});
-	}, false);
-})();
-
-$('#contactForm').on('submit', function(e) {
-    e.preventDefault();
-    $.ajax({
-        type: "POST",
-        url: "{{ route('consulta') }}",
-        data: $(this).serialize(),
-        success: function(msg) {
-          $('#successFormMsg').text(msg.success);
-          $('#successForm').modal();
-          console.log(msg.success);
-        },
-        error: function(xhr, status, error){
-          //muestra solo el primer error
-          firstKey = Object.keys(xhr.responseJSON.errors)[0];
-          $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
-          $('#errorForm').modal();
-        }
-    });
-});
 
 $('a[href$="#modal"]').on( "click", function() {
       $('#consultoria-video').modal('show');
     });
-
-// $(document).ready(function () {
-//         var video1 = document.getElementById("ban_video");
-//         video1.currentTime = 0;
-//         $(".mute-bt").click(function () {
-//             if ($(this).hasClass("stop")) {
-//                 var ban_video = document.getElementById("ban_video");
-//                 $("#ban_video").prop('muted', false);
-//                 $(this).removeClass("stop");
-//             } else {
-//                 var ban_video = document.getElementById("ban_video");
-//                 $("#ban_video").prop('muted', true);
-//                 $(this).addClass("stop");
-//             }
-//         });
-
-//         $(".play-bt").click(function () {
-//             $(".play-bt").hide();
-//             $(".pause-bt").show();
-//             var ban_video = document.getElementById("ban_video");
-//             if ($(".stop-bt").hasClass("active")) {
-//                 ban_video.currentTime = 0;
-//             }
-//             ban_video.play();
-//         });
-//         $(".pause-bt").click(function () {
-//             $(".play-bt").show();
-//             $(".pause-bt").hide();
-//             $(".pause-bt").addClass("active");
-//             $(".stop-bt").removeClass("active");
-//             var ban_video = document.getElementById("ban_video");
-//             ban_video.pause();
-//         });
-//         $(".stop-bt").click(function () {
-//             $(".play-bt").show();
-//             $(".pause-bt").hide();
-//             $(".pause-bt").removeClass("active");
-//             $(".stop-bt").addClass("active");
-//             var ban_video = document.getElementById("ban_video");
-//             stop
-//             ban_video.pause();
-//         });
-//     });
 </script>
 @endsection
