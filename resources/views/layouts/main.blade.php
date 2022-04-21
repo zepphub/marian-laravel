@@ -110,29 +110,6 @@
         }
     });
   });
-
-  $('#form-event').on('submit', function(e) {
-    e.preventDefault();
-    $.ajax({
-        type: "POST",
-        url: "{{ route('suscribir-evento', $event) }}",
-        data: $(this).serialize(),
-        success: function(msg) {
-          $('#successFormMsg').text(msg.success);
-          $('#successForm').modal();
-          console.log(msg.success);
-          setInterval(function(){
-          window.location = "/gracias";
-          },3000)
-        },
-        error: function(xhr, status, error){
-          //muestra solo el primer error
-          firstKey = Object.keys(xhr.responseJSON.errors)[0];
-          $('#errorFormMsg').text(xhr.responseJSON.errors[firstKey][0]);
-          $('#errorForm').modal();
-        }
-    });
-  });
   </script>
   @yield('scripts')
 </body>
