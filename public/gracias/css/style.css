@@ -7013,13 +7013,6 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
-.grecaptcha-badge {
-    z-index: 1000;
-    display: none!important;
-}
-.ocultar{
-	display: none;
-}
 
 @media (max-width:768px){
 	.columna-encuentros{
@@ -7032,9 +7025,6 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 	.titulo-icono{
 		display: none;
-	}
-	.ocultar{
-		display: block;
 	}
 }
 
