@@ -26,8 +26,8 @@ class CounselingUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-          'price_ars' => 'numeric|min:0|max:10000',
-          'price_usd' => 'numeric|min:0|max:100',
+          'price_ars' => 'numeric|min:0|max:1000000000',
+          'price_usd' => 'numeric|min:0|max:1000000000',
           'video' => 'url',
         ];
     }
