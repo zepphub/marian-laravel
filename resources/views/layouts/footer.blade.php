@@ -94,10 +94,10 @@
         <hr>
         <div class="row">
             <div class="col-md-6 text-center text-md-left">
-                <p class="text-marron-claro">© Derechos reservados | Marian PD 2020</p>
+                <p class="text-marron-claro">Marian PD © Todos los derechos reservados</p>
             </div>
             <div class="col-md-6 text-center text-md-right">
-                <p class="text-marron-claro">UX, UI y Desarrollo por Chimpancé</p>
+                <p class="text-marron-claro"><a href="https://gusdenis.com" target="_blank">Angus Dei</a></p>
             </div>
         </div>
     </div>
