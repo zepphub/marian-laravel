@@ -56,7 +56,8 @@
     </div>
   </div>
 
-  <div class="container-fluid my-5">
+ <!-- Video
+   <div class="container-fluid my-5">
     <div class="row">
         <div class="col-md-12 p-0">
             <a href="#modal"  data-bs-toggle="modal" data-bs-target="#mentoriaVideo">
@@ -64,7 +65,7 @@
                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 <lottie-player class="play-bt2" src="https://assets10.lottiefiles.com/packages/lf20_fcloo4ce.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;"  loop  autoplay ></lottie-player>
             </a>
-            <!-- <div class="video-consultoria">
+             <div class="video-consultoria">
 				<video id="ban_video" class="tv_video">
                      <source src="{{ asset('videos/consultoria.mp4') }}" type="video/mp4">
                      Tu navegador no puede reproducir este video.
@@ -73,10 +74,10 @@
                 
                 <div class="pause-bt" style="display:none;"></div>
                 
-             </div> -->
+             </div> 
         </div>
     </div>
-  </div>
+  </div>-->
 
   <div class="d-flex align-items-center" id="mentoria-g-owl-carousel">
     <div class="container">
@@ -258,8 +259,8 @@
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
+      <div class="col-md-4"></div>
+      <!--<div class="col-md-5">
         <div class="card border-secondary text-center card-propuestas shadow">
           <img src="{{ asset('img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
           <div class="card-body">
@@ -271,8 +272,8 @@ valores de tu marca.</p>
             <a href="{{ route('consultorias') }}" class="btn btn-primary">Click Aquí</a>
           </div>
         </div>
-      </div>
-      <div class="col-md-5 my-4 my-md-0">
+      </div>-->
+      <div class="col-md-4 my-4 my-md-0">
         <div class="card border-secondary text-center card-propuestas shadow">
           <img src="{{ asset('img/card-asesoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
           <div class="card-body">
@@ -286,7 +287,7 @@ crecimiento.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-1"></div>
+      <div class="col-md-4"></div>
     </div>
   </div>
 @endsection

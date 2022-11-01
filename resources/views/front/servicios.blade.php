@@ -29,7 +29,7 @@
     <div class="row mt-5">
       <div class="col-12 col-md-5">
         <div class="nav flex-column nav-pills" id="pills-vertical" role="tablist" aria-orientation="vertical">
-          <a class="nav-link rounded font-weight-bold active" id="v-pills-home-tab" data-toggle="pill"
+          <!--<a class="nav-link rounded font-weight-bold active" id="v-pills-home-tab" data-toggle="pill"
             href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Consultorías estratégicas
             <svg class="float-right d-none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
               viewBox="0 0 28 28">
@@ -48,7 +48,7 @@
                 </g>
               </g>
             </svg>
-          </a>
+          </a>-->
           <a class="nav-link rounded font-weight-bold" id="v-pills-profile-tab" data-toggle="pill"
             href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Programa intensivo
             de 8 semanas <svg class="float-right d-none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
@@ -110,7 +110,8 @@
       </div>
       <div class="col-12 col-md-7 mt-4 mt-md-0">
         <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <!--
+            <div class="tab-pane fade show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             <div class="d-flex align-items-center">
               <img src="{{ asset('img/servicios-pill-1.svg') }}" alt="">
               <h4 class="ml-3">Consultorías estratégicas</h4>
@@ -127,9 +128,10 @@
             <a href="{{ route('consultorias') }}"><button class="btn btn-outline-primary mt-2">¡Quiero conocer detalles y reservar mi
                 encuentro!</button></a>
           </div>
+        -->
 
 
-          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+          <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
             <div class="d-flex align-items-center">
               <img src="{{ asset('img/servicios-pill-2.svg') }}" alt="">
               <h4 class="ml-3">Programa intensivo de 8 semanas</h4>
@@ -193,8 +195,8 @@
       </div>
     </div>
   </div>
-
-  <div class="container mt-5">
+  <!--
+    <div class="container mt-5">
     <div class="row">
       <div class="col-md-5 d-flex align-items-center">
         <h4 class="font-weight-bold titulo-home">Marcas con las que he colaborado</h4>
@@ -329,5 +331,6 @@
         </div>
       </div>
     </div>
+  -->
   </div>
 @endsection

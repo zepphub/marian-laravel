@@ -79,7 +79,8 @@
     </div>
   </div>
 
-  <div class="contenedor-testimonios py-5">
+  <!--
+    <div class="contenedor-testimonios py-5">
     <div class="container py-5">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -143,7 +144,7 @@
         <div class="col-md-1"></div>
       </div>
     </div>
-  </div>
+  </div>-->
 
   <!-- Seccion Cards Trabajemos Juntas -->
   <div class="petalos-right cards-trabajemos-juntas">

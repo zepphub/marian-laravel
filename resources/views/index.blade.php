@@ -215,7 +215,7 @@
 </div>
 <!-- Fin Seccion Cards Trabajemos Juntas -->
 
-<!-- Banner Eleva Tu Marca -->
+<!-- Banner Eleva Tu Marca 
 <div class="banner-eleva-tu-marca d-flex align-items-center my-5">
     <div class="container py-5 py-md-0">
         <div class="row text-center text-md-left">
@@ -230,7 +230,7 @@
                         Recurso</button></a></div>
         </div>
     </div>
-</div>
+</div>-->
 <!-- Fin Banner Eleva Tu Marca -->
 
 <!-- Seccion Blog -->
@@ -391,19 +391,6 @@
                                                 transform="translate(-1201.66 -1126.2)" fill="#fff" />
                                         </svg>
                                     </a>
-                                </div>
-                            </div>
-                            <div class="list-group-item border-0 bg-transparent p-0">
-                                <div class="btn-social-group d-flex align-items-center justify-content-center">
-                                    <a class="" href="https://www.facebook.com/Mariana-Pacheco-D-109043760426352" target="_blank"><svg id="Componente_3_9" data-name="Componente 3 – 9"
-                                            xmlns="http://www.w3.org/2000/svg" width="42" height="42"
-                                            viewBox="0 0 42 42">
-                                            <circle id="Elipse_2" data-name="Elipse 2" cx="21" cy="21" r="21"
-                                                fill="#f8337a" opacity="0" />
-                                            <path id="Facebook"
-                                                d="M1254.242,1146.535h-2.584v9.32h-3.829v-9.32h-1.82v-3.294h1.82v-2.131a3.616,3.616,0,0,1,3.864-3.91l2.837.011v3.2h-2.059a.784.784,0,0,0-.812.9v1.936h2.917Z"
-                                                transform="translate(-1229.01 -1125.2)" fill="#fff" />
-                                        </svg></a>
                                 </div>
                             </div>
                             <div class="list-group-item border-0 bg-transparent p-0">
