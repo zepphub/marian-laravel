@@ -37,9 +37,9 @@ $servicios_item = \Request::route()->getName() == 'admin.counselings.index' ||
                     </div>
                     <div id="item-2" class="collapse  @if ($servicios_item) show @endif bg-nude border-0" aria-labelledby="heading-2" data-parent="#main-menu">
                       <ul class="nav flex-column ml-3">
-                        <li class="nav-item">
+                        <!--<li class="nav-item">
                           <a class="nav-link" href="{{ route('admin.counselings.index') }}">Consultorías Personalizadas</a>
-                        </li>
+                        </li>-->
                         <li class="nav-item">
                           <a class="nav-link" href="{{ route('admin.mentorships.index') }}">Mentoría</a>
                         </li>

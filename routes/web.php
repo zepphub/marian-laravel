@@ -24,7 +24,7 @@ Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 
-Route::get('/consultorias', [App\Http\Controllers\CounselingController::class, 'frontIndex'])->name('consultorias');
+// Route::get('/consultorias', [App\Http\Controllers\CounselingController::class, 'frontIndex'])->name('consultorias');
 
 Route::get('/blog', [App\Http\Controllers\PostController::class, 'frontIndex'])->name('blog');
 Route::get('/blog/{category}', [App\Http\Controllers\PostController::class, 'frontIndex'])->name('blog.category');

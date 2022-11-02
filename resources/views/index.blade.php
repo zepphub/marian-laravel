@@ -168,7 +168,7 @@
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="card border-secondary text-center card-propuestas shadow">
                 <img src="{{ asset('/img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2"
                     alt="...">
@@ -182,21 +182,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 my-4 my-md-0">
-            <div class="card border-secondary text-center card-propuestas shadow">
-                <img src="{{ asset('/img/card-asesoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2"
-                    alt="...">
-                <div class="card-body">
-                    <h5 class="card-title titulo-home">Consultoría Estratégica</h5>
-                    <p class="card-text">Te ayudo a potenciar tu estrategia
-                        digital resaltando la esencia y los
-                        valores de tu marca.</p>
-                    <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-                    <a href="{{ route('consultorias') }}" class="btn btn-primary">Click Aquí</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="card border-secondary text-center card-propuestas shadow">
                 <img src="{{ asset('/img/card-talleres-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2"
                     alt="...">

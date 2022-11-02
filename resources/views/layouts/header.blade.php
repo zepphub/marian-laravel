@@ -74,7 +74,6 @@
                                         
                                     </a>
                                     <div class="dropdown-menu border-0" aria-labelledby="trabajaConmigo">
-                                        <a class="dropdown-item" href="{{ route('consultorias') }}">Consultoría Estratégica</a>
                                         <a class="dropdown-item" href="{{ route('mentoria') }}">Mentoría</a>
                                         <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Talleres y Eventos</a>
                                     </div>
@@ -177,7 +176,6 @@
                                         Trabajá conmigo
                                     </a>
                                     <div class="dropdown-menu border-0" aria-labelledby="trabajaConmigo">
-                                        <a class="dropdown-item" href="{{ route('consultorias') }}">Consultoría Estratégica</a>
                                         <a class="dropdown-item" href="{{ route('mentoria') }}">Mentoría</a>
                                         <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Talleres y Eventos</a>
                                     </div>
