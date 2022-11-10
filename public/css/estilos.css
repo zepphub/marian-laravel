@@ -261,10 +261,6 @@ a.text-white:focus {
         height: auto;
     }
 
-    .petalos-right.sobre-mi-section::after {
-        bottom: -4%;
-    }
-
     footer h4 {
         margin: 25px 0 0 0 !important;
     }

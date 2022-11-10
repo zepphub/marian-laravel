@@ -147,7 +147,7 @@
   </div>-->
 
   <!-- Seccion Cards Trabajemos Juntas -->
-  <div class="petalos-right cards-trabajemos-juntas">
+  <div class="cards-trabajemos-juntas">
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-12">

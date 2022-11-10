@@ -40,7 +40,7 @@
 <!-- Portada Home -->
 
 <!-- Seccion Sobre Mi -->
-<div class="petalos-right sobre-mi-section">
+<div class="sobre-mi-section">
     <div class="container sobre-mi">
         <div class="row">
             <div class="col-md-5 order-2 order-md-1">

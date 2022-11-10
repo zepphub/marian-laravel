@@ -153,7 +153,7 @@
     </div>
   </div>
 
-  <div class="petalos-right">
+  <div>
     <div class="container py-5">
 
       <div class="row">
