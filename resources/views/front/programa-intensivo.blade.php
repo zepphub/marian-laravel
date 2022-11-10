@@ -135,20 +135,6 @@
   </div>
   <!-- Fin Banner Eleva Tu Marca -->
 
-    <!-- Banner Consultoria Estrategica 
-    <div id="banner-programa-consultoria-estrategica" class="banner-eleva-tu-marca d-flex align-items-center mt-5">
-    <div class="container py-5">
-      <div class="row text-center text-md-left">
-        <div class="col-md-12 text-center">
-          <h5 class="text-white titulo-home">Consultoría Estratégica</h5>
-          <h5 class="text-white titulo-home my-4 font-weight-normal w-50 mx-auto">Si te gustaría trabajar solo en algunos de los pilares de tu proyecto, las sesiones de consultoría personalizada son ideales para vos</h5>
-          <a href="{{ route('consultorias') }}"><button class="btn btn-outline-white">¡Quiero ver detalles!</button></a>
-        </div>
-      </div>
-    </div>
-  </div>-->
-  <!-- Fin Banner Consultoria Estrategica -->
-
   <div class="m-0 p-0"><img style="margin-bottom: -12px !important;" class="img-fluid w-100"
       src="{{ asset('img/separador-superior-seccion-svg.svg') }}" alt=""></div>
   <div class="bg-crema-suave contenedor-form-home py-5" id="contacto">

@@ -21,16 +21,6 @@ class CounselingController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function frontIndex()
-    {
-      $counselings = Counseling::all();
-      return view('front.consultorias', ['counselings'=>$counselings]);
-    }
-    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

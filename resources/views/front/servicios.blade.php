@@ -110,26 +110,6 @@
       </div>
       <div class="col-12 col-md-7 mt-4 mt-md-0">
         <div class="tab-content" id="v-pills-tabContent">
-          <!--
-            <div class="tab-pane fade show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-            <div class="d-flex align-items-center">
-              <img src="{{ asset('img/servicios-pill-1.svg') }}" alt="">
-              <h4 class="ml-3">Consultorías estratégicas</h4>
-            </div>
-            <p class="mt-4">Te ayudo a consolidar tu presencia online, resaltando la esencia y los valores de tu marca.
-              <br>
-              Las sesiones están creadas especialmente para emprendedoras y profesionales con presencia digital, con
-              intenciones de trabajar sobre temáticas específicas relacionadas al marketing, las redes sociales y la
-              comunicación estratégica de sus marcas. <br>
-              Nos encontramos durante 2 horas y luego trabajamos juntas por 7 días. No importa si llevás años o recién
-              comenzás: aplicamos todo a tu proyecto de forma práctica y personalizada, basándonos en tu situación
-              actual y en tus principales inquietudes.
-            </p>
-            <a href="{{ route('consultorias') }}"><button class="btn btn-outline-primary mt-2">¡Quiero conocer detalles y reservar mi
-                encuentro!</button></a>
-          </div>
-        -->
-
 
           <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
             <div class="d-flex align-items-center">
