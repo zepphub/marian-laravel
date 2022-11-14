@@ -74,12 +74,10 @@
                                         
                                     </a>
                                     <div class="dropdown-menu border-0" aria-labelledby="trabajaConmigo">
+                                        <a class="dropdown-item" href="https://servicios.marianpd.com/cursos">Cursos</a>
                                         <a class="dropdown-item" href="{{ route('mentoria') }}">Mentoría</a>
-                                        <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Talleres y Eventos</a>
+                                        <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Conferencia</a>
                                     </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-marron" href="{{ route('blog') }}">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-marron" href="{{ route('index') }}#contacto">Contacto</a>
@@ -93,12 +91,12 @@
                     <div class="">
                         <a href="https://marianpd.com">
                             <img src="{{ asset('img/logo-marian-nav.svg') }}" alt="">
-                            <h6 class="font-weight-normal text-center bajada-logo">Consultora de marcas auténticas</h6>
+                            <h6 class="font-weight-normal text-center bajada-logo">Consultora de Marcas</h6>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-5 d-md-flex align-items-center justify-content-between pr-0 pl-md-5 d-none">
-                    <a href="{{ route('carrito') }}"><svg xmlns="http://www.w3.org/2000/svg" width="19.374" height="18.562"
+                <div class="col-md-5 d-md-flex align-items-center justify-content-end pr-0 pl-md-5 d-none">
+                    <a href="{{ route('carrito') }}" class="p-2 px-3"><svg xmlns="http://www.w3.org/2000/svg" width="19.374" height="18.562"
                             viewBox="0 0 19.374 18.562">
                             <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart"
                                 transform="translate(-0.75 -0.75)">
@@ -117,9 +115,9 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="{{ route('test') }}"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Test</button></a>
-                    <a href="{{ route('talleres-y-eventos') }}"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Talleres y
-                            Eventos</button></a>
+                    <a href="{{ route('test') }}"><button class="btn btn-sm btn-link-secondary p-2 px-3">Test de Negocio</button></a>
+                    <a href="{{ route('blog') }}"><button class="btn btn-sm btn-link-secondary p-2 px-3">Blog</button></a>
+                    <a href="https://servicios.marianpd.com/cursos" target="_blank"><button class="btn btn-sm btn-secondary rounded-pill p-2 px-3">Cursos</button></a>
                 </div>
             </div>
         </div>

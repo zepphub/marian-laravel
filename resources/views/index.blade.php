@@ -14,8 +14,7 @@
                 <div
                     class="align-items-center text-center text-md-left align-items-md-baseline d-flex flex-column h-100 justify-content-center pr-md-5">
                     <h2>¡Soy Marian!</h2>
-                    <h4 class="text-medium text-marron my-4 my-md-3">Consultora de Marcas Auténticas.
-                        Especialista en Marketing y Estrategias Digitales</h4>
+                    <h4 class="text-medium text-marron my-4 my-md-3">Consultora de Marcas. Experta en Marketing Experiencial y Estrategia en entornos digitales.</h4>
                     <a href="{{ route('servicios') }}" class="btn btn-primary">Mis propuestas para vos</a>
                 </div>
             </div>
@@ -90,9 +89,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 d-flex align-items-center text-center text-md-left">
-                <h4 class="text-white titulo-home">"Creo experiencias y propuestas
-                    especialmente diseñadas para
-                    marcas con propósito"</h4>
+                <h4 class="text-white titulo-home">Acompaño profesionales y negocios digitales a crear una estrategia de marca diferencial que les permita lograr una conexión real y genuina con su audiencia online.</h4>
             </div>
         </div>
     </div>
@@ -111,21 +108,18 @@
                     class="align-items-center align-items-md-baseline text-center text-md-left d-flex flex-column h-100 justify-content-center pr-md-5">
                     <h4 class="titulo-home mt-4 mt-md-0">Sobre Mí</h4>
                     <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
-                    <h6 class="mb-3 mt-4 titulo-home text-marron text-medium">Si pudieras hacer realidad la idea que
-                        hace tiempo
-                        tenes… <br>
-                        Si pudieses construir una marca uniendo todas las actividades,
-                        proyectos e ilusiones que te movilizan…
+                    <h6 class="mb-3 mt-4 titulo-home text-marron text-medium">Si pudieras hacer realidad la idea que hace tiempo tenes…
+                        Si pudieses construir una marca creando estrategias desde la esencia... Uniendo tu expertis, tu formación, las experiencias e ilusiones que te movilizan.
                     </h6>
-                    <h6 class="mb-3 titulo-home text-secondary text-medium">¿Lo imaginas? <br> Ok, allí aparezco yo.
+                    <h6 class="mb-3 titulo-home text-secondary text-medium">¿Lo imaginas?<br>
+                        Ok, allí aparezco yo.
                     </h6>
-                    <p class="mb-3 text-marron">Juntas podemos construir el universo de tu marca de la mano a diversas
-                        estrategias de Marketing Digital, Comunicación y Branding que te ayuden a
-                        posicionarte a través de una propuesta auténtica y diferente.
+                    <p class="mb-3 text-marron">Juntas podemos crear el universo de tu marca de una manera exquisita y detallista, con el propósito de elevar una propuesta de prestigio en entornos digitales, que genere conversaciones genuinas y ventas sinceras.</p>
+
+                    <p class="mb-3 text-marron">A través de mis programas de formación y consultoría digital, fusionamos comunicación experiencial con dinámicas específicas y centradas en el marketing consciente.</p>
+                        
+                    <p class="mb-3 text-marron">Si este proceso resuena con vos, <br>¡Bienvenida!, estás en el lugar correcto.
                     </p>
-                    <p class="mb-3 text-marron">Si alguna de estas palabras resuena en vos, ¡Bienvenida!, estas en el
-                        lugar
-                        correcto.</p>
                     <a href="{{ route('sobre-mi') }}" class="btn btn-outline-secondary">Más por aquí</a>
                 </div>
             </div>
@@ -146,10 +140,7 @@
             <div class="text-center">
                 <h4 class="titulo-home">Trabajemos Juntas</h4>
                 <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
-                <p class="my-4 w-75 mx-auto">Construyamos juntas el universo de tu marca de la mano a diversas
-                    estrategias de Marketing
-                    Digital, Comunicación y Branding que te ayuden a posicionarte a través de una propuesta
-                    auténtica y diferente.</p>
+                <p class="my-4 w-75 mx-auto">Construyamos el universo de tu marca y elevemos su posicionamiento en entornos digitales a través de dinámicas específicas, centradas en el marketing consciente y en la comunicación experiencial.</p>
 
                 <h5 class="text-marron-claro titulo-home text-medium">Mis propuestas</h5>
                 <div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105"
@@ -168,30 +159,36 @@
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="card border-secondary text-center card-propuestas shadow">
                 <img src="{{ asset('/img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2"
                     alt="...">
                 <div class="card-body">
                     <h5 class="card-title titulo-home">Mentoría</h5>
-                    <p class="card-text">Trabajamos en el universo de tu marca, fortaleciendo los pilares más
-                        importantes y
-                        consolidando tu presencia digital, de forma grupal o personalizada.</p>
+                    <p class="card-text">Te acompaño en el proceso de crear una estrategia de marca diferencial a través del marketing y la comunicación consciente.</p>
                     <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
                     <a href="{{ route('mentoria') }}" class="btn btn-primary">Click Aquí</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
+            <div class="card border-secondary text-center card-propuestas shadow">
+                <img src="https://marianpd.com/img/card-asesoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title titulo-home">Cursos</h5>
+                    <p class="card-text">Una propuesta de formación grabada en capsulas de contenido, prácticas y accionables, para que puedas capacitarte a tu ritmo y respetar tus procesos creativos sin presiones de días u horarios.</p>
+                    <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
+                    <a href="https://servicios.marianpd.com/cursos" class="btn btn-primary" target="_blank">Click Aquí</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
             <div class="card border-secondary text-center card-propuestas shadow">
                 <img src="{{ asset('/img/card-talleres-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2"
                     alt="...">
                 <div class="card-body">
-                    <h5 class="card-title titulo-home">Talleres y Conferencias</h5>
-                    <p class="card-text">Experiencias especialmente creadas
-                        para mujeres emprendedoras y
-                        profesionales con visión de
-                        crecimiento.</p>
+                    <h5 class="card-title titulo-home">Conferencias</em></h5>
+                    <p class="card-text">Experiencias especialmente creadas para mujeres emprendedoras y profesionales con visión de crecimiento.</p>
                     <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
                     <a href="{{ route('talleres-y-eventos') }}" class="btn btn-primary">Click Aquí</a>
                 </div>
@@ -220,7 +217,7 @@
 <!-- Fin Banner Eleva Tu Marca -->
 
 <!-- Seccion Blog -->
-<div class="container">
+<div class="container bloque-blog my-5">
     <div class="row">
         <div class="col-md-6">
             <div class="igualar-altura-blog">
@@ -274,12 +271,10 @@
 <div class="container bg-rosa-oscuro rounded p-5 my-5">
     <div class="row">
         <div class="col-md-5">
-            <h4 class="titulo-home text-white">¡Me encantaría que seas
-                parte de mi comunidad!</h4>
+            <h4 class="titulo-home text-white">Un Newsletter con Alma</h4>
         </div>
         <div class="col-md-7">
-            <p class="text-white">Registrate para comenzar a recibir recursos e invitaciones que te ayudarán a elevar tu
-                marca con herramientas de comunicación, marketing y branding.</p>
+            <p class="text-white">Registrate aquí para recibir contenido exclusivo a través de mis mails.</p>
         </div>
     </div>
     <div class="row mt-3">
