@@ -9,11 +9,9 @@
     <div class="container d-flex flex-column align-items-baseline justify-content-center h-100">
       <div class="row">
         <div class="col-md-6 text-center text-md-left">
-          <h2 class="text-white">¡Hola, soy Marian!</h2>
-          <h4 class="text-white font-weight-normal my-5 my-md-4">Emprendedora, Consultora, Mentora de Estrategia y
-            Marketing
-            para marcas auténticas. </h4>
-          <a href="#mi-historia"><button class="btn btn-outline-white">Conocé mi Historia</button></a>
+          <h2 class="text-white">Soy Marian,</h2>
+          <h4 class="text-white font-weight-normal my-5 my-md-4">Me especializo en la construcción de marca y en el desarrollo de estrategias aplicadas a negocios en entornos digitales.</h4>
+          <a href="#mi-historia" class="btn btn-outline-white">Conocé mi Historia</a>
         </div>
       </div>
     </div>
@@ -22,36 +20,13 @@
   <div class="container my-5 py-md-5" id="mi-historia">
     <div class="row">
       <div class="col-md-5">
-        <div class="bg-textura-form p-4 p-md-5 rounded-lg h-100 d-flex flex-column justify-content-center"><svg
-            xmlns="http://www.w3.org/2000/svg" width="48" height="60" viewBox="0 0 48 60">
-            <text id="_" data-name="&quot;" fill="#fff" font-size="84" font-family="Ubuntu-Bold, Ubuntu"
-              font-weight="700">
-              <tspan x="0" y="78">&quot;</tspan>
-            </text>
-          </svg>
-          <h5 class="text-white titulo-home">Hace algún tiempito atrás, me propuse unir todas las actividades y
-            propuestas que estaba
-            llevando adelante desde mi profesión, y así comienza esta historia…</h5>
-        </div>
+        <img class="img-fluid" src="{{ asset('img/about-us.jpg') }}" alt="">
       </div>
       <div class="col-md-7">
         <div class="d-flex align-items-center flex-column mt-4 mt-md-0">
-          <p>Soy Marian, me especializo en la creación de proyectos y estrategias digitales a través de experiencias y
-            propuestas diseñadas especialmente para marcas con historia, propósito y corazón.
-            Soy emprendedora, amante de los viajes, la cultura, los destinos, apasionada por el marketing, las historias
-            y
-            todo lo que se genera con ellas.
-            Hace algún tiempito me propuse unir todas las actividades y propuestas que estaba llevando adelante desde mi
-            profesión para comenzar esta historia…
-          </p>
-          <p>Tengo 28 años y emprendo desde los 19. Comencé en el área de marketing de una empresa familiar, un hotel
-            ubicado en las sierras de Córdoba, Argentina. La vida me llevó a administrarlo tiempo después y así se
-            sucedieron 3 años… Una partecita de mi corazón sigue allí. También creé y administré un bar al que llamamos
-            la
-            Casona, por estar en una casa antigua en la que sucedieron cientos de historias hermosas. Una vez recibida,
-            emprendí una consultora especializada en marketing y turismo. A través de ella trabajé con marcas de la
-            industria de los viajes, aplicando herramientas comerciales y estrategias de marketing y potenciando
-            experiencias colmadas de paisajes y buenas energías.</p>
+          <p>Soy emprendedora, amante de los viajes, la cultura, los destinos, apasionada por el marketing, las historias y todo lo que se genera con ellas. Hace algún tiempito me propuse unir todas las actividades y propuestas que estaba llevando adelante desde mi profesión para comenzar esta historia…</p>
+            <p>Tengo 30 años y emprendo desde los 19. Comencé en el área de marketing de una empresa familiar, un hotel ubicado en las sierras de Córdoba, Argentina. La vida me llevó a administrarlo tiempo después y así se sucedieron 3 años… Una partecita de mi corazón sigue allí. También fundé y administré un bar al que llamamos la Casona, por estar en una casa antigua en la que sucedieron cientos de historias hermosas. El proyecto gastronómico duró pocos meses pero al día de hoy continúo aplicando lo aprendido durante esa experiencia.</p>
+            <p>Una vez recibida, emprendí una consultora especializada en marketing y turismo. A través de ella trabajé con marcas de la industria de los viajes, aplicando herramientas comerciales y estrategias de marketing y potenciando experiencias colmadas de paisajes y buenas energías.</p>
         </div>
       </div>
     </div>
@@ -62,14 +37,10 @@
       <div class="row d-flex">
         <div class="col-md-5 order-2 order-md-1">
           <div class="mt-4 mt-md-0 d-flex flex-column h-100 justify-content-center text-center text-md-left">
-            <p>Acompañé todas estas aventuras estudiando mucho, y aún sigo haciéndolo. Soy Licenciada en Turismo,
-              Diplomada y Especialista en Marketing y Dirección Comercial y en camino se encuentra un MBA de la mano con
-              un Magister en Marketing Digital. </p>
-            <p>Hoy me encuentro aquí, escribiendo el contenido de mi sitio web, un espacio que consolida y une todas las
-              experiencias que te comparto... Hoy decido comunicar, proyectar y ayudar a todas las marcas que tengan la
-              intención de contar su historia y dejar huellas. Lo hago a través de mi Marca Personal, como consultora de
-              marcas auténticas.</p>
-            <a href="{{ route('servicios') }}"><button class="btn btn-outline-secondary">Trabajemos juntas</button></a>
+            <p>Acompañé todas estas aventuras estudiando mucho, y aún sigo haciéndolo. Soy Licenciada en Turismo, Diplomada y Especialista en Marketing y Dirección Comercial, Magister en Administración de Empresas (MBA) y en camino se encuentra una Maestría en Marketing Digital.</p>
+              <p>Hoy me encuentro aquí, escribiendo el contenido de mi sitio web, un espacio que consolida y une todas las experiencias que te comparto... Hoy decido comunicar, proyectar y ayudar a todas las marcas que tengan la intención de contar su historia y dejar huellas. Lo hago a través de mi Marca Personal, como consultora de marcas auténticas.
+              </p>
+            <a href="{{ route('servicios') }}" class="btn btn-outline-secondary">Trabajemos juntas</a>
           </div>
         </div>
         <div class="col-md-7 order-1 order-md-2">
@@ -79,72 +50,6 @@
     </div>
   </div>
 
-  <!--
-    <div class="contenedor-testimonios py-5">
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h4 class="text-white titulo-home">Lo que ellas dicen</h4>.
-          <img src="{{ asset('img/separador-titulo-blanco-svg.svg') }}" alt="">
-        </div>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-md-1"></div>
-
-        <div class="col-md-10">
-          <div id="carousel-testimonios" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-testimonios" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-testimonios" data-slide-to="1"></li>
-              <li data-target="#carousel-testimonios" data-slide-to="2"></li>
-              <li data-target="#carousel-testimonios" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="rounded-circle" src="{{ asset('img/testimonial3.png') }}" alt="">
-                <h4 class="text-white mt-2">Jorgelina Vasconi</h4>
-                <h5 class="">Consultora en Porteo y Doula</h5>
-                <h5 class="text-nude">Proceso intensivo de 6 semanas</h5>
-                <p class="text-white mt-4 descripcion-testimonio">"Lo que más me llamó la atención desde el primer
-                  encuentro fue la escucha
-                  activa.
-                  Ella te devuelve en palabras lo que estabas esperando escuchar, es la que te sacude y te hace
-                  repensar. Una mujer que potencia la esencia y es feliz con vos".</p>
-              </div>
-              <div class="carousel-item">
-                <img class="rounded-circle" src="{{ asset('img/testimonial1.png') }}" alt="">
-                <h4 class="text-white mt-2">Eugenia Fernandez</h4>
-                <h5 class="">Fundadora de Utera de Fuego</h5>
-                <h5 class="text-nude">Proceso intensivo de 6 semanas</h5>
-                <p class="text-white mt-4 descripcion-testimonio">"Fue como si algo se destrabara para fluir y crecer.
-                  Agradezco mucho la amorosidad y el profesionalismo con el que trabajás, eso lo es TODO."</p>
-              </div>
-              <div class="carousel-item">
-                <img class="rounded-circle" src="{{ asset('img/testimonial4.png') }}" alt="">
-                <h4 class="text-white mt-2">Melisa Figuera</h4>
-                <h5 class="">Lider en Cruz Naranja y miembro de Grupo Crecer</h5>
-                <h5 class="text-nude">Mentoría Grupal para Emprendedoras</h5>
-                <p class="text-white mt-4 descripcion-testimonio">"Nos hiciste descubrir muchos puntos a tener en
-                  cuenta, fortalezas y debilidades y no te guardaste nada. Me quedé con ganas de seguir aprendiendo y
-                  compartiendo."</p>
-              </div>
-              <div class="carousel-item">
-                <img class="rounded-circle" src="{{ asset('img/testimonial2.png') }}" alt="">
-                <h4 class="text-white mt-2">Graciela Vargas Landrieli</h4>
-                <h5 class="">Contadora – Esp. En emprendedores</h5>
-                <h5 class="text-nude">Mentoría Grupal para Emprendedoras</h5>
-                <p class="text-white mt-4 descripcion-testimonio">"Sentir que todas estamos en el mismo barco remando
-                  juntas contra la corriente hacia la misma dirección."</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-1"></div>
-      </div>
-    </div>
-  </div>-->
 
   <!-- Seccion Cards Trabajemos Juntas -->
   <div class="cards-trabajemos-juntas">
@@ -179,11 +84,11 @@
           <div class="card border-secondary text-center card-propuestas shadow">
             <img src="{{ asset('img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
             <div class="card-body">
-              <h5 class="card-title titulo-home">Mentoría</h5>
-              <p class="card-text">Trabajamos en el universo de tu marca, fortaleciendo los pilares más importantes y
-                consolidando tu presencia digital, de forma grupal o personalizada.</p>
-              <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-              <a href="{{ route('mentoria') }}" class="btn btn-primary">Click Aquí</a>
+              <h5 class="card-title titulo-home">Mentorías</h5>
+              <h6>personalizadas y grupales</h6>
+              <p class="card-text">Construimos el universo de tu marca y elevamos su posicionamiento en entornos digitales a través de dinámicas específicas, centradas en la proyección estratégica, el marketing consciente y la comunicación experiencial.
+              </p>
+              <a href="{{ route('mentoria') }}" class="btn btn-primary">Más Detalles</a>
             </div>
           </div>
         </div>
@@ -191,13 +96,11 @@
           <div class="card border-secondary text-center card-propuestas shadow">
             <img src="{{ asset('img/card-talleres-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
             <div class="card-body">
-              <h5 class="card-title titulo-home">Talleres y Conferencias</h5>
-              <p class="card-text">Experiencias especialmente creadas
-                para mujeres emprendedoras y
-                profesionales con visión de
-                crecimiento.</p>
-              <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-              <a href="{{ route('talleres-y-eventos') }}" class="btn btn-primary">Click Aquí</a>
+              <h5 class="card-title titulo-home">Cursos</h5>
+              <h6>On Demand</h6>
+              <p class="card-text">Una propuesta de formación con contenidos audiovisuales grabados (videos, ejemplos con casos reales, ejercicios y guías prácticas) para que puedas capacitarte a tu ritmo y respetar tus procesos creativos sin presiones de días u horarios.
+              </p>
+              <a href="https://servicios.marianpd.com/cursos" target="_blank" class="btn btn-primary">Más Detalles</a>
             </div>
           </div>
         </div>
