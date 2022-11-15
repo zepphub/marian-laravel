@@ -9,12 +9,12 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <h2>Mentoría</h2>
-        <nav class="" aria-label="breadcrumb">
+        <!--<nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center bg-transparent text-marron-claro">
             <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="#">Inicio</a></li>
             <li class="breadcrumb-item text-secondary active font-weight-bold" aria-current="page">Mentoría</li>
           </ol>
-        </nav>
+        </nav>-->
       </div>
     </div>
   </div>
@@ -32,41 +32,38 @@
     </div>
   </div>
 
-  <div class="align-items-center d-flex ultimo-contenedor" id="mentoria-propuestas">
-    <div class="container py-5 py-md-0">
-      <div class="row align-items-center">
-        <div class="col-md-4">
+  <div id="mentoria-propuestas">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12">
           <h4 class="text-secondary titulo-home mb-3">Mis propuestas de mentoría para vos</h4>
-          <p class="text-marron-claro">Construyamos juntas el universo de tu marca, de la mano con diversas estrategias
-            de Marketing Digital, Comunicación y Branding que te ayuden a posicionarte a través de una propuesta
-            auténtica y diferente.</p>
+          <p class="text-marron-claro">Creemos una estrategia de marca diferencial, que te ayude a elevar el posicionamiento en entornos digitales, a través de dinámicas específicas centradas en el marketing consciente y en la comunicación experiencial.</p>
         </div>
-        <div class="col-md-8">
-          <div class="row">
+      </div>
+      <div class="row">
             <div class="col-md-6">
               <div class="card border-secondary text-center card-propuestas shadow">
                 <img src="{{ asset('img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
                 <div class="card-body">
                   <h5 class="card-title titulo-home">Mentoría Grupal</h5>
-                  <p class="card-text">Trabajamos el universo de tu marca y fortalecemos los pilares más importantes de tu proyecto, en un proceso compartido con otras emprendedoras, para crecer aún más en comunidad. </p>
-                  <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-                  <a href="{{ route('mentoria-grupal') }}" class="btn btn-primary">Click Aquí</a>
+                  <h5 class="card-title titulo-home">Eleva tu Marca Online</h5>
+                  <p class="card-text">Un programa grupal de 8 semanas con acompañamiento semanal y sesiones de mentoría en vivo, a través de las cuales, te ayudaré a tomar decisiones estratégicas para transformar tu emprendimiento en un negocio digital sólido y alineado al estilo de vida que deseas.</p>
+                  <a href="{{ route('mentoria-grupal') }}" class="btn btn-primary">¡Quiero saber más!
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 my-4 my-md-0">
+            <div class="col-md-6">
               <div class="card border-secondary text-center card-propuestas shadow">
                 <img src="{{ asset('img/card-asesoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title titulo-home">Programa Intensivo de 8 semanas</h5>
-                  <p class="card-text">Te ayudo a crear tu estrategia digital para resaltar la esencia y los valores de tu marca, de forma intensiva y personalizada. </p>
-                  <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
-                  <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">Click Aquí</a>
+                  <h5 class="card-title titulo-home">Mentoría Personalizada</h5>
+                  <h5 class="card-title titulo-home">Programa Selecto para Profesionales y Marcas Digitales</h5>
+                  <p class="card-text">Un proceso en el que te acompaño y ayudo, durante un período de 10 semanas, a crear una estrategia de marca diferencial e integral en entornos digitales a fin de que tu audiencia te perciba como la mejor opción.</p>
+                  <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">¡Quiero saber más!</a>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>

@@ -58,13 +58,13 @@
                         <a class="nav-link pl-0" href="{{ route('servicios') }}">Mis Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pl-0" href="{{ route('programa-intensivo') }}">Programa intensivo de 8 semanas</a>
+                        <a class="nav-link pl-0" href="https://servicios.marianpd.com/cursos" target="_blank">Cursos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pl-0" href="{{ route('mentoria-grupal') }}">Mentoría Grupal</a>
+                        <a class="nav-link pl-0" href="{{ route('mentoria') }}">Mentorías</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pl-0" href="{{ route('talleres-y-eventos') }}">Talleres y Conferencias</a>
+                        <a class="nav-link pl-0" href="{{ route('talleres-y-eventos') }}">Conferencias</a>
                     </li>                    
                 </ul>
             </div>

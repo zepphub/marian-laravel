@@ -45,7 +45,7 @@
                   <h4>Eleva tu Esencia<br>
                   Programa Selecto para Profesionales y Marcas Digitales</h4>
                   <p class="card-text">Un proceso en el que te acompaño y ayudo, durante un período de 10 semanas, a crear una estrategia de marca diferencial e integral en entornos digitales a fin de que tu audiencia te perciba como la mejor opción.</p>
-                  <a href="https://marianpd.com/mentoria/asesoria-personalizada" target="_blank" class="btn btn-primary">Click aquí para aplicar al proceso</a>
+                  <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">Click aquí para aplicar al proceso</a>
               </div>
           </div>
       </div>
@@ -57,7 +57,7 @@
                   <h5 class="card-title titulo-home">MENTORÍA <em>grupal</em></h5>
                   <h4>Eleva tu Marca</h4>
                   <p class="card-text">Un programa grupal de 8 semanas con acompañamiento semanal y sesiones de mentoría en vivo, a través de las cuales, te ayudaré a tomar decisiones estratégicas para transformar tu emprendimiento en un negocio digital sólido y alineado al estilo de vida que deseas.</p>
-                  <a href="https://marianpd.com/mentoria/mentoria-grupal" target="_blank" class="btn btn-primary">Click aquí para conocer detalles</a>
+                  <a href="{{ route('mentoria-grupal') }}" class="btn btn-primary">Click aquí para conocer detalles</a>
               </div>
           </div>
       </div>

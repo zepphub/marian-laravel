@@ -2,11 +2,6 @@ body {
     --font-family-monospace: 'Gotham';
 }
 
-h2 {
-    font-size: 7em;
-    letter-spacing: -2px;
-}
-
 .btn-primary {
     background-color: #F8337A;
 }
@@ -355,3 +350,5 @@ a.text-white:focus {
     position: absolute !important;
     right: -1000px !important;
 } */
+
+.breadcrumb {font-size: 0.9em;}

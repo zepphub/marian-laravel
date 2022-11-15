@@ -75,8 +75,8 @@
                                     </a>
                                     <div class="dropdown-menu border-0" aria-labelledby="trabajaConmigo">
                                         <a class="dropdown-item" href="https://servicios.marianpd.com/cursos">Cursos</a>
-                                        <a class="dropdown-item" href="{{ route('mentoria') }}">Mentoría</a>
-                                        <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Conferencia</a>
+                                        <a class="dropdown-item" href="{{ route('mentoria') }}">Mentorías</a>
+                                        <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Conferencias</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">

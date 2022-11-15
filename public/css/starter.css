@@ -14032,10 +14032,10 @@ a:hover {
 
 h1,
 h2 {
-    font-family: 'Reinata';
+    /*font-family: 'Reinata';
     font-size: 8em;
+    line-height: 4rem */
     color: #B46063;
-    line-height: 4rem
 }
 
 h3 {
@@ -14047,15 +14047,6 @@ h3 {
 
 .line-h-low {
     line-height: 4rem !important
-}
-
-@media (min-width: 768px) {
-
-    h1,
-    h2,
-    h3 {
-        line-height: 8rem
-    }
 }
 
 h4,
@@ -14613,11 +14604,11 @@ img.icon-tab {
 
 @media (min-width: 768px) {
     #mentoria-portada {
-        height: 550px
+        min-height: 550px
     }
 
     #mentoria-propuestas {
-        height: 600px
+        min-height: 600px
     }
 }
 
@@ -14656,6 +14647,13 @@ img.icon-tab {
 
 #mentoria-g-owl-carousel {
     height: 550px;
+    background: url(../img/mentoria-grupal-bg-owl-slider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center
+}
+
+#mentoria-single-banner {
     background: url(../img/mentoria-grupal-bg-owl-slider.jpg);
     background-repeat: no-repeat;
     background-size: cover;
