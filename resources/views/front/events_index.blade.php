@@ -9,6 +9,7 @@
 @endsection
 
 @section('content')
+<header>
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -24,6 +25,7 @@
             </div>
         </div>
     </div>
+</header>
 
     <div class="container my-5">
         <div class="row">

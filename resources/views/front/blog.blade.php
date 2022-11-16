@@ -7,6 +7,7 @@
 @section('title')Blog - @endsection
 
 @section('content')
+<header>
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -20,6 +21,7 @@
       </div>
     </div>
   </div>
+</header>  
 
   <!-- Banner Eleva Tu Marca -->
   <div class="banner-eleva-tu-marca d-flex align-items-center">

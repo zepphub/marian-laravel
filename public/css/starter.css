@@ -8,6 +8,10 @@
         url("../fonts/reinata/b1f8b57f764139aca43d58cff1982ec9.svg#Reinata") format("svg")
 }
 
+.reinata {
+    font-family: "Reinata";
+}
+
 @font-face {
     font-family: 'Gotham';
     src: url("../fonts/Gotham-XLight.eot");
@@ -3237,7 +3241,7 @@ textarea.form-control.is-invalid {
 
 .btn:hover {
     color: #937A69;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .btn:focus,
@@ -4954,17 +4958,18 @@ fieldset:disabled a.btn {
 .btn-link {
     font-weight: 400;
     color: #F8337A;
-    text-decoration: none
+    text-decoration: none;
+    outline: none;
 }
 
 .btn-link:hover {
     color: #d70752;
-    text-decoration: underline
+    text-decoration: none;
 }
 
 .btn-link:focus,
 .btn-link.focus {
-    text-decoration: underline
+    text-decoration: none;
 }
 
 .btn-link:disabled,
@@ -6736,8 +6741,8 @@ input[type="button"].btn-block {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.125);
-    border-radius: 1.2rem
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.5rem;
 }
 
 .card>hr {
@@ -6987,10 +6992,9 @@ input[type="button"].btn-block {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: .75rem 1rem;
-    margin-bottom: 1rem;
     list-style: none;
     background-color: #e9ecef;
-    border-radius: 1.2rem
+    margin-bottom: 0;
 }
 
 .breadcrumb-item+.breadcrumb-item {
@@ -13991,10 +13995,6 @@ a.text-dark-gray:focus {
     border-radius: 2rem !important
 }
 
-.btn:hover {
-    color: #FFF
-}
-
 .btn-verde {
     color: #FFF
 }
@@ -14216,25 +14216,13 @@ h6.titulo-home {
         margin-top: -35px
     }
 
-    .banner-home-1 {
-        margin-top: -55px
-    }
-
     .card-propuestas {
         transition: all .3s
     }
 
-    .card-propuestas p.card-text {
-        min-height: 120px
-    }
-
     .card-propuestas:hover {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        border: none !important;
-        border-bottom: 2px solid #B46063 !important;
-        -webkit-transform: translateY(-40px);
-        transform: translateY(-40px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
         transition: all .3s
     }
 

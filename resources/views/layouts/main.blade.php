@@ -45,9 +45,50 @@
 </head>
 
 <body>
-  @include('layouts.header')
-  @yield('content')
-  @include('layouts.footer')
+  <header class="shadow">
+    @include('layouts.header')
+  </header>
+  <main>
+    @yield('content')
+  </main>
+  <footer>
+    @include('layouts.footer')
+  </footer>
+
+  <!-- Modal Envio Exitoso Form -->
+  <div class="modal fade" id="successForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="successFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <h4 class="text-verde">Envio exitoso</h4>
+          <p id="successFormMsg"></p>
+          <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-exitoso.svg') }}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Envio Fallido Form -->
+  <div class="modal fade" id="errorForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="errorFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <h4 class="text-verde">Error</h4>
+          <p id="errorFormMsg"></p>
+          <img class="pb-4 mt-3" src="{{ asset('/img/icono-modal-envio-fallido.svg') }}" alt="cruz" style="height: 200px;width: 200px;">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="{{ asset('js/jquery.min.js') }}"></script>
   <script type="module" src="{{ asset('js/starter.js') }}"></script>

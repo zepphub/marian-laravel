@@ -19,10 +19,6 @@ button.btn.btn-blanco:hover {
     color: #FFF;
 }
 
-.card-propuestas:hover {
-    border: 2px solid #FFF !important;
-}
-
 footer p {
     font-size: 1.1em;
 }
@@ -214,7 +210,7 @@ a.text-white:focus {
 
 @media (min-width: 768px) {
     .card-propuestas p.card-text {
-        min-height: 145px;
+        min-height: 150px;
     }
 
     .social-group {
@@ -230,9 +226,6 @@ a.text-white:focus {
         position: absolute;
     }
 
-    .card-propuestas h5.card-title {
-        min-height: 52px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -351,6 +344,9 @@ a.text-white:focus {
     right: -1000px !important;
 } */
 
+main header {
+    padding: 3.5rem 0 3rem 0;
+}
 .breadcrumb {font-size: 0.9em;}
 
 /* Counter */
@@ -381,4 +377,9 @@ a.text-white:focus {
     float: none;
     display: table;
     color: #4ad1e5;
+}
+
+#hero h1 {
+    font-size: 8rem;
+    line-height: 0.75;
 }

@@ -5,7 +5,8 @@
 @section('title')Mentoría Personalizada - Programa Selecto para profesionales y marcas digitales - @endsection
 
 @section('content')
-  <div class="container-fluid">
+<header>
+  <div class="container">
     <div class="row my-5">
       <div class="col-md-12 text-center">
         <h1>Mentoría Personalizada</h1>
@@ -16,13 +17,12 @@
             <li class="breadcrumb-item text-secondary active" aria-current="page">Mentoría Personalizada</li>
           </ol>
         </nav>
-        
-        <h2></h2>
-
-
       </div>
     </div>
+  </div>
+</header>
 
+<div class="container">
     <div class="row">
       <div class="col-md-7">
         <h4 class="font-weight-bold titulo-home mb-4">Programa Selecto para profesionales y marcas digitales</h4>

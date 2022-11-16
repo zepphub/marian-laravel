@@ -5,7 +5,7 @@
 @section('content')
   <!-- Portada Home -->
   <div class="bg-crema-suave">
-    <div class="container py-5 contenedor-portada-home">
+    <div class="container py-5">
       <div class="row">
         <div class="col-md-7">
           <div

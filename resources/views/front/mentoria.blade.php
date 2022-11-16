@@ -5,19 +5,21 @@
 @section('title')Mentoría - @endsection
 
 @section('content')
+<header>
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
         <h2>Mentoría</h2>
-        <!--<nav class="" aria-label="breadcrumb">
+        <nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center bg-transparent text-marron-claro">
             <li class="breadcrumb-item text-marron-claro"><a class="text-marron-claro" href="#">Inicio</a></li>
             <li class="breadcrumb-item text-secondary active font-weight-bold" aria-current="page">Mentoría</li>
           </ol>
-        </nav>-->
+        </nav>
       </div>
     </div>
   </div>
+</header>
 
   <div id="mentoria-portada" class="d-flex align-items-center">
     <div class="container">

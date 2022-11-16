@@ -7,14 +7,14 @@
 @section('content')
 
 <!-- Portada Home -->
-<div class="bg-crema-suave">
-    <div class="container py-5 contenedor-portada-home">
+<header class="bg-crema-suave" id="hero">
+    <div class="container">
         <div class="row">
             <div class="col-md-7">
                 <div
                     class="align-items-center text-center text-md-left align-items-md-baseline d-flex flex-column h-100 justify-content-center pr-md-5">
-                    <h2>¡Soy Marian!</h2>
-                    <h4 class="text-medium text-marron my-4 my-md-3">Consultora de Marcas. Experta en Marketing Experiencial y Estrategia en entornos digitales.</h4>
+                    <h1 class="reinata mb-4">¡Soy Marian!</h1>
+                    <h4 class="text-medium text-marron mb-4">Consultora de Marcas. Experta en Marketing Experiencial y Estrategia en entornos digitales.</h4>
                     <a href="{{ route('servicios') }}" class="btn btn-primary">Mis propuestas para vos</a>
                 </div>
             </div>
@@ -23,20 +23,12 @@
             </div>
         </div>
     </div>
-</div>
+</header>
 <div class="divisor-con-forma">
     <img style="margin-top: -12px !important;" class="img-fluid w-100 img-rotate-180"
         src="{{ asset('/img/separador-seccion-svg2.svg') }}" alt="">
 </div>
-<div class="container d-md-none my-3">
-    <div class="row">
-        <div class="col-md-12 text-center text-md-right">
-            <img class="img-fluid" src="{{ asset('/img/Background.png') }}" alt="">
-        </div>
-    </div>
-</div>
-
-<!-- Portada Home -->
+<!-- end Portada Home -->
 
 <!-- Seccion Sobre Mi -->
 <div class="sobre-mi-section">
@@ -53,10 +45,8 @@
                     <img class="img-fluid" src="{{ asset('/img/celu.png') }}" alt="">
                     <div class="play-bt"></div>
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player class="play-bt" src="https://assets10.lottiefiles.com/packages/lf20_fcloo4ce.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;"  loop  autoplay></lottie-player>
+                    <lottie-player class="play-bt" src="https://assets10.lottiefiles.com/packages/lf20_fcloo4ce.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;"  loop  autoplay></lottie-player>
                     <div class="pause-bt" style="display:none;"></div>
-                    
-
                 </div>
             </div>
             <div class="col-md-7 order-1 order-md-2">
@@ -82,7 +72,7 @@
         </div>
     </div>
 </div>
-<!-- Seccion Sobre Mi -->
+<!-- end Seccion Sobre Mi -->
 
 <!-- Seccion Banner Imagen BG -->
 <div class="banner-home-1 d-flex align-items-center">
@@ -94,11 +84,11 @@
         </div>
     </div>
 </div>
-<!-- Seccion Banner Imagen BG -->
+<!-- end Seccion Banner Imagen BG -->
 
 <!-- Seccion Sobre Mi -->
-<div class="bg-crema-suave">
-    <div class="container py-5 contenedor-portada-home">
+<div class="bg-crema-suave pt-5">
+    <div class="container py-5">
         <div class="row">
             <div class="col-md-5 text-center text-md-left">
                 <img class="img-fluid" src="{{ asset('/img/home-sobre-mi.png') }}" alt="">
@@ -134,13 +124,13 @@
 <!-- Fin Seccion Sobre Mi -->
 
 <!-- Seccion Cards Trabajemos Juntas -->
-<div class="container mt-5 mt-md-0">
+<div class="container mt-5 mt-md-0 py-5">
     <div class="row">
         <div class="col-md-12">
             <div class="text-center">
                 <h4 class="titulo-home">Trabajemos Juntas</h4>
                 <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
-                <p class="my-4 w-75 mx-auto">Construyamos el universo de tu marca y elevemos su posicionamiento en entornos digitales a través de dinámicas específicas, centradas en el marketing consciente y en la comunicación experiencial.</p>
+                <p class="my-5 w-75 mx-auto">Construyamos el universo de tu marca y elevemos su posicionamiento en entornos digitales a través de dinámicas específicas, centradas en el marketing consciente y en la comunicación experiencial.</p>
 
                 <h5 class="text-marron-claro titulo-home text-medium">Mis propuestas</h5>
                 <div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105"
@@ -216,7 +206,7 @@
 </div>-->
 <!-- Fin Banner Eleva Tu Marca -->
 
-<!-- Seccion Blog -->
+<!-- Seccion Blog
 <div class="container bloque-blog my-5">
     <div class="row">
         <div class="col-md-6">
@@ -269,12 +259,12 @@
 
 <!-- Seccion Newsletter -->
 <div class="container bg-rosa-oscuro rounded p-5 my-5">
-    <div class="row">
+    <div class="row d-flex align-items-center">
         <div class="col-md-5">
-            <h4 class="titulo-home text-white">Un Newsletter con Alma</h4>
+            <h4 class="titulo-home text-white mb-0">Un Newsletter con Alma</h4>
         </div>
         <div class="col-md-7">
-            <p class="text-white">Registrate aquí para recibir contenido exclusivo a través de mis mails.</p>
+            <p class="text-white mb-0 text-right">Registrate aquí para recibir contenido exclusivo a través de mis mails.</p>
         </div>
     </div>
     <div class="row mt-3">

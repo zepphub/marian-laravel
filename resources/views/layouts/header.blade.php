@@ -1,5 +1,3 @@
-<header>
-
     <div class="top-bar py-2 d-none d-md-block">
         <div class="container">
             <div class="row">
@@ -44,7 +42,7 @@
         </div>
     </div>
 
-    <div class="shadow py-2">
+    <div class="py-2">
         <!-- NAV DEKSTOP -->
         <div class="container d-none d-md-block">
             <div class="row">
@@ -115,13 +113,12 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="{{ route('test') }}"><button class="btn btn-sm btn-link-secondary p-2 px-3">Test de Negocio</button></a>
-                    <a href="{{ route('blog') }}"><button class="btn btn-sm btn-link-secondary p-2 px-3">Blog</button></a>
-                    <a href="https://servicios.marianpd.com/cursos" target="_blank"><button class="btn btn-sm btn-secondary rounded-pill p-2 px-3">Cursos</button></a>
+                    <a href="{{ route('test') }}" class="btn btn-sm btn-link p-2 px-3">Test de Negocio</a>
+                    <a href="{{ route('blog') }}" class="btn btn-sm btn-link p-2 px-3">Blog</a>
+                    <a href="https://servicios.marianpd.com/cursos" class="btn btn-sm btn-outline-secondary p-2 px-3" target="_blank">Cursos</a>
                 </div>
             </div>
         </div>
-
 
         <!-- NAV MOBILE -->
         <div class="container d-block d-md-none">
@@ -225,5 +222,3 @@
             </div>
         </div>
     </div>
-
-</header>

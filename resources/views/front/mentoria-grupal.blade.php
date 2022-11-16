@@ -7,8 +7,8 @@
 @section('title')Mentoría Grupal - Programa de formación online: "Eleva tu Marca" - @endsection
 
 @section('content')
+<header>
   <div class="container">
-
     <div class="row my-5">
       <div class="col-md-12 text-center">
         <h1>Mentoría Grupal</h1>
@@ -19,15 +19,22 @@
             <li class="breadcrumb-item text-secondary active" aria-current="page">Mentoría Grupal</li>
           </ol>
         </nav>
+      </div>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col">
         
         <h2>Programa de formación online <br>
         "Eleva tu marca"</h2>
 
         <p>Un programa grupal de 8 semanas con acompañamiento semanal y sesiones de mentoría en vivo, a través de las cuales, te ayudo a tomar decisiones estratégicas para transformar tu emprendimiento en un negocio digital sólido y auténtico, respetando tus procesos creativos y elevando una estrategia de marca diferencial desde la calma y el disfrute.
         </p>
+
       </div>
     </div>
-    
     <div class="row my-5">
       <div class="col-md-5">
         <img class="w-100 img-fluid" src="{{ asset('img/mentoria-grupal-img-1.png') }}" alt="">
