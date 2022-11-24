@@ -533,7 +533,7 @@ hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 2px solid rgba(0, 0, 0, 0.1)
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
 }
 
 small,
@@ -5083,7 +5083,7 @@ input[type="button"].btn-block {
     background-color: #fff;
     background-clip: padding-box;
     border: 2px solid rgba(0, 0, 0, 0.15);
-    border-radius: 1.2rem;
+    border-radius: 8px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175)
 }
 
@@ -5249,10 +5249,9 @@ input[type="button"].btn-block {
 .dropdown-item {
     display: block;
     width: 100%;
-    padding: .25rem 1.5rem;
+    padding: .5rem 1rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -6139,7 +6138,8 @@ input[type="button"].btn-block {
 
 .nav-link {
     display: block;
-    padding: .5rem 1rem
+    padding: .5rem 1rem;
+    font-weight: 500;
 }
 
 .nav-link:hover,
@@ -6421,8 +6421,8 @@ input[type="button"].btn-block {
     }
 
     .navbar-expand-md .navbar-nav .nav-link {
-        padding-right: .5rem;
-        padding-left: .5rem
+        padding-right: 1rem;
+        padding-left: 1rem
     }
 
     .navbar-expand-md>.container,
@@ -6482,8 +6482,8 @@ input[type="button"].btn-block {
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: .5rem;
-        padding-left: .5rem
+        padding-right: 1rem;
+        padding-left: 1rem
     }
 
     .navbar-expand-lg>.container,
@@ -13776,7 +13776,7 @@ a.text-marron-claro:focus {
 }
 
 .text-marron-claro-2 {
-    color: #CCB4A3 !important
+    color: #CCB4A3 !important;
 }
 
 a.text-marron-claro-2:hover,
@@ -14084,16 +14084,15 @@ footer,
 footer a {
     background-color: #EDE7E4;
     color: #785F4E !important;
-    font-size: 14px !important
 }
 
 footer p.date-input {
-    color: #CCB4A3
+    color: #CCB4A3;
+    font-size: 0.9em;
 }
 
 footer hr {
-    border-color: #CCB4A3;
-    border-width: 1px !important
+    /*border-color: #CCB4A3;*/
 }
 
 @media (max-width: 768px) {
@@ -14244,7 +14243,6 @@ p.entry-date {
 
 .entry-post hr {
     border-color: #E5D9D1;
-    border-width: 1px
 }
 
 .bg-textura-form {

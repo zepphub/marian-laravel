@@ -27,7 +27,7 @@
         <div class="col-md-6">
           <h4 class="text-white titulo-home">Viajamos juntas al corazón de tu marca y aplicamos herramientas adaptadas
             de forma práctica a tu proyecto. </h4>
-          <img src="{{ asset('img/separador-titulo-blanco-svg.svg') }}" alt="">
+          <img src="{{ asset('img/separador-titulo-blanco-svg.svg') }}" class="separador-ondas" alt="">
           <a href="#mentoria-propuestas"><button class="btn btn-outline-white d-block mt-4">Ver mis programas </button></a>
         </div>
       </div>

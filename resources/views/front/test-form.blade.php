@@ -230,7 +230,7 @@
                   <div class="p-md-4 p-0">
                     <img src="{{ asset('img/result-test-form-icon.svg') }}" alt="">
                     <h4 class="titulo-home font-weight-bold mt-4">Tu resultado</h4>
-                    <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" alt="">
+                    <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" class="separador-ondas" alt="">
                     <h4 class="mt-4">Construyamos una marca con esencia y corazón.</h4>
                     <p class="mt-3 text-marron-claro">Teniendo en cuenta tus respuestas, quiero compartirte una guía con
                       el paso a paso para que logres crear una marca de forma
@@ -471,7 +471,7 @@
                   <div class="p-md-4 p-0">
                     <img src="{{ asset('img/result-test-form-icon.svg') }}" alt="">
                     <h4 class="titulo-home font-weight-bold mt-4">Tu resultado</h4>
-                    <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" alt="">
+                    <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" class="separador-ondas" alt="">
                     <h4 class="mt-4">¡Consolidá tu marca en el universo digital!</h4>
                     <p class="mt-3 text-marron-claro">Teniendo en cuenta tus respuestas, quiero compartirte una guía con
                       el paso a paso para que logres afianzar tu marca en el universo digital.
@@ -710,7 +710,7 @@
                   <div class="p-md-4 p-0">
                     <img src="{{ asset('img/result-test-form-icon.svg') }}" alt="">
                     <h4 class="titulo-home font-weight-bold mt-4">Tu resultado</h4>
-                    <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" alt="">
+                    <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" class="separador-ondas" alt="">
                     <h4 class="mt-4">¡Proyectá tu negocio con tus propios productos digitales!</h4>
                     <p class="mt-3 text-marron-claro">Teniendo en cuenta tus respuestas, quiero compartirte una guía que creé específicamente para ayudarte a crear tu plan de acción, con herramientas para identificar los distintos productos digitales que podés crear desde tu marca. 
                     </p>

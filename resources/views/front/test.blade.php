@@ -13,7 +13,7 @@
           <div
             class="align-items-center text-center text-md-left align-items-md-baseline d-flex flex-column h-100 justify-content-center pr-md-5">
             <h2>¡Hola por aquí!</h2>
-            <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" alt="">
+            <img src="{{ asset('img/separador-titulo-svg-crema.svg') }}" class="separador-ondas" alt="">
             <h4 class="font-weight-bold text-marron-claro my-4 my-md-3">¡Qué lindo encontrarte en este espacio!</h4>
             <p>Para comenzar, te propongo que hagas un test sin costo para ayudarte a identificar en qué etapa estás y
               en qué pilar de tu emprendimiento debés enfocarte para mejorar la presencia digital de tu marca y

@@ -1,6 +1,7 @@
-    <div class="container pt-5">
+    <div class="container-fluid pt-5 px-4">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-xl-4 col-lg-3 col-sm-6">
+                <div class="widget">
                 <img src="{{ asset('img/logo-footer.svg') }}" alt="">
                 <p class="mt-4 mb-md-5">Me especializo en la creación de proyectos y estrategias digitales y lo hago a través de
                     experiencias, asesorías y propuestas
@@ -26,63 +27,69 @@
                                     transform="translate(0 -0.001)" fill="#b46063" />
                             </svg>
                         </button></a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="ml-md-5">
-                    <h4 class="text-medium mb-3">Mis enlaces</h4>
+            <div class="col-xl-2 offset-xl-2 col-lg-3 col-sm-6">
+                <div class="widget">
+                    <h5>Mis enlaces</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link pl-0 pt-0" href="{{ route('index') }}">Inicio</a>
+                        <li class="nav-item pt-0">
+                            <a class="nav-link" href="{{ route('index') }}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="{{ route('sobre-mi') }}">Sobre Mi</a>
+                            <a class="nav-link" href="{{ route('sobre-mi') }}">Sobre Mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="{{ route('test') }}">Hola por aquí</a>
+                            <a class="nav-link" href="{{ route('test') }}">Hola por aquí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="{{ route('blog') }}">Blog</a>
+                            <a class="nav-link" href="{{ route('blog') }}">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="{{ route('contacto') }}">Contacto</a>
+                            <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-3">
-                <h4 class="text-medium mb-3">Trabajá conmigo</h4>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link pl-0" href="{{ route('servicios') }}">Mis Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pl-0" href="https://servicios.marianpd.com/cursos" target="_blank">Cursos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pl-0" href="{{ route('mentoria') }}">Mentorías</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pl-0" href="{{ route('talleres-y-eventos') }}">Conferencias</a>
-                    </li>                    
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h4 class="text-medium mb-3">Mis novedades</h4>
-                @php
-                $footer_posts = \App\Models\Post::latest()->take(3)->get();
-                @endphp
-                @foreach ($footer_posts as $post)
-                <div>
-                    <a href="{{ route('blog.post', [ 'category' => $post->category->slug, 'post' => $post->slug ]) }}"><h6 class="text-marron">{{ $post->title }}</h6></a>
-                    <p class="date-input"><span>{{ $post->author }}</span>. <span>{{ $post->created_at->format('d M Y') }}</span></p>
-                    <hr>
+            <div class="col-xl-2 col-lg-3 col-sm-6">    
+                <div class="widget">
+                    <h5>Trabajá conmigo</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item pt-0">
+                            <a class="nav-link" href="{{ route('servicios') }}">Mis Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://servicios.marianpd.com/cursos" target="_blank">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('mentoria') }}">Mentorías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('talleres-y-eventos') }}">Conferencias</a>
+                        </li>                    
+                    </ul>
                 </div>
-                @endforeach
+            </div>
+            <div class="col-xl-2 col-lg-3 col-sm-6">
+                <div class="widget">
+                    <h5>Mis novedades</h5>
+                    <div class="py-1 px-1">
+                        @php
+                        $footer_posts = \App\Models\Post::latest()->take(3)->get();
+                        @endphp
+                        @foreach ($footer_posts as $post)
+                        <div>
+                            <a href="{{ route('blog.post', [ 'category' => $post->category->slug, 'post' => $post->slug ]) }}"><h6 class="text-marron">{{ $post->title }}</h6></a>
+                            <p class="date-input"><!--<span>{{ $post->author }}</span>.--><span>{{ $post->created_at->format('d M Y') }}</span></p>
+                            <hr>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="row">
+        <div class="row copyright">
             <div class="col-md-6 text-center text-md-left">
                 <p class="text-marron-claro">Marian PD © 2022 - Todos los derechos reservados.</p>
             </div>

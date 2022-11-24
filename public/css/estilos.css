@@ -19,10 +19,6 @@ button.btn.btn-blanco:hover {
     color: #FFF;
 }
 
-footer p {
-    font-size: 1.1em;
-}
-
 #carouselAsesoria .card:hover p {
     font-weight: bold;
     transition: all .3s;
@@ -63,7 +59,7 @@ footer p {
 div#navbarNavDropdownMob.show {
     position: absolute;
     padding: 20px;
-    top: 50px;
+    top: 55px;
     right: -15px;
     background: #FFF;
     width: 100vw;
@@ -73,7 +69,7 @@ div#navbarNavDropdownMob.show {
 div#navbarNavDropdownMob.collapsing {
     position: absolute;
     padding: 20px;
-    top: 50px;
+    top: 55px;
     right: -15px;
     background: #FFF;
     width: 100vw;
@@ -382,4 +378,31 @@ main header {
 #hero h1 {
     font-size: 8rem;
     line-height: 0.75;
+}
+
+footer .copyright {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-top: 2rem;
+}
+footer h5 {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+footer .nav-link {
+    padding-left: 0.25em;
+    padding-right: 0;
+}
+footer .widget {
+    margin-bottom: 3rem;
+}
+header .text-secondary {
+    color: #785F4E !important;
+}
+
+.bg-test {
+    background-color: greenyellow;
 }
