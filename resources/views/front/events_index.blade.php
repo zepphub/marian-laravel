@@ -156,7 +156,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h4 class="titulo-home">Próximos Eventos</h4>
-                    <img src="{{ asset('img/separador-svg.svg') }}" alt="">
+                    <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="" height="8px">
                 </div>
             </div>
 
@@ -582,16 +582,14 @@
         </div>
     </div>
 
-    <div class="m-0 p-0"><img style="margin-bottom: -12px !important;" class="img-fluid w-100"
-            src="{{ asset('img/separador-superior-seccion-svg.svg') }}" alt=""></div>
     <div class="bg-crema-suave contenedor-form-home py-5" id="contacto">
-        <div class="container bg-white p-4 rounded-lg">
+        <div class="container bg-white p-4 rounded">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="bg-textura-form rounded-lg p-md-4 p-3">
+                    <div class="bg-textura-form rounded p-md-4 p-3">
                         <p class="text-white mt-3">Si te gustaría que sea parte de tu evento</p>
                         <h4 class="titulo-home text-medium text-white">¡Charlemos!</h4>
-                        <img src="{{ asset('img/separador-secondary-svg.svg') }}" alt="">
+                        <img src="{{ asset('img/separador-secondary-svg.svg') }}" class="separador-ondas" alt="">
 
                         <div>
                             <ul class="list-group">
@@ -672,21 +670,21 @@
                             <x-honeypot />
                             <div class="form-row">
                                 <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control rounded-pill" id="nombre"
+                                    <input type="text" class="form-control " id="nombre"
                                         placeholder="Nombre" name="firstname" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control rounded-pill" id="apellido"
+                                    <input type="text" class="form-control " id="apellido"
                                         placeholder="Apellido" name="lastname" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-6 mb-3">
-                                    <input type="email" class="form-control rounded-pill" placeholder="Email"
+                                    <input type="email" class="form-control " placeholder="Email"
                                         id="email" name="email" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control rounded-pill" placeholder="Teléfono"
+                                    <input type="text" class="form-control " placeholder="Teléfono"
                                         id="telefono" name="phone" required>
                                 </div>
                             </div>

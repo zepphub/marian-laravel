@@ -24,7 +24,7 @@
       <div class="row mt-4">
           <div class="col-md-8">
               <h5 class="text-marron-claro font-weight-normal mb-2">Título del artículo</h5>
-              <input class="form-control form-control-lg rounded-pill" type="text" name="title" value="{{ old('title') ?? $post->title }}">
+              <input class="form-control form-control-lg " type="text" name="title" value="{{ old('title') ?? $post->title }}">
               @error('title')
               <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
               @enderror

@@ -215,8 +215,8 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="{{ route('test') }}"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Test</button></a>
-                    <a href="{{ route('talleres-y-eventos') }}"><button class="btn btn-sm btn-outline-secondary rounded-pill p-2 px-3">Talleres y
+                    <a href="{{ route('test') }}"><button class="btn btn-sm btn-outline-secondary  p-2 px-3">Test</button></a>
+                    <a href="{{ route('talleres-y-eventos') }}"><button class="btn btn-sm btn-outline-secondary  p-2 px-3">Talleres y
                             Eventos</button></a>
                 </div>
             </div>

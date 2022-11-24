@@ -58,7 +58,7 @@
         <div class="col-md-12">
           <div class="text-center">
             <h4 class="titulo-home">Trabajemos Juntas</h4>
-            <img src="{{ asset('img/separador-svg.svg') }}" alt="">
+            <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
             <p class="my-4">Construyamos juntas el universo de tu marca de la mano a diversas estrategias de Marketing
               Digital, Comunicación y Branding que te ayuden a posicionarte a través de una propuesta
               auténtica y diferente</p>

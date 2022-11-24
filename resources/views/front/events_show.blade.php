@@ -8,7 +8,7 @@
 
 @section('content')
   <div id="plantilla-evento" class="contenedor-form-home py-5">
-    <div class="container bg-white p-4 rounded-lg">
+    <div class="container bg-white p-4 rounded">
       <div class="row">
         <div class="col-md-7">
           <div class="">
@@ -57,30 +57,30 @@
         </div>
         @if ($event->inscription)
         <div class="col-md-5">
-          <div class="mt-4 mt-md-0 rounded-lg p-md-4 p-3 bg-textura-form text-md-center">
+          <div class="mt-4 mt-md-0 rounded p-md-4 p-3 bg-textura-form text-md-center">
             <h5 class="text-white titulo-home mb-4">Reserva tu lugar</h5>
             <form id="form-event" class="needs-validation" action="{{ route('suscribir-evento', $event) }}" method="post" novalidate>
               @csrf
               <x-honeypot />
               <div class="form-row">
                 <div class="col-md-12 mb-3">
-                  <input type="text" class="form-control rounded-pill border-0 text-secondary" id="nombre" placeholder="Nombre" name="firstname" required>
+                  <input type="text" class="form-control  border-0 text-secondary" id="nombre" placeholder="Nombre" name="firstname" required>
                 </div>
                 <div class="col-md-12 mb-3">
-                  <input type="text" class="form-control rounded-pill border-0 text-secondary" id="apellido" placeholder="Apellido" name="lastname" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="col-md-12 mb-3">
-                  <input type="email" class="form-control rounded-pill border-0 text-secondary" placeholder="Email" id="email" name="email" required>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <input type="text" class="form-control rounded-pill border-0 text-secondary" placeholder="Whatsapp" id="whatsapp" name="whatsapp" required>
+                  <input type="text" class="form-control  border-0 text-secondary" id="apellido" placeholder="Apellido" name="lastname" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="col-md-12 mb-3">
-                    <input type="text" class="form-control rounded-pill border-0 text-secondary" id="Localidad" placeholder="localidad" name="localidad" required>
+                  <input type="email" class="form-control  border-0 text-secondary" placeholder="Email" id="email" name="email" required>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <input type="text" class="form-control  border-0 text-secondary" placeholder="Whatsapp" id="whatsapp" name="whatsapp" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <input type="text" class="form-control  border-0 text-secondary" id="Localidad" placeholder="localidad" name="localidad" required>
                 </div>
               </div>
               <div class="text-right">

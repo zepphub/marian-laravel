@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-md-8">
                 <h4 class="title-divider text-marron-claro">Sólo un paso más</h4>
-                <img src="{{ asset('img/separador-svg.svg') }}" alt="">
+                <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
                 <p class="mt-2">Una vez registrados tus datos y realizado el pago, recibirás un email con el detalle de tu compra y serás redirigida a un calendario para programa nuestro primer encuentro</p>
                 <form id="orderForm" class="needs-validation" action="{{ route('order') }}" method="post">
                     @csrf
@@ -59,7 +59,7 @@
                 @endif
             </div>
             <div class="col-md-4">
-                <div class="shadow-lg rounded-lg p-4 my-4 my-md-0">
+                <div class="shadow-lg rounded p-4 my-4 my-md-0">
                     <div class="row">
                         <div class="col-6 col-md-6">
                             <h4 class="font-weight-bold">Nombre</h4>

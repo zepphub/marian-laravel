@@ -225,7 +225,7 @@
               </div>
               </div>
 
-              <div id="comenzar_resultado" class="row shadow rounded-lg p-3 d-none">
+              <div id="comenzar_resultado" class="row shadow rounded p-3 d-none">
                 <div class="col-md-7 text-left">
                   <div class="p-md-4 p-0">
                     <img src="{{ asset('img/result-test-form-icon.svg') }}" alt="">
@@ -258,10 +258,10 @@
                       <input type="hidden" name="selection" value="comenzar">
                       <div class="form-row">
                         <div class="col-md-12 mb-3">
-                          <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Tu nombre" name=name required>
+                          <input type="text" class="form-control " id="nombre" placeholder="Tu nombre" name=name required>
                         </div>
                         <div class="col-md-12 mb-3">
-                          <input type="email" class="form-control rounded-pill" id="email" placeholder="Tu mail" name=email required>
+                          <input type="email" class="form-control " id="email" placeholder="Tu mail" name=email required>
                         </div>
                       </div>
 
@@ -466,7 +466,7 @@
               </div>
               </div>
 
-              <div id="mejorar_resultado" class="row shadow rounded-lg p-3 d-none">
+              <div id="mejorar_resultado" class="row shadow rounded p-3 d-none">
                 <div class="col-md-7 text-left">
                   <div class="p-md-4 p-0">
                     <img src="{{ asset('img/result-test-form-icon.svg') }}" alt="">
@@ -499,10 +499,10 @@
                       <input type="hidden" name="selection" value="mejorar">
                       <div class="form-row">
                         <div class="col-md-12 mb-3">
-                          <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Tu nombre" name=name required>
+                          <input type="text" class="form-control " id="nombre" placeholder="Tu nombre" name=name required>
                         </div>
                         <div class="col-md-12 mb-3">
-                          <input type="email" class="form-control rounded-pill" id="email" placeholder="Tu mail" name=email required>
+                          <input type="email" class="form-control " id="email" placeholder="Tu mail" name=email required>
                         </div>
                       </div>
 
@@ -705,7 +705,7 @@
               </div>
               </div>
 
-              <div id="crecer_resultado" class="row shadow rounded-lg p-3 d-none">
+              <div id="crecer_resultado" class="row shadow rounded p-3 d-none">
                 <div class="col-md-7 text-left">
                   <div class="p-md-4 p-0">
                     <img src="{{ asset('img/result-test-form-icon.svg') }}" alt="">
@@ -736,10 +736,10 @@
                       <input type="hidden" name="selection" value="crecer">
                       <div class="form-row">
                         <div class="col-md-12 mb-3">
-                          <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Tu nombre" name=name required>
+                          <input type="text" class="form-control " id="nombre" placeholder="Tu nombre" name=name required>
                         </div>
                         <div class="col-md-12 mb-3">
-                          <input type="email" class="form-control rounded-pill" id="email" placeholder="Tu mail" name=email required>
+                          <input type="email" class="form-control " id="email" placeholder="Tu mail" name=email required>
                         </div>
                       </div>
 

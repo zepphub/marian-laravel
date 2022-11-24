@@ -92,7 +92,7 @@
   <div class="row">
     <div class="col-md-12 text-center">
       <h4 class="titulo-home">¿Qué incluye el programa?</h4>
-      <img src="{{ asset('img/separador-svg.svg') }}" alt="">
+      <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
     </div>
   </div>
 
@@ -128,7 +128,7 @@
   <div class="row">
     <div class="col-md-12 text-center">
       <h4 class="titulo-home">La experiencia contada por ellas</h4>
-      <img src="{{ asset('img/separador-svg.svg') }}" alt="">
+      <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
     </div>
   </div>
 

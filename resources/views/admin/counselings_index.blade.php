@@ -19,7 +19,7 @@
                           @method('PUT')
                           <input type=hidden name="counseling-id" value="{{ $counseling->id }}">
                         </form>
-                        <div class="shadow rounded-lg p-4 mt-5 @if ($loop->first) mt-md-0 @endif">
+                        <div class="shadow rounded p-4 mt-5 @if ($loop->first) mt-md-0 @endif">
                             <h4 class="m-0"><img class="mr-3" src="{{ asset($counseling->icon) }}" width=47 height=45.294 >{{ $counseling->service->name }}</h4>
                             <div class="row">
                                 <div class="col-md-9">
@@ -35,7 +35,7 @@
                                                   <input type=hidden id="ndesc-{{$counseling->id}}" name="new-descriptions" form="editForm-{{ $counseling->id }}" value="0">
                                                 @foreach ($counseling->descriptions as $description)
                                                 <div class="d-flex align-items-center @if (!$loop->first) mt-3 @endif">
-                                                  <input class="form-control form-control-lg rounded-pill" name="content-{{$description->id}}" type="text" form="editForm-{{ $counseling->id }}" value="{{ $description->content }}">
+                                                  <input class="form-control form-control-lg " name="content-{{$description->id}}" type="text" form="editForm-{{ $counseling->id }}" value="{{ $description->content }}">
                                                   <form class="ml-2 d-inline-flex" action="{{ route('admin.counselingdescriptions.destroy', $description) }}" method="POST">
                                                     @csrf
                                                     @method('DELETE')
@@ -54,7 +54,7 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <h4>Precio</h4><input
-                                                            class="form-control form-control-lg rounded-pill"
+                                                            class="form-control form-control-lg "
                                                             type="text" name="price_ars" form="editForm-{{ $counseling->id }}" value="{{ $counseling->service->price_ars }}">
                                                         @error('price_ars')
                                                         @if ( $errors->first('counseling-id') == $counseling->id )
@@ -64,7 +64,7 @@
                                                     </div>
                                                     <div class="col-md-6 mt-3 mt-md-0">
                                                         <h4>Precio U$D</h4><input
-                                                            class="form-control form-control-lg rounded-pill"
+                                                            class="form-control form-control-lg "
                                                             type="text" name="price_usd" form="editForm-{{ $counseling->id }}" value="{{ $counseling->service->price_usd }}">
                                                         @error('price_usd')
                                                         @if ( $errors->first('counseling-id') == $counseling->id )
@@ -74,7 +74,7 @@
                                                     </div>
                                                 </div>
                                                 <h4 class="mt-5">Link de video (Youtube)</h4>
-                                                <input class="form-control form-control-lg rounded-pill" form="editForm-{{ $counseling->id }}" name=video type="text"
+                                                <input class="form-control form-control-lg " form="editForm-{{ $counseling->id }}" name=video type="text"
                                                     value="{{ $counseling->video }}">
                                                 @error('video')
                                                 @if ( $errors->first('counseling-id') == $counseling->id )
@@ -122,7 +122,7 @@ var newDesc = function(c_id){
   let descContainer = document.getElementById("descriptions-container-"+c_id);
   let ndesc = document.getElementById("ndesc-"+c_id);
   ndesc.value = String(parseInt(ndesc.value) + 1);
-  descContainer.insertAdjacentHTML("beforeEnd", ' <input class="form-control form-control-lg rounded-pill mt-3" name="content-new-'+ndesc.value+'" type="text" form="editForm-'+c_id+'" value="">');
+  descContainer.insertAdjacentHTML("beforeEnd", ' <input class="form-control form-control-lg  mt-3" name="content-new-'+ndesc.value+'" type="text" form="editForm-'+c_id+'" value="">');
 
 };
 

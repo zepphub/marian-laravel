@@ -54,7 +54,7 @@
           <div class="col-md-3 p-4 py-md-4">
             <div class="ml-md-4">
               <form class="form-border-1-px" action="">
-                <input class="form-control rounded-pill" type="text" placeholder="Buscar">
+                <input class="form-control " type="text" placeholder="Buscar">
               </form>
               <h4 class="titulo-home mt-3 mt-md-4">Categorías</h4>
               <ul class="list-unstyled list-categories">
@@ -70,22 +70,22 @@ border-marron-claro border-top
                 <form class="form-border-1-px">
                   <div class="form-group">
                     <label class="d-none" for="nombre">Nombre</label>
-                    <input type="text" class="form-control rounded-pill form-control-sm p-3" placeholder="Nombre"
+                    <input type="text" class="form-control  form-control-sm p-3" placeholder="Nombre"
                       id="nombre">
                   </div>
                   <div class="form-group">
                     <label class="d-none" for="apellido">Apellido</label>
-                    <input type="text" class="form-control rounded-pill form-control-sm p-3" placeholder="Apellido"
+                    <input type="text" class="form-control  form-control-sm p-3" placeholder="Apellido"
                       id="apellido">
                   </div>
                   <div class="form-group">
                     <label class="d-none" for="email">Correo electrónico</label>
-                    <input type="email" class="form-control rounded-pill form-control-sm p-3"
+                    <input type="email" class="form-control  form-control-sm p-3"
                       placeholder="Correo electrónico" id="email" aria-describedby="emailHelp">
                   </div>
                   <div class="form-group">
                     <label class="d-none" for="whatsapp">Whatsapp</label>
-                    <input type="text" class="form-control rounded-pill form-control-sm p-3" placeholder="Whatsapp"
+                    <input type="text" class="form-control  form-control-sm p-3" placeholder="Whatsapp"
                       id="whatsapp">
                   </div>
                   <button type="submit" class="btn btn-primary btn-block btn-sm p-2">Suscribirme</button>

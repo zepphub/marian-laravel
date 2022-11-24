@@ -25,7 +25,7 @@
     <div class="row mt-4">
         <div class="col-md-8">
             <h5 class="text-marron-claro font-weight-normal mb-2">Título del evento</h5>
-            <input class="form-control form-control-lg rounded-pill" name="title" type="text" value="{{ old('title') ?? $event->title }}">
+            <input class="form-control form-control-lg " name="title" type="text" value="{{ old('title') ?? $event->title }}">
             @error('title')
             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
             @enderror
@@ -39,15 +39,15 @@
             <div class="row mt-4 mt-md-5">
                 <div class="col-md-4">
                     <h5 class="text-marron-claro text-medium mb-2">Fecha</h5>
-                    <input class="form-control form-control-lg rounded-pill" type="date" name="date" value="{{ old('date') ?? $event->date }}">
+                    <input class="form-control form-control-lg " type="date" name="date" value="{{ old('date') ?? $event->date }}">
                 </div>
                 <div class="col-md-2 mt-3 mt-md-0">
                     <h5 class="text-marron-claro text-medium mb-2">Hora</h5>
-                    <input class="form-control form-control-lg rounded-pill" type="time" name="time" value="{{ old('time') ?? $event->time }}">
+                    <input class="form-control form-control-lg " type="time" name="time" value="{{ old('time') ?? $event->time }}">
                 </div>
                 <div class="col-md-6 mt-3 mt-md-0">
                     <h5 class="text-marron-claro text-medium mb-2">Disertante</h5>
-                    <input class="form-control form-control-lg rounded-pill" name="lecturer" type="text" value="{{ old('lecturer') ?? $event->lecturer }}">
+                    <input class="form-control form-control-lg " name="lecturer" type="text" value="{{ old('lecturer') ?? $event->lecturer }}">
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
     <div class="row mt-4 mt-md-5">
         <div class="col-md-5">
             <h5 class="text-marron-claro text-medium mb-2">Organiza</h5>
-            <input class="form-control form-control-lg rounded-pill" name="host" type="text" value="{{ old('host') ?? $event->host }}">
+            <input class="form-control form-control-lg " name="host" type="text" value="{{ old('host') ?? $event->host }}">
         </div>
         <div class="col-md-2 mt-3 mt-md-0">
             <div class="d-block d-md-flex align-items-center h-100 mt-0 mt-md-3">
@@ -78,7 +78,7 @@
         </div>
         <div class="col-md-5 mt-3 mt-md-0">
             <h5 class="text-marron-claro text-medium mb-2">URL Evento</h5>
-            <input class="form-control form-control-lg rounded-pill" name="url" type="text" value="{{ old('url') ?? $event->url }}">
+            <input class="form-control form-control-lg " name="url" type="text" value="{{ old('url') ?? $event->url }}">
         </div>
         <div class="col-md-12">
             <h5 class="mt-5 text-marron-claro font-weight-normal mb-2">Acerca de este evento</h5>

@@ -2684,7 +2684,7 @@ pre code {
     background-color: #fff;
     background-clip: padding-box;
     border: 2px solid #937A69;
-    border-radius: 1.2rem;
+    border-radius: 8px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 }
@@ -2710,7 +2710,7 @@ pre code {
     background-color: #fff;
     border-color: #fcaeca;
     outline: 0;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 .2rem rgba(248, 51, 122, 0.25)
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 1px rgba(248, 51, 122, 0.25)
 }
 
 .form-control::-webkit-input-placeholder {
@@ -3225,7 +3225,7 @@ textarea.form-control.is-invalid {
     -ms-user-select: none;
     user-select: none;
     background-color: transparent;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     padding: .775rem 1rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -6742,7 +6742,7 @@ input[type="button"].btn-block {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.5rem;
+    border-radius: 8px;
 }
 
 .card>hr {
@@ -9919,7 +9919,8 @@ button.bg-dark-gray:focus {
 }
 
 .rounded {
-    border-radius: .4rem !important
+    /*border-radius: .4rem !important*/
+    border-radius: 8px !important
 }
 
 .rounded-top {
@@ -14053,14 +14054,8 @@ h4,
 h5,
 h6 {
     font-family: 'Gotham';
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: 500;
     color: #B46063
-}
-
-h5,
-h6 {
-    font-size: 1.2rem
 }
 
 .bi {
@@ -14205,10 +14200,6 @@ h4.titulo-home {
 
 h5.titulo-home {
     font-size: 1.4em
-}
-
-h6.titulo-home {
-    font-size: 1.2em
 }
 
 @media (min-width: 768px) {
@@ -14854,6 +14845,10 @@ img.icon-tab {
     background-size: cover;
     bottom: 0;
     left: 0
+}
+
+.separador-ondas {
+    height: 8px;
 }
 
 .tabla-carrito .border.border-marron-claro {

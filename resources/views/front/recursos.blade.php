@@ -30,15 +30,15 @@
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label class="d-none" for="nombre">Nombre</label>
-                <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" name="firstname" required>
+                <input type="text" class="form-control " id="nombre" placeholder="Nombre" name="firstname" required>
               </div>
               <div class="col-md-4 mb-3">
                 <label class="d-none" for="apellido">Apellido</label>
-                <input type="text" class="form-control rounded-pill" id="apellido" placeholder="Apellido" name="lastname" required>
+                <input type="text" class="form-control " id="apellido" placeholder="Apellido" name="lastname" required>
               </div>
               <div class="col-md-4 mb-3">
                 <label class="d-none" for="email">Correo Electrónico</label>
-                <input type="text" class="form-control rounded-pill" id="email" placeholder="Correo electrónico" name="email" required>
+                <input type="text" class="form-control " id="email" placeholder="Correo electrónico" name="email" required>
               </div>
             </div>
             <div class="form-group mt-4">
@@ -81,7 +81,7 @@
                 etapa estás y en qué pilar de tu emprendimiento
                 debés enfocarte para mejorar la presencia digital de tu marca y potenciar tus resultados.</p>
             </div>
-            <a class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" href="{{ route('test') }}">Quiero hacer el test
+            <a class="btn btn-sm btn-outline-secondary  btn-recursos-descargables" href="{{ route('test') }}">Quiero hacer el test
               <svg xmlns="http://www.w3.org/2000/svg" class="ml-md-2" width="13.414" height="13.074" viewBox="0 0 13.414 13.074">
                 <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
                   d="M5.7,14.846l.665.665a.716.716,0,0,0,1.015,0L13.2,9.693a.716.716,0,0,0,0-1.015l-5.82-5.82a.716.716,0,0,0-1.015,0L5.7,3.523A.719.719,0,0,0,5.712,4.55L9.32,7.987H.715A.717.717,0,0,0,0,8.705v.958a.717.717,0,0,0,.719.719h8.6L5.712,13.819A.714.714,0,0,0,5.7,14.846Z"
@@ -97,7 +97,7 @@
               <h4 class="titulo-recurso-descargable">{{$resource->title}}</h4>
               <div>{{$resource->description}}</div>
             </div>
-            <button class="btn btn-sm btn-outline-secondary rounded-pill btn-recursos-descargables" onclick="newDownload('{{$resource->id}}')">{{$resource->button}}<svg class="ml-md-2" xmlns="http://www.w3.org/2000/svg" width="13.414"
+            <button class="btn btn-sm btn-outline-secondary  btn-recursos-descargables" onclick="newDownload('{{$resource->id}}')">{{$resource->button}}<svg class="ml-md-2" xmlns="http://www.w3.org/2000/svg" width="13.414"
                 height="13.074" viewBox="0 0 13.414 13.074">
                 <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left"
                   d="M5.7,14.846l.665.665a.716.716,0,0,0,1.015,0L13.2,9.693a.716.716,0,0,0,0-1.015l-5.82-5.82a.716.716,0,0,0-1.015,0L5.7,3.523A.719.719,0,0,0,5.712,4.55L9.32,7.987H.715A.717.717,0,0,0,0,8.705v.958a.717.717,0,0,0,.719.719h8.6L5.712,13.819A.714.714,0,0,0,5.7,14.846Z"
@@ -140,25 +140,25 @@
         <div class="form-row">
                 <div class="form-group col-md-3">
                     <div class="px-3">
-                        <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre"
+                        <input class="form-control  border-0" type="text" placeholder="Nombre"
                             name="firstname" required>
                     </div>
                 </div>
                 <div class="form-group col-md-3">
                     <div class="px-3">
-                        <input class="form-control rounded-pill border-0" type="text" placeholder="Apellido"
+                        <input class="form-control  border-0" type="text" placeholder="Apellido"
                             name="lastname" required>
                     </div>
                 </div>
                 <div class="form-group col-md-3">
                     <div class="px-3">
-                        <input class="form-control rounded-pill border-0" type="email" placeholder="Correo electrónico"
+                        <input class="form-control  border-0" type="email" placeholder="Correo electrónico"
                             name="email" required>
                     </div>
                 </div>
                 <div class="form-group col-md-3">
                     <div class="px-3">
-                        <input class="form-control rounded-pill border-0" type="text" placeholder="Whatsapp"
+                        <input class="form-control  border-0" type="text" placeholder="Whatsapp"
                             name="whatsapp" required>
                     </div>
                 </div>

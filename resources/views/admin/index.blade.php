@@ -52,14 +52,14 @@
 
     <div class="row my-5">
         <div class="col-md-4">
-            <div class="rounded-lg shadow-lg text-center p-4 my-3 my-md-0 mr-0 mr-md-3">
+            <div class="rounded shadow-lg text-center p-4 my-3 my-md-0 mr-0 mr-md-3">
                 <img src="{{ asset('img/card-blog.svg') }} " alt="">
                 <h4 class="titulo-cards-dashboard my-4">Blog</h4>
                 <a href="{{ route( 'admin.posts.index' ) }}" class="btn btn-primary">Gestionar</a>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="rounded-lg shadow-lg text-center p-4 my-3 my-md-0 mr-0 mr-md-3">
+            <div class="rounded shadow-lg text-center p-4 my-3 my-md-0 mr-0 mr-md-3">
                 <img src="{{ asset('img/card-asesoria.svg') }}" alt="">
                 <h4 class="titulo-cards-dashboard my-4">Asesoría
                     personalizada</h4>
@@ -67,14 +67,14 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="rounded-lg shadow-lg text-center p-4 my-3 my-md-0">
+            <div class="rounded shadow-lg text-center p-4 my-3 my-md-0">
                 <img src="{{ asset('img/card-asesoria.svg') }}" alt="">
                 <h4 class="titulo-cards-dashboard my-4">Mentoría</h4>
                 <a href="{{ route( 'admin.mentorships.index' ) }}#mentoria-tab-2-content" class="btn btn-primary">Gestionar</a>
             </div>
         </div>
         <div class="col-md-4 mt-0 mt-md-5">
-            <div class="rounded-lg shadow-lg text-center p-4 my-3 my-md-0 mr-0 mr-md-3">
+            <div class="rounded shadow-lg text-center p-4 my-3 my-md-0 mr-0 mr-md-3">
                 <img src="{{ asset('img/card-asesoria.svg') }}" alt="">
                 <h4 class="titulo-cards-dashboard my-4">Talleres y
                     eventos</h4>
@@ -82,7 +82,7 @@
             </div>
         </div>
         <div class="col-md-4 mt-0 mt-md-5">
-            <div class="rounded-lg shadow-lg text-center p-4 my-3 my-md-0 mr-0 mr-md-3">
+            <div class="rounded shadow-lg text-center p-4 my-3 my-md-0 mr-0 mr-md-3">
                 <img src="{{ asset('img/card-recursos.svg') }}" alt="">
                 <h4 class="titulo-cards-dashboard my-4">Recursos
                     gratuitos</h4>
@@ -90,7 +90,7 @@
             </div>
         </div>
         <div class="col-md-4 mt-0 mt-md-5">
-            <div class="rounded-lg shadow-lg text-center p-4 my-3 my-md-0">
+            <div class="rounded shadow-lg text-center p-4 my-3 my-md-0">
                 <img src="{{ asset('img/card-newsletter.svg') }}" alt="">
                 <h4 class="titulo-cards-dashboard my-4">Newsletter</h4>
                 <a href="{{ route( 'admin.newsletter' ) }}" class="btn btn-primary">Gestionar</a>

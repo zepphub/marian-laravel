@@ -60,7 +60,7 @@
       <div class="col-md-5 mt-4 mt-md-0 bg-nude rounded">
         <div class="py-4 px-3 pm-d-4">
           <h4 class="text-white titulo-home">Ejes de trabajo</h4>
-          <img src="{{ asset('img/separador-secondary-svg.svg') }}" alt="">
+          <img src="{{ asset('img/separador-secondary-svg.svg') }}" class="separador-ondas" alt="">
           <ul class="list-unstyled mt-4">
             <li class="my-3"><img src="{{ asset('img/programa-icon-list-1.svg') }}" alt=""> Has logrado construir una audiencia digital en uno o diversos canales de comunicación.
 
@@ -93,7 +93,7 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <h4 class="titulo-home">¿Qué incluye el programa?</h4>
-        <img src="{{ asset('img/separador-svg.svg') }}" alt="">
+        <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
       </div>
     </div>
   
@@ -129,7 +129,7 @@
   <div class="row">
     <div class="col-md-12 text-center">
       <h4 class="titulo-home">La experiencia contada por ellas</h4>
-      <img src="{{ asset('img/separador-svg.svg') }}" alt="">
+      <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
     </div>
   </div>
 

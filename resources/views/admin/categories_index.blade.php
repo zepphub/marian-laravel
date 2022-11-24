@@ -27,7 +27,7 @@
           <div class="col-9 col-md-6">
               <div>
                   <h5 class="text-marron-claro font-weight-normal mb-3">Nueva Categoría</h5>
-                  <input class="form-control form-control-lg rounded-pill" type="text"
+                  <input class="form-control form-control-lg " type="text"
                       placeholder="Nombre de categoría" name="name">
               </div>
           </div>
@@ -68,7 +68,7 @@
         </form>
         <div class="col-8 col-md-9">
             <div class="d-flex align-items-center h-100">
-                <input class="form-control font-weight-bold rounded-pill" type="text" form="editForm-{{ $category->id }}" name="name" value="{{ $category->name }}"></input>
+                <input class="form-control font-weight-bold " type="text" form="editForm-{{ $category->id }}" name="name" value="{{ $category->name }}"></input>
             </div>
         </div>
         <div class="col-4 col-md-3 d-flex align-items-center">

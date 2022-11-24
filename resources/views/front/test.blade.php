@@ -37,10 +37,6 @@
       </div>
     </div>
   </div>
-  <div class="divisor-con-forma">
-    <img style="margin-top: -14px !important;" class="img-fluid w-100 img-rotate-180"
-      src="{{ asset('img/separador-seccion-svg2.svg') }}" alt="">
-  </div>
   <!-- Portada Home -->
 
   <!-- Cinco pilares -->
@@ -61,14 +57,14 @@
           <div class="d-md-flex mt-4 mb-5 contenedor-cinco-pilares">
             <div class="mr-md-4 mb-3 mb-md-0">
               <div
-                class="rounded-lg shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
+                class="rounded shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
                 <img class="mt-md-2" src="{{ asset('img/test-box-1.svg') }}" alt="">
                 <h5 class="font-weight-normal text-marron-claro mt-3">El propósito y los valores de tu marca</h5>
               </div>
             </div>
             <div class="mr-md-4 mb-3 mb-md-0">
               <div
-                class="rounded-lg shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
+                class="rounded shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
                 <img class="mt-md-2" src="{{ asset('img/test-box-2.svg') }}" alt="">
                 <h5 class="font-weight-normal text-marron-claro mt-3">El público objetivo y la audiencia que quieres
                   atraer</h5>
@@ -76,7 +72,7 @@
             </div>
             <div class="mr-md-4 mb-3 mb-md-0">
               <div
-                class="rounded-lg shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
+                class="rounded shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
                 <img class="mt-md-2" src="{{ asset('img/test-box-3.svg') }}" alt="">
                 <h5 class="font-weight-normal text-marron-claro mt-3">El universo visual de tu marca, fruto de su
                   personalidad e identidad</h5>
@@ -84,7 +80,7 @@
             </div>
             <div class="mr-md-4 mb-3 mb-md-0">
               <div
-                class="rounded-lg shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
+                class="rounded shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
                 <img class="mt-md-2" src="{{ asset('img/test-box-4.svg') }}" alt="">
                 <h5 class="font-weight-normal text-marron-claro mt-3">Tu plan de acción:
                   planificación y estrategia</h5>
@@ -92,7 +88,7 @@
             </div>
             <div class="mb-3 mb-md-0">
               <div
-                class="rounded-lg shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
+                class="rounded shadow text-center bg-white p-4 p-md-3 d-flex flex-column align-items-center justify-content-center">
                 <img class="mt-md-2" src="{{ asset('img/test-box-5.svg') }}" alt="">
                 <h5 class="font-weight-normal text-marron-claro mt-3">El contenido de tus canales digitales</h5>
               </div>
@@ -115,7 +111,7 @@
             tu proyecto se encuentra.</p>
         </div>
         <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-end"><a
-            href="{{ route('test-formulario') }}"><button class="btn btn-sm p-3 btn-white text-primary rounded-pill">¡Quiero hacer el
+            href="{{ route('test-formulario') }}"><button class="btn btn-sm p-3 btn-white text-primary ">¡Quiero hacer el
               test gratis!</button></a></div>
       </div>
     </div>

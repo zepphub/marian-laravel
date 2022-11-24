@@ -23,7 +23,7 @@
         <div class="row mt-4">
           <div class="col-md-8">
               <h5 class="text-marron-claro font-weight-normal mb-2">Título del recurso</h5>
-              <input class="form-control form-control-lg rounded-pill" type="text" name="title" value="{{ old('title') ?? $resource->title }}">
+              <input class="form-control form-control-lg " type="text" name="title" value="{{ old('title') ?? $resource->title }}">
               @error('title')
               <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
               @enderror
@@ -33,7 +33,7 @@
               <div class="row mt-4 mt-md-5">
                 <div class="col-md-12">
                   <h5 class="text-marron-claro text-medium mb-2">Texto botón</h5>
-                  <input class="form-control form-control-lg rounded-pill" name="button" type="text" value="{{ old('button') ?? $resource->button }}">
+                  <input class="form-control form-control-lg " name="button" type="text" value="{{ old('button') ?? $resource->button }}">
                 </div>
               </div>
               <div class="row mt-4 mt-md-5">

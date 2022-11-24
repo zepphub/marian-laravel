@@ -24,10 +24,6 @@
         </div>
     </div>
 </header>
-<div class="divisor-con-forma">
-    <img style="margin-top: -12px !important;" class="img-fluid w-100 img-rotate-180"
-        src="{{ asset('/img/separador-seccion-svg2.svg') }}" alt="">
-</div>
 <!-- end Portada Home -->
 
 <!-- Seccion Sobre Mi -->
@@ -53,7 +49,7 @@
                 <div
                     class="d-flex flex-column align-items-center align-items-md-baseline text-center text-md-left justify-content-center h-100">
                     <h4 class="titulo-home mt-4 mt-md-0">¡Hola por aquí!</h4>
-                    <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
+                    <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
                     <h5 class="mt-4 my-3 text-marron text-medium titulo-home">¡Qué lindo encontrarte en este espacio!
                     </h5>
                     <p class="mb-3 text-marron">Para comenzar, te propongo que hagas un test sin costo para ayudarte a
@@ -97,7 +93,7 @@
                 <div
                     class="align-items-center align-items-md-baseline text-center text-md-left d-flex flex-column h-100 justify-content-center pr-md-5">
                     <h4 class="titulo-home mt-4 mt-md-0">Sobre Mí</h4>
-                    <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
+                    <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
                     <h6 class="mb-3 mt-4 titulo-home text-marron text-medium">Si pudieras hacer realidad la idea que hace tiempo tenes…
                         Si pudieses construir una marca creando estrategias desde la esencia... Uniendo tu expertis, tu formación, las experiencias e ilusiones que te movilizan.
                     </h6>
@@ -117,10 +113,6 @@
 
     </div>
 </div>
-<div class="divisor-con-forma">
-    <img style="margin-top: -12px !important;" class="img-fluid w-100 img-rotate-180"
-        src="{{ asset('/img/separador-seccion-svg.svg') }}" alt="">
-</div>
 <!-- Fin Seccion Sobre Mi -->
 
 <!-- Seccion Cards Trabajemos Juntas -->
@@ -129,7 +121,7 @@
         <div class="col-md-12">
             <div class="text-center">
                 <h4 class="titulo-home">Trabajemos Juntas</h4>
-                <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
+                <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
                 <p class="my-5 w-75 mx-auto">Construyamos el universo de tu marca y elevemos su posicionamiento en entornos digitales a través de dinámicas específicas, centradas en el marketing consciente y en la comunicación experiencial.</p>
 
                 <h5 class="text-marron-claro titulo-home text-medium">Mis propuestas</h5>
@@ -212,7 +204,7 @@
         <div class="col-md-6">
             <div class="igualar-altura-blog">
                 <h4 class="titulo-home">Blog</h4>
-                <img src="{{ asset('/img/separador-svg.svg') }}" alt="">
+                <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
             </div>
 
             <div class="mt-4 mt-md-0">
@@ -275,25 +267,25 @@
             <div class="form-row">
                 <div class="form-group col-md-3">
                     <div class="px-3">
-                        <input class="form-control rounded-pill border-0" type="text" placeholder="Nombre"
+                        <input class="form-control  border-0" type="text" placeholder="Nombre"
                             name="firstname" required>
                     </div>
                 </div>
                 <div class="form-group col-md-3">
                     <div class="px-3">
-                        <input class="form-control rounded-pill border-0" type="text" placeholder="Apellido"
+                        <input class="form-control  border-0" type="text" placeholder="Apellido"
                             name="lastname" required>
                     </div>
                 </div>
                 <div class="form-group col-md-3">
                     <div class="px-3">
-                        <input class="form-control rounded-pill border-0" type="email" placeholder="Correo electrónico"
+                        <input class="form-control  border-0" type="email" placeholder="Correo electrónico"
                             name="email" required>
                     </div>
                 </div>
                 <div class="form-group col-md-3">
                     <div class="px-3">
-                        <input class="form-control rounded-pill border-0" type="text" placeholder="Whatsapp"
+                        <input class="form-control  border-0" type="text" placeholder="Whatsapp"
                             name="whatsapp" required>
                     </div>
                 </div>
@@ -317,15 +309,13 @@
 </div>
 <!-- Seccion Newsletter -->
 
-<div class="m-0 p-0"><img style="margin-bottom: -12px !important;" class="img-fluid w-100"
-        src="{{ asset('/img/separador-superior-seccion-svg.svg') }}" alt=""></div>
 <div id="contacto" class="bg-crema-suave contenedor-form-home py-5">
-    <div class="container bg-white py-3 p-md-4 rounded-lg">
+    <div class="container bg-white py-3 p-md-4 rounded">
         <div class="row">
             <div class="col-md-5">
-                <div class="bg-textura-form rounded-lg p-md-4 p-3">
+                <div class="bg-textura-form rounded p-md-4 p-3">
                     <h4 class="titulo-home text-medium text-white">Contacta conmigo, me encantará leerte</h4>
-                    <img src="{{ asset('/img/separador-secondary-svg.svg') }}" alt="">
+                    <img src="{{ asset('/img/separador-secondary-svg.svg') }}" class="separador-ondas" alt="">
                     <p class="text-white mt-3">Si estas por aquí es porque hay algo que quieres decirme o preguntarme.
                     </p>
                     <div>
@@ -402,18 +392,18 @@
                         <x-honeypot />
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre" name="firstname" required>
+                            <input type="text" class="form-control " id="nombre" placeholder="Nombre" name="firstname" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control rounded-pill" id="apellido" placeholder="Apellido" name="lastname" required>
+                            <input type="text" class="form-control " id="apellido" placeholder="Apellido" name="lastname" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
-                            <input type="email" class="form-control rounded-pill" placeholder="Email" id="email" name="email" required>
+                            <input type="email" class="form-control " placeholder="Email" id="email" name="email" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control rounded-pill" placeholder="Teléfono" id="telefono" name="phone" required>
+                            <input type="text" class="form-control " placeholder="Teléfono" id="telefono" name="phone" required>
                             </div>
                         </div>
                         <div class="form-row">

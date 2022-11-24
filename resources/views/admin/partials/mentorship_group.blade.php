@@ -9,7 +9,7 @@ aria-labelledby="mentoria-tab-{{ $mentorship->id }}">
     <div class="col-md-3">
       <div class="d-flex align-items-center">
         <h4 class="m-0 mr-3 text-rosa-claro">
-        Precio</h4><input form="editForm-{{ $mentorship->id }}" name="price_ars"  class="form-control form-control-lg rounded-pill" type="text"
+        Precio</h4><input form="editForm-{{ $mentorship->id }}" name="price_ars"  class="form-control form-control-lg " type="text"
         value="{{ $mentorship->service->price_ars }}">
       </div>
     </div>
@@ -17,7 +17,7 @@ aria-labelledby="mentoria-tab-{{ $mentorship->id }}">
       <div class="d-flex align-items-center">
         <h4 style="white-space: nowrap;" class=
         "m-0 mr-3 text-rosa-claro">Precio U$D</h4><input form="editForm-{{ $mentorship->id }}" name="price_usd" class=
-        "form-control form-control-lg rounded-pill" type="text"
+        "form-control form-control-lg " type="text"
         value="{{ $mentorship->service->price_usd }}">
       </div>
     </div>
@@ -33,7 +33,7 @@ aria-labelledby="mentoria-tab-{{ $mentorship->id }}">
     <div class="col-10 col-md-11">
       <div class="d-flex align-items-center h-100">
         <textarea class=
-        "form-control form-control-md rounded-pill" form="editForm-{{ $mentorship->id }}"  name="content-{{ $description->id }}"
+        "form-control form-control-md " form="editForm-{{ $mentorship->id }}"  name="content-{{ $description->id }}"
         cols="10" rows=
         "1">{{ $description->content }}</textarea>
       </div>
