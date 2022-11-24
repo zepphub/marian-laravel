@@ -48,7 +48,7 @@
     <div class="container-fluid d-none d-lg-block">
         <div class="row py-4 px-2">
             <div class="col-md-5 d-flex align-items-center">
-                <nav class="navbar main-navigation navbar-expand-lg navbar-light pl-0">
+                <nav class="navbar main-navigation navbar-expand-xl navbar-light pl-0">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -87,7 +87,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-md-2 d-flex flex-column align-items-center">
+            <div class="col-md-2 d-flex flex-column align-items-center justify-content-center">
                 <div class="">
                     <a href="https://marianpd.com">
                         <img src="{{ asset('img/logo-marian-nav.svg') }}" class="img-fluid" alt="">
