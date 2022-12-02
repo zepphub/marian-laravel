@@ -205,9 +205,6 @@ a.text-white:focus {
 }
 
 @media (min-width: 768px) {
-    .card-propuestas p.card-text {
-        min-height: 150px;
-    }
 
     .social-group {
         margin-top: 100px !important;
@@ -225,13 +222,6 @@ a.text-white:focus {
 }
 
 @media (max-width: 768px) {
-    h2 {
-        margin-bottom: 30px;
-        font-size: 6em;
-        letter-spacing: -2px;
-        line-height: 3rem;
-    }
-
     .w-75 {
         width: 100% !important;
     }
@@ -247,12 +237,6 @@ a.text-white:focus {
 
     footer h4 {
         margin: 25px 0 0 0 !important;
-    }
-
-    div.col-md-12>h2 {
-        font-size: 5em;
-        letter-spacing: -2px;
-        margin-top: 20px;
     }
 
     #carouselAsesoriaMob .card-text {
@@ -406,3 +390,42 @@ header .text-secondary {
 .bg-test {
     background-color: greenyellow;
 }
+
+.card-propuestas .card-img-top {
+    width: 25%;
+    margin: 3rem auto 0 auto;
+}
+
+.epigrafe {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.epigrafe::after {
+    content: '';
+    display: block;
+    width: 32px;
+    margin-left: -16px;
+    height: 1px;
+    background-color: white;
+    position: relative;
+    top: 1rem;
+    left: 50%;
+}
+
+.card-title.epigrafe {
+    letter-spacing: 0.1em;
+    margin-bottom: 2.75rem;
+    font-size: 1.125em;
+}
+.card-title.epigrafe::after {
+    background-color: var(--secondary) ;
+}
+.card-body h4 {
+    color: var(--primary);
+    font-size: 2em;
+    margin-bottom: 1.75rem;
+}
+p.card-text {margin-bottom: 2rem;}

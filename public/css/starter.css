@@ -475,7 +475,7 @@ h6,
 .h5,
 .h6 {
     margin-bottom: .5rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5
 }
 
@@ -6860,12 +6860,6 @@ input[type="button"].btn-block {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     width: 100%
-}
-
-.card-img,
-.card-img-top {
-    border-top-left-radius: calc(1.2rem - 2px);
-    border-top-right-radius: calc(1.2rem - 2px)
 }
 
 .card-img,
@@ -14051,10 +14045,10 @@ h2 {
 }
 
 h3 {
-    font-family: 'Reinata';
+    /*font-family: 'Reinata';
     font-size: 6em;
+    line-height: 4rem*/
     color: #B46063;
-    line-height: 4rem
 }
 
 .line-h-low {
@@ -14065,7 +14059,6 @@ h4,
 h5,
 h6 {
     font-family: 'Figtree', sans-serif;
-    font-weight: 500;
     color: #B46063
 }
 
@@ -14201,14 +14194,6 @@ h4.titulo-cards-dashboard {
 #tabMentoria.nav-tabs .nav-link.active,
 #tabMentoria.nav-tabs .nav-item.show .nav-link {
     border-bottom: 2px solid #937A69 !important
-}
-
-h4.titulo-home {
-    font-size: 2em
-}
-
-h5.titulo-home {
-    font-size: 1.4em
 }
 
 @media (min-width: 768px) {
