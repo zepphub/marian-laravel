@@ -90,15 +90,15 @@
             <div class="col-md-2 d-flex flex-column align-items-center justify-content-center">
                 <div class="">
                     <a href="https://marianpd.com">
-                        <img src="{{ asset('img/logo-marian-nav.svg') }}" class="img-fluid" alt="">
-                        <h6 class="font-weight-normal text-center bajada-logo">Consultora de Marcas</h6>
+                        <img src="{{ asset('img/logo-marian-nav.svg') }}" class="img-fluid" alt="" width="250px">
+                        <h6 class="font-weight-normal text-center mb-0 mt-2 bajada-logo">Consultora de Marcas</h6>
                     </a>
                 </div>
             </div>
             <div class="col-md-5 d-md-flex align-items-center justify-content-end d-none">
-                <a href="{{ route('test') }}" class="btn btn-sm btn-link text-secondary p-2 px-3">Test de Negocio</a>
-                <a href="{{ route('blog') }}" class="btn btn-sm btn-link text-secondary p-2 px-3 mr-2">Blog</a>
-                <a href="https://servicios.marianpd.com/cursos" class="btn btn-sm btn-outline-secondary p-2 px-3"
+                <a href="{{ route('test') }}" class="btn btn-link text-secondary p-2 px-3">Test de Negocio</a>
+                <a href="{{ route('blog') }}" class="btn btn-link text-secondary p-2 px-3 mr-2">Blog</a>
+                <a href="https://servicios.marianpd.com/cursos" class="btn btn-outline-secondary p-2 px-3"
                     target="_blank">Cursos</a>
                     <a href="{{ route('carrito') }}" class="p-2 px-3"><svg xmlns="http://www.w3.org/2000/svg"
                         width="19.374" height="18.562" viewBox="0 0 19.374 18.562">
@@ -199,7 +199,7 @@
                             </li>
                             <hr>
                             <li class="nav-item">
-                                <a href="https://servicios.marianpd.com/cursos" class="btn btn-sm btn-outline-secondary p-2 px-3"
+                                <a href="https://servicios.marianpd.com/cursos" class="btn btn-outline-secondary p-2 px-3"
                                 target="_blank">Cursos</a>
                             </li>
                         </ul>

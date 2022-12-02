@@ -12,8 +12,9 @@
     font-family: "Reinata";
 }
 
+/*
 @font-face {
-    font-family: 'Gotham';
+    font-family: 'Figtree', sans-serif;
     src: url("../fonts/Gotham-XLight.eot");
     src: local("Gotham ExtraLight"), local("Gotham-XLight"), url("Gotham-XLight.eot?#iefix") format("embedded-opentype"), url("Gotham-XLight.woff2") format("woff2"), url("Gotham-XLight.woff") format("woff"), url("Gotham-XLight.ttf") format("truetype");
     font-weight: 200;
@@ -75,6 +76,14 @@
     font-weight: 900;
     font-style: normal
 }
+*/
+
+/* Font Rendering */
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
 :root {
     --blue: #007bff;
@@ -116,7 +125,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: Gotham;
+    --font-family-sans-serif: Figtree;
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -149,8 +158,8 @@ section {
 
 body {
     margin: 0;
-    font-family: "Gotham";
-    font-size: 1rem;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: #937A69;
@@ -467,7 +476,7 @@ h6,
 .h6 {
     margin-bottom: .5rem;
     font-weight: 500;
-    line-height: 1.2
+    line-height: 1.5
 }
 
 h1,
@@ -2702,7 +2711,6 @@ pre code {
 
 .form-control:-moz-focusring {
     color: transparent;
-    text-shadow: 0 0 0 #937A69
 }
 
 .form-control:focus {
@@ -2710,7 +2718,7 @@ pre code {
     background-color: #fff;
     border-color: #fcaeca;
     outline: 0;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 1px rgba(248, 51, 122, 0.25)
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 2px rgba(248, 51, 122, 0.25)
 }
 
 .form-control::-webkit-input-placeholder {
@@ -6139,7 +6147,7 @@ input[type="button"].btn-block {
 .nav-link {
     display: block;
     padding: .5rem 1rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .nav-link:hover,
@@ -6741,8 +6749,11 @@ input[type="button"].btn-block {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 0;
     border-radius: 8px;
+}
+.card.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(204, 180, 163, .5) !important;
 }
 
 .card>hr {
@@ -6776,7 +6787,7 @@ input[type="button"].btn-block {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 1.25rem
+    padding: 3rem
 }
 
 .card-title {
@@ -8851,7 +8862,7 @@ a.close.disabled {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: "Gotham";
+    font-family: 'Figtree', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -8976,7 +8987,7 @@ a.close.disabled {
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: "Gotham";
+    font-family: 'Figtree', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -13992,7 +14003,7 @@ a.text-dark-gray:focus {
 }
 
 .btn {
-    font-weight: 500;
+    font-weight: 400;
     border-radius: 2rem !important
 }
 
@@ -14053,7 +14064,7 @@ h3 {
 h4,
 h5,
 h6 {
-    font-family: 'Gotham';
+    font-family: 'Figtree', sans-serif;
     font-weight: 500;
     color: #B46063
 }
@@ -14070,10 +14081,9 @@ h6 {
     font-size: 11px !important
 }
 
-.navbar.main-navigation .nav-link,
 .navbar.main-navigation .dropdown-item,
 .top-bar h6 {
-    font-size: 14px !important
+    font-size: 0.85em;
 }
 
 footer {

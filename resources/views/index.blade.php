@@ -13,7 +13,7 @@
             <div class="col-md-7">
                 <div
                     class="align-items-center text-center text-md-left align-items-md-baseline d-flex flex-column h-100 justify-content-center pr-md-5">
-                    <h1 class="reinata mb-4">¡Soy Marian!</h1>
+                    <h1 class="reinata mb-4">Soy Marian!</h1>
                     <h4 class="text-medium text-marron mb-4">Consultora de Marcas. Experta en Marketing Experiencial y Estrategia en entornos digitales.</h4>
                     <a href="{{ route('servicios') }}" class="btn btn-primary">Mis propuestas para vos</a>
                 </div>
