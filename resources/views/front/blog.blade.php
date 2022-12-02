@@ -28,7 +28,7 @@
     <div class="container py-5 py-md-0">
       <div class="row text-center text-md-left py-5">
         <div class="col-md-12">
-          <h4 class="text-white titulo-home">¡Activá tu magia!</h4>
+          <h4 class="text-white ">¡Activá tu magia!</h4>
           <p class="text-white">Recursos de Marketing digital, Comunicación y Branding para que lleves tu marca al
             próximo nivel</p>
         </div>
@@ -78,7 +78,7 @@
           <form class="form-border-1-px" action="">
             <input class="form-control " type="text" placeholder="Buscar">
           </form>
-          <h4 class="titulo-home mt-3 mt-md-4">Categorías</h4>
+          <h4 class=" mt-3 mt-md-4">Categorías</h4>
           <ul class="list-unstyled list-categories">
             @foreach ($categories as $category)
             <li class="mt-0 mb-0 @if (!$loop->first)

@@ -14,7 +14,7 @@
           <div class="d-flex justify-content-center align-items-center mx-auto" id="badge-category">
             <h5 class="text-white font-weight-normal mb-3">{{ $post->category->name }}</h5>
           </div>
-          <h4 class="titulo-home text-white">{{ $post->title }}</h4>
+          <h4 class=" text-white">{{ $post->title }}</h4>
           <div class="align-items-center d-flex justify-content-around mt-4">
             <h6 class="mr-3"><svg xmlns="http://www.w3.org/2000/svg" width="12.469" height="11.579" viewBox="0 0 12.469 11.579">
                 <path id="Icon_metro-user" data-name="Icon metro-user"
@@ -56,7 +56,7 @@
               <form class="form-border-1-px" action="">
                 <input class="form-control " type="text" placeholder="Buscar">
               </form>
-              <h4 class="titulo-home mt-3 mt-md-4">Categorías</h4>
+              <h4 class=" mt-3 mt-md-4">Categorías</h4>
               <ul class="list-unstyled list-categories">
                 <li>Marketing</li>
                 <li class="border-marron-claro border-top border-bottom">Capacitaciones</li>

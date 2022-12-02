@@ -44,7 +44,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h6 class="font-weight-normal text-center my-3 titulo-home px-md-5">Mi experiencia con cientos de marcas de
+          <h6 class="font-weight-normal text-center my-3  px-md-5">Mi experiencia con cientos de marcas de
             diversos rubros y países me
             llevó a <strong>identificar 5 pilares esenciales</strong> que
             considero deben integrar una estrategia digital para poder crecer, mejorar y potenciar resultados en el

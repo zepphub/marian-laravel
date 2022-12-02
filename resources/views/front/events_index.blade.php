@@ -71,7 +71,7 @@
                     <p>Si te gustaría que sea parte de tu evento y/o que desarrolle una ponencia experiencial para tu
                         audiencia (en modalidad presencial u online), puedo hacerlo a través de los siguientes tópicos de
                         especialización:</p>
-                    <h4 class="text-white titulo-home">Temas sobre los cuales aporto contenido y valor</h4>
+                    <h4 class="text-white ">Temas sobre los cuales aporto contenido y valor</h4>
                 </div>
             </div>
             <div class="row mt-5 position-relative">
@@ -155,7 +155,7 @@
 
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h4 class="titulo-home">Próximos Eventos</h4>
+                    <h4 class="">Próximos Eventos</h4>
                     <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="" height="8px">
                 </div>
             </div>
@@ -237,7 +237,7 @@
                                                             </svg>
                                                             {{ $event->lecturer }}</h5>
                                                     </div>
-                                                    <h5 class="card-title text-marron-claro titulo-home">
+                                                    <h5 class="card-title text-marron-claro ">
                                                         {{ $event->title }}</h5>
                                                     <p class="card-text" style="white-space:pre-wrap;">
                                                         {{ $event->description }}</p>
@@ -345,7 +345,7 @@
                                         </svg>
                                         {{ $event->lecturer }}
                                     </h5>
-                                    <h5 class="card-title text-marron-claro titulo-home">{{ $event->title }}</h5>
+                                    <h5 class="card-title text-marron-claro ">{{ $event->title }}</h5>
                                     <p class="card-text">{{ $event->description }}</p>
 
                                     <div class="d-md-flex align-items-center justify-content-between">
@@ -398,7 +398,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="font-weight-bold titulo-home">
+                <h4 class="font-weight-bold ">
                     Instituciones a las que he acompañado
                 </h4>
             </div>
@@ -588,7 +588,7 @@
                 <div class="col-md-5">
                     <div class="bg-textura-form rounded p-md-4 p-3">
                         <p class="text-white mt-3">Si te gustaría que sea parte de tu evento</p>
-                        <h4 class="titulo-home text-medium text-white">¡Charlemos!</h4>
+                        <h4 class=" text-medium text-white">¡Charlemos!</h4>
                         <img src="{{ asset('img/separador-secondary-svg.svg') }}" class="separador-ondas" alt="">
 
                         <div>

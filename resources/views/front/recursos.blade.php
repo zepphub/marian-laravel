@@ -18,7 +18,7 @@
           </button>
         </div>
         <div class="modal-body text-center">
-          <h4 class="modal-title titulo-home" id="staticBackdropLabel">Ya casi tenés tus recursos</h4>
+          <h4 class="modal-title " id="staticBackdropLabel">Ya casi tenés tus recursos</h4>
           <p>Para obtenerlo solo deja tus datos y la descarga se iniciará de manera automática</p>
           <form id="hidden-download" action="{{ route('recursos-descarga') }}" method="post" class="d-none">
            @csrf
@@ -130,7 +130,7 @@
         </div>
       </div>
       <div class="col-md-12 mt-3">
-        <h4 class="titulo-home text-white">¡Suscribete a mi newsletter!</h4>
+        <h4 class=" text-white">¡Suscribete a mi newsletter!</h4>
       </div>
     </div>
     <div class="row mt-3">

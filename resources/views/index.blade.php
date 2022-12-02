@@ -48,9 +48,9 @@
             <div class="col-md-7 order-1 order-md-2">
                 <div
                     class="d-flex flex-column align-items-center align-items-md-baseline text-center text-md-left justify-content-center h-100">
-                    <h4 class="titulo-home mt-4 mt-md-0">¡Hola por aquí!</h4>
+                    <h4 class=" mt-4 mt-md-0">¡Hola por aquí!</h4>
                     <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
-                    <h5 class="mt-4 my-3 text-marron text-medium titulo-home">¡Qué lindo encontrarte en este espacio!
+                    <h5 class="mt-4 my-3 text-marron text-medium ">¡Qué lindo encontrarte en este espacio!
                     </h5>
                     <p class="mb-3 text-marron">Para comenzar, te propongo que hagas un test sin costo para ayudarte a
                         identificar en qué etapa estás y, en cuál pilar de tu emprendimiento debes enfocarte para
@@ -75,7 +75,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 d-flex align-items-center text-center text-md-left">
-                <h4 class="text-white titulo-home">Acompaño profesionales y negocios digitales a crear una estrategia de marca diferencial que les permita lograr una conexión real y genuina con su audiencia online.</h4>
+                <h4 class="text-white ">Acompaño profesionales y negocios digitales a crear una estrategia de marca diferencial que les permita lograr una conexión real y genuina con su audiencia online.</h4>
             </div>
         </div>
     </div>
@@ -92,12 +92,12 @@
             <div class="col-md-7">
                 <div
                     class="align-items-center align-items-md-baseline text-center text-md-left d-flex flex-column h-100 justify-content-center pr-md-5">
-                    <h4 class="titulo-home mt-4 mt-md-0">Sobre Mí</h4>
+                    <h4 class=" mt-4 mt-md-0">Sobre Mí</h4>
                     <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
-                    <h6 class="mb-3 mt-4 titulo-home text-marron text-medium">Si pudieras hacer realidad la idea que hace tiempo tenes…
+                    <h6 class="mb-3 mt-4  text-marron text-medium">Si pudieras hacer realidad la idea que hace tiempo tenes…
                         Si pudieses construir una marca creando estrategias desde la esencia... Uniendo tu expertis, tu formación, las experiencias e ilusiones que te movilizan.
                     </h6>
-                    <h6 class="mb-3 titulo-home text-secondary text-medium">¿Lo imaginas?<br>
+                    <h6 class="mb-3  text-secondary text-medium">¿Lo imaginas?<br>
                         Ok, allí aparezco yo.
                     </h6>
                     <p class="mb-3 text-marron">Juntas podemos crear el universo de tu marca de una manera exquisita y detallista, con el propósito de elevar una propuesta de prestigio en entornos digitales, que genere conversaciones genuinas y ventas sinceras.</p>
@@ -120,11 +120,11 @@
     <div class="row">
         <div class="col-md-12">
             <div class="text-center">
-                <h4 class="titulo-home">Trabajemos Juntas</h4>
+                <h4 class="">Trabajemos Juntas</h4>
                 <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
                 <p class="my-5 w-75 mx-auto">Construyamos el universo de tu marca y elevemos su posicionamiento en entornos digitales a través de dinámicas específicas, centradas en el marketing consciente y en la comunicación experiencial.</p>
 
-                <h5 class="text-marron-claro titulo-home text-medium">Mis propuestas</h5>
+                <h5 class="text-marron-claro  text-medium">Mis propuestas</h5>
                 <div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105"
                         height="4" viewBox="0 0 105 4">
                         <defs>
@@ -146,7 +146,7 @@
                 <img src="{{ asset('/img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2"
                     alt="...">
                 <div class="card-body">
-                    <h5 class="card-title titulo-home">Mentoría</h5>
+                    <h5 class="card-title ">Mentoría</h5>
                     <p class="card-text">Te acompaño en el proceso de crear una estrategia de marca diferencial a través del marketing y la comunicación consciente.</p>
                     <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
                     <a href="{{ route('mentoria') }}" class="btn btn-primary">Click Aquí</a>
@@ -157,7 +157,7 @@
             <div class="card border-secondary text-center card-propuestas shadow">
                 <img src="https://marianpd.com/img/card-asesoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title titulo-home">Cursos</h5>
+                    <h5 class="card-title ">Cursos</h5>
                     <p class="card-text">Una propuesta de formación grabada en capsulas de contenido, prácticas y accionables, para que puedas capacitarte a tu ritmo y respetar tus procesos creativos sin presiones de días u horarios.</p>
                     <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
                     <a href="https://servicios.marianpd.com/cursos" class="btn btn-primary" target="_blank">Click Aquí</a>
@@ -169,7 +169,7 @@
                 <img src="{{ asset('/img/card-talleres-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2"
                     alt="...">
                 <div class="card-body">
-                    <h5 class="card-title titulo-home">Conferencias</em></h5>
+                    <h5 class="card-title ">Conferencias</em></h5>
                     <p class="card-text">Experiencias especialmente creadas para mujeres emprendedoras y profesionales con visión de crecimiento.</p>
                     <p class="text-primary font-weight-bold">¡Quiero saber más!</p>
                     <a href="{{ route('talleres-y-eventos') }}" class="btn btn-primary">Click Aquí</a>
@@ -185,7 +185,7 @@
     <div class="container py-5 py-md-0">
         <div class="row text-center text-md-left">
             <div class="col-md-9">
-                <h4 class="text-white titulo-home my-md-3">Elevá tu marca con mis recursos descargables</h4>
+                <h4 class="text-white  my-md-3">Elevá tu marca con mis recursos descargables</h4>
                 <p class="text-white my-md-3">Obtené mis guías, planners y cursos sin costo para activar tu magia en el
                     universo
                     digital</p>
@@ -203,7 +203,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="igualar-altura-blog">
-                <h4 class="titulo-home">Blog</h4>
+                <h4 class="">Blog</h4>
                 <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
             </div>
 
@@ -215,7 +215,7 @@
                 <p class="text-coral m-0 mt-4">{{ $latest_posts->first()->category->name }}</p>
                 <a
                     href="{{ route('blog.post', [ 'category' => $latest_posts->first()->category->slug, 'post' => $latest_posts->first()->slug ]) }}">
-                    <h4 class="titulo-home text-marron my-2">{{ $latest_posts->first()->title }}</h4>
+                    <h4 class=" text-marron my-2">{{ $latest_posts->first()->title }}</h4>
                 </a>
                 <p class="entry-date"><span>{{ $latest_posts->first()->author }}</span>.
                     <span>{{ $latest_posts->first()->created_at->format('d M Y') }}</span></p>
@@ -236,7 +236,7 @@
             <div class="row entry-post">
                 <div class="col-md-12">
                     <div class="ml-md-3">
-                        <h5 class="titulo-home text-medium text-marron my-2">{{ $post->title }}</h5>
+                        <h5 class=" text-medium text-marron my-2">{{ $post->title }}</h5>
                         <p class="entry-date m-0"><span>{{ $post->author }}</span>.
                             <span>{{ $post->created_at->format('d M Y') }}</span></p>
                         <hr>
@@ -253,7 +253,7 @@
 <div class="container bg-rosa-oscuro rounded p-5 my-5">
     <div class="row d-flex align-items-center">
         <div class="col-md-5">
-            <h4 class="titulo-home text-white mb-0">Un Newsletter con Alma</h4>
+            <h4 class=" text-white mb-0">Un Newsletter con Alma</h4>
         </div>
         <div class="col-md-7">
             <p class="text-white mb-0 text-right">Registrate aquí para recibir contenido exclusivo a través de mis mails.</p>
@@ -314,7 +314,7 @@
         <div class="row">
             <div class="col-md-5">
                 <div class="bg-textura-form rounded p-md-4 p-3">
-                    <h4 class="titulo-home text-medium text-white">Contacta conmigo, me encantará leerte</h4>
+                    <h4 class=" text-medium text-white">Contacta conmigo, me encantará leerte</h4>
                     <img src="{{ asset('/img/separador-secondary-svg.svg') }}" class="separador-ondas" alt="">
                     <p class="text-white mt-3">Si estas por aquí es porque hay algo que quieres decirme o preguntarme.
                     </p>

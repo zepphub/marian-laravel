@@ -57,13 +57,13 @@
       <div class="row">
         <div class="col-md-12">
           <div class="text-center">
-            <h4 class="titulo-home">Trabajemos Juntas</h4>
+            <h4 class="">Trabajemos Juntas</h4>
             <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
             <p class="my-4">Construyamos juntas el universo de tu marca de la mano a diversas estrategias de Marketing
               Digital, Comunicación y Branding que te ayuden a posicionarte a través de una propuesta
               auténtica y diferente</p>
 
-            <h5 class="text-marron-claro titulo-home text-medium">Mis propuestas</h5>
+            <h5 class="text-marron-claro  text-medium">Mis propuestas</h5>
             <div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105"
                 height="4" viewBox="0 0 105 4">
                 <defs>
@@ -84,7 +84,7 @@
           <div class="card border-secondary text-center card-propuestas shadow">
             <img src="{{ asset('img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
             <div class="card-body">
-              <h5 class="card-title titulo-home">Mentorías</h5>
+              <h5 class="card-title ">Mentorías</h5>
               <h6>personalizadas y grupales</h6>
               <p class="card-text">Construimos el universo de tu marca y elevamos su posicionamiento en entornos digitales a través de dinámicas específicas, centradas en la proyección estratégica, el marketing consciente y la comunicación experiencial.
               </p>
@@ -96,7 +96,7 @@
           <div class="card border-secondary text-center card-propuestas shadow">
             <img src="{{ asset('img/card-talleres-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
             <div class="card-body">
-              <h5 class="card-title titulo-home">Cursos</h5>
+              <h5 class="card-title ">Cursos</h5>
               <h6>On Demand</h6>
               <p class="card-text">Una propuesta de formación con contenidos audiovisuales grabados (videos, ejemplos con casos reales, ejercicios y guías prácticas) para que puedas capacitarte a tu ritmo y respetar tus procesos creativos sin presiones de días u horarios.
               </p>

@@ -12,7 +12,7 @@
       <div class="row">
         <div class="col-md-7">
           <div class="">
-            <h4 class="titulo-home">{{$event->title}}</h4>
+            <h4 class="">{{$event->title}}</h4>
             <div class="mt-3" style="white-space:pre-wrap;">{{$event->description}}</div>
             <div class="row mt-3">
               <div class="col-md-4 d-flex align-items-center">
@@ -58,7 +58,7 @@
         @if ($event->inscription)
         <div class="col-md-5">
           <div class="mt-4 mt-md-0 rounded p-md-4 p-3 bg-textura-form text-md-center">
-            <h5 class="text-white titulo-home mb-4">Reserva tu lugar</h5>
+            <h5 class="text-white  mb-4">Reserva tu lugar</h5>
             <form id="form-event" class="needs-validation" action="{{ route('suscribir-evento', $event) }}" method="post" novalidate>
               @csrf
               <x-honeypot />

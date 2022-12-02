@@ -40,7 +40,7 @@
         <img class="w-100 img-fluid" src="{{ asset('img/mentoria-grupal-img-1.png') }}" alt="">
       </div>
       <div class="col-md-7 pl-md-5">
-        <h4 class="font-weight-bold titulo-home mb-4 mt-5 mt-md-0">¿Qué significa tener un negocio online sólido?
+        <h4 class="font-weight-bold  mb-4 mt-5 mt-md-0">¿Qué significa tener un negocio online sólido?
         </h4>
         <p class="my-4">
           <span class="text-medium">Gestionar un emprendimiento que no absorba todas tus horas productivas tratando de sumar likes y comentarios en tus posteos, por lo contrario, <u>una marca auténtica y estratégica que te impulse a hacer menos pero mejor, elevando tus resultados.</u></span>
@@ -65,7 +65,7 @@
   <div class="row my-5">
     <div class="offset-md-2 col-md-8">
       <div class="bg-nude p-4 rounded">
-        <h4 class="titulo-home text-white">Este programa es para vos si querés:</h4>
+        <h4 class=" text-white">Este programa es para vos si querés:</h4>
         <ul class="list-unstyled mt-4">
           <li class="my-3 text-dark-gray"><img src="{{ asset('img/check-icon.svg') }}" alt=""> Definir el modelo de negocio que se adapte al estilo de vida que querés vivir para potenciar la venta de tus servicios online desde la calma y con estrategia.</li>
           <li class="my-3 text-dark-gray"><img src="{{ asset('img/check-icon.svg') }}" alt=""> Fortalecer las bases estratégicas de tu emprendimiento para que te asegures de comunicar tu factor diferencial y conectar con tu cliente ideal. 
@@ -91,7 +91,7 @@
 
   <div class="row">
     <div class="col-md-12 text-center">
-      <h4 class="titulo-home">¿Qué incluye el programa?</h4>
+      <h4 class="">¿Qué incluye el programa?</h4>
       <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
     </div>
   </div>
@@ -127,7 +127,7 @@
 
   <div class="row">
     <div class="col-md-12 text-center">
-      <h4 class="titulo-home">La experiencia contada por ellas</h4>
+      <h4 class="">La experiencia contada por ellas</h4>
       <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
     </div>
   </div>
@@ -151,7 +151,7 @@
   <div class="container banner-eleva-tu-marca my-5 p-5">
     <div class="row text-center">
       <div class="col-md-12">
-        <h4 class="text-white titulo-home mb-3">¡Quiero ser parte de la próxima edición!
+        <h4 class="text-white  mb-3">¡Quiero ser parte de la próxima edición!
         </h4>
                 <!-- <h5 class="text-white mt-3">Costo <span>{{ $mentorship->service->price() }}</span></h5> -->
         <a href="https://www.dopplerpages.com/marianapd.tur-C0AD3/LISTADEESPERAMentoragrupalED2023-69561" target="_blank"><button class="btn btn-blanco mt-3 mt-md-0">Registrarme en lista de espera</button></a>
@@ -183,7 +183,7 @@
               <img src="{{ asset('/img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2"
                   alt="...">
               <div class="card-body">
-                  <h5 class="card-title titulo-home">Mentoría personalizada</h5>
+                  <h5 class="card-title ">Mentoría personalizada</h5>
                   <h5>Programa Selecto para Profesionales y Marcas Digitales</h5>
                   <p class="card-text">Un proceso en el que te acompaño y ayudo, durante un período de 10 semanas, a crear una estrategia de marca diferencial e integral en entornos digitales a fin de que tu audiencia te perciba como la mejor opción.</p>
                   <a href="{{ route('programa-intensivo') }}" class="btn btn-primary">Más Detalles</a>
@@ -194,7 +194,7 @@
           <div class="card border-secondary text-center card-propuestas shadow">
               <img src="https://marianpd.com/img/card-asesoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
               <div class="card-body">
-                  <h5 class="card-title titulo-home">Cursos</h5>
+                  <h5 class="card-title ">Cursos</h5>
                   <h5>On Demand</h5>
                   <p class="card-text">Una propuesta de formación con contenidos audiovisuales grabados (videos, ejemplos con casos reales, ejercicios y guías prácticas) para que puedas capacitarte a tu ritmo y respetar tus procesos creativos sin presiones de días u horarios.</p>
                   <a href="https://servicios.marianpd.com/cursos" class="btn btn-primary" target="_blank">Más Detalles</a>

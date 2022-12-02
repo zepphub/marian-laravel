@@ -25,7 +25,7 @@
 <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h4 class="font-weight-bold titulo-home mb-4">Programa Selecto para profesionales y marcas digitales</h4>
+        <h4 class="font-weight-bold  mb-4">Programa Selecto para profesionales y marcas digitales</h4>
         <p>Durante un período de 10 semanas te acompaño y ayudo en el proceso de toma de decisión, en etapa de construcción y proyección de marca, para que logres crear una estrategia de diferenciación en entornos digitales a fin de que la audiencia te perciba como la mejor opción.</p>
         <a href="https://forms.gle/bX4KrmZhpPcoyprV6" target="_blank" class="btn btn-primary">¡Quiero aplicar a la mentoría!</a>
       </div>
@@ -39,7 +39,7 @@
     <div class="row my-5">
       <div class="col-md-7">
         <div class="bg-nude p-4 rounded">
-          <h4 class="titulo-home text-white">¿Cuál es el momento ideal para aplicar al proceso?</h4>
+          <h4 class=" text-white">¿Cuál es el momento ideal para aplicar al proceso?</h4>
           <p>Cuando tu negocio digital y/o flujo de venta online es un hecho y te encontras en una etapa de crecimiento o expansión, lo que refleja que:</p>
           <ul class="list-unstyled mt-4">
             <li class="my-3 text-dark-gray"><img src="{{ asset('img/check-icon.svg') }}" alt=""> Definir el modelo de negocio que se adapte al estilo de vida que querés vivir para potenciar la venta de tus servicios online desde la calma y con estrategia.</li>
@@ -59,7 +59,7 @@
 
       <div class="col-md-5 mt-4 mt-md-0 bg-nude rounded">
         <div class="py-4 px-3 pm-d-4">
-          <h4 class="text-white titulo-home">Ejes de trabajo</h4>
+          <h4 class="text-white ">Ejes de trabajo</h4>
           <img src="{{ asset('img/separador-secondary-svg.svg') }}" class="separador-ondas" alt="">
           <ul class="list-unstyled mt-4">
             <li class="my-3"><img src="{{ asset('img/programa-icon-list-1.svg') }}" alt=""> Has logrado construir una audiencia digital en uno o diversos canales de comunicación.
@@ -92,7 +92,7 @@
 
     <div class="row">
       <div class="col-md-12 text-center">
-        <h4 class="titulo-home">¿Qué incluye el programa?</h4>
+        <h4 class="">¿Qué incluye el programa?</h4>
         <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
       </div>
     </div>
@@ -128,7 +128,7 @@
 
   <div class="row">
     <div class="col-md-12 text-center">
-      <h4 class="titulo-home">La experiencia contada por ellas</h4>
+      <h4 class="">La experiencia contada por ellas</h4>
       <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
     </div>
   </div>
@@ -150,10 +150,10 @@
     <div class="container py-5">
       <div class="row text-center text-md-left">
         <div class="col-md-12 text-center">
-          <h5 class="text-white titulo-home font-weight-normal mb-4">Si estás decidida a crear una estrategia de comunicación
+          <h5 class="text-white  font-weight-normal mb-4">Si estás decidida a crear una estrategia de comunicación
             y de marketing que te ayude a dar a conocer la esencia y el enorme valor que tiene tu marca, ¡me encantará
             acompañarte!</h5>
-          <!-- <h5 class="text-white titulo-home my-4">Te invito a conocernos en una llamada de claridad de 20 minutos </h5> -->
+          <!-- <h5 class="text-white  my-4">Te invito a conocernos en una llamada de claridad de 20 minutos </h5> -->
           <a href="https://forms.gle/bX4KrmZhpPcoyprV6" target="_blank" class="btn btn-outline-white">¡Quiero agendar una reunión!</a>
         </div>
       </div>
@@ -185,7 +185,7 @@
               <img src="{{ asset('/img/card-mentoria-home.svg') }}" class="card-img-top w-25 mx-auto my-4 mb-2"
                   alt="...">
               <div class="card-body">
-                  <h5 class="card-title titulo-home">Mentoría Grupal</h5>
+                  <h5 class="card-title ">Mentoría Grupal</h5>
                   <h5>Eleva tu Marca</h5>
                   <p class="card-text">Un programa grupal de 8 semanas con acompañamiento semanal y sesiones de mentoría en vivo, a través de las cuales, te ayudaré a tomar decisiones estratégicas para transformar tu emprendimiento en un negocio digital sólido y alineado al estilo de vida que deseas.</p>
                   <a href="{{ route('mentoria-grupal') }}" class="btn btn-primary">Más Detalles</a>
@@ -196,7 +196,7 @@
           <div class="card border-secondary text-center card-propuestas shadow">
               <img src="https://marianpd.com/img/card-asesoria-home.svg" class="card-img-top w-25 mx-auto my-4 mb-2" alt="...">
               <div class="card-body">
-                  <h5 class="card-title titulo-home">Cursos</h5>
+                  <h5 class="card-title ">Cursos</h5>
                   <h5>On Demand</h5>
                   <p class="card-text">Una propuesta de formación con contenidos audiovisuales grabados (videos, ejemplos con casos reales, ejercicios y guías prácticas) para que puedas capacitarte a tu ritmo y respetar tus procesos creativos sin presiones de días u horarios.</p>
                   <a href="https://servicios.marianpd.com/cursos" class="btn btn-primary" target="_blank">Más Detalles</a>
