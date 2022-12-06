@@ -43,10 +43,10 @@
         <h4 class="font-weight-bold  mb-4 mt-5 mt-md-0">¿Qué significa tener un negocio online sólido?
         </h4>
         <p class="my-4">
-          <span class="text-medium">Gestionar un emprendimiento que no absorba todas tus horas productivas tratando de sumar likes y comentarios en tus posteos, por lo contrario, <u>una marca auténtica y estratégica que te impulse a hacer menos pero mejor, elevando tus resultados.</u></span>
+          <span class="">Gestionar un emprendimiento que no absorba todas tus horas productivas tratando de sumar likes y comentarios en tus posteos, por lo contrario, <u>una marca auténtica y estratégica que te impulse a hacer menos pero mejor, elevando tus resultados.</u></span>
         </p>
         <p>Es lo que necesito,</p>
-        <h4 class="text-medium">¡Quiero registrarme en lista de espera para la próxima edición!</h4>
+        <h4 class="">¡Quiero registrarme en lista de espera para la próxima edición!</h4>
         <a href="https://www.google.com/url?q=https://www.dopplerpages.com/marianapd.tur-C0AD3/LISTADEESPERAMentoragrupalED2023-69561&sa=D&source=docs&ust=1668521241051007&usg=AOvVaw0n3DPwPCcgO4B8dU389jA6" target="_blank" class="btn btn-primary mt-3">Reservar mi lugar <svg
               class="ml-2" xmlns="http://www.w3.org/2000/svg" width="8.248" height="14.367" viewBox="0 0 8.248 14.367">
               <g id="next_1_" data-name="next (1)" transform="translate(-60.438 -1.439)">
@@ -85,7 +85,7 @@
 
   <div class="row my-5 d-flex" id="mentoria-single-banner">
     <div class="col-md-6 offset-md-3 align-items-center py-md-5">
-        <h5 class="text-medium text-center text-white">Que sea grupal significa que compartirás el proceso con emprendedoras y profesionales que están en tu misma situación, siendo parte de una experiencia altamente enriquecedora que se eleva en comunidad.</h5>
+        <h5 class=" text-center text-white">Que sea grupal significa que compartirás el proceso con emprendedoras y profesionales que están en tu misma situación, siendo parte de una experiencia altamente enriquecedora que se eleva en comunidad.</h5>
     </div>
   </div>  
 
@@ -162,7 +162,7 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h4 class="text-marron-claro text-medium">Otras maneras de encontrarnos</h4>
+        <h4 class="text-marron-claro ">Otras maneras de encontrarnos</h4>
         <div class="mb-2">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="4"
             viewBox="0 0 76 4">

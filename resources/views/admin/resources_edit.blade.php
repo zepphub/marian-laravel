@@ -32,13 +32,13 @@
                 rows="10">{{ old('description') ?? $resource->description }}</textarea>
               <div class="row mt-4 mt-md-5">
                 <div class="col-md-12">
-                  <h5 class="text-marron-claro text-medium mb-2">Texto botón</h5>
+                  <h5 class="text-marron-claro  mb-2">Texto botón</h5>
                   <input class="form-control form-control-lg " name="button" type="text" value="{{ old('button') ?? $resource->button }}">
                 </div>
               </div>
               <div class="row mt-4 mt-md-5">
                 <div class="col-md-12">
-                  <h5 class="text-marron-claro text-medium m-0">Archivo descargable</h5>
+                  <h5 class="text-marron-claro  m-0">Archivo descargable</h5>
                   <div class="d-md-flex align-items-center">
                     <label for=inputFile id=fileUpload class="btn btn-primary mr-md-4">Subir archivo</label>
                     <p id=fileName class="m-0">{{ basename($resource->file)}}</p>

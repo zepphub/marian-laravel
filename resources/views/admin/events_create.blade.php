@@ -29,15 +29,15 @@
                         <textarea class="form-control" name="description" cols="30" rows="10" required></textarea>
                         <div class="row mt-4 mt-md-5">
                             <div class="col-md-4">
-                                <h5 class="text-marron-claro text-medium mb-2">Fecha</h5>
+                                <h5 class="text-marron-claro  mb-2">Fecha</h5>
                                 <input class="form-control form-control-lg " type="date" name="date" required>
                             </div>
                             <div class="col-md-2 mt-3 mt-md-0">
-                                <h5 class="text-marron-claro text-medium mb-2">Hora</h5>
+                                <h5 class="text-marron-claro  mb-2">Hora</h5>
                                 <input class="form-control form-control-lg " type="time" name="time" required>
                             </div>
                             <div class="col-md-6 mt-3 mt-md-0">
-                                <h5 class="text-marron-claro text-medium mb-2">Disertante</h5>
+                                <h5 class="text-marron-claro  mb-2">Disertante</h5>
                                 <input class="form-control form-control-lg " type="text" name="lecturer" required>
                             </div>
                         </div>
@@ -55,12 +55,12 @@
                 </div>
                 <div class="row mt-4 mt-md-5">
                     <div class="col-md-5">
-                        <h5 class="text-marron-claro text-medium mb-2">Organiza</h5>
+                        <h5 class="text-marron-claro  mb-2">Organiza</h5>
                         <input class="form-control form-control-lg " name="host" type="text" required>
                     </div>
                     <div class="col-md-2 mt-3 mt-md-0">
                         <div class="d-block d-md-flex align-items-center h-100 mt-0 mt-md-3">
-                            <h5 class="text-marron-claro text-medium m-0 mb-3 mb-md-0">Inscripción</h5>
+                            <h5 class="text-marron-claro  m-0 mb-3 mb-md-0">Inscripción</h5>
                             <div class="custom-control custom-switch.custom-switch-md custom-switch ml-0 ml-md-3">
                                 <input type="checkbox" name="inscription" class="custom-control-input" id="inscription">
                                 <label class="custom-control-label" for="inscription"></label>
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 mt-3 mt-md-0">
-                        <h5 class="text-marron-claro text-medium mb-2">URL Evento</h5>
+                        <h5 class="text-marron-claro  mb-2">URL Evento</h5>
                         <input class="form-control form-control-lg " name="url" type="text" required>
                     </div>
                     <div class="col-md-12">

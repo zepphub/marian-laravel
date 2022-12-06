@@ -164,7 +164,7 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h4 class="text-marron-claro text-medium">Otras maneras de encontrarnos</h4>
+        <h4 class="text-marron-claro ">Otras maneras de encontrarnos</h4>
         <div class="mb-2">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="4"
             viewBox="0 0 76 4">

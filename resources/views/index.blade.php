@@ -14,7 +14,7 @@
                 <div
                     class="align-items-center text-center text-md-left align-items-md-baseline d-flex flex-column h-100 justify-content-center pr-md-5">
                     <h1 class="reinata mb-4">Soy Marian!</h1>
-                    <h4 class="text-medium text-marron mb-4">Consultora de Marcas. Experta en Marketing Experiencial y Estrategia en entornos digitales.</h4>
+                    <h4 class=" text-marron mb-4">Consultora de Marcas. Experta en Marketing Experiencial y Estrategia en entornos digitales.</h4>
                     <a href="{{ route('servicios') }}" class="btn btn-primary">Mis propuestas para vos</a>
                 </div>
             </div>
@@ -50,13 +50,13 @@
                     class="d-flex flex-column align-items-center align-items-md-baseline text-center text-md-left justify-content-center h-100">
                     <h4 class=" mt-4 mt-md-0">¡Hola por aquí!</h4>
                     <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
-                    <h5 class="mt-4 my-3 text-marron text-medium ">¡Qué lindo encontrarte en este espacio!
+                    <h5 class="mt-4 my-3 text-marron  ">¡Qué lindo encontrarte en este espacio!
                     </h5>
                     <p class="mb-3 text-marron">Para comenzar, te propongo que hagas un test sin costo para ayudarte a
                         identificar en qué etapa estás y, en cuál pilar de tu emprendimiento debes enfocarte para
                         mejorar la
                         presencia digital de tu marca y potenciar tus resultados</p>
-                    <h5 class="my-3 text-medium">¡Quiero hacer el test!</h5>
+                    <h5 class="my-3 ">¡Quiero hacer el test!</h5>
                     <a href="{{ route('test') }}"><button class="btn btn-primary mb-5 mb-md-0">Iniciar ahora <svg
                                 xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
                                 class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -94,10 +94,10 @@
                     class="align-items-center align-items-md-baseline text-center text-md-left d-flex flex-column h-100 justify-content-center pr-md-5">
                     <h4 class=" mt-4 mt-md-0">Sobre Mí</h4>
                     <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
-                    <h6 class="mb-3 mt-4  text-marron text-medium">Si pudieras hacer realidad la idea que hace tiempo tenes…
+                    <h6 class="mb-3 mt-4  text-marron ">Si pudieras hacer realidad la idea que hace tiempo tenes…
                         Si pudieses construir una marca creando estrategias desde la esencia... Uniendo tu expertis, tu formación, las experiencias e ilusiones que te movilizan.
                     </h6>
-                    <h6 class="mb-3  text-secondary text-medium">¿Lo imaginas?<br>
+                    <h6 class="mb-3  text-secondary ">¿Lo imaginas?<br>
                         Ok, allí aparezco yo.
                     </h6>
                     <p class="mb-3 text-marron">Juntas podemos crear el universo de tu marca de una manera exquisita y detallista, con el propósito de elevar una propuesta de prestigio en entornos digitales, que genere conversaciones genuinas y ventas sinceras.</p>
@@ -124,7 +124,7 @@
                 <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
                 <p class="my-5 w-75 mx-auto">Construyamos el universo de tu marca y elevemos su posicionamiento en entornos digitales a través de dinámicas específicas, centradas en el marketing consciente y en la comunicación experiencial.</p>
 
-                <h5 class="text-marron-claro  text-medium">Mis propuestas</h5>
+                <h5 class="text-marron-claro  ">Mis propuestas</h5>
                 <div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105"
                         height="4" viewBox="0 0 105 4">
                         <defs>
@@ -236,7 +236,7 @@
             <div class="row entry-post">
                 <div class="col-md-12">
                     <div class="ml-md-3">
-                        <h5 class=" text-medium text-marron my-2">{{ $post->title }}</h5>
+                        <h5 class="  text-marron my-2">{{ $post->title }}</h5>
                         <p class="entry-date m-0"><span>{{ $post->author }}</span>.
                             <span>{{ $post->created_at->format('d M Y') }}</span></p>
                         <hr>
@@ -314,7 +314,7 @@
         <div class="row">
             <div class="col-md-5">
                 <div class="bg-textura-form rounded p-md-4 p-3">
-                    <h4 class=" text-medium text-white">Contacta conmigo, me encantará leerte</h4>
+                    <h4 class="  text-white">Contacta conmigo, me encantará leerte</h4>
                     <img src="{{ asset('/img/separador-secondary-svg.svg') }}" class="separador-ondas" alt="">
                     <p class="text-white mt-3">Si estas por aquí es porque hay algo que quieres decirme o preguntarme.
                     </p>

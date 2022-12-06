@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-12">
             <h2>Bienvenida a tu panel de gestión</h2>
-            <h4 class="text-medium">Descargar listas de:</h4>
+            <h4 class="">Descargar listas de:</h4>
             <div class="mt-5">
                 <div class="btn btn-coral p-1 text-white dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="adminDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

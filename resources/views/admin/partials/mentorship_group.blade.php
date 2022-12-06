@@ -24,7 +24,7 @@ aria-labelledby="mentoria-tab-{{ $mentorship->id }}">
   </div>
   <div class="row mt-5">
     <div class="col-md-12">
-      <h4 class="text-rosa-claro text-medium">Ser parte de la Mentoría Grupal te dará acceso a</h4>
+      <h4 class="text-rosa-claro ">Ser parte de la Mentoría Grupal te dará acceso a</h4>
     </div>
   </div>
   <!-- Item Editable -->

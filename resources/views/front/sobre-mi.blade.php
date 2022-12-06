@@ -63,7 +63,7 @@
               Digital, Comunicación y Branding que te ayuden a posicionarte a través de una propuesta
               auténtica y diferente</p>
 
-            <h5 class="text-marron-claro  text-medium">Mis propuestas</h5>
+            <h5 class="text-marron-claro  ">Mis propuestas</h5>
             <div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105"
                 height="4" viewBox="0 0 105 4">
                 <defs>

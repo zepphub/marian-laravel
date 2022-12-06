@@ -588,7 +588,7 @@
                 <div class="col-md-5">
                     <div class="bg-textura-form rounded p-md-4 p-3">
                         <p class="text-white mt-3">Si te gustaría que sea parte de tu evento</p>
-                        <h4 class=" text-medium text-white">¡Charlemos!</h4>
+                        <h4 class="  text-white">¡Charlemos!</h4>
                         <img src="{{ asset('img/separador-secondary-svg.svg') }}" class="separador-ondas" alt="">
 
                         <div>
