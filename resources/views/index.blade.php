@@ -48,8 +48,8 @@
             <div class="col-md-7 order-1 order-md-2">
                 <div
                     class="d-flex flex-column align-items-center align-items-md-baseline text-center text-md-left justify-content-center h-100">
-                    <h4 class=" mt-4 mt-md-0">¡Hola por aquí!</h4>
-                    <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
+                    <h3 class="mt-4 mt-md-0">¡Hola por aquí!</h3>
+                    <img src="{{ asset('/img/separador.svg') }}" class="separador-ondas"  alt="">
                     <h5 class="mt-4 my-3 text-marron  ">¡Qué lindo encontrarte en este espacio!
                     </h5>
                     <p class="mb-3 text-marron">Para comenzar, te propongo que hagas un test sin costo para ayudarte a
@@ -92,8 +92,8 @@
             <div class="col-md-7">
                 <div
                     class="align-items-center align-items-md-baseline text-center text-md-left d-flex flex-column h-100 justify-content-center pr-md-5">
-                    <h4 class=" mt-4 mt-md-0">Sobre Mí</h4>
-                    <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
+                    <h2 class=" mt-4 mt-md-0">Sobre Mí</h2>
+                    <img src="{{ asset('/img/separador.svg') }}" class="separador-ondas"  alt="">
                     <h6 class="mb-3 mt-4  text-marron ">Si pudieras hacer realidad la idea que hace tiempo tenes…
                         Si pudieses construir una marca creando estrategias desde la esencia... Uniendo tu expertis, tu formación, las experiencias e ilusiones que te movilizan.
                     </h6>
@@ -120,8 +120,8 @@
     <div class="row">
         <div class="col-md-12">
             <div class="text-center">
-                <h4 class="">Trabajemos Juntas</h4>
-                <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
+                <h2 class="">Trabajemos Juntas</h2>
+                <img src="{{ asset('/img/separador.svg') }}" class="separador-ondas"  alt="">
                 <p class="my-5 w-75 mx-auto">Construyamos el universo de tu marca y elevemos su posicionamiento en entornos digitales a través de dinámicas específicas, centradas en el marketing consciente y en la comunicación experiencial.</p>
 
                 <h5 class="text-marron-claro  ">Mis propuestas</h5>
@@ -204,7 +204,7 @@
         <div class="col-md-6">
             <div class="igualar-altura-blog">
                 <h4 class="">Blog</h4>
-                <img src="{{ asset('/img/separador-svg.svg') }}" class="separador-ondas"  alt="">
+                <img src="{{ asset('/img/separador.svg') }}" class="separador-ondas"  alt="">
             </div>
 
             <div class="mt-4 mt-md-0">

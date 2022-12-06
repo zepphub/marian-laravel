@@ -7022,8 +7022,9 @@ input[type="button"].btn-block {
 }
 
 .breadcrumb-item.active {
-    color: #6c757d
+    color: var(--secondary);
 }
+.breadcrumb-item a {text-decoration: underline;}
 
 .pagination {
     display: -ms-flexbox;
@@ -13659,10 +13660,6 @@ button.bg-dark-gray:focus {
     font-style: italic !important
 }
 
-.text-white {
-    color: #fff !important
-}
-
 .text-primary {
     color: #F8337A !important
 }
@@ -13763,7 +13760,7 @@ a.text-coral:focus {
 }
 
 .text-marron {
-    color: #785F4E !important
+    color: var(--marron) !important
 }
 
 a.text-marron:hover,
@@ -14033,18 +14030,10 @@ a:hover {
 }
 
 h1,
-h2 {
-    /*font-family: 'Reinata';
-    font-size: 8em;
-    line-height: 4rem */
-    color: #B46063;
-}
-
+h2,
 h3 {
-    /*font-family: 'Reinata';
-    font-size: 6em;
-    line-height: 4rem*/
     color: #B46063;
+    font-weight: 500;
 }
 
 .line-h-low {
@@ -14827,9 +14816,9 @@ img.icon-tab {
 .title-divider::after {
     content: "";
     position: absolute;
-    width: 130px;
+    width: 97px;
     height: 8px;
-    background: url(../assets/img/separador-svg.svg);
+    background: url(../img/separador.svg);
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 0;
@@ -14838,6 +14827,7 @@ img.icon-tab {
 
 .separador-ondas {
     height: 8px;
+    display: block;
 }
 
 .tabla-carrito .border.border-marron-claro {

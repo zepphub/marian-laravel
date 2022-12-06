@@ -88,6 +88,11 @@ button.navbar-toggler {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(180, 96, 99, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+header#nav {
+    z-index: 1000;
+    position: relative;
+}
+
 .dropdown-option:hover,
 .dropdown-option:focus {
     background: none !important;
@@ -324,10 +329,26 @@ a.text-white:focus {
     right: -1000px !important;
 } */
 
-main header {
-    padding: 3.5rem 0 3rem 0;
+main article header {
+    padding: 4rem 0 2rem 0;
+    background-color: var(--rosa-oscuro);
+    color: white;
 }
-.breadcrumb {font-size: 0.9em;}
+.breadcrumb {
+    font-size: 0.9em;
+}
+main article header h1, main article header h2 {
+    color: white;
+    
+}
+main article header h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+@media screen and (max-width:767.98px) {
+    main article header h2 { font-size: 2.75rem;}
+}
 
 /* Counter */
 .counter {
@@ -402,6 +423,7 @@ header .text-secondary {
     font-size: 1.25em;
     font-weight: 500;
     margin-bottom: 3rem;
+    color: white;
 }
 .epigrafe::after {
     content: '';
@@ -415,10 +437,40 @@ header .text-secondary {
     left: 50%;
 }
 
+.separador-vertical {
+    margin-bottom: 3rem;
+}
+.separador-vertical::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 32px;
+    margin-left: -0.5px;
+    background-color: var(--secondary);
+    position: relative;
+    top: 1rem;
+    left: 50%;
+}
+.separador-horizontal {
+    margin-bottom: 3rem;
+}
+.separador-horizontal::after {
+    content: '';
+    display: block;
+    width: 32px;
+    margin-left: -16px;
+    height: 1px;
+    background-color: var(--secondary);
+    position: relative;
+    top: 1rem;
+    left: 50%
+}
+
 .card-title.epigrafe {
     letter-spacing: 0.1em;
     margin-bottom: 2.75rem;
     font-size: 1.125em;
+    color: var(--secondary);   
 }
 .card-title.epigrafe::after {
     background-color: var(--secondary) ;
@@ -429,3 +481,14 @@ header .text-secondary {
     margin-bottom: 1.75rem;
 }
 p.card-text {margin-bottom: 2rem;}
+
+.checklist li {
+    color: #5B5B5F;
+    margin: 1.5rem 0;
+}
+.checklist li img {
+    width: 16px;
+    height: 16px;
+    margin-top: -4px;
+    margin-right: 3px;
+}

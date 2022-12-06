@@ -22,7 +22,7 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <h2 class="">Mis Propuestas</h4>
-        <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="">
+        <img src="{{ asset('img/separador.svg') }}" class="separador-ondas"  alt="">
       </div>
     </div>
     <div class="row mt-5">
@@ -52,7 +52,7 @@
       </div>
       <div class="col-md-6 mb-5">
         <div class="card border-secondary text-center card-propuestas shadow">
-            <img src="{{ asset('/img/card-asesoria.svg') }}" class="card-img-top"
+            <img src="{{ asset('/img/card-asesoria-home.svg') }}" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <h5 class="card-title epigrafe">Cursos</h5>
@@ -64,7 +64,7 @@
       </div>
       <div class="col-md-6 mb-5">
         <div class="card border-secondary text-center card-propuestas shadow">
-            <img src="https://marianpd.com/img/card-talleres.svg" class="card-img-top" alt="...">
+            <img src="{{ asset('/img/card-talleres-home.svg') }}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title epigrafe">Conferencias y Talleres</h5>
                 <h4>A Medida</h4>

@@ -156,7 +156,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h4 class="">Próximos Eventos</h4>
-                    <img src="{{ asset('img/separador-svg.svg') }}" class="separador-ondas"  alt="" height="8px">
+                    <img src="{{ asset('img/separador.svg') }}" class="separador-ondas"  alt="" height="8px">
                 </div>
             </div>
 
