@@ -10,7 +10,8 @@
 @section('content')
     <article>
 
-        <header class="container-fluid" id="mentoria-portada">
+        <header id="mentoria-portada">
+          <div class="container">
             <div class="row py-5">
                 <div class="col-md-6 offset-md-3 text-center">
                     <h1 class="epigrafe">Mentorías</h1>
@@ -24,6 +25,7 @@
                       </nav>-->
                     <a href="#mentoria-propuestas" class="btn btn-outline-white">Ver mis programas</a>
                 </div>
+            </div>
             </div>
         </header>
 
@@ -54,7 +56,7 @@
                 </div>
                 <div class="col-md-6 mb-5">
                     <div class="card border-secondary text-center card-propuestas shadow">
-                        <img src="{{ asset('/img/badge-mentoria_grupal.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('/img/badge-mentoria_grupal-2.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Grupal</h5>
                             <h4>Eleva tu Marca</h4>

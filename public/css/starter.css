@@ -83,7 +83,7 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
 
 :root {
     --blue: #007bff;
@@ -5766,7 +5766,7 @@ input[type="button"].btn-block {
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e")
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
 
 .custom-radio .custom-control-input:disabled:checked~.custom-control-label::before {
@@ -6752,6 +6752,7 @@ input[type="button"].btn-block {
     border: 0;
     border-radius: 8px;
 }
+
 .card.shadow {
     box-shadow: 0 0.5rem 1rem rgba(204, 180, 163, .5) !important;
 }
@@ -7024,7 +7025,10 @@ input[type="button"].btn-block {
 .breadcrumb-item.active {
     color: var(--secondary);
 }
-.breadcrumb-item a {text-decoration: underline;}
+
+.breadcrumb-item a {
+    text-decoration: underline;
+}
 
 .pagination {
     display: -ms-flexbox;
@@ -13787,7 +13791,7 @@ a.text-marron-claro-2:focus {
 }
 
 .text-rosa-oscuro {
-    color: #D89A9E !important
+    color: #D89A9E !important;
 }
 
 a.text-rosa-oscuro:hover,
@@ -13908,7 +13912,7 @@ a.text-dark-gray:focus {
     }
 
     abbr[title]::after {
-        content: " ("attr(title) ")"
+        content: " (" attr(title) ")"
     }
 
     pre {
@@ -14002,13 +14006,17 @@ a.text-dark-gray:focus {
     color: #FFF
 }
 
-button.btn.btn-blanco {
-    border: 2px solid #F8337A;
+.btn-blanco {
+    border: 1px solid #F8337A;
     color: #F8337A;
     background: #FFF
 }
+.btn-blanco:hover {
+    background: #F8337A;
+    color: #FFF;
+}
 
-button.btn.btn-outline-white:hover {
+.btn-outline-white:hover {
     color: #785F4E
 }
 
@@ -14210,11 +14218,11 @@ h4.titulo-cards-dashboard {
 }
 
 .banner-eleva-tu-marca {
-    min-height: 147px;
     background: url(../img/bg-banner-eleva-tu-marca.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center
+    background-position: center center;
+
 }
 
 p.entry-date {
@@ -14347,7 +14355,7 @@ p.entry-date {
     }
 }
 
-.portada-servicios {
+#portada-servicios {
     background: url(../img/servicios-img-portada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14373,10 +14381,6 @@ p.entry-date {
 }
 
 @media (min-width: 768px) {
-    .portada-servicios {
-        min-height: 600px
-    }
-
     #brandsCarousel .row.align-items-center {
         min-height: 120px
     }

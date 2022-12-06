@@ -14,11 +14,6 @@ body {
     padding: .7rem 1.4rem;
 }
 
-button.btn.btn-blanco:hover {
-    background: #F8337A;
-    color: #FFF;
-}
-
 #carouselAsesoria .card:hover p {
     font-weight: bold;
     transition: all .3s;
@@ -330,7 +325,7 @@ a.text-white:focus {
 } */
 
 main article header {
-    padding: 4rem 0 2rem 0;
+    padding: 3rem 0;
     background-color: var(--rosa-oscuro);
     color: white;
 }
@@ -491,4 +486,11 @@ p.card-text {margin-bottom: 2rem;}
     height: 16px;
     margin-top: -4px;
     margin-right: 3px;
+}
+
+.vcenter-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }

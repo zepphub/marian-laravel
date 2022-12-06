@@ -108,8 +108,7 @@
             </div>
             <div class="row my-5">
               <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
-                    <h4>Si te sentís identificada con las afirmaciones que comparto respecto al momento vital de tu negocio,
-                        probablemente necesites:</h4>
+                    <h4>Si te sentís identificada con las afirmaciones que comparto respecto al momento vital de tu negocio, probablemente necesites:</h4>
                     <ul class="list-unstyled checklist text-justify">
                         <li><img src="{{ asset('img/check-icon.svg') }}" alt=""> Capitalizar la experiencia
                             rediseñando la estrategia de marca en entornos digitales con acciones validadas y alineadas a
@@ -228,7 +227,7 @@
             <div class="row mt-5">
                 <div class="col-md-6 mb-5">
                     <div class="card border-secondary text-center card-propuestas shadow">
-                        <img src="{{ asset('/img/badge-mentoria_grupal.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('/img/badge-mentoria_grupal-2.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Grupal</h5>
                             <h4>Eleva tu Marca</h4>
