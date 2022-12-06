@@ -6997,7 +6997,7 @@ input[type="button"].btn-block {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: .75rem 1rem;
+    padding: 0 1rem;
     list-style: none;
     background-color: #e9ecef;
     margin-bottom: 0;
@@ -14591,10 +14591,6 @@ img.icon-tab {
     }
 }
 
-.item-carousel {
-    min-height: 220px
-}
-
 #mentoria-g-owl-carousel {
     height: 550px;
     background: url(../img/mentoria-grupal-bg-owl-slider.jpg);
@@ -14617,21 +14613,22 @@ img.icon-tab {
 
 .customNextBtn,
 .customPrevBtn {
-    position: absolute
+    position: absolute;
+    -webkit-transform: translateY(64px);
+    transform: translateY(64px);
+    z-index: 10;
 }
 
 .customNextBtn {
-    right: -21px;
-    z-index: 10;
-    -webkit-transform: translateY(115px);
-    transform: translateY(115px)
+    right: -16px;
 }
 
 .customPrevBtn {
-    left: -21px;
-    z-index: 10;
-    -webkit-transform: translateY(115px);
-    transform: translateY(115px)
+    left: -16px;
+}
+
+.item-carousel {
+    border-radius: 4px;
 }
 
 .owl-dots {
@@ -14656,19 +14653,6 @@ img.icon-tab {
     }
 }
 
-@media (min-width: 768px) {
-    .item-carousel {
-        min-height: 270px
-    }
-}
-
-#tye-owl-carousel {
-    height: 550px;
-    background: url(../img/talleres-y-eventos-bg-textura.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center
-}
 
 #carouselTYE .carousel-indicators li,
 #carouselTYE_mobile .carousel-indicators li {
