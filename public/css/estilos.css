@@ -324,7 +324,7 @@ a.text-white:focus {
     right: -1000px !important;
 } */
 
-main article header {
+main article header, header.cart-header, header.blog-header {
     padding: 3rem 0;
     background-color: var(--rosa-oscuro);
     color: white;
@@ -332,7 +332,7 @@ main article header {
 .breadcrumb {
     font-size: 0.9em;
 }
-main article header h1, main article header h2 {
+main article header h1, main article header h2  {
     color: white;
     
 }

@@ -3,11 +3,12 @@
 @section('title')Carrito - @endsection
 
 @section('content')
-    <div class="container">
-        <header class="row">
+
+        <header class="container-fluid cart-header">
+            <div class="row">
             <div class="col-md-12">
                 <div class="text-center">
-                    <h2>Tu pedido</h2>
+                    <h1 class="epigrafe text-white">Tu pedido</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb custom">
                             <li class="breadcrumb-item"><a href="/">Inicio</a></li>
@@ -16,8 +17,10 @@
                     </nav>
                 </div>
             </div>
+            </div>
         </header>
 
+        <div class="container mt-5">
         @if (\Session::has('message'))
         <div class="row mt-5 mt-md-4">
           <div class="col-md-12">

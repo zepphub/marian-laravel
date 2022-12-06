@@ -6788,7 +6788,7 @@ input[type="button"].btn-block {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 3rem
+    padding: 2rem
 }
 
 .card-title {
@@ -14693,11 +14693,7 @@ img.icon-tab {
 }
 
 .badge-date {
-    bottom: 2px;
-    left: 30px;
-    background: #B46063;
-    border-radius: 15px 15px 0px 0px;
-    padding: 2px 15px
+    color: var(--marron-claro-2);
 }
 
 .list-categories li {
