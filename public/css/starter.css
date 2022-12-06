@@ -14072,10 +14072,6 @@ h6 {
     font-size: 0.85em;
 }
 
-footer {
-    margin-top: 5%
-}
-
 footer,
 footer a {
     background-color: #EDE7E4;
@@ -14300,16 +14296,7 @@ p.entry-date {
     }
 }
 
-.seccion-cinco-pilares {
-    padding-top: 7%;
-    margin-top: -5.9%
-}
-
 @media (min-width: 768px) {
-    .seccion-cinco-pilares {
-        padding-top: 7%;
-        margin-top: -3.9%
-    }
 
     .contenedor-cinco-pilares h5 {
         max-width: 175px;

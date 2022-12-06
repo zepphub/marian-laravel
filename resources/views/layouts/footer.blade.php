@@ -1,4 +1,4 @@
-    <div class="container-fluid pt-5 px-4">
+    <div class="container-fluid p-5">
         <div class="row">
             <div class="col-xl-4 col-lg-3 col-sm-6">
                 <div class="widget">

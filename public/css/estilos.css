@@ -395,9 +395,6 @@ footer .nav-link {
 footer .widget {
     margin-bottom: 3rem;
 }
-header .text-secondary {
-    color: #785F4E !important;
-}
 
 .bg-test {
     background-color: greenyellow;
@@ -489,4 +486,9 @@ p.card-text {margin-bottom: 2rem;}
     flex-direction: column;
     justify-content: center;
     align-items: start;
+}
+
+.portada-test {
+    background: url('../img/img-portada-test.png') center right no-repeat;
+    background-size: contain;
 }
