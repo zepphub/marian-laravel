@@ -14549,25 +14549,14 @@ img.icon-tab {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 450px
 }
 
-#mentoria-propuestas {
+/*#mentoria-propuestas {
     background: url(../img/mentoria-manchitas-left.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom left
-}
-
-@media (min-width: 768px) {
-    #mentoria-portada {
-        min-height: 550px
-    }
-
-    #mentoria-propuestas {
-        min-height: 600px
-    }
-}
+}*/
 
 #programa-section-para-vos {
     background: url(../img/programa-bg-para-vos.jpg);
