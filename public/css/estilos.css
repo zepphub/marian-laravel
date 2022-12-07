@@ -492,3 +492,28 @@ p.card-text {margin-bottom: 2rem;}
     background: url('../img/img-portada-test.png') center right no-repeat;
     background-size: contain;
 }
+.blog-posts .card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.txt-body {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 1rem;
+}
+.lettercoffee {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 1rem;
+    border: 1px solid var(--marron-claro-2);
+    border-radius: 8px;
+}
+.list-categories li {
+    border-color: var(--marron-claro-2);
+}
+.list-categories li a {
+    color: var(--marron-claro-2);
+}
+.list-categories li a:hover {
+    color: var(--marron-claro);
+}

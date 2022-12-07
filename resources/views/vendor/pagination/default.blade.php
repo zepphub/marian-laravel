@@ -1,5 +1,5 @@
 @if ($paginator->hasPages())
-<div class="row mt-5">
+<div class="row mb-5">
   <div class="col-md-12">
     <nav aria-label="...">
         <ul class="pagination pagination-blog">

@@ -24,7 +24,7 @@
            @csrf
            <input type=hidden name=resource id="hidden-resource" value=1>
           </form>
-          <form class="form-border-1-px form-download" action="{{ route('recursos-descarga') }}" method="post">
+          <form class=" form-download" action="{{ route('recursos-descarga') }}" method="post">
             @csrf
             <input type=hidden name=resource id=resource value=1>
             <div class="form-row">

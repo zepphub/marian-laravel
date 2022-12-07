@@ -2692,7 +2692,7 @@ pre code {
     color: #937A69;
     background-color: #fff;
     background-clip: padding-box;
-    border: 2px solid #937A69;
+    border: 1px solid #937A69;
     border-radius: 8px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
@@ -14029,7 +14029,6 @@ a.text-dark-gray:focus {
 
 a,
 a:hover {
-    color: #B46063;
     text-decoration: none
 }
 
@@ -14146,6 +14145,9 @@ h4.titulo-cards-dashboard {
     padding: 0 1em
 }
 
+.pagination-blog {
+    justify-content: center;
+}
 .pagination-blog .page-link {
     position: relative;
     display: block;
@@ -14158,6 +14160,11 @@ h4.titulo-cards-dashboard {
     width: 50px;
     height: 50px;
     border-radius: 50% !important
+}
+.pagination-blog .page-link svg {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
 }
 
 .pagination-blog .page-item.active .page-link {
@@ -14448,10 +14455,6 @@ img.icon-tab {
     position: relative
 }
 
-.ultimo-contenedor {
-    margin-bottom: -5%
-}
-
 @media (min-width: 768px) {
     #banner-asesoria-eleva::after {
         content: '';
@@ -14530,9 +14533,6 @@ img.icon-tab {
         width: 50%
     }
 
-    .ultimo-contenedor {
-        margin-bottom: -10%
-    }
 }
 
 #mentoria-portada {
@@ -14688,34 +14688,24 @@ img.icon-tab {
     border-top: none
 }
 
-.form-border-1-px .form-control {
-    border-width: 1px !important
-}
-
 .badge-date {
     color: var(--marron-claro-2);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+    font-size: 0.9em;
 }
 
 .list-categories li {
     border-width: 1px !important;
-    margin: 5px 0;
-    padding: 10px 0
+    margin: 4px;
+    padding: 8px;
 }
 
 #portada-entrada {
-    height: 315px;
     background: url(../img/img-entrada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center
-}
-
-#badge-category {
-    width: 120px;
-    height: 55px;
-    background: url(../img/entrada-bg-badge-categoria.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
     background-position: center center
 }
 
