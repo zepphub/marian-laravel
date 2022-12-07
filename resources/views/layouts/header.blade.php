@@ -36,7 +36,7 @@
                             viewBox="0 0 19.367 19.367">
                             <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in"
                                 d="M4.335,19.367H.32V6.437H4.335ZM2.325,4.673A2.336,2.336,0,1,1,4.651,2.326,2.345,2.345,0,0,1,2.325,4.673ZM19.363,19.367H15.356V13.073c0-1.5-.03-3.424-2.088-3.424-2.088,0-2.407,1.63-2.407,3.316v6.4H6.85V6.437H10.7V8.2h.056a4.219,4.219,0,0,1,3.8-2.088c4.064,0,4.811,2.676,4.811,6.152v7.1Z"
-                                transform="translate(0 -0.001)" fill="#b46063" />
+                                transform="translate(0 -0.001)" fill="currentColor" />
                         </svg>
                     </a>
                 </div>
@@ -46,8 +46,8 @@
 
     <!-- NAV DESKTOP -->
     <div class="container-fluid d-none d-lg-block">
-        <div class="row py-4 px-2">
-            <div class="col-md-5 d-flex align-items-center">
+        <div class="row align-items-center py-4 px-2">
+            <div class="col">
                 <nav class="navbar main-navigation navbar-expand-xl navbar-light pl-0">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -57,45 +57,45 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link text-secondary pl-0" href="{{ route('index') }}">Inicio <span
+                                <a class="nav-link text-marron-claro pl-0" href="{{ route('index') }}">Inicio <span
                                         class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-secondary" href="{{ route('sobre-mi') }}">Sobre Mi</a>
+                                <a class="nav-link text-marron-claro" href="{{ route('sobre-mi') }}">Sobre Mi</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link text-secondary d-inline-block pr-0" href="{{ route('servicios') }}"
+                                <a class="nav-link text-marron-claro d-inline-block pr-0" href="{{ route('servicios') }}"
                                     role="button">
                                     Trabajá conmigo
                                 </a>
-                                <a class="nav-link text-secondary dropdown-toggle d-inline-block pl-0"
+                                <a class="nav-link text-marron-claro dropdown-toggle d-inline-block pl-0"
                                     href="{{ route('servicios') }}" id="trabajaConmigo" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                                 </a>
                                 <div class="dropdown-menu border-0" aria-labelledby="trabajaConmigo">
-                                    <a class="dropdown-item" href="https://servicios.marianpd.com/cursos">Cursos</a>
-                                    <a class="dropdown-item" href="{{ route('mentoria') }}">Mentorías</a>
-                                    <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Conferencias</a>
+                                    <a class="dropdown-item text-marron-claro" href="https://servicios.marianpd.com/cursos">Cursos</a>
+                                    <a class="dropdown-item text-marron-claro" href="{{ route('mentoria') }}">Mentorías</a>
+                                    <a class="dropdown-item text-marron-claro" href="{{ route('talleres-y-eventos') }}">Conferencias</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-secondary" href="{{ route('index') }}#contacto">Contacto</a>
+                                <a class="nav-link text-marron-claro" href="{{ route('index') }}#contacto">Contacto</a>
                             </li>
 
                         </ul>
                     </div>
                 </nav>
             </div>
-            <div class="col-md-2 d-flex flex-column align-items-center justify-content-center">
+            <div class="col col-logo d-flex flex-column align-items-center justify-content-center">
                 <div class="">
-                    <a href="https://marianpd.com">
+                    <a href="/">
                         <img src="{{ asset('img/logo-marian-nav.svg') }}" class="img-fluid" alt="" width="250px">
-                        <h6 class="font-weight-normal text-center mb-0 mt-2 bajada-logo">Consultora de Marcas</h6>
+                        <h6 class="text-center mb-0 mt-2 bajada-logo">Consultora de Marcas</h6>
                     </a>
                 </div>
             </div>
-            <div class="col-md-5 d-md-flex align-items-center justify-content-end d-none">
+            <div class="col d-none d-md-flex align-items-center justify-content-end ">
                 <a href="{{ route('test') }}" class="btn btn-link text-secondary p-2 px-3">Test de Negocio</a>
                 <a href="{{ route('blog') }}" class="btn btn-link text-secondary p-2 px-3 mr-2">Blog</a>
                 <a href="https://servicios.marianpd.com/cursos" class="btn btn-outline-secondary p-2 px-3"
@@ -143,39 +143,39 @@
                     <div class="collapse navbar-collapse shadow" id="navbarNavDropdownMob">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link text-secondary pl-0" href="{{ route('index') }}">Inicio <span
+                                <a class="nav-link text-marron-claro pl-0" href="{{ route('index') }}">Inicio <span
                                         class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-secondary" href="{{ route('sobre-mi') }}">Sobre Mi</a>
+                                <a class="nav-link text-marron-claro" href="{{ route('sobre-mi') }}">Sobre Mi</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link text-secondary d-inline-block pr-0" href="{{ route('servicios') }}"
+                                <a class="nav-link text-marron-claro d-inline-block pr-0" href="{{ route('servicios') }}"
                                     role="button">
                                     Trabajá conmigo
                                 </a>
-                                <a class="nav-link text-secondary dropdown-toggle d-inline-block pl-0"
+                                <a class="nav-link text-marron-claro dropdown-toggle d-inline-block pl-0"
                                     href="{{ route('servicios') }}" id="trabajaConmigo" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                                 </a>
                                 <div class="dropdown-menu border-0" aria-labelledby="trabajaConmigo">
-                                    <a class="dropdown-item" href="https://servicios.marianpd.com/cursos">Cursos</a>
-                                    <a class="dropdown-item" href="{{ route('mentoria') }}">Mentorías</a>
-                                    <a class="dropdown-item" href="{{ route('talleres-y-eventos') }}">Conferencias</a>
+                                    <a class="dropdown-item text-marron-claro" href="https://servicios.marianpd.com/cursos">Cursos</a>
+                                    <a class="dropdown-item text-marron-claro" href="{{ route('mentoria') }}">Mentorías</a>
+                                    <a class="dropdown-item text-marron-claro" href="{{ route('talleres-y-eventos') }}">Conferencias</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-secondary" href="{{ route('index') }}#contacto">Contacto</a>
+                                <a class="nav-link text-marron-claro" href="{{ route('index') }}#contacto">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('test') }}" class="nav-link text-secondary">Test de Negocio</a>
+                                <a href="{{ route('test') }}" class="nav-link text-marron-claro">Test de Negocio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('blog') }}" class="nav-link text-secondary">Blog</a>
+                                <a href="{{ route('blog') }}" class="nav-link text-marron-claro">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('carrito') }}" class="nav-link text-secondary">
+                                <a href="{{ route('carrito') }}" class="nav-link text-marron-claro">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                     width="19.374" height="18.562" viewBox="0 0 19.374 18.562">
                                         <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart"

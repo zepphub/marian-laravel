@@ -517,3 +517,9 @@ p.card-text {margin-bottom: 2rem;}
 .list-categories li a:hover {
     color: var(--marron-claro);
 }
+.col-logo {
+    max-width: 300px;
+}
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(204, 180, 163, .5) !important;
+}
