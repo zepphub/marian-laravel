@@ -14276,14 +14276,6 @@ p.entry-date {
     bottom: -40px
 }
 
-@media (min-width: 768px) {
-
-    .contenedor-cinco-pilares h5 {
-        max-width: 175px;
-        min-height: 76px
-    }
-}
-
 #pills-form-test .nav-link.active h5 {
     color: #FFF !important;
 }

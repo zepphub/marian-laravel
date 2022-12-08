@@ -80,7 +80,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-marron-claro" href="{{ route('index') }}#contacto">Contacto</a>
+                                <a class="nav-link text-marron-claro" href="{{ route('contacto') }}">Contacto</a>
                             </li>
 
                         </ul>
@@ -166,7 +166,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-marron-claro" href="{{ route('index') }}#contacto">Contacto</a>
+                                <a class="nav-link text-marron-claro" href="{{ route('contacto') }}">Contacto</a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('test') }}" class="nav-link text-marron-claro">Test de Negocio</a>

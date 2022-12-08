@@ -218,11 +218,16 @@ a.text-white:focus {
         min-height: 120px;
     }
 
-    /*.contenedor-celu video,
-    .contenedor-celu img {
-        position: absolute;
-    }*/
+}
 
+.contenedor-cinco-pilares h5 {
+    font-size: 1.1rem;
+}
+
+.cinco-pilares .pilar {
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+    flex: 1 1 0px;
 }
 
 @media (max-width: 768px) {
@@ -466,10 +471,6 @@ p.card-text {margin-bottom: 2rem;}
     align-items: start;
 }
 
-.portada-test {
-    background: url('../img/img-portada-test.png') center right no-repeat;
-    background-size: contain;
-}
 .blog-posts .card-img-top {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
