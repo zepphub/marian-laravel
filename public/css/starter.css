@@ -14276,12 +14276,42 @@ p.entry-date {
     bottom: -40px
 }
 
+#pills-form-test .nav-item {
+    /* flex: 1 1 0px;*/
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+    #pills-form-test .nav-item {
+        width: auto;
+    }
+}
+
+#pills-form-test .nav-link h5 {
+    margin-bottom: 0;
+}
 #pills-form-test .nav-link.active h5 {
     color: #FFF !important;
 }
 
+#pills-form-test.nav-pills .nav-link {
+    background-color: var(--crema-suave);
+    padding: 1.5rem;
+}
+#pills-form-test.nav-pills .nav-link:hover {
+    background-color: var(--crema-suave-2);
+}
 #pills-form-test .nav-link.active {
-    background-color: #B46063 !important;
+    background-color: var(--secondary);
+}
+
+.test-form .desafio {
+    color: var(--primary);
+    margin: 3rem auto;
+    text-align: center;
+    max-width: 600px;
+    display: block;
+    text-decoration: underline;
 }
 
 .numerito-form {
@@ -14290,14 +14320,12 @@ p.entry-date {
     background: url(../img/bg-numeritos.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center
+    background-position: center center;
+    margin-bottom: 1.5rem !important;
 }
-
-.bg-textura-form-test {
-    background: url(../img/bg-tu-resutlado.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center
+.numerito-form h4 {
+    font-weight: 600;
+    margin-bottom: 0;
 }
 
 #result-test .form-control {
