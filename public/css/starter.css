@@ -14277,16 +14277,6 @@ p.entry-date {
 }
 
 @media (min-width: 768px) {
-    .portada-sobre-mi {
-        height: 70vh
-    }
-
-    .descripcion-testimonio {
-        min-height: 75px
-    }
-}
-
-@media (min-width: 768px) {
 
     .contenedor-cinco-pilares h5 {
         max-width: 175px;

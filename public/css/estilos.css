@@ -226,21 +226,9 @@ a.text-white:focus {
 }
 
 @media (max-width: 768px) {
-    .w-75 {
-        width: 100% !important;
-    }
 
     #asesoriaTabs .d-flex.flex-column h4 {
         font-size: 1.5em;
-    }
-
-    .logo-mobile img {
-        width: 150px;
-        height: auto;
-    }
-
-    footer h4 {
-        margin: 25px 0 0 0 !important;
     }
 
     #carouselAsesoriaMob .card-text {
@@ -282,36 +270,6 @@ a.text-white:focus {
     #carouselTYE_mobile .card-body {
         padding: 0;
     }
-
-    /*.contenedor-celu video,
-    .contenedor-celu img {
-        position: absolute;
-    }
-
-    .contenedor-celu img {
-        left: 20%;
-    }
-
-    .contenedor-celu video {
-        left: 50% !important;
-    }*/
-
-    .play-bt {
-        left: 45%;
-    }
-
-    .pause-bt {
-        left: 51%;
-    }
-}
-
-@media (max-width: 450px) {
-
-    /*.contenedor-celu video,
-    .contenedor-celu img {
-        left: 50%;
-        transform: translateX(-50%);
-    }*/
 
 }
 
