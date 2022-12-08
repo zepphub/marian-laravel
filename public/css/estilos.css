@@ -398,7 +398,23 @@ footer .nav-link {
 }
 footer .widget {
     margin-bottom: 3rem;
+    padding-top: 1.5rem;
 }
+
+footer .widget h5 {
+    margin-bottom: 2rem;
+}
+footer .widget h5::after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1px;
+    background-color: var(--secondary);
+    position: relative;
+    top: 1rem;
+    left: 0;
+}
+
 
 .bg-test {
     background-color: greenyellow;

@@ -1,7 +1,6 @@
-    <div class="container-fluid p-5">
+    <div class="container-fluid px-5 pt-5 pb-3">
         <div class="row">
-            <div class="col-xl-4 col-lg-3 col-sm-6">
-                <div class="widget">
+            <div class="col-xl-4 col-lg-3 col-sm-6 pt-3">
                     <img src="{{ asset('img/logo-footer.svg') }}" alt="">
                     <p class="mt-4 mb-md-5">Me especializo en la creación de proyectos y estrategias digitales y lo hago
                         a través de
@@ -32,7 +31,6 @@
                                 </svg>
                             </button></a>
                     </div>
-                </div>
             </div>
             <div class="col-xl-2 offset-xl-2 col-lg-3 col-sm-6">
                 <div class="widget">
@@ -105,7 +103,7 @@
                 <p class="text-marron-claro">Marian PD © 2022 - Todos los derechos reservados.</p>
             </div>
             <div class="col-md-6 text-center text-md-right">
-                <p class="text-marron-claro"><a href="https://gusdenis.com" target="_blank">Angus Dei</a></p>
+                <p class="text-marron-claro">With ❤️ by <a href="https://gusdenis.com" target="_blank" class="text-secondary">Angus Dei</a></p>
             </div>
         </div>
     </div>

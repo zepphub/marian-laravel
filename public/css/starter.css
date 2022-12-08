@@ -14076,21 +14076,14 @@ h6 {
     font-size: 0.85em;
 }
 
-footer,
-footer a {
+footer {
     background-color: #EDE7E4;
-    color: #785F4E !important;
 }
-
-footer p.date-input {
-    color: #CCB4A3;
-    font-size: 0.9em;
+footer a {
+    color: var(--marron-claro);
 }
-
-@media (max-width: 768px) {
-    footer {
-        margin-top: 10%
-    }
+footer a:hover, footer a:focus {
+    color: var(--marron);
 }
 
 .border-2 {
@@ -14678,7 +14671,7 @@ img.icon-tab {
     border-top: none
 }
 
-.badge-date {
+.badge-date, .date-input {
     color: var(--marron-claro-2);
     text-transform: uppercase;
     letter-spacing: 0.1em;
