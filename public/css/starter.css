@@ -189,7 +189,7 @@ h6 {
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
 
 abbr[title],
@@ -14009,13 +14009,14 @@ a.text-dark-gray:focus {
 }
 
 .btn-blanco {
-    border: 1px solid #F8337A;
+    border-color: #FFF;
     color: #F8337A;
-    background: #FFF
+    background: #FFF;
 }
 .btn-blanco:hover {
     background: #F8337A;
     color: #FFF;
+    border-color: #F8337A;
 }
 
 .btn-outline-white:hover {
@@ -14189,9 +14190,6 @@ h4.titulo-cards-dashboard {
 }
 
 @media (min-width: 768px) {
-    .container.sobre-mi {
-        margin-top: -35px
-    }
 
     .card-propuestas {
         transition: all .3s
@@ -14209,11 +14207,17 @@ h4.titulo-cards-dashboard {
 }
 
 .banner-home-1 {
-    min-height: 475px;
-    background: url(../img/banner-home-1.jpg);
+    min-height: 400px;
+    background-image: url(../img/marble-texture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #EDE7E4;
+    color: var(--secondary);
+}
+.banner-home-1 .epigrafe::after {
+    display: none;
 }
 
 .banner-eleva-tu-marca {
@@ -14255,16 +14259,6 @@ p.entry-date {
     border: 1px solid #CCB4A3;
     background: transparent;
     color: #CCB4A3
-}
-
-.contenedor-form-home {
-    margin-bottom: -5%
-}
-
-@media (max-width: 768px) {
-    .contenedor-form-home {
-        margin-bottom: -10%
-    }
 }
 
 .portada-sobre-mi {
