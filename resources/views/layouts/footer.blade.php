@@ -103,7 +103,7 @@
                 <p class="text-marron-claro">Marian PD © 2022 - Todos los derechos reservados.</p>
             </div>
             <div class="col-md-6 text-center text-md-right">
-                <p class="text-marron-claro">With ❤️ by <a href="https://gusdenis.com" target="_blank" class="text-secondary">Angus Dei</a></p>
+                <p class="text-marron-claro">With ❤️ by <a href="https://angusdeir.ar" target="_blank" class="text-secondary">AngusDei</a></p>
             </div>
         </div>
     </div>
