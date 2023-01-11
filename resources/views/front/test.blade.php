@@ -35,7 +35,7 @@
                         <a href="{{ route('test-formulario') }}" class="btn btn-primary mt-3">Quiero hacer el test</a>
                     </div>
                     <div class="col-md-6 order-1 order-md-2">
-                        <img class="img-fluid rounded-circle mb-5" src="{{ asset('img/about-me.jpg') }}" alt="">
+                        <img class="img-fluid rounded-circle mb-5" src="{{ asset('img/test.jpg') }}" alt="">
                     </div>
                 </div>
             </div>

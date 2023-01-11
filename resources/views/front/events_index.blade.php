@@ -26,11 +26,11 @@
         </header>
 
         <section class="container my-5">
-            <div class="row py-5">
+            <div class="row py-5 align-content-center">
                 <div class="col-md-5">
-                    <img class="w-100 img-fluid mb-5" src="{{ asset('img/talleres-y-eventos-img-1.png') }}" alt="">
+                    <img class="w-100 img-fluid mb-5" src="{{ asset('img/conferencias.jpg') }}" alt="">
                 </div>
-                <div class="col-md-7 pl-md-5">
+                <div class="col-md-7 pl-md-5 pt-5">
                     <h2>Talleres y Conferencias a medida</h2>
                     <img src="{{ asset('/img/separador.svg') }}" class="separador-ondas mb-4" alt="">
                     <p>Comencé mi carrera como consultora de marcas a mis 22 años, cuando me propuse fusionar mis áreas de
