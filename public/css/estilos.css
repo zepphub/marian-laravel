@@ -516,3 +516,10 @@ p.card-text {margin-bottom: 2rem;}
     background-attachment: fixed;
     background-color: #E5C1C5 !important;
 }
+
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active:focus,
+.btn:not(:disabled):not(.disabled).active:focus {
+    box-shadow: none;
+}
