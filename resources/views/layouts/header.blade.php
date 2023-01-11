@@ -100,25 +100,6 @@
                 <a href="{{ route('blog') }}" class="btn btn-link text-secondary p-2 px-3 mr-2">Blog</a>
                 <a href="https://servicios.marianpd.com/cursos" class="btn btn-outline-secondary p-2 px-3"
                     target="_blank">Cursos</a>
-                    <a href="{{ route('carrito') }}" class="p-2 px-3"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="19.374" height="18.562" viewBox="0 0 19.374 18.562">
-                        <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart"
-                            transform="translate(-0.75 -0.75)">
-                            <path id="Trazado_25" data-name="Trazado 25"
-                                d="M13.625,30.812A.812.812,0,1,1,12.812,30,.812.812,0,0,1,13.625,30.812Z"
-                                transform="translate(-4.813 -13.063)" fill="none" stroke="#785F4E"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-                            <path id="Trazado_26" data-name="Trazado 26"
-                                d="M30.125,30.812A.812.812,0,1,1,29.312,30,.812.812,0,0,1,30.125,30.812Z"
-                                transform="translate(-12.376 -13.063)" fill="none" stroke="#785F4E"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-                            <path id="Trazado_27" data-name="Trazado 27"
-                                d="M1.5,1.5H4.75L6.927,12.379a1.625,1.625,0,0,0,1.625,1.308h7.9a1.625,1.625,0,0,0,1.625-1.308l1.3-6.817H5.562"
-                                fill="none" stroke="#785F4E" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5" />
-                        </g>
-                    </svg>
-                </a>
             </div>
         </div>
     </div>
@@ -173,29 +154,6 @@
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('blog') }}" class="nav-link text-marron-claro">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ route('carrito') }}" class="nav-link text-marron-claro">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                    width="19.374" height="18.562" viewBox="0 0 19.374 18.562">
-                                        <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart"
-                                            transform="translate(-0.75 -0.75)">
-                                            <path id="Trazado_25" data-name="Trazado 25"
-                                                d="M13.625,30.812A.812.812,0,1,1,12.812,30,.812.812,0,0,1,13.625,30.812Z"
-                                                transform="translate(-4.813 -13.063)" fill="none" stroke="#785F4E"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-                                            <path id="Trazado_26" data-name="Trazado 26"
-                                                d="M30.125,30.812A.812.812,0,1,1,29.312,30,.812.812,0,0,1,30.125,30.812Z"
-                                                transform="translate(-12.376 -13.063)" fill="none" stroke="#785F4E"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-                                            <path id="Trazado_27" data-name="Trazado 27"
-                                                d="M1.5,1.5H4.75L6.927,12.379a1.625,1.625,0,0,0,1.625,1.308h7.9a1.625,1.625,0,0,0,1.625-1.308l1.3-6.817H5.562"
-                                                fill="none" stroke="#785F4E" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="1.5" />
-                                        </g>
-                                    </svg>
-                                    Carrito
-                                </a>
                             </li>
                             <hr>
                             <li class="nav-item">
