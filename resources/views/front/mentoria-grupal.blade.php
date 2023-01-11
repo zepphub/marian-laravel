@@ -29,9 +29,9 @@
 
         <section class="container py-5">
             <div class="row my-5">
-                <div class="col-md-5 text-center">
+                <div class="col-md-5 text-center d-flex align-items-center justify-content-center">
                     <img class="img-fluid m-5 m-sm-0" style="max-width: 256px;"
-                        src="{{ asset('img/badge-mentoria_grupal.png') }}" alt="">
+                        src="{{ asset('img/mg-badge.svg') }}" alt="">
                 </div>
                 <div class="col-md-7 vcenter-col">
                     <h2>Programa de formación <u>online</u></h2>

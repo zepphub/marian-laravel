@@ -227,7 +227,7 @@
             <div class="row mt-5">
                 <div class="col-md-6 mb-5">
                     <div class="card border-secondary text-center card-propuestas shadow">
-                        <img src="{{ asset('/img/badge-mentoria_grupal-2.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('/img/mg-badge-dark.svg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Grupal</h5>
                             <h4>Eleva tu Marca®</h4>
