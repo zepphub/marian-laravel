@@ -108,7 +108,7 @@
                         conversaciones genuinas y ventas sinceras.</p>
 
                     <p class="text-marron">A través de mis programas de formación y consultoría digital, fusionamos
-                        comunicación experiencial con dinámicas específicas y centradas en el marketing consciente.</p>
+                        Comunicación Experiencial® con dinámicas específicas y centradas en el marketing consciente.</p>
 
                     <p class="text-marron">Si este proceso resuena con vos, <br><b>¡Bienvenida!, estás en el lugar
                             correcto.</b></p>
@@ -130,7 +130,7 @@
                         <p class="my-5 w-75 mx-auto">Construyamos el universo de tu marca y elevemos su posicionamiento en
                             entornos digitales a través de dinámicas específicas, centradas en el marketing consciente y en
                             la
-                            comunicación experiencial.</p>
+                            Comunicación Experiencial®.</p>
                         <h5 class="separador-vertical">Mis propuestas</h5>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                         <img src="{{ asset('/img/card-talleres-home.svg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">Conferencias y Talleres</h5>
-                            <p class="card-text">Capacitaciones, workshops y ponencias sobre comunicación experiencial,
+                            <p class="card-text">Capacitaciones, workshops y ponencias sobre Comunicación Experiencial®,
                                 marketing consciente y estrategia diferencial en entornos digitales.</p>
                             <a href="{{ route('talleres-y-eventos') }}" class="btn btn-primary">Click Aquí</a>
                         </div>

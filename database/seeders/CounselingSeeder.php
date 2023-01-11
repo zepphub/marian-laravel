@@ -19,7 +19,7 @@ class CounselingSeeder extends Seeder
         $counseling_service_list = [
             [
                'id'=>'1',
-               'name'=>'Eleva tu Esencia',
+               'name'=>'Eleva tu Esencia®',
                'price_ars'=>'435',
                'price_usd'=>'6',
                'calendly'=>'https://calendly.com/marianpd/sesion',

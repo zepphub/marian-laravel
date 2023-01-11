@@ -87,7 +87,7 @@
                                 entornos digitales a través de dinámicas específicas, centradas en el marketing consciente y
                                 en
                                 la
-                                comunicación experiencial.</p>
+                                Comunicación Experiencial®.</p>
                             <h5 class="separador-vertical">Mis propuestas</h5>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                             <img src="{{ asset('/img/card-talleres-home.svg') }}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title epigrafe">Conferencias y Talleres</h5>
-                                <p class="card-text">Capacitaciones, workshops y ponencias sobre comunicación experiencial,
+                                <p class="card-text">Capacitaciones, workshops y ponencias sobre Comunicación Experiencial®,
                                     marketing consciente y estrategia diferencial en entornos digitales.</p>
                                 <a href="{{ route('talleres-y-eventos') }}" class="btn btn-primary">Click Aquí</a>
                             </div>

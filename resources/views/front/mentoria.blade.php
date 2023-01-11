@@ -35,7 +35,7 @@
                     <h2 class="separador-horizontal">Mis propuestas de mentoría para vos</h2>
                     <p class="text-marron-claro">Creemos una estrategia de marca diferencial, que te ayude a elevar el
                         posicionamiento en entornos digitales, a través de dinámicas específicas centradas en el marketing
-                        consciente y en la comunicación experiencial.</p>
+                        consciente y en la Comunicación Experiencial®.</p>
                 </div>
             </div>
             <div class="row">
@@ -44,7 +44,7 @@
                         <img src="{{ asset('/img/ps-badge-dark.svg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Personalizada</h5>
-                            <h4>Eleva tu Esencia</h4>
+                            <h4>Eleva tu Esencia®</h4>
                             <p class="card-text"><b>Programa Selecto para Profesionales y Marcas Digitales.</b><br> Un
                                 proceso en el que te acompaño y ayudo, durante un período de 10 semanas, a crear una
                                 estrategia de marca diferencial e integral en entornos digitales a fin de que tu audiencia
@@ -59,7 +59,7 @@
                         <img src="{{ asset('/img/badge-mentoria_grupal-2.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Grupal</h5>
-                            <h4>Eleva tu Marca</h4>
+                            <h4>Eleva tu Marca®</h4>
                             <p class="card-text"><b>Un programa grupal de 8 semanas con acompañamiento semanal y sesiones de
                                     mentoría en vivo.</b><br> Te ayudaré a tomar decisiones estratégicas para transformar tu
                                 emprendimiento en un negocio digital sólido y alineado al estilo de vida que deseas.</p>

@@ -15,7 +15,7 @@
             <div class="row py-5">
                 <div class="col-md-12 text-center">
                     <h1 class="epigrafe">Mentoría Grupal</h1>
-                    <h2>Eleva tu Marca</h2>
+                    <h2>Eleva tu Marca®</h2>
                     <nav class="" aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center bg-transparent">
                             <li class="breadcrumb-item"><a href="{{ route('index') }}">Inicio</a></li>
@@ -201,7 +201,7 @@
                         <img src="{{ asset('/img/ps-badge-dark.svg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Personalizada</h5>
-                            <h4>Eleva tu Esencia</h4>
+                            <h4>Eleva tu Esencia®</h4>
                             <p class="card-text"><b>Programa Selecto para Profesionales y Marcas Digitales.</b><br> Un
                                 proceso en el que te acompaño y ayudo, durante un período de 10 semanas, a crear una
                                 estrategia de marca diferencial e integral en entornos digitales a fin de que tu audiencia

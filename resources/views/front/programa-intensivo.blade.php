@@ -14,7 +14,7 @@
             <div class="row py-5">
                 <div class="col-md-12 text-center">
                     <h1 class="epigrafe">Mentoría Personalizada</h1>
-                    <h2>Eleva tu esencia</h2>
+                    <h2>Eleva tu Esencia®</h2>
                     <nav class="" aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center bg-transparent">
                             <li class="breadcrumb-item"><a href="{{ route('index') }}">Inicio</a></li>
@@ -230,7 +230,7 @@
                         <img src="{{ asset('/img/badge-mentoria_grupal-2.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Grupal</h5>
-                            <h4>Eleva tu Marca</h4>
+                            <h4>Eleva tu Marca®</h4>
                             <p class="card-text"><b>Un programa grupal de 8 semanas con acompañamiento semanal y sesiones
                                     de mentoría en vivo.</b><br> Te ayudaré a tomar decisiones estratégicas para transformar
                                 tu emprendimiento en un negocio digital sólido y alineado al estilo de vida que deseas.</p>
