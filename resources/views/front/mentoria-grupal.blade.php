@@ -150,27 +150,8 @@
                     <h3 class="mb-0">La experiencia contada por ellas</h3>
                     <img src="{{ asset('img/separador.svg') }}" class="separador-ondas mx-auto my-4" alt="">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="560" height="315"
-                            src="https://www.youtube.com/embed/xLOF69whyDo" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xLOF69whyDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                    <img src="{{ asset('img/separador.svg') }}" class="separador-ondas mx-auto my-4" alt="">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="560" height="315"
-                            src="https://www.youtube.com/embed/xLOF69whyDo" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <img src="{{ asset('img/separador.svg') }}" class="separador-ondas mx-auto my-4" alt="">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="560" height="315"
-                            src="https://www.youtube.com/embed/xLOF69whyDo" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <img src="{{ asset('img/separador.svg') }}" class="separador-ondas mx-auto my-4" alt="">
-
                 </div>
             </div>
         </section>
