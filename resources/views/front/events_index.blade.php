@@ -586,40 +586,43 @@
         </section>
 
         <div class="bg-crema-suave contenedor-form-home py-5" id="contacto">
-            <div class="container bg-white p-4 rounded">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="bg-textura-form rounded p-md-4 p-3">
-                            <p class="text-white mt-3">Si te gustaría que sea parte de tu evento</p>
-                            <h4 class="  text-white">¡Charlemos!</h4>
-                            <img src="{{ asset('img/separador-secondary.svg') }}" class="separador-ondas"
-                                alt="">
-
-                            <div>
-                                <ul class="list-group">
-                                    <li class="list-group-item border-0 bg-transparent pl-md-0 py-1">
-                                        <div class="d-flex text-white align-items-center"><svg class="mr-2 text-secondary"
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                                            </svg>contacto@marianpd.com</div>
-                                    </li>
-                                    <!-- <li class="list-group-item border-0 bg-transparent pl-md-0 py-1">
-                              <div class="d-flex text-white align-items-center"><svg class="mr-2 text-secondary"
-                                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                  class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                  <path
-                                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                                </svg>+549- 3537-536010</div>
-                            </li> -->
-                                </ul>
-                            </div>
-                            <div class="social-group mt-5">
+            <!-- Formulario de Contacto -->
+    <aside id="contacto" class="bg-crema-suave p-md-5">
+        <div class="container bg-white px-3 py-4 rounded shadow">
+            <div class="row p-3">
+                <div class="col-md-6 mb-3 pr-md-5">
+                    <div>
+                        <h3 class="text-primary">Contacta conmigo, <br>me encantará leerte.</h3>
+                        <img src="{{ asset('/img/separador-primary.svg') }}" class="separador-ondas mb-3"
+                            alt="">
+                        <p>Si estas por aquí es porque hay algo que quieres decirme o preguntarme.</p>
+                        <div>
+                            <ul class="list-group">
+                                <li class="list-group-item border-0 bg-transparent p-0 pl-md-0 py-md-1">
+                                    <div class="d-flex align-items-center">
+                                        <svg class="mr-2 text-primary" xmlns="http://www.w3.org/2000/svg" width="18"
+                                            height="18" fill="currentColor" class="bi bi-envelope"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                                        </svg> <a href="mailto:contacto@marianpd.com">contacto@marianpd.com</a>
+                                    </div>
+                                </li>
+                                <!-- <li class="list-group-item border-0 bg-transparent p-0 pl-md-0 py-md-1 my-2 my-md-0">
+                                            <div class="d-flex text-white align-items-center"><svg class="mr-2 text-secondary"
+                                                    xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                                </svg>+549- 3537-536010</div>
+                                        </li> -->
+                            </ul>
+                        </div>
+                        <!--<div class="social-group mt-5">
                                 <div class="d-flex">
                                     <div class="list-group-item border-0 bg-transparent p-0">
                                         <div class="btn-social-group d-flex align-items-center justify-content-center">
-                                            <a class="" href="https://twitter.com/Marianaapd?s=08"><svg
+                                            <a class="" href="https://twitter.com/Marianaapd?s=08" target="_blank"><svg
                                                     id="Componente_2_9" data-name="Componente 2 – 9"
                                                     xmlns="http://www.w3.org/2000/svg" width="42" height="42"
                                                     viewBox="0 0 42 42">
@@ -634,8 +637,8 @@
                                     </div>
                                     <div class="list-group-item border-0 bg-transparent p-0">
                                         <div class="btn-social-group d-flex align-items-center justify-content-center">
-                                            <a class="" href="https://www.instagram.com/mariann.pd/?hl=es-la"><svg
-                                                    id="Componente_4_15" data-name="Componente 4 – 15"
+                                            <a class="" href="https://www.instagram.com/mariann.pd/?hl=es-la"
+                                                target="_blank"><svg id="Componente_4_15" data-name="Componente 4 – 15"
                                                     xmlns="http://www.w3.org/2000/svg" width="42" height="42"
                                                     viewBox="0 0 42 42">
                                                     <circle id="Elipse_3" data-name="Elipse 3" cx="21"
@@ -650,124 +653,116 @@
                                     <div class="list-group-item border-0 bg-transparent p-0">
                                         <div class="btn-social-group d-flex align-items-center justify-content-center">
                                             <a class=""
-                                                href="https://www.linkedin.com/in/mariana-pacheco-d-aquila-ba537375/"><svg
-                                                    id="Componente_4_16" data-name="Componente 4 – 16"
+                                                href="https://www.linkedin.com/in/mariana-pacheco-d-aquila-ba537375/"
+                                                target="_blank"><svg id="Componente_4_16" data-name="Componente 4 – 16"
                                                     xmlns="http://www.w3.org/2000/svg" width="42" height="42"
                                                     viewBox="0 0 42 42">
                                                     <circle id="Elipse_3" data-name="Elipse 3" cx="21"
                                                         cy="21" r="21" fill="#f8337a" opacity="0" />
-                                                    <path id="Icon_awesome-linkedin-in"
-                                                        data-name="Icon awesome-linkedin-in"
+                                                    <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in"
                                                         d="M4.335,19.367H.32V6.437H4.335ZM2.325,4.673A2.336,2.336,0,1,1,4.651,2.326,2.345,2.345,0,0,1,2.325,4.673ZM19.363,19.367H15.356V13.073c0-1.5-.03-3.424-2.088-3.424-2.088,0-2.407,1.63-2.407,3.316v6.4H6.85V6.437H10.7V8.2h.056a4.219,4.219,0,0,1,3.8-2.088c4.064,0,4.811,2.676,4.811,6.152v7.1Z"
                                                         transform="translate(11.066 11.066)" fill="#fff" />
                                                 </svg></a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div>-->
                     </div>
-                    <div class="col-md-7">
-                        <div class="mt-4 mt-md-0">
-                            <form id="contactForm" class="needs-validation form-home" action="{{ route('consulta') }}"
-                                method="post">
-                                @csrf
-                                <x-honeypot />
-                                <div class="form-row">
-                                    <div class="col-md-6 mb-3">
-                                        <input type="text" class="form-control " id="nombre" placeholder="Nombre"
-                                            name="firstname" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <input type="text" class="form-control " id="apellido"
-                                            placeholder="Apellido" name="lastname" required>
-                                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mt-4 mt-md-0">
+                        <form id="contactForm" class="needs-validation form-home" action="{{ route('consulta') }}"
+                            method="post">
+                            @csrf
+                            <x-honeypot />
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control " id="nombre" placeholder="Nombre"
+                                        name="firstname" required>
                                 </div>
-                                <div class="form-row">
-                                    <div class="col-md-6 mb-3">
-                                        <input type="email" class="form-control " placeholder="Email" id="email"
-                                            name="email" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <input type="text" class="form-control " placeholder="Teléfono"
-                                            id="telefono" name="phone" required>
-                                    </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control " id="apellido" placeholder="Apellido"
+                                        name="lastname" required>
                                 </div>
-                                <div class="form-row">
-                                    <div class="col-md-12 mb-3">
-                                        <textarea class="form-control" name="query" cols="30" rows="5" placeholder="Dejame tu consulta"
-                                            required></textarea>
-                                    </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control " placeholder="Email" id="email"
+                                        name="email" required>
                                 </div>
-                                <div class="text-right">
-                                    <button class="btn btn-primary" type="submit">Enviar
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="21.29" height="21.29"
-                                            viewBox="0 0 21.29 21.29">
-                                            <g id="avion-de-papel" transform="translate(0 0)">
-                                                <g id="Grupo_536" data-name="Grupo 536" transform="translate(2.246 0)">
-                                                    <g id="Grupo_535" data-name="Grupo 535" transform="translate(0 0)">
-                                                        <path id="Trazado_388" data-name="Trazado 388"
-                                                            d="M72.834.054a.416.416,0,0,0-.418,0L64.8,4.564a.416.416,0,1,0,.423.716l5.467-3.233L60.5,12.613l-5.065-1.55,6.61-3.909a.416.416,0,0,0-.423-.716L54.2,10.827a.416.416,0,0,0,.09.756l6.049,1.851,2.669,4.857.009.013a.415.415,0,0,0,.646.084l3.069-3,5.772,1.766a.416.416,0,0,0,.537-.4V.416A.416.416,0,0,0,72.834.054Zm-9.8,13.635a.416.416,0,0,0-.074.237V16.47l-1.822-3.317L69.2,4.787Zm.758,3.413V14.489l2.037.623Zm8.421-.908-8.171-2.5L72.212,1.9Z"
-                                                            transform="translate(-53.999 0)" fill="#fff" />
-                                                    </g>
-                                                </g>
-                                                <g id="Grupo_538" data-name="Grupo 538"
-                                                    transform="translate(2.246 14.331)">
-                                                    <g id="Grupo_537" data-name="Grupo 537">
-                                                        <path id="Trazado_389" data-name="Trazado 389"
-                                                            d="M58.591,344.77a.416.416,0,0,0-.588,0l-3.882,3.882a.416.416,0,0,0,.588.588l3.882-3.882A.416.416,0,0,0,58.591,344.77Z"
-                                                            transform="translate(-53.999 -344.648)" fill="#fff" />
-                                                    </g>
-                                                </g>
-                                                <g id="Grupo_540" data-name="Grupo 540" transform="translate(0 19.502)">
-                                                    <g id="Grupo_539" data-name="Grupo 539" transform="translate(0)">
-                                                        <path id="Trazado_390" data-name="Trazado 390"
-                                                            d="M1.666,469.123a.416.416,0,0,0-.588,0l-.956.956a.416.416,0,1,0,.588.588l.956-.956A.416.416,0,0,0,1.666,469.123Z"
-                                                            transform="translate(0 -469.001)" fill="#fff" />
-                                                    </g>
-                                                </g>
-                                                <g id="Grupo_542" data-name="Grupo 542"
-                                                    transform="translate(5.222 20.434)">
-                                                    <g id="Grupo_541" data-name="Grupo 541">
-                                                        <path id="Trazado_391" data-name="Trazado 391"
-                                                            d="M126.29,491.532a.415.415,0,1,0,.122.294A.419.419,0,0,0,126.29,491.532Z"
-                                                            transform="translate(-125.58 -491.41)" fill="#fff" />
-                                                    </g>
-                                                </g>
-                                                <g id="Grupo_544" data-name="Grupo 544"
-                                                    transform="translate(6.26 17.34)">
-                                                    <g id="Grupo_543" data-name="Grupo 543">
-                                                        <path id="Trazado_392" data-name="Trazado 392"
-                                                            d="M153.3,417.128a.416.416,0,0,0-.588,0l-2.056,2.056a.416.416,0,1,0,.588.588l2.056-2.056A.416.416,0,0,0,153.3,417.128Z"
-                                                            transform="translate(-150.534 -417.006)" fill="#fff" />
-                                                    </g>
-                                                </g>
-                                                <g id="Grupo_546" data-name="Grupo 546"
-                                                    transform="translate(13.35 17.182)">
-                                                    <g id="Grupo_545" data-name="Grupo 545">
-                                                        <path id="Trazado_393" data-name="Trazado 393"
-                                                            d="M323.825,413.333a.416.416,0,0,0-.588,0l-2.062,2.062a.416.416,0,1,0,.588.588l2.062-2.062A.416.416,0,0,0,323.825,413.333Z"
-                                                            transform="translate(-321.053 -413.211)" fill="#fff" />
-                                                    </g>
-                                                </g>
-                                                <g id="Grupo_548" data-name="Grupo 548"
-                                                    transform="translate(11.079 5.546)">
-                                                    <g id="Grupo_547" data-name="Grupo 547">
-                                                        <path id="Trazado_394" data-name="Trazado 394"
-                                                            d="M267.14,133.5a.416.416,0,1,0,.122.294A.419.419,0,0,0,267.14,133.5Z"
-                                                            transform="translate(-266.43 -133.38)" fill="#fff" />
-                                                    </g>
-                                                </g>
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control " placeholder="Teléfono" id="telefono"
+                                        name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <textarea class="form-control" name="query" cols="30" rows="5" placeholder="Dejame tu consulta"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100" type="submit">Enviar
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.29" height="21.29"
+                                    viewBox="0 0 21.29 21.29">
+                                    <g id="avion-de-papel" transform="translate(0 0)">
+                                        <g id="Grupo_536" data-name="Grupo 536" transform="translate(2.246 0)">
+                                            <g id="Grupo_535" data-name="Grupo 535" transform="translate(0 0)">
+                                                <path id="Trazado_388" data-name="Trazado 388"
+                                                    d="M72.834.054a.416.416,0,0,0-.418,0L64.8,4.564a.416.416,0,1,0,.423.716l5.467-3.233L60.5,12.613l-5.065-1.55,6.61-3.909a.416.416,0,0,0-.423-.716L54.2,10.827a.416.416,0,0,0,.09.756l6.049,1.851,2.669,4.857.009.013a.415.415,0,0,0,.646.084l3.069-3,5.772,1.766a.416.416,0,0,0,.537-.4V.416A.416.416,0,0,0,72.834.054Zm-9.8,13.635a.416.416,0,0,0-.074.237V16.47l-1.822-3.317L69.2,4.787Zm.758,3.413V14.489l2.037.623Zm8.421-.908-8.171-2.5L72.212,1.9Z"
+                                                    transform="translate(-53.999 0)" fill="#fff" />
                                             </g>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </form>
-
-                        </div>
+                                        </g>
+                                        <g id="Grupo_538" data-name="Grupo 538" transform="translate(2.246 14.331)">
+                                            <g id="Grupo_537" data-name="Grupo 537">
+                                                <path id="Trazado_389" data-name="Trazado 389"
+                                                    d="M58.591,344.77a.416.416,0,0,0-.588,0l-3.882,3.882a.416.416,0,0,0,.588.588l3.882-3.882A.416.416,0,0,0,58.591,344.77Z"
+                                                    transform="translate(-53.999 -344.648)" fill="#fff" />
+                                            </g>
+                                        </g>
+                                        <g id="Grupo_540" data-name="Grupo 540" transform="translate(0 19.502)">
+                                            <g id="Grupo_539" data-name="Grupo 539" transform="translate(0)">
+                                                <path id="Trazado_390" data-name="Trazado 390"
+                                                    d="M1.666,469.123a.416.416,0,0,0-.588,0l-.956.956a.416.416,0,1,0,.588.588l.956-.956A.416.416,0,0,0,1.666,469.123Z"
+                                                    transform="translate(0 -469.001)" fill="#fff" />
+                                            </g>
+                                        </g>
+                                        <g id="Grupo_542" data-name="Grupo 542" transform="translate(5.222 20.434)">
+                                            <g id="Grupo_541" data-name="Grupo 541">
+                                                <path id="Trazado_391" data-name="Trazado 391"
+                                                    d="M126.29,491.532a.415.415,0,1,0,.122.294A.419.419,0,0,0,126.29,491.532Z"
+                                                    transform="translate(-125.58 -491.41)" fill="#fff" />
+                                            </g>
+                                        </g>
+                                        <g id="Grupo_544" data-name="Grupo 544" transform="translate(6.26 17.34)">
+                                            <g id="Grupo_543" data-name="Grupo 543">
+                                                <path id="Trazado_392" data-name="Trazado 392"
+                                                    d="M153.3,417.128a.416.416,0,0,0-.588,0l-2.056,2.056a.416.416,0,1,0,.588.588l2.056-2.056A.416.416,0,0,0,153.3,417.128Z"
+                                                    transform="translate(-150.534 -417.006)" fill="#fff" />
+                                            </g>
+                                        </g>
+                                        <g id="Grupo_546" data-name="Grupo 546" transform="translate(13.35 17.182)">
+                                            <g id="Grupo_545" data-name="Grupo 545">
+                                                <path id="Trazado_393" data-name="Trazado 393"
+                                                    d="M323.825,413.333a.416.416,0,0,0-.588,0l-2.062,2.062a.416.416,0,1,0,.588.588l2.062-2.062A.416.416,0,0,0,323.825,413.333Z"
+                                                    transform="translate(-321.053 -413.211)" fill="#fff" />
+                                            </g>
+                                        </g>
+                                        <g id="Grupo_548" data-name="Grupo 548" transform="translate(11.079 5.546)">
+                                            <g id="Grupo_547" data-name="Grupo 547">
+                                                <path id="Trazado_394" data-name="Trazado 394"
+                                                    d="M267.14,133.5a.416.416,0,1,0,.122.294A.419.419,0,0,0,267.14,133.5Z"
+                                                    transform="translate(-266.43 -133.38)" fill="#fff" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
+        </div>
+    </aside>
         </div>
     </article>
 @endsection
