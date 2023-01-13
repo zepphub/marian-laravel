@@ -11,15 +11,15 @@
     <article>
         <header class="portada-sobre-mi py-5">
             <div class="container py-5 d-flex flex-column align-items-baseline justify-content-center">
-                <div class="row">
+                <div class="row pb-3">
                     <div class="col-md-12">
-                        <h1 class="epigrafe text-center">Sobre Mi</h1>
+                        <h1 class="epigrafe text-marron text-center">Sobre Mi</h1>
                     </div>
                     <div class="col-md-6">
                         <h2 class="text-white reinata" style="font-size: 8rem; margin-bottom:-1rem;">Soy Marian,</h2>
                         <h4 class="text-white mb-4">Me especializo en la construcción de marca y en el desarrollo de
                             estrategias aplicadas a negocios en entornos digitales.</h4>
-                        <a href="#next" class="btn btn-outline-white">Conocé mi Historia</a>
+                        <a href="#next" class="btn btn-white">Conocé mi Historia</a>
                     </div>
                 </div>
             </div>
@@ -28,10 +28,10 @@
         <section class="py-5" id="next">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-sm-12">
                         <img class="img-fluid rounded-circle mb-5" src="{{ asset('img/about-me.jpg') }}" alt="">
                     </div>
-                    <div class="col-md-6 vcenter-col pl-md-5">
+                    <div class="col-md-6 vcenter-col pr-md-5 order-sm-1">
                             <p>Soy emprendedora, amante de los viajes, la cultura, los destinos, apasionada por el
                                 marketing, las historias y todo lo que se genera con ellas. Hace algún tiempito me propuse
                                 unir todas las actividades y propuestas que estaba llevando adelante desde mi profesión para
@@ -48,27 +48,27 @@
                             </p>
                             <a href="{{ route('servicios') }}" class="btn btn-outline-secondary mt-3">Trabajemos juntas</a>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="bg-crema-suave-2 py-5">
+        <section class="bg-crema-suave-2 portada2-sobre-mi py-5">
                 <div class="container py-5">
                     <div class="row">
-                        <div class="col-md-6 order-2 order-md-1 vcenter-col pr-md-5">
-                                <p>Acompañé todas estas aventuras estudiando mucho, y aún sigo haciéndolo. Soy Licenciada en
+                        <div class="col-md-6">
+                        </div>
+                        <div class="col-md-6 vcenter-col ">
+                                <p class="text-secondary">Acompañé todas estas aventuras estudiando mucho, y aún sigo haciéndolo. Soy Licenciada en
                                     Turismo, Diplomada y Especialista en Marketing y Dirección Comercial, Magister en
                                     Administración de Empresas (MBA) y en camino se encuentra una Maestría en Marketing
                                     Digital.</p>
-                                <p>Hoy me encuentro aquí, escribiendo el contenido de mi sitio web, un espacio que consolida
+                                <p class="text-secondary">Hoy me encuentro aquí, escribiendo el contenido de mi sitio web, un espacio que consolida
                                     y une todas las experiencias que te comparto... Hoy decido comunicar, proyectar y ayudar
                                     a todas las marcas que tengan la intención de contar su historia y dejar huellas. Lo
                                     hago a través de mi Marca Personal, como consultora de marcas auténticas.
                                 </p>
-                                <a href="{{ route('servicios') }}" class="btn btn-outline-secondary mt-3">Trabajemos juntas</a>
-                        </div>
-                        <div class="col-md-6 order-1 order-md-2">
-                            <img class="img-fluid rounded-circle mb-5" src="{{ asset('img/about-me.jpg') }}" alt="">
+                                <a href="{{ route('servicios') }}" class="btn btn-white mt-3">Trabajemos juntas</a>
                         </div>
                     </div>
                 </div>

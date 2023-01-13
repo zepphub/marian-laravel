@@ -24,7 +24,7 @@
             </div>
         </header>
 
-        <div class="container mt-5">
+        <div class="container mt-5 py-5">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2 class="">Mis Propuestas</h4>
@@ -34,7 +34,7 @@
             <div class="row mt-5">
                 <div class="col-md-6 mb-5">
                     <div class="card border-secondary text-center card-propuestas shadow">
-                        <img src="{{ asset('/img/ps-badge-dark.svg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('/img/ps-badge.svg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Personalizada</h5>
                             <h4>Eleva tu Esencia®</h4>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-md-6 mb-5">
                     <div class="card border-secondary text-center card-propuestas shadow">
-                        <img src="{{ asset('/img/mg-badge-dark.svg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('/img/mg-badge.svg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Grupal</h5>
                             <h4>Eleva tu Marca®</h4>

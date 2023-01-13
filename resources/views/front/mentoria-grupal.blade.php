@@ -46,9 +46,11 @@
             </div>
         </section>
 
-        <section class="container py-5">
-            <div class="row my-5">
-                <div class="col-md-7 vcenter-col">
+        <section class="py-5" id="negocio-solido">
+            <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 vcenter-col">
                     <h3>¿Qué significa tener un negocio online sólido?</h3>
                     <img src="{{ asset('/img/separador.svg') }}" class="separador-ondas mb-4" alt="">
                     <p>Gestionar un emprendimiento que no absorba todas tus horas productivas tratando de sumar likes y
@@ -59,13 +61,11 @@
                     <a href="https://www.google.com/url?q=https://www.dopplerpages.com/marianapd.tur-C0AD3/LISTADEESPERAMentoragrupalED2023-69561&sa=D&source=docs&ust=1668521241051007&usg=AOvVaw0n3DPwPCcgO4B8dU389jA6"
                         target="_blank" class="btn btn-primary mt-3">Reservar mi lugar</a>
                 </div>
-                <div class="col-md-5">
-                    <img class="w-100 img-fluid" src="{{ asset('img/mentoria-grupal-img-1.png') }}" alt="">
-                </div>
+            </div>
             </div>
         </section>
 
-        <section class="container pb-5">
+        <section class="container py-5">
             <div class="row my-5">
                 <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                     <h3 class="text-center separador-vertical">Este programa es para vos si querés:</h3>
@@ -98,18 +98,22 @@
             </div>
         </section>
 
-        <section id="mentoria-single-banner" class="d-flex align-items-center">
-            <h4 class="text-center text-white p-5">Que sea grupal significa que compartirás el proceso con emprendedoras y
+        <section id="mentoria-single-banner" class="container-fluid py-5">
+            <div class="row py-5 justify-content-center">
+                <div class="col-10 text-center">
+                    <h4 class="text-white">Que sea grupal significa que compartirás el proceso con emprendedoras y
                 profesionales que están en tu misma situación, siendo parte de una experiencia altamente enriquecedora que
                 se eleva en comunidad.</h4>
+                </div>
+            </div>
         </section>
 
         <section class="container-fluid py-5 bg-crema-suave-2">
             <div class="row my-5">
                 <div class="col-md-12 text-center">
                     <h3>¿Qué incluye el programa?</h3>
+                    <img src="{{ asset('/img/separador.svg') }}" class="separador-ondas mb-4 mt-3 mx-auto" alt="">
                     <div class="row mt-4 mt-md-5">
-
                         <div class="col-md-3">
                             <div class="d-flex flex-column align-items-center text-center my-3 my-md-0">
                                 <img src="{{ asset('img/mentoria-g-exp-1.svg') }}" alt="" class="mb-3 w-25">
@@ -156,30 +160,30 @@
             </div>
         </section>
 
-        <section class="banner-eleva-tu-marca">
-            <div class="container my-5 p-5">
+        <section class="banner-eleva-tu-marca py-5">
+            <div class="container p-5">
                 <div class="row text-center">
                     <div class="col-md-12">
-                        <h4 class="text-white  mb-3">¡Quiero ser parte de la próxima edición!
+                        <h4 class="text-white mb-3">¡Quiero ser parte de la próxima edición!
                         </h4>
                         <!-- <h5 class="text-white mt-3">Costo <span>{{ $mentorship->service->price() }}</span></h5> -->
                         <a href="https://www.dopplerpages.com/marianapd.tur-C0AD3/LISTADEESPERAMentoragrupalED2023-69561"
-                            target="_blank" class="btn btn-blanco mt-3 mt-md-0">Registrarme en lista de espera</a>
+                            target="_blank" class="btn btn-outline-white">Registrarme en lista de espera</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container mt-5">
-            <div class="row">
+        <section class="container my-5">
+            <div class="row pt-5">
                 <div class="col-md-12 text-center">
-                    <h4 class="text-marron-claro">Otras maneras de encontrarnos</h4>
+                    <h4 class="text-marron-claro mb-5">Otras maneras de encontrarnos</h4>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row pb-3">
                 <div class="col-md-6 mb-5">
                     <div class="card border-secondary text-center card-propuestas shadow">
-                        <img src="{{ asset('/img/ps-badge-dark.svg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('/img/ps-badge.svg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Personalizada</h5>
                             <h4>Eleva tu Esencia®</h4>

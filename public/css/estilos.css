@@ -407,6 +407,9 @@ footer .widget h5::after {
     top: 1rem;
     left: 50%;
 }
+.epigrafe.text-marron::after {
+    background-color: var(--marron-claro);
+}
 
 .separador-vertical {
     margin-bottom: 3rem;
@@ -454,7 +457,7 @@ footer .widget h5::after {
 p.card-text {margin-bottom: 2rem;}
 
 .checklist li {
-    color: #5B5B5F;
+    color: #937A69;
     margin: 1.5rem 0;
 }
 .checklist li img {
@@ -509,7 +512,7 @@ p.card-text {margin-bottom: 2rem;}
     font-weight: 400;
 }
 #newsletter-alma {
-    background-image: url(../img/bg-satin-texture.jpg);
+    background-image: url(../img/texturas/bg-satin-texture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -522,4 +525,11 @@ p.card-text {margin-bottom: 2rem;}
 .btn:not(:disabled):not(.disabled):active:focus,
 .btn:not(:disabled):not(.disabled).active:focus {
     box-shadow: none;
+}
+
+#negocio-solido {
+    background-image: url(../img/new/_DSC3008.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }

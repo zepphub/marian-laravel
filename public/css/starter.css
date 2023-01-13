@@ -4124,16 +4124,17 @@ fieldset:disabled a.btn {
 }
 
 .btn-white {
-    color: #212529;
-    background: #fff linear-gradient(180deg, #fff, #fff) repeat-x;
+    color: var(--secondary);
+    background: #fff;
     border-color: #fff;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075)
+    box-shadow: none;
 }
 
 .btn-white:hover {
-    color: #212529;
-    background: #ececec linear-gradient(180deg, #efefef, #ececec) repeat-x;
-    border-color: #e6e6e6
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: white;
+    box-shadow: none;
 }
 
 .btn-white:focus,
@@ -7024,7 +7025,7 @@ input[type="button"].btn-block {
     text-decoration: none
 }
 
-.breadcrumb-item.active {
+.breadcrumb-item.active, .breadcrumb-item a {
     color: var(--secondary);
 }
 
@@ -14201,24 +14202,31 @@ h4.titulo-cards-dashboard {
 
 .banner-home-1 {
     min-height: 400px;
-    background-image: url(../img/marble-texture.jpg);
+    background-image: url(../img/texturas/marble-texture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     background-color: #EDE7E4;
+    position: relative;
+}
+.banner-home-1:before {
+    background-color: var(--rosa-claro);
+    opacity: 1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    mix-blend-mode: overlay;
+}
+.banner-home-1 .epigrafe {
     color: var(--secondary);
 }
 .banner-home-1 .epigrafe::after {
     display: none;
-}
-
-.banner-eleva-tu-marca {
-    background: url(../img/bg-banner-eleva-tu-marca.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
 }
 
 p.entry-date {
@@ -14255,10 +14263,16 @@ p.entry-date {
 }
 
 .portada-sobre-mi {
-    background: url(../img/portada-sobre-mi.jpg);
+    background: url(../img/new/_DSC3229.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center
+}
+.portada2-sobre-mi {
+    background: url(../img/new/_DSC2982.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center
 }
 
 .contenedor-testimonios {
@@ -14343,10 +14357,20 @@ p.entry-date {
 }
 
 #portada-servicios {
-    background: url(../img/servicios-img-portada.jpg);
+    background: url(../img/new/_DSC2955.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center
+    background-position: center center;
+    position: relative;
+}
+#portada-servicios:before {
+    position: absolute;
+    top:0;left:0;
+    content: '';
+    width: 100%;height: 100%;
+    background-color: var(--marron-claro-2);
+    mix-blend-mode: screen;
+    opacity: 0.25;
 }
 
 #pills-vertical .nav-link.active {
@@ -14527,13 +14551,32 @@ img.icon-tab {
     }
 
 }
+.bg-overlay {
+    position: relative;
+}
+.bg-overlay:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    mix-blend-mode: overlay;
+}
 
 #mentoria-portada {
-    background: url(../img/mentoria-img-portada.jpg);
+    background: url(../img/new/_DSC2923.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
 }
+#mentoria-portada.bg-overlay:before {
+    background-color: var(--marron-claro);
+    opacity: 0.75;
+    mix-blend-mode: multiply;
+}
+
 
 /*#mentoria-propuestas {
     background: url(../img/mentoria-manchitas-left.png);
@@ -14543,25 +14586,49 @@ img.icon-tab {
 }*/
 
 #programa-section-para-vos {
-    background: url(../img/programa-bg-para-vos.jpg);
+    /*background: url(../img/programa-bg-para-vos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center
+    background-position: center center*/
+    background-color: var(--secondary);
 }
 
 #banner-programa-reunion {
-    background: url(../img/programa-banner-reunion.jpg);
+    /*background: url(../img/programa-banner-reunion.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center
+    background-position: center center*/
+    background-color: var(--secondary);
 }
 
 #banner-programa-consultoria-estrategica {
-    background: url(../img/programa-banner-consultoria.jpg);
+    /*background: url(../img/programa-banner-consultoria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;*/
+    background-color: var(--secondary);
+    margin-bottom: -35px
+}
+
+.banner-eleva-tu-marca {
+    background: url(../img/texturas/marmol-byn.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    margin-bottom: -35px
+    background-attachment: fixed;
+    position: relative;
+}
+.banner-eleva-tu-marca:before {
+    background-color: var(--rosa-oscuro);
+    opacity: 1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    mix-blend-mode: multiply;
 }
 
 @media (min-width: 768px) {
@@ -14580,10 +14647,11 @@ img.icon-tab {
 }
 
 #mentoria-single-banner {
-    background: url(../img/mentoria-grupal-bg-owl-slider.jpg);
+    background: url(../img/texturas/sombras.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center
+    background-position: center center;
+    background-color: var(--marron-claro-2);
 }
 
 .icon-owl-carousel {

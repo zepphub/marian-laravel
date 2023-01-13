@@ -10,7 +10,7 @@
 @section('content')
     <article>
 
-        <header id="mentoria-portada">
+        <header id="mentoria-portada" class="bg-overlay">
           <div class="container">
             <div class="row py-5">
                 <div class="col-md-6 offset-md-3 text-center">
@@ -23,7 +23,7 @@
                               <li class="breadcrumb-item active">Mentorías</li>
                           </ol>
                       </nav>-->
-                    <a href="#mentoria-propuestas" class="btn btn-outline-white">Ver mis programas</a>
+                    <a href="#mentoria-propuestas" class="btn btn-white">Ver mis programas</a>
                 </div>
             </div>
             </div>
@@ -31,7 +31,7 @@
 
         <section id="mentoria-propuestas" class="container py-5">
             <div class="row py-5">
-                <div class="col-md-12 text-center">
+                <div class="col-md-8 offset-md-2 text-center">
                     <h2 class="separador-horizontal">Mis propuestas de mentoría para vos</h2>
                     <p class="text-marron-claro">Creemos una estrategia de marca diferencial, que te ayude a elevar el
                         posicionamiento en entornos digitales, a través de dinámicas específicas centradas en el marketing
@@ -41,7 +41,7 @@
             <div class="row">
                 <div class="col-md-6 mb-5">
                     <div class="card border-secondary text-center card-propuestas shadow">
-                        <img src="{{ asset('/img/ps-badge-dark.svg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('/img/ps-badge.svg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Personalizada</h5>
                             <h4>Eleva tu Esencia®</h4>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-md-6 mb-5">
                     <div class="card border-secondary text-center card-propuestas shadow">
-                        <img src="{{ asset('/img/mg-badge-dark.svg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('/img/mg-badge.svg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title epigrafe">MENTORÍA Grupal</h5>
                             <h4>Eleva tu Marca®</h4>
