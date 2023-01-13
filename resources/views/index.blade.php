@@ -92,10 +92,10 @@
     <section class="bg-crema-suave py-5" id="home-about-me">
         <div class="container my-5">
             <div class="row">
-                <div class="col-md-5 text-center text-md-left vcenter-col">
-                    <img class="img-fluid mb-4" src="{{ asset('/img/about-me.jpg') }}" alt="">
+                <div class="col-md-5 text-center text-md-left">
+                    <img class="img-fluid mb-4" src="{{ asset('/img/hero-marian2.jpg') }}" alt="">
                 </div>
-                <div class="col-md-7 px-5">
+                <div class="col-md-7 px-5 vcenter-col">
                     <h2 class="mt-4 mt-md-0">Sobre Mí</h2>
                     <img src="{{ asset('/img/separador.svg') }}" class="separador-ondas" alt="">
                     <p class="mb-3 mt-4 text-marron">Si pudieras hacer realidad la idea que hace tiempo tenes…
