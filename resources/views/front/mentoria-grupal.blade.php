@@ -30,7 +30,7 @@
         <section class="container py-5">
             <div class="row my-5">
                 <div class="col-md-5 text-center d-flex align-items-center justify-content-center">
-                    <img class="img-fluid m-5 m-sm-0" style="max-width: 256px;"
+                    <img class="img-fluid m-5" style="max-width: 256px;"
                         src="{{ asset('img/mg-badge.svg') }}" alt="">
                 </div>
                 <div class="col-md-7 vcenter-col">
@@ -40,7 +40,7 @@
                         de las cuales, te ayudo a tomar decisiones estratégicas para transformar tu emprendimiento en un
                         negocio digital sólido y auténtico, respetando tus procesos creativos y elevando una estrategia de
                         marca diferencial desde la calma y el disfrute.</p>
-                    <a href="#" target="_blank" class="btn btn-primary mt-3">¡Quiero aplicar a
+                    <a href="https://www.dopplerpages.com/marianapd.tur-C0AD3/LISTADEESPERAMentoragrupalED2023-69561" target="_blank" class="btn btn-primary mt-3">¡Quiero aplicar a
                         la mentoría!</a>
                 </div>
             </div>
@@ -49,8 +49,7 @@
         <section class="py-5" id="negocio-solido">
             <div class="container py-5">
             <div class="row py-5">
-                <div class="col-md-6"></div>
-                <div class="col-md-6 vcenter-col">
+                <div class="col-md-6 col-sm-8 vcenter-col">
                     <h3>¿Qué significa tener un negocio online sólido?</h3>
                     <img src="{{ asset('/img/separador.svg') }}" class="separador-ondas mb-4" alt="">
                     <p>Gestionar un emprendimiento que no absorba todas tus horas productivas tratando de sumar likes y
@@ -58,9 +57,10 @@
                             hacer menos pero mejor, elevando tus resultados.</u></p>
                     <p>Es lo que necesito,</p>
                     <h6>¡Quiero registrarme en lista de espera para la próxima edición!</h6>
-                    <a href="https://www.google.com/url?q=https://www.dopplerpages.com/marianapd.tur-C0AD3/LISTADEESPERAMentoragrupalED2023-69561&sa=D&source=docs&ust=1668521241051007&usg=AOvVaw0n3DPwPCcgO4B8dU389jA6"
+                    <a href="https://www.dopplerpages.com/marianapd.tur-C0AD3/LISTADEESPERAMentoragrupalED2023-69561"
                         target="_blank" class="btn btn-primary mt-3">Reservar mi lugar</a>
                 </div>
+                <div class="col-md-6 col-sm-4"></div>
             </div>
             </div>
         </section>
@@ -100,7 +100,7 @@
 
         <section id="mentoria-single-banner" class="container-fluid py-5">
             <div class="row py-5 justify-content-center">
-                <div class="col-10 text-center">
+                <div class="col-8 text-center">
                     <h4 class="text-white">Que sea grupal significa que compartirás el proceso con emprendedoras y
                 profesionales que están en tu misma situación, siendo parte de una experiencia altamente enriquecedora que
                 se eleva en comunidad.</h4>
@@ -141,14 +141,14 @@
                             <div class="d-flex flex-column align-items-center text-center my-3 my-md-0">
                                 <img src="{{ asset('img/mentoria-g-exp-4.svg') }}" alt="" class="mb-3 w-25">
                                 <h5 class="text-marron-claro m-md-0 ml-md-3 mt-2 mt-md-0">Material audiovisual disponible +
-                                    acceso a ejemplos y casos reales + Seguimiento personalizado.</h5>
+                                    acceso a ejemplos y casos reales</h5>
                             </div>
                         </div>
                     </div>
                 </div>
         </section>
 
-        <section class="container py-5">
+        <!--<section class="container py-5">
             <div class="row my-5">
                 <div class="col-md-8 offset-md-2 text-center">
                     <h3 class="mb-0">La experiencia contada por ellas</h3>
@@ -158,7 +158,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <section class="banner-eleva-tu-marca py-5">
             <div class="container p-5">

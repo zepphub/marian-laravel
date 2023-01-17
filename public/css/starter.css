@@ -14652,6 +14652,7 @@ img.icon-tab {
     background-size: cover;
     background-position: center center;
     background-color: var(--marron-claro-2);
+    background-attachment: fixed;
 }
 
 .icon-owl-carousel {
