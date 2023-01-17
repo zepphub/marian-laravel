@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1 class="epigrafe">Blog</h1>
-                    <h2 class="text-white">¡Activá tu magia!</h2>
+                    <h2 class="text-white">¡Eleva tu marca!</h2>
                     <p>Recursos de Marketing digital, Comunicación y Branding para que lleves tu marca al
                         próximo nivel</p>
                     <!--<nav class="" aria-label="breadcrumb">
