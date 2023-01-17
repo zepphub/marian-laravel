@@ -135,20 +135,20 @@
             <div class="row text-center">
                 <div class="col-sm-4">
                     <div class="counter">
-                        <h2 class="timer count-title count-number" data-to="3000" data-speed="1500">+</h2>
+                        <h2 class="count-title">+ <span class="timer count-number" data-to="3000" data-speed="1500"></span></h2>
                         <p class="count-text ">Emprendedores y Profesionales formados con los programas de Marian</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="counter">
-                        <h2 class="timer count-title count-number" data-to="200" data-speed="1500"></h2>
+                        <h2 class="count-title">+ <span class="timer count-number" data-to="200" data-speed="1500"></span></h2>
                         <p class="count-text ">Cursos y talleres brindados en modalidad presencial-online
                         </p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="counter">
-                        <h2 class="timer count-title count-number" data-to="500" data-speed="1500"></h2>
+                        <h2 class="count-title">+ <span class="timer count-number" data-to="500" data-speed="1500"></span></h2>
                         <p class="count-text ">Negocios digitales mentoreados en construcción y estrategia de marca</p>
                     </div>
                 </div>
