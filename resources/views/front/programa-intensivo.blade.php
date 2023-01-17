@@ -38,85 +38,51 @@
                     <p>Durante un período de 10 semanas te acompaño y ayudo en el proceso de toma de decisión, en etapa de
                         construcción y proyección de marca, para que logres crear una estrategia de diferenciación en
                         entornos digitales a fin de que la audiencia te perciba como la mejor opción.</p>
-                    <a href="https://forms.gle/bX4KrmZhpPcoyprV6" target="_blank" class="btn btn-primary mt-3">¡Quiero
-                        aplicar a
-                        la mentoría!</a>
+                    <a href="https://www.dopplerpages.com/marianapd.tur-C0AD3/LISTADEESPERAProgramaselecto-69565"
+                        target="_blank" class="btn btn-primary mt-3">¡Quiero recibir información!</a>
                 </div>
             </div>
         </section>
 
         <section class="container">
             <div class="row py-5">
-                <div class="col text-center">
-                    <h3>Ejes de trabajo</h3>
-                    <img src="{{ asset('img/separador.svg') }}" class="separador-ondas mx-auto my-4" alt="">
-                    <div class="row mt-4">
-                        <div class="col-sm-4 mb-4">
-                            <div class="card bg-nude p-4 h-100">
-                                <img src="{{ asset('img/programa-icon-list-1.svg') }}" alt=""
-                                    class="w-25 mb-4 mx-auto">
-                                <p>Has logrado construir una audiencia digital en uno o diversos canales de
-                                    comunicación.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 mb-4">
-                            <div class="card bg-nude p-4 h-100">
-                                <img src="{{ asset('img/programa-icon-list-2.svg') }}" alt=""
-                                    class="w-25 mb-4 mx-auto">
-                                <p>Has probado y validado diversas estrategias en entornos digitales.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 mb-4">
-                            <div class="card bg-nude p-4 h-100">
-                                <img src="{{ asset('img/programa-icon-list-3.svg') }}" alt=""
-                                    class="w-25 mb-4 mx-auto">
-                                <p>Has logrado un flujo de ventas constante, lo que por períodos se traduce a la “agenda
-                                    llena”</p>
-                            </div>
-                        </div>
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h3 class="text-center">¿Cuál es el momento ideal para aplicar al proceso?</h3>
+                    <img src="{{ asset('img/separador.svg') }}" alt="" class="separador-ondas my-4 mx-auto">
+                    <h5 class="text-marron text-center">Cuando tu negocio digital y/o flujo de venta online es un hecho y te
+                        encontras en una etapa de crecimiento o expansión, lo que refleja que:</h5>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-4 mb-4">
+                    <div class="card bg-nude p-4 h-100">
+                        <img src="{{ asset('img/programa-icon-list-1.svg') }}" alt="" class="w-25 mb-4 mx-auto">
+                        <p>Has logrado construir una audiencia digital en uno o diversos canales de
+                            comunicación.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 mb-4">
+                    <div class="card bg-nude p-4 h-100">
+                        <img src="{{ asset('img/programa-icon-list-2.svg') }}" alt="" class="w-25 mb-4 mx-auto">
+                        <p>Has probado y validado diversas estrategias en entornos digitales.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 mb-4">
+                    <div class="card bg-nude p-4 h-100">
+                        <img src="{{ asset('img/programa-icon-list-3.svg') }}" alt="" class="w-25 mb-4 mx-auto">
+                        <p>Has logrado un flujo de ventas constante, lo que por períodos se traduce a la “agenda
+                            llena”</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="container py-5">
-            <div class="row mb-5">
-                <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                    <h3 class="text-center">¿Cuál es el momento ideal para aplicar al proceso?</h3>
-                    <img src="{{ asset('img/separador.svg') }}" alt="" class="separador-ondas my-4 mx-auto">
-                    <h5 class="mb-4 text-marron text-center">Cuando tu negocio digital y/o flujo de venta online es un hecho
-                        y te
-                        encontras en una etapa de crecimiento o expansión, lo que refleja que:</h5>
-                    <ul class="list-unstyled checklist text-justify">
-                        <li><img src="{{ asset('img/check-icon.svg') }}" alt=""> Definir el modelo de negocio que se
-                            adapte al estilo de vida que querés vivir para potenciar la venta de tus servicios online desde
-                            la calma y con estrategia.</li>
-                        <li><img src="{{ asset('img/check-icon.svg') }}" alt=""> Fortalecer las bases estratégicas
-                            de tu emprendimiento para que te asegures de comunicar tu factor diferencial y conectar con tu
-                            cliente ideal.
-                        </li>
-                        <li><img src="{{ asset('img/check-icon.svg') }}" alt=""> Crear una estrategia de marca a tu
-                            medida, que represente tus valores profesionales y que respete tus procesos creativos, evitando
-                            caer en métodos preestablecidos.
-                        </li>
-                        <li><img src="{{ asset('img/check-icon.svg') }}" alt=""> Aplicar acciones de venta sin
-                            perder la esencia y la personalización que te caracteriza al momento de comunicar tus servicios.
-                        </li>
-                        <li><img src="{{ asset('img/check-icon.svg') }}" alt=""> Contar con las herramientas
-                            necesarias para crear una estrategia de marca consciente y sostenible, en términos de contenido
-                            y posicionamiento.
-                        </li>
-                        <li><img src="{{ asset('img/check-icon.svg') }}" alt=""> Contar con una mirada objetiva y
-                            profesional sobre la presencia de tu marca en entornos digitales, además de un acompañamiento
-                            que te ayude y asegure el avance.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mb-5">
+            <div class="row my-5">
                 <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
-                    <h4 class="mb-4">Si te sentís identificada con las afirmaciones que comparto respecto al momento vital de tu negocio,
-                        probablemente necesites:</h4>
+                    <h4 class="mb-4">Si te sentís identificada con las afirmaciones que comparto respecto al momento vital
+                        de tu negocio, probablemente necesites: </h4>
+                        <img src="{{ asset('img/separador.svg') }}" alt="" class="separador-ondas my-4 mx-auto">
                     <ul class="list-unstyled checklist text-justify">
                         <li><img src="{{ asset('img/check-icon.svg') }}" alt=""> Capitalizar la experiencia
                             rediseñando la estrategia de marca en entornos digitales con acciones validadas y alineadas a
@@ -129,14 +95,14 @@
                             creativos y comunicativos a la hora de vender online.</li>
                     </ul>
                     <span class="separador-vertical"></span>
-                    <h4 class="my-4" style="color: var(--primary);">Es mi momento!</h4>
-                    <a href="https://forms.gle/bX4KrmZhpPcoyprV6" target="_blank" class="btn btn-primary"> ¡Quiero aplicar
+                    <h4 class="my-4" style="color: var(--primary);">¡Es mi momento!</h4>
+                    <a href="https://www.dopplerpages.com/marianapd.tur-C0AD3/LISTADEESPERAProgramaselecto-69565" target="_blank" class="btn btn-primary"> ¡Quiero aplicar
                         al Programa Selecto!</a>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid bg-crema-suave-2">
+        <!--<section class="container-fluid bg-crema-suave-2">
             <div class="row py-5">
                 <div class="col-md-12 text-center">
                     <h3>¿Qué incluye el programa?</h3>
@@ -176,12 +142,12 @@
                         </div>
                     </div>
                 </div>
-        </section>
+        </section>-->
 
         <section class="container mb-5">
             <div class="row py-5">
                 <div class="col-md-8 offset-md-2 text-center">
-                    <h3 class="mb-0">La experiencia contada por ellas</h3>
+                    <h3 class="mb-0">La experiencia</h3>
                     <img src="{{ asset('img/separador.svg') }}" class="separador-ondas mx-auto my-4" alt="">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/Y0VG82mzpVk"
@@ -203,6 +169,10 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </div>
+                    <img src="{{ asset('img/separador.svg') }}" class="separador-ondas mx-auto my-4" alt="">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8MP8g3oPUIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </section>
@@ -218,8 +188,8 @@
                             encantará
                             acompañarte!</h5>
                         <!-- <h5 class="text-white  my-4">Te invito a conocernos en una llamada de claridad de 20 minutos </h5> -->
-                        <a href="https://forms.gle/bX4KrmZhpPcoyprV6" target="_blank"
-                            class="btn btn-outline-white">¡Quiero agendar una reunión!</a>
+                        <a href="https://www.dopplerpages.com/marianapd.tur-C0AD3/LISTADEESPERAProgramaselecto-69565" target="_blank"
+                            class="btn btn-outline-white">¡Quiero recibir información!</a>
                     </div>
                 </div>
             </div>
