@@ -29,7 +29,7 @@
         <section class="container">
             <div class="row py-5 my-5">
                 <div class="col-md-5 d-flex justify-content-center order-xs-12">
-                    <img class="img-fluid m-5 m-sm-0" style="max-width: 256px;" src="{{ asset('img/PS-badge.svg') }}"
+                    <img class="img-fluid m-5 m-sm-0" style="max-width: 256px;" src="{{ asset('img/ps-badge.svg') }}"
                         alt="">
                 </div>
                 <div class="col-md-7 align-items-center order-xs-1">

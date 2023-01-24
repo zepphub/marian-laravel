@@ -29,7 +29,7 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-md-6 order-sm-12">
-                        <img class="img-fluid rounded-circle mb-5" src="{{ asset('img/about-me.jpg') }}" alt="">
+                        <img class="img-fluid rounded-circle mb-5" src="{{ asset('img/about-me-3.jpg') }}" alt="">
                     </div>
                     <div class="col-md-6 vcenter-col pr-md-5 order-sm-1">
                             <p>Soy emprendedora, amante de los viajes, la cultura, los destinos, apasionada por el

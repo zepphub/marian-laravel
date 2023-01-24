@@ -143,7 +143,7 @@
                             <h5 class="card-title epigrafe">MENTORÍA</h5>
                             <p class="card-text">Te acompaño en el proceso de crear una estrategia de marca diferencial a
                                 través del marketing y la comunicación consciente.</p>
-                            <a href="{{ route('mentoria-grupal') }}" class="btn btn-primary">Click aquí para conocer
+                            <a href="{{ route('mentoria') }}" class="btn btn-primary">Click aquí para conocer
                                 detalles</a>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                             <p class="card-text">Una propuesta de formación con contenidos audiovisuales grabados (videos,
                                 ejemplos con casos reales, ejercicios y guías prácticas) para que puedas capacitarte a tu
                                 ritmo y respetar tus procesos creativos sin presiones de días u horarios.</p>
-                            <a href="https://servicios.marianpd.com/cursos" target="_blank" class="btn btn-primary">Ver
+                            <a href="https://servicios.marianpd.com/cursos-on-demand/" target="_blank" class="btn btn-primary">Ver
                                 los
                                 cursos disponible</a>
                         </div>
