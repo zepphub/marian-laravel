@@ -101,7 +101,7 @@
                                 <p class="card-text">Te acompaño en el proceso de crear una estrategia de marca diferencial
                                     a
                                     través del marketing y la comunicación consciente.</p>
-                                <a href="{{ route('mentoria-grupal') }}" class="btn btn-primary">Click aquí para conocer
+                                <a href="{{ route('mentoria') }}" class="btn btn-primary">Click aquí para conocer
                                     detalles</a>
                             </div>
                         </div>
