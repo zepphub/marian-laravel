@@ -5,6 +5,11 @@ php artisan migrate:fresh --seed
 php artisan storage:link
 
 
+# Run Server
+
+php artisan serve 
+
+
 # Factory Test Data
 
 php artisan tinker
