@@ -210,10 +210,6 @@ a.text-white:focus {
 
 @media (min-width: 768px) {
 
-    .social-group {
-        margin-top: 100px !important;
-    }
-
     .contenedor-cinco-pilares h5 {
         min-height: 120px;
     }
